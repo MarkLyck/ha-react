@@ -1,0 +1,16 @@
+{
+  "entity_id": "persistent_notification.config_entry_discovery",
+  "state": "notifying",
+  "attributes": {
+    "message": "We have discovered new devices on your network. [Check it out](/config/integrations).",
+    "title": "New devices discovered",
+    "friendly_name": "New devices discovered"
+  },
+  "context": {
+    "id": "01810c29fb01c46ac449509647cacd12",
+    "parent_id": null,
+    "user_id": null
+  },
+  "last_changed": "2022-05-28T19:34:46.785Z",
+  "last_updated": "2022-05-28T19:34:46.785Z"
+}
