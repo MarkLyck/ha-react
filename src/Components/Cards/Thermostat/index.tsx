@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import { Alert } from 'antd'
 import { ThermostatCard as HomekitThermostatCard } from './ThermostatCard'
 
@@ -10,6 +10,9 @@ type ThermostatCardCardProps = {
 export const ThermostatCard = ({ hass, entityId }: ThermostatCardCardProps) => {
   const entity = hass.states[entityId]
   console.log('🔈 ~ entity', entity)
+  const [targetTemperature, setTargetTemperature] = useState(
+    entity?.attributes?.temperature || 0
+  )
   if (!entityId) {
     return <Alert message="Missing entityId" type="error" showIcon />
   }
@@ -26,9 +29,10 @@ export const ThermostatCard = ({ hass, entityId }: ThermostatCardCardProps) => {
   const { friendly_name, occupied_heating_setpoint } = entity.attributes
 
   const handleTemperatureChange = (value: number) => {
+    setTargetTemperature(value)
     hass.callService('climate', 'set_temperature', {
       entity_id: entity.entity_id,
-      temperature: value,
+      temperature: Math.floor(value),
     })
   }
 
@@ -40,16 +44,14 @@ export const ThermostatCard = ({ hass, entityId }: ThermostatCardCardProps) => {
   }
 
   return (
-    <React.Fragment>
-      <HomekitThermostatCard
-        entity={entity}
-        name={friendly_name}
-        currentMode={entity.state}
-        currentTemperature={occupied_heating_setpoint}
-        targetTemperature={occupied_heating_setpoint}
-        onModeChange={handleModeChange}
-        onTemperatureChange={handleTemperatureChange}
-      />
-    </React.Fragment>
+    <HomekitThermostatCard
+      entity={entity}
+      name={friendly_name}
+      currentMode={entity.state}
+      currentTemperature={occupied_heating_setpoint}
+      targetTemperature={targetTemperature}
+      onModeChange={handleModeChange}
+      onTemperatureChange={handleTemperatureChange}
+    />
   )
 }

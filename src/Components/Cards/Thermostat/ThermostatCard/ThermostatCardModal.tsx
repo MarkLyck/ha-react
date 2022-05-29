@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Modal, Button } from 'antd'
+import { Modal, Button, Segmented } from 'antd'
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -14,23 +14,40 @@ const StyledModal = styled(Modal)`
 `
 
 const LabelTemperature = styled.div`
-  font-size: 48px;
+  font-size: 42px;
   font-weight: bold;
-  margin-right: 16px;
+  background: #eee;
+  border-radius: 12px;
+  width: 202px;
 `
 
 const Container = styled.div`
+  text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 48px;
+  margin-bottom: 8px;
 `
 
 const ButtonContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  width: 202px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+
+  button {
+    width: calc(50% - 8px);
+    margin: 0 4px;
+  }
 `
-const TemperatureChangeButton = styled(Button)``
+const ModeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 interface ThermostatCardModalProps {
   /** Method to close the modal */
@@ -75,12 +92,6 @@ export const ThermostatCardModal: FC<ThermostatCardModalProps> = ({
 }) => {
   const on = currentMode !== 'off'
 
-  function handleModeChange(key: string, value: string) {
-    if (onModeChange) {
-      onModeChange(value)
-    }
-  }
-
   const handleIncreaseTemperature = () => {
     const newTemp = targetTemperature + 1
     if (newTemp <= tempMax) {
@@ -100,26 +111,45 @@ export const ThermostatCardModal: FC<ThermostatCardModalProps> = ({
         title={name}
         subtitle={statusLabel}
         close={close}
-        icon={<TemperatureIcon temperature={currentTemperature} />}
+        icon={
+          <TemperatureIcon
+            temperature={targetTemperature}
+            // @ts-ignore
+            state={currentMode}
+          />
+        }
       />
       <Container>
         <LabelTemperature>
-          {on ? targetTemperature?.toFixed(1) : currentTemperature?.toFixed(1)}°
+          {on ? targetTemperature?.toFixed(0) : currentTemperature?.toFixed(1)}°
         </LabelTemperature>
         <ButtonContainer>
-          <TemperatureChangeButton
-            onClick={handleIncreaseTemperature}
-            disabled={targetTemperature >= tempMax}
-          >
-            <FontAwesomeIcon icon={['fal', 'angle-up']} />
-          </TemperatureChangeButton>
-          <TemperatureChangeButton
+          <Button
             onClick={handleDecreaseTemperature}
-            disabled={targetTemperature <= tempMin}
+            disabled={targetTemperature <= Number(tempMin)}
           >
             <FontAwesomeIcon icon={['fal', 'angle-down']} />
-          </TemperatureChangeButton>
+          </Button>
+          <Button
+            onClick={handleIncreaseTemperature}
+            disabled={targetTemperature >= Number(tempMax)}
+          >
+            <FontAwesomeIcon icon={['fal', 'angle-up']} />
+          </Button>
         </ButtonContainer>
+        <ModeContainer>
+          <Segmented
+            defaultValue={currentMode}
+            // @ts-ignore
+            onChange={onModeChange}
+            options={[
+              { label: 'Auto', value: 'heat_cool' },
+              { label: 'Heat', value: 'heat' },
+              { label: 'Cool', value: 'cool' },
+              { label: 'Off', value: 'off' },
+            ]}
+          />
+        </ModeContainer>
       </Container>
     </StyledModal>
   )

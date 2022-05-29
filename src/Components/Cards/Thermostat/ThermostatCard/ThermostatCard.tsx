@@ -34,7 +34,7 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
   name,
   onModeChange,
   onTemperatureChange,
-  targetTemperature = 0,
+  targetTemperature,
 }) => {
   const { showModal, openModal, closeModal } = useModalHelper()
 
@@ -47,8 +47,18 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
   return (
     <React.Fragment>
       <AccessoryCard
-        iconActive={<TemperatureIcon temperature={currentTemperature} />}
-        iconInactive={<TemperatureIcon temperature={currentTemperature} />}
+        iconActive={
+          <TemperatureIcon
+            temperature={targetTemperature}
+            state={entity.state}
+          />
+        }
+        iconInactive={
+          <TemperatureIcon
+            temperature={currentTemperature}
+            state={entity.state}
+          />
+        }
         name={name}
         state={statusLabel}
         isActive={entity.state !== 'off'}
@@ -61,10 +71,10 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
         currentMode={entity.state}
         modes={modes}
         onModeChange={onModeChange}
-        tempMax={entity.attributes.max_temp}
-        tempMin={entity.attributes.min_temp}
+        tempMax={Math.floor(entity.attributes.max_temp)}
+        tempMin={Math.ceil(entity.attributes.min_temp)}
         currentTemperature={entity.attributes.current_temperature}
-        targetTemperature={entity.attributes.temperature}
+        targetTemperature={targetTemperature}
         onTemperatureChange={onTemperatureChange}
         show={showModal}
         close={closeModal}

@@ -40,7 +40,6 @@ type ControlsProps = {
 const Controls = ({ hass }: ControlsProps) => {
   return (
     <ControlsContainer>
-      <Alert message="antd styled" />
       <ControlsLeft>
         <ControlsSection title="Office">
           <Components>
@@ -53,7 +52,6 @@ const Controls = ({ hass }: ControlsProps) => {
         </ControlsSection>
         <ControlsSection title="Hallway">
           <Components>
-            <LightCard hass={hass} entityId="light.desk_light" />
             <ThermostatCard hass={hass} entityId="climate.ecobee" />
           </Components>
         </ControlsSection>

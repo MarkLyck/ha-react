@@ -1,4 +1,4 @@
-import { message } from 'antd'
+// import { message } from 'antd'
 
 const hass = {
   callService: (
@@ -7,7 +7,7 @@ const hass = {
     data: { entity_id: string; brightness?: string }
   ) => {
     console.log('🚀 data', data)
-    message.success(`callService: ${domain}, ${service}, ${data.entity_id}`)
+    // message.success(`callService: ${domain}, ${service}, ${data.entity_id}`)
   },
   auth: {
     data: {
