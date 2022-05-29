@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react'
 import styled from '@emotion/styled'
 
-import CloseIconSvg from 'src/common/icons/modal-close.svg'
+import CloseIconSvg from 'src/assets/icones/modal-close.svg'
 
 const ModalHeaderContainer = styled.div`
   height: 24px;

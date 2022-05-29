@@ -4,29 +4,29 @@ import { BinarySensorType, SwitchType } from 'src/types'
 /**
  * Sensors
  */
-import ContactClosedSrc from '/assets/icons/accessories/contact-closed-large@2x.png'
-import ContactOpenSrc from '/assets/icons/accessories/contact-open-large@2x.png'
+import ContactClosedSrc from 'src/assets/icones/accessories/contact-closed-large@2x.png'
+import ContactOpenSrc from 'src/assets/icones/accessories/contact-open-large@2x.png'
 
-import DoorClosedSrc from '/assets/icons/accessories/door-closed-large@2x.png'
-import DoorOpenSrc from '/assets/icons/accessories/door-open-large@2x.png'
+import DoorClosedSrc from 'src/assets/icones/accessories/door-closed-large@2x.png'
+import DoorOpenSrc from 'src/assets/icones/accessories/door-open-large@2x.png'
 
-import LockSecuredSrc from '/assets/icons/accessories/lock-secured-large@2x.png'
-import LockUnsecuredSrc from '/assets/icons/accessories/lock-unsecured-large@2x.png'
+import LockSecuredSrc from 'src/assets/icones/accessories/lock-secured-large@2x.png'
+import LockUnsecuredSrc from 'src/assets/icones/accessories/lock-unsecured-large@2x.png'
 
-import MotionOffSrc from '/assets/icons/accessories/motion-off-large@2x.png'
-import MotionOnSrc from '/assets/icons/accessories/motion-on-large@2x.png'
+import MotionOffSrc from 'src/assets/icones/accessories/motion-off-large@2x.png'
+import MotionOnSrc from 'src/assets/icones/accessories/motion-on-large@2x.png'
 
-import WindowClosedSrc from '/assets/icons/accessories/window-closed-large@2x.png'
-import WindowOpenSrc from '/assets/icons/accessories/window-open-large@2x.png'
+import WindowClosedSrc from 'src/assets/icones/accessories/window-closed-large@2x.png'
+import WindowOpenSrc from 'src/assets/icones/accessories/window-open-large@2x.png'
 
 /**
  * Switch
  */
-import OutletOffSrc from '/assets/icons/accessories/outlet-off-large@2x.png'
-import OutletOnSrc from '/assets/icons/accessories/outlet-on-large@2x.png'
+import OutletOffSrc from 'src/assets/icones/accessories/outlet-off-large@2x.png'
+import OutletOnSrc from 'src/assets/icones/accessories/outlet-on-large@2x.png'
 
-import SwitchOffSrc from '/assets/icons/accessories/switch-off-large@2x.png'
-import SwitchOnSrc from '/assets/icons/accessories/switch-on-large@2x.png'
+import SwitchOffSrc from 'src/assets/icones/accessories/switch-off-large@2x.png'
+import SwitchOnSrc from 'src/assets/icones/accessories/switch-on-large@2x.png'
 
 /**
  * Light

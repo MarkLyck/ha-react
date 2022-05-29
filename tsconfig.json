@@ -18,5 +18,5 @@
     "jsx": "react-jsx",
     "baseUrl": "."
   },
-  "include": ["src", "test"]
+  "include": ["src", "test", "public/assets"]
 }

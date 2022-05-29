@@ -1,4 +1,15 @@
+import { message } from 'antd'
+
 const hass = {
+  callService: (
+    entityType: string,
+    actionType: string,
+    entity: { entity_id: string }
+  ) => {
+    message.success(
+      `callService: ${entityType}, ${actionType}, ${entity.entity_id}`
+    )
+  },
   auth: {
     data: {
       access_token: 'access_xxx',

@@ -7,7 +7,6 @@ import hassMock from '../mocks/hass'
 import entityMock from '../mocks/entity.json'
 
 import 'antd/dist/antd.css'
-import 'src/lib/styles/font.css'
 
 if (window.location.hostname.includes('localhost')) {
   const container = document.getElementById('root')

@@ -5,7 +5,6 @@ export const CardContainer = styled.div`
   border-radius: ${(props) => props.theme.card.borderRadius};
   box-sizing: border-box;
   overflow: hidden;
-  font-family: 'SF UI Display';
   user-select: none;
 `
 

@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import './font.css'
+import backgroundImage from 'src/assets/images/background1.png'
 
 const globalStyles = css`
   html,
@@ -9,7 +9,10 @@ const globalStyles = css`
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'SF UI Display';
+
+    @font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 
   #root {
@@ -17,8 +20,7 @@ const globalStyles = css`
   }
 
   .App {
-    background: url('/assets/images/background1.png') no-repeat center center
-      fixed;
+    background: url(${backgroundImage}) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,8 +29,7 @@ const globalStyles = css`
   }
 
   .App-bg {
-    background: url('/assets/images/background1.png') no-repeat center center
-      fixed;
+    background: url(${backgroundImage}) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

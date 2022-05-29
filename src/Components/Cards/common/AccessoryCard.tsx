@@ -18,7 +18,6 @@ export const AccessoryCardContainer = styled(ActionableCardContainer)`
   width: ${(props) => props.theme.card.size};
   height: ${(props) => props.theme.card.size};
   cursor: pointer;
-  font-family: 'SF UI Display';
 `
 
 export const AccessoryCardName = styled(CardName)`
