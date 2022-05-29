@@ -13,7 +13,7 @@ body,
 }
 
 .App {
-  background: url('src/assets/images/background1.png') no-repeat center center
+  background: url('/assets/images/background1.png') no-repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -23,7 +23,7 @@ body,
 }
 
 .App-bg {
-  background: url('src/assets/images/background1.png') no-repeat center center
+  background: url('/assets/images/background1.png') no-repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

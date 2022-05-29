@@ -7,16 +7,9 @@ import hassMock from '../mocks/hass'
 import entityMock from '../mocks/entity.json'
 
 import 'antd/dist/antd.css'
-import 'src/lib/styles/index.css'
 import 'src/lib/styles/font.css'
 
-if (window.name === 'ha-main-window') {
-  const root = document.createElement('root')
-  root.setAttribute('id', 'root')
-  document.body.appendChild(root)
-
-  customElements.define('react-panel', ReactPanelElement(Dashboard))
-} else {
+if (window.location.hostname.includes('localhost')) {
   const container = document.getElementById('root')
   // render standalone with mocks
   ReactDOM.createRoot(container!).render(
@@ -24,4 +17,7 @@ if (window.name === 'ha-main-window') {
       <Dashboard hass={hassMock} entity={entityMock} />
     </React.StrictMode>
   )
+} else {
+  // render it inside a home assistant panel
+  customElements.define('react-panel', ReactPanelElement(Dashboard))
 }

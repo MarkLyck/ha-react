@@ -1,4 +1,4 @@
-import { LightCard as HomekitLightCard } from 'homekit-react-components'
+import { LightCard as HomekitLightCard } from './LightCard'
 import { Alert } from 'antd'
 
 type HassLightCardProps = {

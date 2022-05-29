@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom'
-
+import React from 'react'
 // Small helper function to generate custom elements that will render the passed
 // in React component and forwards the Home Assistant panel properties.
 export default (ReactPanel: (props: any) => JSX.Element) =>

@@ -9,7 +9,7 @@ import {
   ShowerIcon,
   SnowIcon,
   ThunderstormIcon,
-} from 'src/assets/icons/weather'
+} from 'src/common/weatherIcons'
 
 const WeatherRowContainer = styled('div', {
   width: ' 100%',
