@@ -49,7 +49,7 @@ export const TemperatureIcon: FC<TemperatureIconProps> = ({
   return (
     <ThermostatIcon
       // @ts-ignore
-      temperature={temperature.toFixed(0)}
+      temperature={temperature?.toFixed(0) || '?'}
       stateColor={stateColor}
     />
   )

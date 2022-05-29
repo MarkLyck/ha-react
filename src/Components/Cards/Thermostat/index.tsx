@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Alert } from 'antd'
+import { ErrorBoundary } from 'react-error-boundary'
+
 import { ThermostatCard as HomekitThermostatCard } from './ThermostatCard'
 
 type ThermostatCardCardProps = {
@@ -7,7 +9,7 @@ type ThermostatCardCardProps = {
   entityId: string
 }
 
-export const ThermostatCard = ({ hass, entityId }: ThermostatCardCardProps) => {
+const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
   const entity = hass.states[entityId]
   console.log('🔈 ~ entity', entity)
   const [targetTemperature, setTargetTemperature] = useState(
@@ -55,3 +57,11 @@ export const ThermostatCard = ({ hass, entityId }: ThermostatCardCardProps) => {
     />
   )
 }
+
+export const ThermostatCard = (props: ThermostatCardCardProps) => (
+  <ErrorBoundary
+    fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
+  >
+    <Thermostat {...props} />
+  </ErrorBoundary>
+)

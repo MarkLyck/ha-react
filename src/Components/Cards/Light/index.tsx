@@ -1,12 +1,13 @@
 import { LightCard as HomekitLightCard } from './LightCard'
 import { Alert } from 'antd'
+import { ErrorBoundary } from 'react-error-boundary'
 
 type HassLightCardProps = {
   hass: any
   entityId: string
 }
 
-export const LightCard = ({ hass, entityId }: HassLightCardProps) => {
+const Light = ({ hass, entityId }: HassLightCardProps) => {
   const entity = hass.states[entityId]
 
   if (!entityId) {
@@ -54,3 +55,11 @@ export const LightCard = ({ hass, entityId }: HassLightCardProps) => {
     />
   )
 }
+
+export const LightCard = (props: HassLightCardProps) => (
+  <ErrorBoundary
+    fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
+  >
+    <Light {...props} />
+  </ErrorBoundary>
+)
