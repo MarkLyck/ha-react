@@ -2,6 +2,8 @@ import { css } from '@emotion/react'
 import backgroundImage from 'src/assets/images/background1.png'
 
 const globalStyles = css`
+  @import '~antd/dist/antd.css';
+
   html,
   body,
   .App {

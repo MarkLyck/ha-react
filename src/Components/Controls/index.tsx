@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Alert } from 'antd'
 import { LightCard, ThermostatCard } from 'src/Components/Cards'
 import ControlsSection from './ControlsSection'
 // import {
@@ -39,6 +40,7 @@ type ControlsProps = {
 const Controls = ({ hass }: ControlsProps) => {
   return (
     <ControlsContainer>
+      <Alert message="antd styled" />
       <ControlsLeft>
         <ControlsSection title="Office">
           <Components>

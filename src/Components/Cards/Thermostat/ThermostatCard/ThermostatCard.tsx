@@ -18,7 +18,7 @@ interface ThermostatCardProps {
   /** Action triggered when mode change */
   readonly onModeChange?: (value: string) => void
   /** Action triggered when temperature change */
-  readonly onTemperatureChange?: (value: number) => void
+  readonly onTemperatureChange: (value: number) => void
   /** Target temperature */
   readonly targetTemperature: number
   /** Temperature max */

@@ -1,6 +1,6 @@
 import { styled } from '@stitches/react'
 import { TimeView, DateView } from 'src/Components/Widgets'
-import { WeatherCard } from 'src/Components/Cards'
+import { WeatherCard } from 'src/Components/Widgets'
 
 const PanelContainer = styled('div', {
   height: '100%',
