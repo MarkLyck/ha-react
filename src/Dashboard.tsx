@@ -8,15 +8,18 @@ type DashboardProps = {
   entity: any
 }
 
-const Dashboard = (props: DashboardProps) => (
-  <ThemeProvider theme={theme}>
-    <>
-      <div className="App">
-        <Controls {...props} />
-      </div>
-      <Global styles={globalStyles} />
-    </>
-  </ThemeProvider>
-)
+const Dashboard = (props: DashboardProps) => {
+  console.log('🔧 hass: ', props.hass)
+  return (
+    <ThemeProvider theme={theme}>
+      <>
+        <div className="App">
+          <Controls {...props} />
+        </div>
+        <Global styles={globalStyles} />
+      </>
+    </ThemeProvider>
+  )
+}
 
 export default Dashboard

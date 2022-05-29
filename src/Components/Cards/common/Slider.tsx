@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, useState } from 'react'
+import { ChangeEvent, FC, useState } from 'react'
 import styled from '@emotion/styled'
 
 const SliderContainer = styled.div`

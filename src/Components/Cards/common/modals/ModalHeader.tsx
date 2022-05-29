@@ -1,8 +1,6 @@
 import { FC, ReactNode } from 'react'
 import styled from '@emotion/styled'
 
-import CloseIconSvg from 'src/assets/icones/modal-close.svg'
-
 const ModalHeaderContainer = styled.div`
   height: 24px;
   padding: 10px;
@@ -36,19 +34,6 @@ const Subtitle = styled.div`
   font-weight: ${(props) => props.theme.modal.header.subtitle.weight};
 `
 
-const CloseIconContainer = styled.div`
-  background: ${(props) => props.theme.colors.light2};
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  text-align: center;
-  cursor: pointer;
-  img {
-    height: 18px;
-    margin-top: 3px;
-  }
-`
-
 interface ModalHeaderProps {
   /** Method to close the modal */
   readonly close: () => void
@@ -68,9 +53,6 @@ export const ModalHeader: FC<ModalHeaderProps> = (props) => {
         <Title>{props.title}</Title>
         <Subtitle>{props.subtitle}</Subtitle>
       </TitleContainer>
-      <CloseIconContainer onClick={props.close}>
-        <img src={CloseIconSvg} />
-      </CloseIconContainer>
     </ModalHeaderContainer>
   )
 }

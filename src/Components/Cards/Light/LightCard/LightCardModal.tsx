@@ -1,18 +1,11 @@
 import { FC, useState } from 'react'
-import Modal from 'react-modal'
+import styled from '@emotion/styled'
+import { Modal } from 'antd'
 // @ts-ignore
 import LightIconSvg from './light-bulb.svg?component'
-import {
-  ModalContainer,
-  ModalContent,
-  ModalHeader,
-  ModalStyle,
-} from '../../common/modals'
+import { ModalContent, ModalHeader } from '../../common/modals'
 import { Slider, Switch } from '../../common'
 import { Capabilities } from '../../common/types'
-
-// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
-Modal.setAppElement('html')
 
 interface LightCardModalProps {
   /** Brightness value */
@@ -39,53 +32,60 @@ interface LightCardModalProps {
   readonly state: string
 }
 
-export const LightCardModal: FC<LightCardModalProps> = (props) => {
+const StyledModal = styled(Modal)`
+  .ant-modal-content {
+    width: 300px;
+    border-radius: 12px;
+  }
+`
+
+export const LightCardModal: FC<LightCardModalProps> = ({
+  name,
+  state,
+  on,
+  show,
+  capabilities,
+  brightness,
+  onBrightnessChange,
+  onToggle,
+  close,
+}: LightCardModalProps) => {
   const [color] = useState('#F8CC46')
 
-  const stateLabel = props.capabilities.SUPPORT_BRIGHTNESS
-    ? props.brightness && props.brightness > 0
-      ? `${props.brightness}% Brightness`
-      : props.state
-    : props.state
+  const stateLabel = capabilities.SUPPORT_BRIGHTNESS
+    ? brightness && brightness > 0
+      ? `${brightness}% Brightness`
+      : state
+    : state
 
   function handleSliderChange(value: number) {
-    if (props.onBrightnessChange) {
-      props.onBrightnessChange(value)
+    if (onBrightnessChange) {
+      onBrightnessChange(value)
     }
   }
 
   return (
-    <Modal
-      isOpen={props.show}
-      onRequestClose={props.close}
-      contentLabel="Example Modal"
-      style={ModalStyle}
-    >
-      <ModalContainer>
-        <ModalHeader
-          title={props.name}
-          subtitle={stateLabel}
-          close={props.close}
-          icon={<LightIconSvg />}
-        />
-        <ModalContent>
-          {props.capabilities.SUPPORT_BRIGHTNESS ? (
-            <Slider
-              value={props.brightness || 0}
-              onChange={handleSliderChange}
-              color={color}
-            />
-          ) : (
-            <Switch
-              isActive={props.on}
-              onToggle={() => props.onToggle && props.onToggle()}
-            />
-          )}
-          {props.capabilities.SUPPORT_COLOR ? (
-            <div>TODO: Implement color picker</div>
-          ) : null}
-        </ModalContent>
-      </ModalContainer>
-    </Modal>
+    <StyledModal visible={show} onCancel={close} footer={null}>
+      <ModalHeader
+        title={name}
+        subtitle={stateLabel}
+        close={close}
+        icon={<LightIconSvg />}
+      />
+      <ModalContent>
+        {capabilities.SUPPORT_BRIGHTNESS ? (
+          <Slider
+            value={brightness || 0}
+            onChange={handleSliderChange}
+            color={color}
+          />
+        ) : (
+          <Switch isActive={on} onToggle={() => onToggle && onToggle()} />
+        )}
+        {capabilities.SUPPORT_COLOR ? (
+          <div>TODO: Implement color picker</div>
+        ) : null}
+      </ModalContent>
+    </StyledModal>
   )
 }

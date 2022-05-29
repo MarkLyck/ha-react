@@ -1,7 +1,7 @@
 // import React, { useEffect, useState } from 'react'
 import { styled } from '@stitches/react'
 // import { WeatherRow } from './WeatherRow'
-import { CardTitle, CardContainer } from '../common'
+import { CardTitle, CardContainer } from '../../Cards/common'
 // import { getWeather } from '../../stores/weather'
 
 const WeatherCardContainer = styled(CardContainer, {

@@ -2,13 +2,12 @@ import { message } from 'antd'
 
 const hass = {
   callService: (
-    entityType: string,
-    actionType: string,
-    entity: { entity_id: string }
+    domain: string,
+    service: string,
+    data: { entity_id: string; brightness?: string }
   ) => {
-    message.success(
-      `callService: ${entityType}, ${actionType}, ${entity.entity_id}`
-    )
+    console.log('🚀 data', data)
+    message.success(`callService: ${domain}, ${service}, ${data.entity_id}`)
   },
   auth: {
     data: {
@@ -673,8 +672,8 @@ const hass = {
           last_changed: '2022-05-28T19:34:40.905Z',
           last_updated: '2022-05-28T19:34:40.905Z',
         },
-        'binary_sensor.my_ecobee_occupancy': {
-          entity_id: 'binary_sensor.my_ecobee_occupancy',
+        'binary_sensor.ecobee_occupancy': {
+          entity_id: 'binary_sensor.ecobee_occupancy',
           state: 'on',
           attributes: {
             device_class: 'occupancy',
@@ -718,8 +717,8 @@ const hass = {
           last_changed: '2022-05-28T19:34:40.941Z',
           last_updated: '2022-05-28T19:34:40.941Z',
         },
-        'sensor.my_ecobee_temperature': {
-          entity_id: 'sensor.my_ecobee_temperature',
+        'sensor.ecobee_temperature': {
+          entity_id: 'sensor.ecobee_temperature',
           state: '75.3',
           attributes: {
             state_class: 'measurement',
@@ -735,8 +734,8 @@ const hass = {
           last_changed: '2022-05-28T19:34:40.941Z',
           last_updated: '2022-05-28T19:34:40.941Z',
         },
-        'sensor.my_ecobee_humidity': {
-          entity_id: 'sensor.my_ecobee_humidity',
+        'sensor.ecobee_humidity': {
+          entity_id: 'sensor.ecobee_humidity',
           state: '54',
           attributes: {
             state_class: 'measurement',
@@ -786,8 +785,8 @@ const hass = {
           last_changed: '2022-05-28T19:34:40.944Z',
           last_updated: '2022-05-28T19:34:40.944Z',
         },
-        'weather.my_ecobee': {
-          entity_id: 'weather.my_ecobee',
+        'weather.ecobee': {
+          entity_id: 'weather.ecobee',
           state: 'partlycloudy',
           attributes: {
             temperature: 79,
@@ -850,8 +849,8 @@ const hass = {
           last_changed: '2022-05-28T19:34:40.962Z',
           last_updated: '2022-05-28T19:36:10.980Z',
         },
-        'climate.my_ecobee': {
-          entity_id: 'climate.my_ecobee',
+        'climate.ecobee': {
+          entity_id: 'climate.ecobee',
           state: 'cool',
           attributes: {
             hvac_modes: ['heat_cool', 'heat', 'cool', 'off'],
@@ -8704,8 +8703,8 @@ const hass = {
       last_changed: '2022-05-28T19:34:40.905Z',
       last_updated: '2022-05-28T19:34:40.905Z',
     },
-    'binary_sensor.my_ecobee_occupancy': {
-      entity_id: 'binary_sensor.my_ecobee_occupancy',
+    'binary_sensor.ecobee_occupancy': {
+      entity_id: 'binary_sensor.ecobee_occupancy',
       state: 'on',
       attributes: {
         device_class: 'occupancy',
@@ -8749,8 +8748,8 @@ const hass = {
       last_changed: '2022-05-28T19:34:40.941Z',
       last_updated: '2022-05-28T19:34:40.941Z',
     },
-    'sensor.my_ecobee_temperature': {
-      entity_id: 'sensor.my_ecobee_temperature',
+    'sensor.ecobee_temperature': {
+      entity_id: 'sensor.ecobee_temperature',
       state: '75.3',
       attributes: {
         state_class: 'measurement',
@@ -8766,8 +8765,8 @@ const hass = {
       last_changed: '2022-05-28T19:34:40.941Z',
       last_updated: '2022-05-28T19:34:40.941Z',
     },
-    'sensor.my_ecobee_humidity': {
-      entity_id: 'sensor.my_ecobee_humidity',
+    'sensor.ecobee_humidity': {
+      entity_id: 'sensor.ecobee_humidity',
       state: '54',
       attributes: {
         state_class: 'measurement',
@@ -8817,8 +8816,8 @@ const hass = {
       last_changed: '2022-05-28T19:34:40.944Z',
       last_updated: '2022-05-28T19:34:40.944Z',
     },
-    'weather.my_ecobee': {
-      entity_id: 'weather.my_ecobee',
+    'weather.ecobee': {
+      entity_id: 'weather.ecobee',
       state: 'partlycloudy',
       attributes: {
         temperature: 79,
@@ -8881,8 +8880,8 @@ const hass = {
       last_changed: '2022-05-28T19:34:40.962Z',
       last_updated: '2022-05-28T19:34:40.962Z',
     },
-    'climate.my_ecobee': {
-      entity_id: 'climate.my_ecobee',
+    'climate.ecobee': {
+      entity_id: 'climate.ecobee',
       state: 'cool',
       attributes: {
         hvac_modes: ['heat_cool', 'heat', 'cool', 'off'],

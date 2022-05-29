@@ -1,11 +1,5 @@
 import styled from '@emotion/styled'
 
-export const ModalContainer = styled.div`
-  background-color: ${(props) => props.theme.colors.light1};
-  width: 300px;
-  border-radius: 10px;
-`
-
 export const ModalContent = styled.div`
   padding: 10px;
   text-align: center;

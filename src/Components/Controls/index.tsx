@@ -1,5 +1,5 @@
-import { styled } from '@stitches/react'
-import { LightCard } from 'src/Components/Cards'
+import styled from '@emotion/styled'
+import { LightCard, ThermostatCard } from 'src/Components/Cards'
 import ControlsSection from './ControlsSection'
 // import {
 //   CameraCard,
@@ -10,31 +10,27 @@ import ControlsSection from './ControlsSection'
 //   ThermostatCard,
 // } from '../../packages/hass-homekit-react-components/src'
 
-const ControlsContainer = styled('div', {
-  height: '100%',
-  width: 1300,
-  padding: 30,
-  boxSizing: 'border-box',
-})
+const ControlsContainer = styled.div`
+  height: 100%;
+  width: 1300px;
+  padding: 30px;
+  box-sizing: border-box;
+`
 
-const ControlsLeft = styled('div', {
-  marginRight: 20,
-  float: 'left',
-})
+const ControlsLeft = styled.div`
+  margin-right: 20px;
+  float: left;
+`
 
-const ControlsRight = styled('div', {
-  float: 'left',
-})
+const ControlsRight = styled.div`
+  float: left;
+})`
 
-// const CardContainers = styled('div', {
-//   width: 400,
-// })
-
-const Components = styled('div', {
-  '& > div': {
-    margin: '12px 12px 12px 0px',
-  },
-})
+const Components = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+`
 
 type ControlsProps = {
   hass: any
@@ -47,12 +43,16 @@ const Controls = ({ hass }: ControlsProps) => {
         <ControlsSection title="Office">
           <Components>
             <LightCard hass={hass} entityId="light.desk_light" />
-            <LightCard hass={hass} entityId="light.desk_light" />
-            <LightCard hass={hass} entityId="light.desk_light" />
             {/* <ThermostatCard
               hass={hass}
               entityId="climate.thermostat_salon_climate"
             /> */}
+          </Components>
+        </ControlsSection>
+        <ControlsSection title="Hallway">
+          <Components>
+            <LightCard hass={hass} entityId="light.desk_light" />
+            <ThermostatCard hass={hass} entityId="climate.ecobee" />
           </Components>
         </ControlsSection>
         {/* <ControlsSection>

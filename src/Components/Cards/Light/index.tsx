@@ -8,6 +8,7 @@ type HassLightCardProps = {
 
 export const LightCard = ({ hass, entityId }: HassLightCardProps) => {
   const entity = hass.states[entityId]
+
   if (!entityId) {
     return <Alert message="Missing entityId" type="error" showIcon />
   }
