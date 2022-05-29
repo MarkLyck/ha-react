@@ -28,7 +28,6 @@ export const AccessoryCardName = styled(CardName)`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  margin-bottom: 0.2rem;
   text-overflow: ellipsis;
 `
 
@@ -79,7 +78,7 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
     if (props.handleLongPress) {
       buttonPressTimer = setTimeout(
         () => props.handleLongPress && props.handleLongPress(),
-        1000
+        200
       )
     }
   }

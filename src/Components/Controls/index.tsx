@@ -1,9 +1,6 @@
-import React from 'react'
 import { styled } from '@stitches/react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon } from '@fortawesome/free-solid-svg-icons'
-import { Title } from './Title'
 import { LightCard } from 'src/Components/Cards'
+import ControlsSection from './ControlsSection'
 // import {
 //   CameraCard,
 //   FanCard,
@@ -20,10 +17,6 @@ const ControlsContainer = styled('div', {
   boxSizing: 'border-box',
 })
 
-const ControlsSection = styled('div', {
-  marginBottom: 20,
-})
-
 const ControlsLeft = styled('div', {
   marginRight: 20,
   float: 'left',
@@ -33,13 +26,13 @@ const ControlsRight = styled('div', {
   float: 'left',
 })
 
-const CardContainers = styled('div', {
-  width: 400,
-})
+// const CardContainers = styled('div', {
+//   width: 400,
+// })
 
 const Components = styled('div', {
   '& > div': {
-    margin: ' 5px 5px 5px 0px',
+    margin: '12px 12px 12px 0px',
   },
 })
 
@@ -51,9 +44,10 @@ const Controls = ({ hass }: ControlsProps) => {
   return (
     <ControlsContainer>
       <ControlsLeft>
-        <ControlsSection>
-          <Title>Living room</Title>
+        <ControlsSection title="Office">
           <Components>
+            <LightCard hass={hass} entityId="light.desk_light" />
+            <LightCard hass={hass} entityId="light.desk_light" />
             <LightCard hass={hass} entityId="light.desk_light" />
             {/* <ThermostatCard
               hass={hass}
