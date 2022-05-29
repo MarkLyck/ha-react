@@ -41,9 +41,9 @@ export const TemperatureIcon: FC<TemperatureIconProps> = ({
   temperature,
   state,
 }) => {
-  let stateColor = '#0892FF' // blue (cooling)
+  let stateColor = '#1890ff' // blue (cooling)
   if (state === 'heat') stateColor = '#FF0000' // red (heating)
-  if (state === 'heat_and_cool') stateColor = '#FFA500' // orange (heating and cooling)
+  if (state === 'heat_cool') stateColor = '#52c41a' // orange (heating and cooling)
   if (state === 'off') stateColor = '#444444' // grey (off)
 
   return (

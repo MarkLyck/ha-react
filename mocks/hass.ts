@@ -11,13 +11,15 @@ const hass = {
   },
   auth: {
     data: {
-      access_token: 'access_xxx',
+      access_token:
+        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5M2U0YzRkZjRmNTY0ODMyYjg5YjYwY2E5NzdhNzY1MSIsImlhdCI6MTY1MzgwMzQ4MCwiZXhwIjoxNjUzODA1MjgwfQ.quOJsULlkddc9k9qewDpIO9yKmy1jCRAASCVcwswB-Y',
       token_type: 'Bearer',
       expires_in: 1800,
       hassUrl: 'http://homeassistant.local:8123',
       clientId: 'http://homeassistant.local:8123/',
-      expires: 1653767956903,
-      refresh_token: 'refresh_xxx',
+      expires: 1653805280224,
+      refresh_token:
+        '0ee0286c422930fbc597111ff8eb2754e4aae7d006a6dcaaabbdcd5966fe9107a69fcf24c7fce72fc7ed5801511a63c22fd4904031fe8c376c1b1f718c1791f3',
     },
   },
   connection: {
@@ -25,17 +27,19 @@ const hass = {
       setupRetry: 0,
       auth: {
         data: {
-          access_token: 'access_xxx',
+          access_token:
+            'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5M2U0YzRkZjRmNTY0ODMyYjg5YjYwY2E5NzdhNzY1MSIsImlhdCI6MTY1MzgwMzQ4MCwiZXhwIjoxNjUzODA1MjgwfQ.quOJsULlkddc9k9qewDpIO9yKmy1jCRAASCVcwswB-Y',
           token_type: 'Bearer',
           expires_in: 1800,
           hassUrl: 'http://homeassistant.local:8123',
           clientId: 'http://homeassistant.local:8123/',
-          expires: 1653767956903,
-          refresh_token: 'refresh_xxx',
+          expires: 1653805280224,
+          refresh_token:
+            '0ee0286c422930fbc597111ff8eb2754e4aae7d006a6dcaaabbdcd5966fe9107a69fcf24c7fce72fc7ed5801511a63c22fd4904031fe8c376c1b1f718c1791f3',
         },
       },
     },
-    commandId: 21,
+    commandId: 20,
     commands: {},
     eventListeners: {},
     closeRequested: false,
@@ -45,24 +49,24 @@ const hass = {
     haVersion: '2022.5.5',
     _ent: {
       state: {
-        'person.first_last': {
-          entity_id: 'person.first_last',
+        'person.mark_lyck': {
+          entity_id: 'person.mark_lyck',
           state: 'unknown',
           attributes: {
             editable: false,
-            id: 'first_last',
+            id: 'mark_lyck',
             user_id: 'fefe8d8a7bec4ab9ad5ca86ac9734a4c',
             entity_picture:
               '/api/image/serve/40a12e595b7c321dcbc108342b96d3d9/512x512',
             friendly_name: 'Mark',
           },
           context: {
-            id: '01810c29ed25e513b417fba55a640827',
+            id: '01810e5e8559fb4f835c64b7147d7dc6',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:33.052Z',
-          last_updated: '2022-05-28T19:34:43.237Z',
+          last_changed: '2022-05-29T05:51:12.942Z',
+          last_updated: '2022-05-29T05:51:24.505Z',
         },
         'person.grace_park': {
           entity_id: 'person.grace_park',
@@ -74,12 +78,12 @@ const hass = {
             friendly_name: 'Grace',
           },
           context: {
-            id: '01810c29ed254197c2392ad9c3d6bf87',
+            id: '01810e5e85599dd8f9c66b52ff5c886a',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:33.054Z',
-          last_updated: '2022-05-28T19:34:43.237Z',
+          last_changed: '2022-05-29T05:51:12.952Z',
+          last_updated: '2022-05-29T05:51:24.505Z',
         },
         'update.home_assistant_supervisor_update': {
           entity_id: 'update.home_assistant_supervisor_update',
@@ -99,12 +103,12 @@ const hass = {
             supported_features: 1,
           },
           context: {
-            id: '01810c29ddf2b297519669d398b83ec6',
+            id: '01810e5e74271109899ffb69bc190efd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.346Z',
-          last_updated: '2022-05-28T19:34:39.346Z',
+          last_changed: '2022-05-29T05:51:20.103Z',
+          last_updated: '2022-05-29T05:51:20.103Z',
         },
         'update.home_assistant_core_update': {
           entity_id: 'update.home_assistant_core_update',
@@ -124,12 +128,12 @@ const hass = {
             supported_features: 11,
           },
           context: {
-            id: '01810c29ddf34d1a1e9b7adbdea96838',
+            id: '01810e5e7428ee3d210a6edbb704f906',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.347Z',
-          last_updated: '2022-05-28T19:34:39.347Z',
+          last_changed: '2022-05-29T05:51:20.104Z',
+          last_updated: '2022-05-29T05:51:20.104Z',
         },
         'update.terminal_ssh_update': {
           entity_id: 'update.terminal_ssh_update',
@@ -149,12 +153,12 @@ const hass = {
             supported_features: 25,
           },
           context: {
-            id: '01810c29ddf38424b84c4ab2ab7c8a19',
+            id: '01810e5e7428b2c7d1a0dd2824d9543f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.348Z',
-          last_updated: '2022-05-28T19:34:39.348Z',
+          last_changed: '2022-05-29T05:51:20.104Z',
+          last_updated: '2022-05-29T05:51:20.104Z',
         },
         'update.file_editor_update': {
           entity_id: 'update.file_editor_update',
@@ -173,12 +177,12 @@ const hass = {
             supported_features: 25,
           },
           context: {
-            id: '01810c29ddf4558a26d6582b76373383',
+            id: '01810e5e74289142e7f7fd5050338fc8',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.348Z',
-          last_updated: '2022-05-28T19:34:39.348Z',
+          last_changed: '2022-05-29T05:51:20.105Z',
+          last_updated: '2022-05-29T05:51:20.105Z',
         },
         'update.samba_share_update': {
           entity_id: 'update.samba_share_update',
@@ -198,12 +202,12 @@ const hass = {
             supported_features: 25,
           },
           context: {
-            id: '01810c29ddf461d53c930afbd842864f',
+            id: '01810e5e7429841a868ee13c4cfe3cc4',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.348Z',
-          last_updated: '2022-05-28T19:34:39.348Z',
+          last_changed: '2022-05-29T05:51:20.105Z',
+          last_updated: '2022-05-29T05:51:20.105Z',
         },
         'update.home_assistant_operating_system_update': {
           entity_id: 'update.home_assistant_operating_system_update',
@@ -224,35 +228,35 @@ const hass = {
             supported_features: 3,
           },
           context: {
-            id: '01810c29ddf58b9801383f60f7b19257',
+            id: '01810e5e742a7c808a5ef450880adba0',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.349Z',
-          last_updated: '2022-05-28T19:34:39.349Z',
+          last_changed: '2022-05-29T05:51:20.106Z',
+          last_updated: '2022-05-29T05:51:20.106Z',
         },
         'sun.sun': {
           entity_id: 'sun.sun',
-          state: 'above_horizon',
+          state: 'below_horizon',
           attributes: {
             next_dawn: '2022-05-29T09:12:36.366587+00:00',
-            next_dusk: '2022-05-29T00:59:45.451871+00:00',
-            next_midnight: '2022-05-29T05:06:22+00:00',
+            next_dusk: '2022-05-30T01:00:35.085666+00:00',
+            next_midnight: '2022-05-30T05:06:30+00:00',
             next_noon: '2022-05-29T17:06:16+00:00',
             next_rising: '2022-05-29T09:44:42.442374+00:00',
-            next_setting: '2022-05-29T00:27:39.027454+00:00',
-            elevation: 53.9,
-            azimuth: 252.18,
-            rising: false,
+            next_setting: '2022-05-30T00:28:24.126536+00:00',
+            elevation: -28.53,
+            azimuth: 11.92,
+            rising: true,
             friendly_name: 'Sun',
           },
           context: {
-            id: '01810c29de3ebb05b47670119f424ce3',
+            id: '01810e5e746eeb501064ff4045448e33',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.422Z',
-          last_updated: '2022-05-28T19:34:39.422Z',
+          last_changed: '2022-05-29T05:51:20.174Z',
+          last_updated: '2022-05-29T05:51:20.174Z',
         },
         'zone.home': {
           entity_id: 'zone.home',
@@ -268,12 +272,12 @@ const hass = {
             friendly_name: 'Home',
           },
           context: {
-            id: '01810c29df2620182824cd16f3f8dcca',
+            id: '01810e5e746f61615054fad69dae9072',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.654Z',
-          last_updated: '2022-05-28T19:34:39.654Z',
+          last_changed: '2022-05-29T05:51:20.176Z',
+          last_updated: '2022-05-29T05:51:20.176Z',
         },
         'binary_sensor.rpi_power_status': {
           entity_id: 'binary_sensor.rpi_power_status',
@@ -284,12 +288,12 @@ const hass = {
             friendly_name: 'RPi Power status',
           },
           context: {
-            id: '01810c29df60e16206ae6532cd3d8e0b',
+            id: '01810e5e75c666bcfff5e82e208806f0',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:39.712Z',
-          last_updated: '2022-05-28T19:34:39.712Z',
+          last_changed: '2022-05-29T05:51:20.518Z',
+          last_updated: '2022-05-29T05:51:20.518Z',
         },
         'media_player.living_room': {
           entity_id: 'media_player.living_room',
@@ -313,29 +317,26 @@ const hass = {
               'TV Shows',
               'YouTube',
             ],
-            media_content_type: 'music',
-            media_duration: 264,
-            media_position: 32,
-            media_position_updated_at: '2022-05-28T19:34:41.222884+00:00',
-            media_title: 'Sad Song feat. Elena Coats',
-            media_artist: 'We the Kings',
-            media_album_name: 'Stripped',
-            app_id: 'com.apple.TVMusic',
-            app_name: 'Music',
-            shuffle: true,
-            repeat: 'off',
+            media_content_id: 'D8258E02',
+            media_content_type: 'video',
+            media_duration: 5629,
+            media_position: 1,
+            media_position_updated_at: '2022-05-29T05:51:23.307316+00:00',
+            media_title: 'Midsomer Murders',
+            app_id: 'com.apple.TVWatchList',
+            app_name: 'TV',
             entity_picture:
-              '/api/media_player_proxy/media_player.living_room?token=5e06197296f0a29b234b18e04d73493d17edc05a9eb1d89566a3ad3d21b68ccf&cache=Music125/v4/ac/8d/da/ac8ddad8-cf5a-4c9c-0833-8c0c7dcc61c5/stripped_cover_1600x1600.jpg',
+              '/api/media_player_proxy/media_player.living_room?token=2f84e13d3cdebffe1191672954470fe088906bdf4c97d3a65fb037885d75495b&cache=D8258E02',
             friendly_name: 'Living Room',
             supported_features: 450487,
           },
           context: {
-            id: '01810c29e547cd92bb826864ff25606b',
+            id: '01810e5e80ac5a955a0f2681f3b532cf',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:41.213Z',
-          last_updated: '2022-05-28T19:34:41.223Z',
+          last_changed: '2022-05-29T05:51:23.296Z',
+          last_updated: '2022-05-29T05:51:23.308Z',
         },
         'remote.living_room': {
           entity_id: 'remote.living_room',
@@ -345,93 +346,93 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29e538def7fa6317531d19592e',
+            id: '01810e5e809b08696b74cb48a2c27f2d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:41.208Z',
-          last_updated: '2022-05-28T19:34:41.208Z',
+          last_changed: '2022-05-29T05:51:23.291Z',
+          last_updated: '2022-05-29T05:51:23.291Z',
         },
         'sensor.iphone_mark_activity': {
           entity_id: 'sensor.iphone_mark_activity',
-          state: 'Walking',
+          state: 'Stationary',
           attributes: {
             Confidence: 'High',
-            Types: ['Walking'],
-            icon: 'mdi:walk',
+            Types: ['Stationary'],
+            icon: 'mdi:human-male',
             friendly_name: 'iphone mark Activity',
           },
           context: {
-            id: '01810c29e298ad92cb812d9c16c37903',
+            id: '01810e5e7d0aa1d28d881b5c4d29918a',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.537Z',
-          last_updated: '2022-05-28T19:34:40.537Z',
+          last_changed: '2022-05-29T05:51:22.378Z',
+          last_updated: '2022-05-29T05:51:22.378Z',
         },
         'sensor.iphone_mark_average_active_pace': {
           entity_id: 'sensor.iphone_mark_average_active_pace',
-          state: '1',
+          state: '0',
           attributes: {
             unit_of_measurement: 'm/s',
             icon: 'mdi:speedometer',
             friendly_name: 'iphone mark Average Active Pace',
           },
           context: {
-            id: '01810c29e2995e60204cbc991acaa1f9',
+            id: '01810e5e7d0bce487bdf49d5d3f712f9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.537Z',
-          last_updated: '2022-05-28T19:34:40.537Z',
+          last_changed: '2022-05-29T05:51:22.379Z',
+          last_updated: '2022-05-29T05:51:22.379Z',
         },
         'sensor.iphone_mark_bssid': {
           entity_id: 'sensor.iphone_mark_bssid',
-          state: '6c:ae:f6:ca:75:88',
+          state: '6c:ae:f6:ca:75:86',
           attributes: {
             icon: 'mdi:wifi-star',
             friendly_name: 'iphone mark BSSID',
           },
           context: {
-            id: '01810c29e299a288a5c3b26fd5cd47a5',
+            id: '01810e5e7d0bc316efe43b2e454c0b1c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.537Z',
-          last_updated: '2022-05-28T19:34:40.537Z',
+          last_changed: '2022-05-29T05:51:22.379Z',
+          last_updated: '2022-05-29T05:51:22.379Z',
         },
         'sensor.iphone_mark_battery_level': {
           entity_id: 'sensor.iphone_mark_battery_level',
-          state: '85',
+          state: '60',
           attributes: {
             unit_of_measurement: '%',
             device_class: 'battery',
-            icon: 'mdi:battery-80',
+            icon: 'mdi:battery-60',
             friendly_name: 'iphone mark Battery Level',
           },
           context: {
-            id: '01810c29e29a5b90be9dc73c15153538',
+            id: '01810e5e7d0c147d1f472fdc974a9fe5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.538Z',
-          last_updated: '2022-05-28T19:34:40.538Z',
+          last_changed: '2022-05-29T05:51:22.380Z',
+          last_updated: '2022-05-29T05:51:22.380Z',
         },
         'sensor.iphone_mark_battery_state': {
           entity_id: 'sensor.iphone_mark_battery_state',
           state: 'Not Charging',
           attributes: {
             'Low Power Mode': false,
-            icon: 'mdi:battery-80',
+            icon: 'mdi:battery-60',
             friendly_name: 'iphone mark Battery State',
           },
           context: {
-            id: '01810c29e29a4bdab3bb7753b3f867ee',
+            id: '01810e5e7d0c016393e4c981e960de31',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.538Z',
-          last_updated: '2022-05-28T19:34:40.538Z',
+          last_changed: '2022-05-29T05:51:22.380Z',
+          last_updated: '2022-05-29T05:51:22.380Z',
         },
         'sensor.iphone_mark_connection_type': {
           entity_id: 'sensor.iphone_mark_connection_type',
@@ -441,28 +442,28 @@ const hass = {
             friendly_name: 'iphone mark Connection Type',
           },
           context: {
-            id: '01810c29e29a1212f5243677be59d594',
+            id: '01810e5e7d0df9c1473d3308a2c2457f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.538Z',
-          last_updated: '2022-05-28T19:34:40.538Z',
+          last_changed: '2022-05-29T05:51:22.381Z',
+          last_updated: '2022-05-29T05:51:22.381Z',
         },
         'sensor.iphone_mark_distance': {
           entity_id: 'sensor.iphone_mark_distance',
-          state: '1029',
+          state: '0',
           attributes: {
             unit_of_measurement: 'm',
             icon: 'mdi:hiking',
             friendly_name: 'iphone mark Distance',
           },
           context: {
-            id: '01810c29e29be32642c30c8241c08241',
+            id: '01810e5e7d0dc7cba330be0210ef4c4b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.539Z',
-          last_updated: '2022-05-28T19:34:40.539Z',
+          last_changed: '2022-05-29T05:51:22.381Z',
+          last_updated: '2022-05-29T05:51:22.381Z',
         },
         'sensor.iphone_mark_floors_ascended': {
           entity_id: 'sensor.iphone_mark_floors_ascended',
@@ -473,12 +474,12 @@ const hass = {
             friendly_name: 'iphone mark Floors Ascended',
           },
           context: {
-            id: '01810c29e29bbfd9a5c6f847b4d02412',
+            id: '01810e5e7d0da13b49877867178b7812',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.539Z',
-          last_updated: '2022-05-28T19:34:40.539Z',
+          last_changed: '2022-05-29T05:51:22.381Z',
+          last_updated: '2022-05-29T05:51:22.381Z',
         },
         'sensor.iphone_mark_floors_descended': {
           entity_id: 'sensor.iphone_mark_floors_descended',
@@ -489,12 +490,12 @@ const hass = {
             friendly_name: 'iphone mark Floors Descended',
           },
           context: {
-            id: '01810c29e29c29c9582530c8c3fe78a5',
+            id: '01810e5e7d0e9d1936088105b3ebb838',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.540Z',
-          last_updated: '2022-05-28T19:34:40.540Z',
+          last_changed: '2022-05-29T05:51:22.382Z',
+          last_updated: '2022-05-29T05:51:22.382Z',
         },
         'sensor.iphone_mark_geocoded_location': {
           entity_id: 'sensor.iphone_mark_geocoded_location',
@@ -506,7 +507,7 @@ const hass = {
             'Inland Water': 'N/A',
             'ISO Country Code': 'US',
             Locality: 'McLean',
-            Location: [38.929229736328125, -77.22927715772039],
+            Location: [38.92922506774823, -77.22944354122387],
             Name: '8231 Crestwood Heights Dr',
             Ocean: 'N/A',
             'Postal Code': '22102',
@@ -520,27 +521,27 @@ const hass = {
             friendly_name: 'iphone mark Geocoded Location',
           },
           context: {
-            id: '01810c29e29caef34e45a103fc9418f5',
+            id: '01810e5e7d0eaa2f9b494d056abdb34c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.540Z',
-          last_updated: '2022-05-28T19:34:40.540Z',
+          last_changed: '2022-05-29T05:51:22.382Z',
+          last_updated: '2022-05-29T05:51:22.382Z',
         },
         'sensor.iphone_mark_last_update_trigger': {
           entity_id: 'sensor.iphone_mark_last_update_trigger',
-          state: 'Launch',
+          state: 'Manual',
           attributes: {
             icon: 'mdi:cellphone-wireless',
             friendly_name: 'iphone mark Last Update Trigger',
           },
           context: {
-            id: '01810c29e29ca1412c1f05242cfff27a',
+            id: '01810e5e7d0e5e52d2e1ec57d04116ee',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.540Z',
-          last_updated: '2022-05-28T19:34:40.540Z',
+          last_changed: '2022-05-29T05:51:22.382Z',
+          last_updated: '2022-05-29T05:51:22.382Z',
         },
         'sensor.iphone_mark_sim_1': {
           entity_id: 'sensor.iphone_mark_sim_1',
@@ -556,12 +557,12 @@ const hass = {
             friendly_name: 'iphone mark SIM 1',
           },
           context: {
-            id: '01810c29e29df9b98f50cabd163e0311',
+            id: '01810e5e7d0fec1b7445d8d1fa249d47',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.541Z',
-          last_updated: '2022-05-28T19:34:40.541Z',
+          last_changed: '2022-05-29T05:51:22.383Z',
+          last_updated: '2022-05-29T05:51:22.383Z',
         },
         'sensor.iphone_mark_sim_2': {
           entity_id: 'sensor.iphone_mark_sim_2',
@@ -578,12 +579,12 @@ const hass = {
             friendly_name: 'iphone mark SIM 2',
           },
           context: {
-            id: '01810c29e29daf8dd95ab746708175d6',
+            id: '01810e5e7d0fc6845fd838fae477670e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.541Z',
-          last_updated: '2022-05-28T19:34:40.541Z',
+          last_changed: '2022-05-29T05:51:22.383Z',
+          last_updated: '2022-05-29T05:51:22.383Z',
         },
         'sensor.iphone_mark_ssid': {
           entity_id: 'sensor.iphone_mark_ssid',
@@ -593,133 +594,112 @@ const hass = {
             friendly_name: 'iphone mark SSID',
           },
           context: {
-            id: '01810c29e29e9a56d2bab2b3529d7583',
+            id: '01810e5e7d0fc3c08a45151df18f70ac',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.542Z',
-          last_updated: '2022-05-28T19:34:40.542Z',
+          last_changed: '2022-05-29T05:51:22.383Z',
+          last_updated: '2022-05-29T05:51:22.383Z',
         },
         'sensor.iphone_mark_steps': {
           entity_id: 'sensor.iphone_mark_steps',
-          state: '1285',
+          state: '0',
           attributes: {
             unit_of_measurement: 'steps',
             icon: 'mdi:walk',
             friendly_name: 'iphone mark Steps',
           },
           context: {
-            id: '01810c29e29e39031d4867281ce3d46c',
+            id: '01810e5e7d10a2574818d38c7a6f1d8a',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.542Z',
-          last_updated: '2022-05-28T19:34:40.542Z',
+          last_changed: '2022-05-29T05:51:22.384Z',
+          last_updated: '2022-05-29T05:51:22.384Z',
         },
         'sensor.iphone_mark_storage': {
           entity_id: 'sensor.iphone_mark_storage',
-          state: '62.69',
+          state: '62.60',
           attributes: {
-            Available: '60.56 GB',
-            'Available (Important)': '164.99 GB',
-            'Available (Opportunistic)': '160.42 GB',
+            Available: '60.31 GB',
+            'Available (Important)': '164.29 GB',
+            'Available (Opportunistic)': '160.17 GB',
             Total: '255.88 GB',
             unit_of_measurement: '% available',
             icon: 'mdi:database',
             friendly_name: 'iphone mark Storage',
           },
           context: {
-            id: '01810c29e29ec43eb5a4c04514246d1b',
+            id: '01810e5e7d109be619306a65f4bb8ac4',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.542Z',
-          last_updated: '2022-05-28T19:34:40.542Z',
+          last_changed: '2022-05-29T05:51:22.384Z',
+          last_updated: '2022-05-29T05:51:22.384Z',
         },
         'binary_sensor.iphone_mark_focus': {
           entity_id: 'binary_sensor.iphone_mark_focus',
-          state: 'off',
+          state: 'on',
           attributes: {
             icon: 'mdi:moon-waning-crescent',
             friendly_name: 'iphone mark Focus',
           },
           context: {
-            id: '01810c29e29fdd203566c8c07da861ea',
+            id: '01810e5e7d11d9acb72ad62a58738509',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.543Z',
-          last_updated: '2022-05-28T19:34:40.543Z',
+          last_changed: '2022-05-29T05:51:22.385Z',
+          last_updated: '2022-05-29T05:51:22.385Z',
         },
-        'device_tracker.iphone_mark': {
-          entity_id: 'device_tracker.iphone_mark',
-          state: 'home',
-          attributes: {
-            source_type: 'gps',
-            battery_level: 80,
-            latitude: 38.929229736328125,
-            longitude: -77.22927715772039,
-            gps_accuracy: 35,
-            altitude: 162.77061462402344,
-            vertical_accuracy: 5.059759616851807,
-            friendly_name: 'iphone mark',
-          },
-          context: {
-            id: '01810c29e409a6418bdd976cffa4e772',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-28T19:34:40.905Z',
-          last_updated: '2022-05-28T19:34:40.905Z',
-        },
-        'binary_sensor.ecobee_occupancy': {
-          entity_id: 'binary_sensor.ecobee_occupancy',
-          state: 'on',
+        'binary_sensor.my_ecobee_occupancy': {
+          entity_id: 'binary_sensor.my_ecobee_occupancy',
+          state: 'off',
           attributes: {
             device_class: 'occupancy',
             friendly_name: 'My ecobee Occupancy',
           },
           context: {
-            id: '01810c29e42be52bd6e0896717655b12',
+            id: '01810e5e7e5409aa90ecf99e39ceaaaa',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.939Z',
-          last_updated: '2022-05-28T19:34:40.939Z',
+          last_changed: '2022-05-29T05:51:22.708Z',
+          last_updated: '2022-05-29T05:51:22.708Z',
         },
         'binary_sensor.bedroom_sensor_occupancy': {
           entity_id: 'binary_sensor.bedroom_sensor_occupancy',
-          state: 'off',
+          state: 'on',
           attributes: {
             device_class: 'occupancy',
             friendly_name: 'bedroom sensor Occupancy',
           },
           context: {
-            id: '01810c29e42cda5fc7f41f27f46cb642',
+            id: '01810e5e7e55a3a1931ab0556c66ed34',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.940Z',
-          last_updated: '2022-05-28T19:34:40.940Z',
+          last_changed: '2022-05-29T05:51:22.709Z',
+          last_updated: '2022-05-29T05:51:22.709Z',
         },
         'binary_sensor.office_occupancy': {
           entity_id: 'binary_sensor.office_occupancy',
-          state: 'on',
+          state: 'off',
           attributes: {
             device_class: 'occupancy',
             friendly_name: 'Office Occupancy',
           },
           context: {
-            id: '01810c29e42d096fd5849073b10acdeb',
+            id: '01810e5e7e567e180fd646b6a6317de8',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.941Z',
-          last_updated: '2022-05-28T19:34:40.941Z',
+          last_changed: '2022-05-29T05:51:22.710Z',
+          last_updated: '2022-05-29T05:51:22.710Z',
         },
-        'sensor.ecobee_temperature': {
-          entity_id: 'sensor.ecobee_temperature',
-          state: '75.3',
+        'sensor.my_ecobee_temperature': {
+          entity_id: 'sensor.my_ecobee_temperature',
+          state: '77.3',
           attributes: {
             state_class: 'measurement',
             unit_of_measurement: '°F',
@@ -727,16 +707,16 @@ const hass = {
             friendly_name: 'My ecobee Temperature',
           },
           context: {
-            id: '01810c29e42dc85c587f46915a1b0481',
+            id: '01810e63879b75a4d23406e2669fb02b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.941Z',
-          last_updated: '2022-05-28T19:34:40.941Z',
+          last_changed: '2022-05-29T05:56:52.763Z',
+          last_updated: '2022-05-29T05:56:52.763Z',
         },
-        'sensor.ecobee_humidity': {
-          entity_id: 'sensor.ecobee_humidity',
-          state: '54',
+        'sensor.my_ecobee_humidity': {
+          entity_id: 'sensor.my_ecobee_humidity',
+          state: '51',
           attributes: {
             state_class: 'measurement',
             unit_of_measurement: '%',
@@ -744,16 +724,16 @@ const hass = {
             friendly_name: 'My ecobee Humidity',
           },
           context: {
-            id: '01810c29e42e27356bf1b307ea0ff9d9',
+            id: '01810e5e7e574597d69b03c6613d0de3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.942Z',
-          last_updated: '2022-05-28T19:34:40.942Z',
+          last_changed: '2022-05-29T05:51:22.711Z',
+          last_updated: '2022-05-29T05:51:22.711Z',
         },
         'sensor.bedroom_sensor_temperature': {
           entity_id: 'sensor.bedroom_sensor_temperature',
-          state: '75.3',
+          state: '76.0',
           attributes: {
             state_class: 'measurement',
             unit_of_measurement: '°F',
@@ -761,16 +741,16 @@ const hass = {
             friendly_name: 'bedroom sensor Temperature',
           },
           context: {
-            id: '01810c29e42fbaf0150d29a99d256e3a',
+            id: '01810e63879c128ba735f53b6d4f5217',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.943Z',
-          last_updated: '2022-05-28T19:34:40.943Z',
+          last_changed: '2022-05-29T05:56:52.764Z',
+          last_updated: '2022-05-29T05:56:52.764Z',
         },
         'sensor.office_temperature': {
           entity_id: 'sensor.office_temperature',
-          state: '76.9',
+          state: '77.0',
           attributes: {
             state_class: 'measurement',
             unit_of_measurement: '°F',
@@ -778,80 +758,37 @@ const hass = {
             friendly_name: 'Office Temperature',
           },
           context: {
-            id: '01810c29e430acef2b91050ace33d1e0',
+            id: '01810e605344a617c7999f468da5e437',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.944Z',
-          last_updated: '2022-05-28T19:34:40.944Z',
+          last_changed: '2022-05-29T05:53:22.756Z',
+          last_updated: '2022-05-29T05:53:22.756Z',
         },
-        'weather.ecobee': {
-          entity_id: 'weather.ecobee',
-          state: 'partlycloudy',
+        'device_tracker.iphone_mark': {
+          entity_id: 'device_tracker.iphone_mark',
+          state: 'home',
           attributes: {
-            temperature: 79,
-            humidity: 46,
-            pressure: 29.83,
-            wind_bearing: 289,
-            wind_speed: 9,
-            visibility: 13,
-            forecast: [
-              {
-                condition: 'partlycloudy',
-                temperature: 79,
-                templow: 64,
-                wind_bearing: 289,
-                wind_speed: 9,
-                datetime: '2022-05-28T19:36:10.980419+00:00',
-              },
-              {
-                condition: 'sunny',
-                temperature: 81,
-                templow: 66,
-                wind_bearing: 96,
-                wind_speed: 3,
-                datetime: '2022-05-29T19:36:10.980419+00:00',
-              },
-              {
-                condition: 'sunny',
-                temperature: 87,
-                templow: 69,
-                wind_bearing: 195,
-                wind_speed: 4,
-                datetime: '2022-05-30T19:36:10.980419+00:00',
-              },
-              {
-                condition: 'sunny',
-                temperature: 90,
-                templow: 73,
-                wind_bearing: 251,
-                wind_speed: 4,
-                datetime: '2022-05-31T19:36:10.980419+00:00',
-              },
-              {
-                condition: 'partlycloudy',
-                temperature: 88,
-                templow: 77,
-                wind_bearing: 43,
-                wind_speed: 4,
-                datetime: '2022-06-01T19:36:10.980419+00:00',
-              },
-            ],
-            attribution:
-              'Ecobee weather provided by FI:NDV at 2022-05-28 19:30:45 UTC',
-            friendly_name: 'My ecobee',
+            source_type: 'gps',
+            battery_level: 60,
+            latitude: 38.92922506774823,
+            longitude: -77.22944354122387,
+            gps_accuracy: 35.07095741880386,
+            altitude: 161.7546157836914,
+            vertical_accuracy: 3.979067802429199,
+            friendly_name: 'iphone mark',
           },
           context: {
-            id: '01810c2b43e4f072b8371ac26c7e9a5e',
+            id: '01810e5e7e735fdb50391b0d9421d0ee',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.962Z',
-          last_updated: '2022-05-28T19:36:10.980Z',
+          last_changed: '2022-05-29T05:51:22.739Z',
+          last_updated: '2022-05-29T05:51:22.739Z',
         },
         'climate.ecobee': {
           entity_id: 'climate.ecobee',
-          state: 'cool',
+          state: 'off',
           attributes: {
             hvac_modes: ['heat_cool', 'heat', 'cool', 'off'],
             min_temp: 44.6,
@@ -859,17 +796,17 @@ const hass = {
             target_temp_step: 0.5,
             fan_modes: ['auto', 'on'],
             preset_modes: ['Away', 'Home', 'Sleep'],
-            current_temperature: 76.1,
-            temperature: 77,
+            current_temperature: 76,
+            temperature: null,
             target_temp_high: null,
             target_temp_low: null,
-            current_humidity: 54,
+            current_humidity: 51,
             fan_mode: 'auto',
             hvac_action: 'idle',
             preset_mode: 'temp',
             aux_heat: 'off',
             fan: 'off',
-            climate_mode: 'Home',
+            climate_mode: 'Sleep',
             equipment_running: '',
             fan_min_on_time: 0,
             icon: 'thermo',
@@ -877,12 +814,76 @@ const hass = {
             supported_features: 91,
           },
           context: {
-            id: '01810c29e4445057ccad10e676a4b1ae',
+            id: '01810e63fcd42c6d48aa5520bf2e3603',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:40.964Z',
-          last_updated: '2022-05-28T19:34:40.964Z',
+          last_changed: '2022-05-29T05:53:17.686Z',
+          last_updated: '2022-05-29T05:57:22.772Z',
+        },
+        'weather.my_ecobee': {
+          entity_id: 'weather.my_ecobee',
+          state: 'partlycloudy',
+          attributes: {
+            temperature: 68,
+            humidity: 70,
+            pressure: 29.94,
+            wind_bearing: 28,
+            wind_speed: 0,
+            visibility: 10,
+            forecast: [
+              {
+                condition: 'partlycloudy',
+                temperature: 82,
+                templow: 65,
+                wind_bearing: 28,
+                wind_speed: 0,
+                datetime: '2022-05-29T05:59:52.777156+00:00',
+              },
+              {
+                condition: 'sunny',
+                temperature: 87,
+                templow: 69,
+                wind_bearing: 195,
+                wind_speed: 4,
+                datetime: '2022-05-30T05:59:52.777156+00:00',
+              },
+              {
+                condition: 'sunny',
+                temperature: 91,
+                templow: 73,
+                wind_bearing: 249,
+                wind_speed: 4,
+                datetime: '2022-05-31T05:59:52.777156+00:00',
+              },
+              {
+                condition: 'partlycloudy',
+                temperature: 92,
+                templow: 76,
+                wind_bearing: 259,
+                wind_speed: 5,
+                datetime: '2022-06-01T05:59:52.777156+00:00',
+              },
+              {
+                condition: 'rainy',
+                temperature: 81,
+                templow: 71,
+                wind_bearing: 321,
+                wind_speed: 7,
+                datetime: '2022-06-02T05:59:52.777156+00:00',
+              },
+            ],
+            attribution:
+              'Ecobee weather provided by FI:NDV at 2022-05-29 05:30:51 UTC',
+            friendly_name: 'My ecobee',
+          },
+          context: {
+            id: '01810e6646c9ec25bbbaeaa5f9575fbc',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-29T05:51:22.747Z',
+          last_updated: '2022-05-29T05:59:52.777Z',
         },
         'light.couch_lamp': {
           entity_id: 'light.couch_lamp',
@@ -894,57 +895,12 @@ const hass = {
             supported_features: 37,
           },
           context: {
-            id: '01810c29e477afc62c4959dcbf4a1487',
+            id: '01810e5e7f49b308fda04f9ea94ca630',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:41.015Z',
-          last_updated: '2022-05-28T19:34:41.015Z',
-        },
-        'binary_sensor.eero_wan_status': {
-          entity_id: 'binary_sensor.eero_wan_status',
-          state: 'on',
-          attributes: {
-            device_class: 'connectivity',
-            friendly_name: 'eero wan status',
-          },
-          context: {
-            id: '01810c29e47f4da6a27a7e686fd6dc5f',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-28T19:34:41.023Z',
-          last_updated: '2022-05-28T19:34:41.023Z',
-        },
-        'sensor.eero_external_ip': {
-          entity_id: 'sensor.eero_external_ip',
-          state: '108.28.69.66',
-          attributes: {
-            icon: 'mdi:server-network',
-            friendly_name: 'eero External IP',
-          },
-          context: {
-            id: '01810c29e4808fb518280984b9782bb5',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-28T19:34:41.024Z',
-          last_updated: '2022-05-28T19:34:41.024Z',
-        },
-        'sensor.eero_wan_status': {
-          entity_id: 'sensor.eero_wan_status',
-          state: 'Connected',
-          attributes: {
-            icon: 'mdi:server-network',
-            friendly_name: 'eero wan status',
-          },
-          context: {
-            id: '01810c29e481c5d6c71dc9397c039aa0',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-28T19:34:41.025Z',
-          last_updated: '2022-05-28T19:34:41.025Z',
+          last_changed: '2022-05-29T05:51:22.953Z',
+          last_updated: '2022-05-29T05:51:22.953Z',
         },
         'light.desk_light': {
           entity_id: 'light.desk_light',
@@ -955,7 +911,7 @@ const hass = {
             effect_list: ['effect_colorloop', 'effect_pulse', 'effect_stop'],
             supported_color_modes: ['color_temp', 'hs'],
             color_mode: 'color_temp',
-            brightness: 255,
+            brightness: 84,
             color_temp: 364,
             hs_color: [28.295, 64.242],
             rgb_color: [255, 168, 91],
@@ -965,12 +921,57 @@ const hass = {
             supported_features: 55,
           },
           context: {
-            id: '01810c29e484982c85c74ffe6d7f4756',
+            id: '01810e5e7fd8cdc79e799b570a97eb3f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:41.029Z',
-          last_updated: '2022-05-28T19:34:41.029Z',
+          last_changed: '2022-05-29T05:51:23.096Z',
+          last_updated: '2022-05-29T05:51:23.096Z',
+        },
+        'binary_sensor.eero_wan_status': {
+          entity_id: 'binary_sensor.eero_wan_status',
+          state: 'on',
+          attributes: {
+            device_class: 'connectivity',
+            friendly_name: 'eero wan status',
+          },
+          context: {
+            id: '01810e5e7fda5acce1d786080d4ed20b',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-29T05:51:23.098Z',
+          last_updated: '2022-05-29T05:51:23.098Z',
+        },
+        'sensor.eero_external_ip': {
+          entity_id: 'sensor.eero_external_ip',
+          state: '108.28.69.66',
+          attributes: {
+            icon: 'mdi:server-network',
+            friendly_name: 'eero External IP',
+          },
+          context: {
+            id: '01810e5e7fdb750859c1e6b037aa258c',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-29T05:51:23.099Z',
+          last_updated: '2022-05-29T05:51:23.099Z',
+        },
+        'sensor.eero_wan_status': {
+          entity_id: 'sensor.eero_wan_status',
+          state: 'Connected',
+          attributes: {
+            icon: 'mdi:server-network',
+            friendly_name: 'eero wan status',
+          },
+          context: {
+            id: '01810e5e7fdca00d964e9533def18351',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-29T05:51:23.100Z',
+          last_updated: '2022-05-29T05:51:23.100Z',
         },
         'sensor.hacs': {
           entity_id: 'sensor.hacs',
@@ -982,35 +983,35 @@ const hass = {
             friendly_name: 'hacs',
           },
           context: {
-            id: '01810c2a08aa49416de8ea07e011f5cc',
+            id: '01810e5e9cfda6b01ea9aa7b22d2f590',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:50.282Z',
-          last_updated: '2022-05-28T19:34:50.282Z',
+          last_changed: '2022-05-29T05:51:30.557Z',
+          last_updated: '2022-05-29T05:51:30.557Z',
         },
         'vacuum.alfred_2': {
           entity_id: 'vacuum.alfred_2',
           state: 'error',
           attributes: {
             fan_speed_list: ['quiet', 'normal', 'max', 'max+'],
-            battery_level: 87,
-            battery_icon: 'mdi:battery-90',
+            battery_level: 100,
+            battery_icon: 'mdi:battery',
             fan_speed: 'max',
             rooms: {
-              default: [0, 1, 2, 3],
+              default: [0, 1, 3, 2],
             },
             last_error: 'WheelAbnormal: Driving Wheel malfunction (103)',
             friendly_name: 'Alfred',
             supported_features: 15228,
           },
           context: {
-            id: '01810c2a1fc680d477f5304c2c5dbcf5',
+            id: '01810e5e9c82b5414ada246cb5916ccd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:46.142Z',
-          last_updated: '2022-05-28T19:34:56.198Z',
+          last_changed: '2022-05-29T05:51:27.016Z',
+          last_updated: '2022-05-29T05:51:30.434Z',
         },
         'button.alfred_life_span_side_brush_reset': {
           entity_id: 'button.alfred_life_span_side_brush_reset',
@@ -1020,12 +1021,12 @@ const hass = {
             friendly_name: 'Alfred life span side brush reset',
           },
           context: {
-            id: '01810c29ecf7cc1b3d70d99d2e83019c',
+            id: '01810e5e842b1effeefa72064e39e024',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.191Z',
-          last_updated: '2022-05-28T19:34:43.191Z',
+          last_changed: '2022-05-29T05:51:24.203Z',
+          last_updated: '2022-05-29T05:51:24.203Z',
         },
         'button.alfred_life_span_brush_reset': {
           entity_id: 'button.alfred_life_span_brush_reset',
@@ -1035,12 +1036,12 @@ const hass = {
             friendly_name: 'Alfred life span brush reset',
           },
           context: {
-            id: '01810c29ecf76e2d852d107ce0d62a6b',
+            id: '01810e5e842bafe0aebe4f3fb3c5e973',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.191Z',
-          last_updated: '2022-05-28T19:34:43.191Z',
+          last_changed: '2022-05-29T05:51:24.203Z',
+          last_updated: '2022-05-29T05:51:24.203Z',
         },
         'button.alfred_life_span_filter_reset': {
           entity_id: 'button.alfred_life_span_filter_reset',
@@ -1050,12 +1051,12 @@ const hass = {
             friendly_name: 'Alfred life span filter reset',
           },
           context: {
-            id: '01810c29ecf87df21b5daff0fc279364',
+            id: '01810e5e842c80fb908ad477642f04cb',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.192Z',
-          last_updated: '2022-05-28T19:34:43.192Z',
+          last_changed: '2022-05-29T05:51:24.204Z',
+          last_updated: '2022-05-29T05:51:24.204Z',
         },
         'button.alfred_relocate': {
           entity_id: 'button.alfred_relocate',
@@ -1065,12 +1066,12 @@ const hass = {
             friendly_name: 'Alfred relocate',
           },
           context: {
-            id: '01810c29ecf8de927ab9c6974b2d3e90',
+            id: '01810e5e842cdf404f74079de56a19f0',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.192Z',
-          last_updated: '2022-05-28T19:34:43.192Z',
+          last_changed: '2022-05-29T05:51:24.204Z',
+          last_updated: '2022-05-29T05:51:24.204Z',
         },
         'input_number.empty': {
           entity_id: 'input_number.empty',
@@ -1080,12 +1081,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfc01e769c133ba80c281d5',
+            id: '01810e5e8431dcf17f803939a4ab544f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.196Z',
-          last_updated: '2022-05-28T19:34:43.196Z',
+          last_changed: '2022-05-29T05:51:24.209Z',
+          last_updated: '2022-05-29T05:51:24.209Z',
         },
         'input_boolean.dummy1': {
           entity_id: 'input_boolean.dummy1',
@@ -1095,12 +1096,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfdb0ad16a1c5de30cc6ad8',
+            id: '01810e5e84318bf3736bff0d8e91ad83',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.209Z',
+          last_updated: '2022-05-29T05:51:24.209Z',
         },
         'input_boolean.empty': {
           entity_id: 'input_boolean.empty',
@@ -1110,12 +1111,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfdca903690d221d4852642',
+            id: '01810e5e8432e14b7d6f0835351eb71d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.210Z',
+          last_updated: '2022-05-29T05:51:24.210Z',
         },
         'input_boolean.remote_control': {
           entity_id: 'input_boolean.remote_control',
@@ -1125,12 +1126,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfd9c13b670a5c48d7a51ff',
+            id: '01810e5e8432ed545babf251fc99683e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.210Z',
+          last_updated: '2022-05-29T05:51:24.210Z',
         },
         'input_text.opacity_on': {
           entity_id: 'input_text.opacity_on',
@@ -1140,12 +1141,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfda895812952ce4e9d730e',
+            id: '01810e5e84325e64eac9717f84ebc0ad',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.210Z',
+          last_updated: '2022-05-29T05:51:24.210Z',
         },
         'input_text.opacity_off': {
           entity_id: 'input_text.opacity_off',
@@ -1155,12 +1156,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfd8e0e7293dd6a622ee279',
+            id: '01810e5e8432a6790a6650b136ca3609',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.210Z',
+          last_updated: '2022-05-29T05:51:24.210Z',
         },
         'input_text.opacity_unavailable': {
           entity_id: 'input_text.opacity_unavailable',
@@ -1170,12 +1171,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfd8bdc0e88aa07c9c8d767',
+            id: '01810e5e8432329b0159cf0e948cea81',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.210Z',
+          last_updated: '2022-05-29T05:51:24.210Z',
         },
         'input_text.card_box_shadow_light_color': {
           entity_id: 'input_text.card_box_shadow_light_color',
@@ -1185,12 +1186,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfd67419d1e18379b934c6e',
+            id: '01810e5e8432fa9f08804b256ec4ee00',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.210Z',
+          last_updated: '2022-05-29T05:51:24.210Z',
         },
         'input_text.color_unavailable': {
           entity_id: 'input_text.color_unavailable',
@@ -1200,12 +1201,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfd8d1b61cf6998141fa464',
+            id: '01810e5e84328f4efc5cfb8c62c53eae',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.197Z',
-          last_updated: '2022-05-28T19:34:43.197Z',
+          last_changed: '2022-05-29T05:51:24.210Z',
+          last_updated: '2022-05-29T05:51:24.210Z',
         },
         'input_text.header_badge_icon_color': {
           entity_id: 'input_text.header_badge_icon_color',
@@ -1215,12 +1216,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfe86b3bda2530afcba38e2',
+            id: '01810e5e8433208812d62c1de74d5fdd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.211Z',
+          last_updated: '2022-05-29T05:51:24.211Z',
         },
         'input_text.header_badge_background': {
           entity_id: 'input_text.header_badge_background',
@@ -1230,12 +1231,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfe48ddeab71fe9d91cea6b',
+            id: '01810e5e8433cd24c7e203abac551870',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.211Z',
+          last_updated: '2022-05-29T05:51:24.211Z',
         },
         'input_text.header_badge_color': {
           entity_id: 'input_text.header_badge_color',
@@ -1245,12 +1246,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfecb9465525555a3e086a8',
+            id: '01810e5e843355a94f7cdd1282624da5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.211Z',
+          last_updated: '2022-05-29T05:51:24.211Z',
         },
         'input_text.header_badge_text_color': {
           entity_id: 'input_text.header_badge_text_color',
@@ -1260,12 +1261,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfebbec72721ee684f23e66',
+            id: '01810e5e8433f9c45fce216d7bfbd586',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.211Z',
+          last_updated: '2022-05-29T05:51:24.211Z',
         },
         'input_text.header_border_radius': {
           entity_id: 'input_text.header_border_radius',
@@ -1275,12 +1276,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfe30eb4880d5489947dd04',
+            id: '01810e5e843356bb264ef002b6ec0372',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.211Z',
+          last_updated: '2022-05-29T05:51:24.211Z',
         },
         'input_text.header_box_shadow': {
           entity_id: 'input_text.header_box_shadow',
@@ -1290,12 +1291,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfedc836070fd634e737673',
+            id: '01810e5e8433480ef82f33f4b47fcf66',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.211Z',
+          last_updated: '2022-05-29T05:51:24.211Z',
         },
         'input_text.footer_box_shadow': {
           entity_id: 'input_text.footer_box_shadow',
@@ -1305,12 +1306,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfe2033b36df3a8f769c402',
+            id: '01810e5e8434d8594531b0d81534ee8f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.212Z',
+          last_updated: '2022-05-29T05:51:24.212Z',
         },
         'input_text.nav_bar_color': {
           entity_id: 'input_text.nav_bar_color',
@@ -1320,12 +1321,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfef1afbe15c618f6ac04bb',
+            id: '01810e5e8434720ec2514ca90bbc774c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.198Z',
-          last_updated: '2022-05-28T19:34:43.198Z',
+          last_changed: '2022-05-29T05:51:24.212Z',
+          last_updated: '2022-05-29T05:51:24.212Z',
         },
         'input_text.nav_bar_text_color': {
           entity_id: 'input_text.nav_bar_text_color',
@@ -1335,12 +1336,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecff36ce6809f72ca85cd317',
+            id: '01810e5e8434414c722955d439ef0519',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.212Z',
+          last_updated: '2022-05-29T05:51:24.212Z',
         },
         'input_text.card_color': {
           entity_id: 'input_text.card_color',
@@ -1350,12 +1351,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecff5225bed88905d333e0b4',
+            id: '01810e5e84349c4abdec7c2ab269e208',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.212Z',
+          last_updated: '2022-05-29T05:51:24.212Z',
         },
         'input_text.card_border_style': {
           entity_id: 'input_text.card_border_style',
@@ -1365,12 +1366,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecffc4e527d9fe017a8467d6',
+            id: '01810e5e843455f35f3c3a9adc62a8a7',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.212Z',
+          last_updated: '2022-05-29T05:51:24.212Z',
         },
         'input_text.card_border_width': {
           entity_id: 'input_text.card_border_width',
@@ -1380,12 +1381,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecfff562de26cb322abbe965',
+            id: '01810e5e84343e5220fef42bc97420e3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.212Z',
+          last_updated: '2022-05-29T05:51:24.212Z',
         },
         'input_text.card_border_color': {
           entity_id: 'input_text.card_border_color',
@@ -1395,12 +1396,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecffb0a172148f83115824f2',
+            id: '01810e5e843470143706b95143f73244',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.212Z',
+          last_updated: '2022-05-29T05:51:24.212Z',
         },
         'input_text.card_border_radius': {
           entity_id: 'input_text.card_border_radius',
@@ -1410,12 +1411,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecffcf971cd436786953c8dd',
+            id: '01810e5e84356bf11bede973817df8d3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.213Z',
+          last_updated: '2022-05-29T05:51:24.213Z',
         },
         'input_text.card_box_shadow': {
           entity_id: 'input_text.card_box_shadow',
@@ -1425,12 +1426,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecff1b1920614a6d187f1310',
+            id: '01810e5e84351ed602ed3836060c0645',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.213Z',
+          last_updated: '2022-05-29T05:51:24.213Z',
         },
         'input_text.header_color': {
           entity_id: 'input_text.header_color',
@@ -1440,12 +1441,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ecffecb71a6724bc95c79055',
+            id: '01810e5e84354bde502eb50eabb0a94c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.199Z',
-          last_updated: '2022-05-28T19:34:43.199Z',
+          last_changed: '2022-05-29T05:51:24.213Z',
+          last_updated: '2022-05-29T05:51:24.213Z',
         },
         'input_text.header_text_color': {
           entity_id: 'input_text.header_text_color',
@@ -1455,12 +1456,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed00f4c062b92007e46e8e28',
+            id: '01810e5e843521cc6a00b2678206df2b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.213Z',
+          last_updated: '2022-05-29T05:51:24.213Z',
         },
         'input_text.text_color': {
           entity_id: 'input_text.text_color',
@@ -1470,12 +1471,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed001a765781ddf54014a1f4',
+            id: '01810e5e843568e724caa4a725f9357e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.213Z',
+          last_updated: '2022-05-29T05:51:24.213Z',
         },
         'input_text.secondary_text_color': {
           entity_id: 'input_text.secondary_text_color',
@@ -1485,12 +1486,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed00280f889b0c47d083810f',
+            id: '01810e5e8435522deaa04084b29b9a48',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.213Z',
+          last_updated: '2022-05-29T05:51:24.213Z',
         },
         'input_text.background_image': {
           entity_id: 'input_text.background_image',
@@ -1500,12 +1501,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0036826a2a479923deff2e',
+            id: '01810e5e843523f551505082b033de85',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.213Z',
+          last_updated: '2022-05-29T05:51:24.213Z',
         },
         'input_text.icon_color_default': {
           entity_id: 'input_text.icon_color_default',
@@ -1515,12 +1516,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed004c5fc80861401b43b798',
+            id: '01810e5e8436a36ae809972f049edbac',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.214Z',
+          last_updated: '2022-05-29T05:51:24.214Z',
         },
         'input_text.icon_color_active': {
           entity_id: 'input_text.icon_color_active',
@@ -1530,12 +1531,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed00987998a8fb7c1e69b100',
+            id: '01810e5e8436d1db869756bd0fe576b2',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.214Z',
+          last_updated: '2022-05-29T05:51:24.214Z',
         },
         'input_text.font_family': {
           entity_id: 'input_text.font_family',
@@ -1545,12 +1546,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed00512bdf60f1fe28d6b3aa',
+            id: '01810e5e843671e23361b1ce81285bcf',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.214Z',
+          last_updated: '2022-05-29T05:51:24.214Z',
         },
         'input_text.header_font_size': {
           entity_id: 'input_text.header_font_size',
@@ -1560,12 +1561,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed00ec36c2fded6efe2bf79e',
+            id: '01810e5e8436457f6cee5fe3da237376',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.200Z',
-          last_updated: '2022-05-28T19:34:43.200Z',
+          last_changed: '2022-05-29T05:51:24.214Z',
+          last_updated: '2022-05-29T05:51:24.214Z',
         },
         'input_text.header_font_weight': {
           entity_id: 'input_text.header_font_weight',
@@ -1575,12 +1576,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed01fda261ca8425ab99d7b7',
+            id: '01810e5e8436846f2c612b2912a1ebc5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.214Z',
+          last_updated: '2022-05-29T05:51:24.214Z',
         },
         'input_text.subtitle_font_size': {
           entity_id: 'input_text.subtitle_font_size',
@@ -1590,12 +1591,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed01d57f265605b10c263e31',
+            id: '01810e5e843676d767495c97d438bf24',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.214Z',
+          last_updated: '2022-05-29T05:51:24.214Z',
         },
         'input_text.subtitle_font_weight': {
           entity_id: 'input_text.subtitle_font_weight',
@@ -1605,12 +1606,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0120b16356344b6ec62e02',
+            id: '01810e5e84366eca7629c22b004dd74c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.214Z',
+          last_updated: '2022-05-29T05:51:24.214Z',
         },
         'input_text.subtitle_text_color': {
           entity_id: 'input_text.subtitle_text_color',
@@ -1620,12 +1621,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed01b1c8cf9077cdcb7400f4',
+            id: '01810e5e8437450d28b020fc26bcc7a8',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.215Z',
+          last_updated: '2022-05-29T05:51:24.215Z',
         },
         'input_text.title_text_color': {
           entity_id: 'input_text.title_text_color',
@@ -1635,12 +1636,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed01c765baa50a33c0c15fdc',
+            id: '01810e5e8437f3d31c18995de3efff01',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.215Z',
+          last_updated: '2022-05-29T05:51:24.215Z',
         },
         'input_text.title_text_font_size': {
           entity_id: 'input_text.title_text_font_size',
@@ -1650,12 +1651,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed01188bbaab97e1ee42d29d',
+            id: '01810e5e8437951176c70a41892ae626',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.215Z',
+          last_updated: '2022-05-29T05:51:24.215Z',
         },
         'input_text.title_text_font_weight': {
           entity_id: 'input_text.title_text_font_weight',
@@ -1665,12 +1666,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed01e2b204a4d1b2cd3fc565',
+            id: '01810e5e84376be2607c471d394bceb6',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.215Z',
+          last_updated: '2022-05-29T05:51:24.215Z',
         },
         'input_text.title_text_background_color': {
           entity_id: 'input_text.title_text_background_color',
@@ -1680,12 +1681,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed019266b4acb19d778594e7',
+            id: '01810e5e8437c9bb13453afbd6398f9c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.201Z',
-          last_updated: '2022-05-28T19:34:43.201Z',
+          last_changed: '2022-05-29T05:51:24.215Z',
+          last_updated: '2022-05-29T05:51:24.215Z',
         },
         'input_text.title_text_justify_self': {
           entity_id: 'input_text.title_text_justify_self',
@@ -1695,12 +1696,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed01462b8bdd76816d8b6a58',
+            id: '01810e5e843779c757bf82985e510d7f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.215Z',
+          last_updated: '2022-05-29T05:51:24.215Z',
         },
         'input_text.title_text_border_radius': {
           entity_id: 'input_text.title_text_border_radius',
@@ -1710,12 +1711,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed02f33ed4b3301a3ff17dc4',
+            id: '01810e5e8437dc27e71cb1e899e21d58',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.title_text_box_shadow': {
           entity_id: 'input_text.title_text_box_shadow',
@@ -1725,12 +1726,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed02100aaab573a9335471f8',
+            id: '01810e5e843885f51e7acab3b3ecb7b2',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.title_text_padding': {
           entity_id: 'input_text.title_text_padding',
@@ -1740,12 +1741,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed02af2751ca1390954e71fc',
+            id: '01810e5e84386ee61d261fcad8491c40',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.title_text_border_style': {
           entity_id: 'input_text.title_text_border_style',
@@ -1755,12 +1756,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed02e5fddf2a3b28ff83059f',
+            id: '01810e5e8438af55b3f7215b1808a2ce',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.title_text_border_width': {
           entity_id: 'input_text.title_text_border_width',
@@ -1770,12 +1771,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed02eb8c3c3d50c3b30e1496',
+            id: '01810e5e843873885f81e44ac3706c65',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.title_text_border_color': {
           entity_id: 'input_text.title_text_border_color',
@@ -1785,12 +1786,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed024bca8d9abdfed8f7c7d3',
+            id: '01810e5e8438338869a12d5f58408860',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.button_color_active': {
           entity_id: 'input_text.button_color_active',
@@ -1800,12 +1801,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed025e4bddd014dc77b5611f',
+            id: '01810e5e8438173541356f2d27e8c74e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.button_name_font_size': {
           entity_id: 'input_text.button_name_font_size',
@@ -1815,12 +1816,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed02d63fa7a45223f15616e8',
+            id: '01810e5e84383b51e9634c7007202578',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.202Z',
-          last_updated: '2022-05-28T19:34:43.202Z',
+          last_changed: '2022-05-29T05:51:24.216Z',
+          last_updated: '2022-05-29T05:51:24.216Z',
         },
         'input_text.button_name_font_weight': {
           entity_id: 'input_text.button_name_font_weight',
@@ -1830,12 +1831,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed03afb865fb80510730038b',
+            id: '01810e5e8439a0b2ed37d66c9fd24937',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.217Z',
+          last_updated: '2022-05-29T05:51:24.217Z',
         },
         'input_text.button_label_font_size': {
           entity_id: 'input_text.button_label_font_size',
@@ -1845,12 +1846,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0375f77007af07b9c2fb47',
+            id: '01810e5e8439262f430ee6b5dad54861',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.217Z',
+          last_updated: '2022-05-29T05:51:24.217Z',
         },
         'input_text.button_label_font_weight': {
           entity_id: 'input_text.button_label_font_weight',
@@ -1860,12 +1861,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed032666e02d6dee3feb40d6',
+            id: '01810e5e8439bc1071e0fa889572bc93',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.217Z',
+          last_updated: '2022-05-29T05:51:24.217Z',
         },
         'input_text.button_state_font_size': {
           entity_id: 'input_text.button_state_font_size',
@@ -1875,12 +1876,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed03780bf99a4a2f6b7722db',
+            id: '01810e5e84394be6f4d597fff3149b2a',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.217Z',
+          last_updated: '2022-05-29T05:51:24.217Z',
         },
         'input_text.button_state_font_weight': {
           entity_id: 'input_text.button_state_font_weight',
@@ -1890,12 +1891,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed03b5009a92fbec53efff9c',
+            id: '01810e5e8439c0fd3dd63c5741a16f4d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.217Z',
+          last_updated: '2022-05-29T05:51:24.217Z',
         },
         'input_text.button_name_color': {
           entity_id: 'input_text.button_name_color',
@@ -1905,12 +1906,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed032a82494bf88ff0168ac0',
+            id: '01810e5e8439b74fd4e7ed281d84e2dc',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.217Z',
+          last_updated: '2022-05-29T05:51:24.217Z',
         },
         'input_text.button_name_color_active': {
           entity_id: 'input_text.button_name_color_active',
@@ -1920,12 +1921,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed03c7f83e9158549c2fd676',
+            id: '01810e5e84390de1247b5714861fee76',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.217Z',
+          last_updated: '2022-05-29T05:51:24.217Z',
         },
         'input_text.button_label_color': {
           entity_id: 'input_text.button_label_color',
@@ -1935,12 +1936,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed030386c3b4ebb9c31e874f',
+            id: '01810e5e843aac0596fd220e71eedb3d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.203Z',
-          last_updated: '2022-05-28T19:34:43.203Z',
+          last_changed: '2022-05-29T05:51:24.218Z',
+          last_updated: '2022-05-29T05:51:24.218Z',
         },
         'input_text.button_label_color_active': {
           entity_id: 'input_text.button_label_color_active',
@@ -1950,12 +1951,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed04a16e0560b0329a1ed831',
+            id: '01810e5e843a0f60caaca974db3fd7bb',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.218Z',
+          last_updated: '2022-05-29T05:51:24.218Z',
         },
         'input_text.button_state_color': {
           entity_id: 'input_text.button_state_color',
@@ -1965,12 +1966,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed049b0064dd356ecf2d7009',
+            id: '01810e5e843a3ed080aed77bb3174df9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.218Z',
+          last_updated: '2022-05-29T05:51:24.218Z',
         },
         'input_text.button_state_color_active': {
           entity_id: 'input_text.button_state_color_active',
@@ -1980,12 +1981,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed042ac31a541d428bafdc30',
+            id: '01810e5e843a08dfd73a32c9e0deb1f5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.218Z',
+          last_updated: '2022-05-29T05:51:24.218Z',
         },
         'input_text.badge_background_color': {
           entity_id: 'input_text.badge_background_color',
@@ -1995,12 +1996,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed041a4e3641371813ab14ff',
+            id: '01810e5e843af407efb5f96f5ea049c9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.218Z',
+          last_updated: '2022-05-29T05:51:24.218Z',
         },
         'input_text.badge_text_color': {
           entity_id: 'input_text.badge_text_color',
@@ -2010,12 +2011,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed042bd7e861cbd928c5c3cc',
+            id: '01810e5e843aaeb48411b901b4e94fab',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.218Z',
+          last_updated: '2022-05-29T05:51:24.218Z',
         },
         'input_text.badge_font_size': {
           entity_id: 'input_text.badge_font_size',
@@ -2025,12 +2026,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed04f8ec98ff53911789ec19',
+            id: '01810e5e843a2b26d6f30c005c31f6a4',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.218Z',
+          last_updated: '2022-05-29T05:51:24.218Z',
         },
         'input_text.badge_font_weight': {
           entity_id: 'input_text.badge_font_weight',
@@ -2040,12 +2041,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed043555101a180522ba15cd',
+            id: '01810e5e843bf742e970acc0ac169c3d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.219Z',
+          last_updated: '2022-05-29T05:51:24.219Z',
         },
         'input_text.badge_text_transform': {
           entity_id: 'input_text.badge_text_transform',
@@ -2055,12 +2056,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed04ac212c2617b611186a6e',
+            id: '01810e5e843b5e7f314fcd33b9768d79',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.204Z',
-          last_updated: '2022-05-28T19:34:43.204Z',
+          last_changed: '2022-05-29T05:51:24.219Z',
+          last_updated: '2022-05-29T05:51:24.219Z',
         },
         'input_text.button_box_shadow_active': {
           entity_id: 'input_text.button_box_shadow_active',
@@ -2070,12 +2071,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05d4fbb9c076db9f4155d4',
+            id: '01810e5e843b40925a587c82b69a55c5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.219Z',
+          last_updated: '2022-05-29T05:51:24.219Z',
         },
         'input_text.lock_color_active': {
           entity_id: 'input_text.lock_color_active',
@@ -2085,12 +2086,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05994fd37c81ac5ea4e311',
+            id: '01810e5e843b6d42253d2cc64353151f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.219Z',
+          last_updated: '2022-05-29T05:51:24.219Z',
         },
         'input_text.lock_color_inactive': {
           entity_id: 'input_text.lock_color_inactive',
@@ -2100,12 +2101,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed059fefda59ffb375037cd4',
+            id: '01810e5e843b4fcffaf415c7587cc320',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.219Z',
+          last_updated: '2022-05-29T05:51:24.219Z',
         },
         'input_text.dark_color_unavailable': {
           entity_id: 'input_text.dark_color_unavailable',
@@ -2115,12 +2116,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05d32356e384964dc313e6',
+            id: '01810e5e843b8bc6afe1692c305d76f6',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.219Z',
+          last_updated: '2022-05-29T05:51:24.219Z',
         },
         'input_text.dark_lock_color_active': {
           entity_id: 'input_text.dark_lock_color_active',
@@ -2130,12 +2131,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05df3958b7844ef01ebdb7',
+            id: '01810e5e843cfd0cd6c21673ccba2073',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.220Z',
+          last_updated: '2022-05-29T05:51:24.220Z',
         },
         'input_text.dark_lock_color_inactive': {
           entity_id: 'input_text.dark_lock_color_inactive',
@@ -2145,12 +2146,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05de373ccd6cd26d773258',
+            id: '01810e5e843cd1b822f5aba71e6494b6',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.220Z',
+          last_updated: '2022-05-29T05:51:24.220Z',
         },
         'input_text.dark_header_box_shadow': {
           entity_id: 'input_text.dark_header_box_shadow',
@@ -2160,12 +2161,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05c6ab96e910cce2313221',
+            id: '01810e5e843c34b9619b4abb7c713d12',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.220Z',
+          last_updated: '2022-05-29T05:51:24.220Z',
         },
         'input_text.dark_button_box_shadow_active': {
           entity_id: 'input_text.dark_button_box_shadow_active',
@@ -2175,12 +2176,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05c6b5b98ba8be5353772e',
+            id: '01810e5e8534a6421e3220b19265a18d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.468Z',
+          last_updated: '2022-05-29T05:51:24.468Z',
         },
         'input_text.dark_footer_box_shadow': {
           entity_id: 'input_text.dark_footer_box_shadow',
@@ -2190,12 +2191,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed05224ef58422ecab37a8dc',
+            id: '01810e5e85344b990bdf769644b94e41',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.205Z',
-          last_updated: '2022-05-28T19:34:43.205Z',
+          last_changed: '2022-05-29T05:51:24.468Z',
+          last_updated: '2022-05-29T05:51:24.468Z',
         },
         'input_text.dark_header_border_radius': {
           entity_id: 'input_text.dark_header_border_radius',
@@ -2205,12 +2206,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed06e7fc704d705fc8ea2e74',
+            id: '01810e5e853412c8fbec5c201d09340e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.206Z',
-          last_updated: '2022-05-28T19:34:43.206Z',
+          last_changed: '2022-05-29T05:51:24.468Z',
+          last_updated: '2022-05-29T05:51:24.468Z',
         },
         'input_text.dark_header_badge_icon_color': {
           entity_id: 'input_text.dark_header_badge_icon_color',
@@ -2220,12 +2221,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0657f704de0bbfe7a63111',
+            id: '01810e5e853426fd80b7cb31141cd555',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.206Z',
-          last_updated: '2022-05-28T19:34:43.206Z',
+          last_changed: '2022-05-29T05:51:24.468Z',
+          last_updated: '2022-05-29T05:51:24.468Z',
         },
         'input_text.dark_header_badge_background': {
           entity_id: 'input_text.dark_header_badge_background',
@@ -2235,12 +2236,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed06da7fb3a66db627d700ee',
+            id: '01810e5e8534d8b91d1246b455152024',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.206Z',
-          last_updated: '2022-05-28T19:34:43.206Z',
+          last_changed: '2022-05-29T05:51:24.468Z',
+          last_updated: '2022-05-29T05:51:24.468Z',
         },
         'input_text.dark_header_badge_color': {
           entity_id: 'input_text.dark_header_badge_color',
@@ -2250,12 +2251,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed07c97a98e6f3ce7076c506',
+            id: '01810e5e85353bfda541f8a14fe1185d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.207Z',
-          last_updated: '2022-05-28T19:34:43.207Z',
+          last_changed: '2022-05-29T05:51:24.469Z',
+          last_updated: '2022-05-29T05:51:24.469Z',
         },
         'input_text.dark_header_badge_text_color': {
           entity_id: 'input_text.dark_header_badge_text_color',
@@ -2265,12 +2266,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed07142018efa63dd2718ff7',
+            id: '01810e5e853511f967967539a90c7924',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.207Z',
-          last_updated: '2022-05-28T19:34:43.207Z',
+          last_changed: '2022-05-29T05:51:24.469Z',
+          last_updated: '2022-05-29T05:51:24.469Z',
         },
         'input_text.dark_nav_bar_color': {
           entity_id: 'input_text.dark_nav_bar_color',
@@ -2280,12 +2281,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed078dc993d03816291ebe40',
+            id: '01810e5e85352f30ee3ddd8f8fecab58',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.207Z',
-          last_updated: '2022-05-28T19:34:43.207Z',
+          last_changed: '2022-05-29T05:51:24.469Z',
+          last_updated: '2022-05-29T05:51:24.469Z',
         },
         'input_text.dark_nav_bar_text_color': {
           entity_id: 'input_text.dark_nav_bar_text_color',
@@ -2295,12 +2296,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed07de0b3abe9bf2dbf0c13a',
+            id: '01810e5e85356c91a84a73f01662c06d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.207Z',
-          last_updated: '2022-05-28T19:34:43.207Z',
+          last_changed: '2022-05-29T05:51:24.469Z',
+          last_updated: '2022-05-29T05:51:24.469Z',
         },
         'input_text.dark_card_color': {
           entity_id: 'input_text.dark_card_color',
@@ -2310,12 +2311,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed087d2740c78b2e36898da4',
+            id: '01810e5e85352e72aa0da3a730bcfdf5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.469Z',
+          last_updated: '2022-05-29T05:51:24.469Z',
         },
         'input_text.dark_card_border_style': {
           entity_id: 'input_text.dark_card_border_style',
@@ -2325,12 +2326,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed08869604f2060e40865a86',
+            id: '01810e5e85358770e9ce8de25c9075fc',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.469Z',
+          last_updated: '2022-05-29T05:51:24.469Z',
         },
         'input_text.dark_card_border_width': {
           entity_id: 'input_text.dark_card_border_width',
@@ -2340,12 +2341,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed086e69c537f1dd4d8c40b2',
+            id: '01810e5e8535af3e986c56ee6635169b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.469Z',
+          last_updated: '2022-05-29T05:51:24.469Z',
         },
         'input_text.dark_card_border_color': {
           entity_id: 'input_text.dark_card_border_color',
@@ -2355,12 +2356,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed08f01951e0d373f6767f5f',
+            id: '01810e5e853612f107c904929485d8ef',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.470Z',
+          last_updated: '2022-05-29T05:51:24.470Z',
         },
         'input_text.dark_card_border_radius': {
           entity_id: 'input_text.dark_card_border_radius',
@@ -2370,12 +2371,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0842d24dd872a81c050083',
+            id: '01810e5e8536c230e8c623cad44c347e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.470Z',
+          last_updated: '2022-05-29T05:51:24.470Z',
         },
         'input_text.dark_card_box_shadow': {
           entity_id: 'input_text.dark_card_box_shadow',
@@ -2385,12 +2386,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed08cd51da6d7b8c444a65a1',
+            id: '01810e5e8536f23fabe2b46b34ea361b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.470Z',
+          last_updated: '2022-05-29T05:51:24.470Z',
         },
         'input_text.dark_header_color': {
           entity_id: 'input_text.dark_header_color',
@@ -2400,12 +2401,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed08a2679d004a492648662e',
+            id: '01810e5e8536b835837f28a2a3180905',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.470Z',
+          last_updated: '2022-05-29T05:51:24.470Z',
         },
         'input_text.dark_header_text_color': {
           entity_id: 'input_text.dark_header_text_color',
@@ -2415,12 +2416,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed08239027f2b6af38f44c02',
+            id: '01810e5e8536cc96883bd601d3ae4c88',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.470Z',
+          last_updated: '2022-05-29T05:51:24.470Z',
         },
         'input_text.dark_text_color': {
           entity_id: 'input_text.dark_text_color',
@@ -2430,12 +2431,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed08bcf0b001d6e00396f8fe',
+            id: '01810e5e85361a5078b65f9a15715d49',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.208Z',
-          last_updated: '2022-05-28T19:34:43.208Z',
+          last_changed: '2022-05-29T05:51:24.470Z',
+          last_updated: '2022-05-29T05:51:24.470Z',
         },
         'input_text.dark_secondary_text_color': {
           entity_id: 'input_text.dark_secondary_text_color',
@@ -2445,12 +2446,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed09d555b9f30a057e1e9819',
+            id: '01810e5e8536f425a8ce4b392003ebb2',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.470Z',
+          last_updated: '2022-05-29T05:51:24.470Z',
         },
         'input_text.dark_background_image': {
           entity_id: 'input_text.dark_background_image',
@@ -2460,12 +2461,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0938cb9b9c48a9963e678c',
+            id: '01810e5e8537cfbd550c6ed79db2ed99',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.471Z',
+          last_updated: '2022-05-29T05:51:24.471Z',
         },
         'input_text.dark_icon_color_default': {
           entity_id: 'input_text.dark_icon_color_default',
@@ -2475,12 +2476,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed096daec5c3f6d35951fc8d',
+            id: '01810e5e85370203a3a1390a8de0742a',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.471Z',
+          last_updated: '2022-05-29T05:51:24.471Z',
         },
         'input_text.dark_icon_color_active': {
           entity_id: 'input_text.dark_icon_color_active',
@@ -2490,12 +2491,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed098707e163505426a6d5df',
+            id: '01810e5e8537fb2130ba9fba3f1312d5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.471Z',
+          last_updated: '2022-05-29T05:51:24.471Z',
         },
         'input_text.dark_font_family': {
           entity_id: 'input_text.dark_font_family',
@@ -2505,12 +2506,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0958bbf7a301b1ff50b525',
+            id: '01810e5e853730fe8d0d6174cad560af',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.471Z',
+          last_updated: '2022-05-29T05:51:24.471Z',
         },
         'input_text.dark_header_font_size': {
           entity_id: 'input_text.dark_header_font_size',
@@ -2520,12 +2521,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed09e9b2c0e54327b2a9f5d5',
+            id: '01810e5e8537b02b76874952f769021d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.471Z',
+          last_updated: '2022-05-29T05:51:24.471Z',
         },
         'input_text.dark_header_font_weight': {
           entity_id: 'input_text.dark_header_font_weight',
@@ -2535,12 +2536,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed09ff057c5d02fe35e1aba9',
+            id: '01810e5e8537cb04bff9de000d8880bd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.471Z',
+          last_updated: '2022-05-29T05:51:24.471Z',
         },
         'input_text.dark_subtitle_font_size': {
           entity_id: 'input_text.dark_subtitle_font_size',
@@ -2550,12 +2551,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed092eab3083a0db399ea27c',
+            id: '01810e5e8538f141c9e36b9faefdd2d3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.209Z',
-          last_updated: '2022-05-28T19:34:43.209Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_subtitle_font_weight': {
           entity_id: 'input_text.dark_subtitle_font_weight',
@@ -2565,12 +2566,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0a7ce4f588d98fd6c6f55d',
+            id: '01810e5e85382fc9abeb638f5dc34c44',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_subtitle_text_color': {
           entity_id: 'input_text.dark_subtitle_text_color',
@@ -2580,12 +2581,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0ac84f5c94eb18d1e6e60e',
+            id: '01810e5e85383976d3d8e22f35789e44',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_title_text_color': {
           entity_id: 'input_text.dark_title_text_color',
@@ -2595,12 +2596,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0a33f51c1d9667db8b8d6b',
+            id: '01810e5e853888760016938a9dc74593',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_title_text_font_size': {
           entity_id: 'input_text.dark_title_text_font_size',
@@ -2610,12 +2611,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0a18c0f4f5abf2b9ff1ba3',
+            id: '01810e5e8538db8d4d551cd6b25bd5cb',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_title_text_font_weight': {
           entity_id: 'input_text.dark_title_text_font_weight',
@@ -2625,12 +2626,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0a86a308bf45419a46a721',
+            id: '01810e5e8538640705336e9281e6a3db',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_title_text_background_color': {
           entity_id: 'input_text.dark_title_text_background_color',
@@ -2640,12 +2641,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0a82648fd7e1cb713798e3',
+            id: '01810e5e8538905417ef28ac9dfd075b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_title_text_justify_self': {
           entity_id: 'input_text.dark_title_text_justify_self',
@@ -2655,12 +2656,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0a4a3e4f9d671cae9ea924',
+            id: '01810e5e8538884febc8a16aacd95f81',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.472Z',
+          last_updated: '2022-05-29T05:51:24.472Z',
         },
         'input_text.dark_title_text_border_radius': {
           entity_id: 'input_text.dark_title_text_border_radius',
@@ -2670,12 +2671,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0af48d5543fe894ed77de4',
+            id: '01810e5e85394e9dfc7c73816589014f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.473Z',
+          last_updated: '2022-05-29T05:51:24.473Z',
         },
         'input_text.dark_title_text_box_shadow': {
           entity_id: 'input_text.dark_title_text_box_shadow',
@@ -2685,12 +2686,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0a54f8d11732d02c0734d3',
+            id: '01810e5e85399c124e40cf03819f2dfd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.210Z',
-          last_updated: '2022-05-28T19:34:43.210Z',
+          last_changed: '2022-05-29T05:51:24.473Z',
+          last_updated: '2022-05-29T05:51:24.473Z',
         },
         'input_text.dark_title_text_padding': {
           entity_id: 'input_text.dark_title_text_padding',
@@ -2700,12 +2701,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0b1c67461b2d5d1d8b306c',
+            id: '01810e5e8539c2cf40c5e96182cee0ee',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.473Z',
+          last_updated: '2022-05-29T05:51:24.473Z',
         },
         'input_text.dark_title_text_border_style': {
           entity_id: 'input_text.dark_title_text_border_style',
@@ -2715,12 +2716,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0bd05912cfb5d1b77a424c',
+            id: '01810e5e8539e9e239631261e1bb5527',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.473Z',
+          last_updated: '2022-05-29T05:51:24.473Z',
         },
         'input_text.dark_title_text_border_width': {
           entity_id: 'input_text.dark_title_text_border_width',
@@ -2730,12 +2731,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0b7a3b55e05ba79a6086c1',
+            id: '01810e5e853939ade7deae0150d81cb9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.473Z',
+          last_updated: '2022-05-29T05:51:24.473Z',
         },
         'input_text.dark_title_text_border_color': {
           entity_id: 'input_text.dark_title_text_border_color',
@@ -2745,12 +2746,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0b6de64994a0bcce0b34c2',
+            id: '01810e5e85399d105ad6d6d0f032c784',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.473Z',
+          last_updated: '2022-05-29T05:51:24.473Z',
         },
         'input_text.dark_button_color_active': {
           entity_id: 'input_text.dark_button_color_active',
@@ -2760,12 +2761,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0b545aa0583239d59c2953',
+            id: '01810e5e8539f9a761a5702ca655440e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.473Z',
+          last_updated: '2022-05-29T05:51:24.473Z',
         },
         'input_text.dark_button_name_font_size': {
           entity_id: 'input_text.dark_button_name_font_size',
@@ -2775,12 +2776,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0bf4257823bb3120bbcfbd',
+            id: '01810e5e853a83a271d398535d7260a9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.474Z',
+          last_updated: '2022-05-29T05:51:24.474Z',
         },
         'input_text.dark_button_name_font_weight': {
           entity_id: 'input_text.dark_button_name_font_weight',
@@ -2790,12 +2791,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0bc52063e18e9b49a2d92d',
+            id: '01810e5e853aafc0f9b64cd25e0aa5e0',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.474Z',
+          last_updated: '2022-05-29T05:51:24.474Z',
         },
         'input_text.dark_button_label_font_size': {
           entity_id: 'input_text.dark_button_label_font_size',
@@ -2805,12 +2806,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0b922adcc1e675decc7da6',
+            id: '01810e5e853aefcc472ebcb797ec308d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.211Z',
-          last_updated: '2022-05-28T19:34:43.211Z',
+          last_changed: '2022-05-29T05:51:24.474Z',
+          last_updated: '2022-05-29T05:51:24.474Z',
         },
         'input_text.dark_button_label_font_weight': {
           entity_id: 'input_text.dark_button_label_font_weight',
@@ -2820,12 +2821,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0c7352df3208edc94e818e',
+            id: '01810e5e853a8cadfd44cccb72df45ba',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.474Z',
+          last_updated: '2022-05-29T05:51:24.474Z',
         },
         'input_text.dark_button_state_font_size': {
           entity_id: 'input_text.dark_button_state_font_size',
@@ -2835,12 +2836,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0c9ef5f6cd7571899cb342',
+            id: '01810e5e853a063d0d998c3d915e0b18',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.474Z',
+          last_updated: '2022-05-29T05:51:24.474Z',
         },
         'input_text.dark_button_state_font_weight': {
           entity_id: 'input_text.dark_button_state_font_weight',
@@ -2850,12 +2851,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0cd0b12b3100325559ec24',
+            id: '01810e5e853a58661ea8735b0d7f4988',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.474Z',
+          last_updated: '2022-05-29T05:51:24.474Z',
         },
         'input_text.dark_button_name_color': {
           entity_id: 'input_text.dark_button_name_color',
@@ -2865,12 +2866,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0c2bc243fc95bc252362ba',
+            id: '01810e5e853b275df72dfcf5cf5f041b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.475Z',
+          last_updated: '2022-05-29T05:51:24.475Z',
         },
         'input_text.dark_button_name_color_active': {
           entity_id: 'input_text.dark_button_name_color_active',
@@ -2880,12 +2881,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0c03cbdd8c75537e753af1',
+            id: '01810e5e853bda3c523defa362a55952',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.475Z',
+          last_updated: '2022-05-29T05:51:24.475Z',
         },
         'input_text.dark_button_label_color': {
           entity_id: 'input_text.dark_button_label_color',
@@ -2895,12 +2896,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0c10a98dd655ece98edb93',
+            id: '01810e5e853bcd08de7e4a635eaab6f3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.475Z',
+          last_updated: '2022-05-29T05:51:24.475Z',
         },
         'input_text.dark_button_label_color_active': {
           entity_id: 'input_text.dark_button_label_color_active',
@@ -2910,12 +2911,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0c6662e8af0d60a6fde06d',
+            id: '01810e5e853bad7af0aa961ba8552c91',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.475Z',
+          last_updated: '2022-05-29T05:51:24.475Z',
         },
         'input_text.dark_button_state_color': {
           entity_id: 'input_text.dark_button_state_color',
@@ -2925,12 +2926,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0ceb751fd39b7bb4fbe981',
+            id: '01810e5e853b9e1da26727e0e5cb50c5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.212Z',
-          last_updated: '2022-05-28T19:34:43.212Z',
+          last_changed: '2022-05-29T05:51:24.475Z',
+          last_updated: '2022-05-29T05:51:24.475Z',
         },
         'input_text.dark_button_state_color_active': {
           entity_id: 'input_text.dark_button_state_color_active',
@@ -2940,12 +2941,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0dcd3c749fe121f40ece77',
+            id: '01810e5e853ca4f8bc2618560c961eab',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.476Z',
+          last_updated: '2022-05-29T05:51:24.476Z',
         },
         'input_text.dark_badge_font_size': {
           entity_id: 'input_text.dark_badge_font_size',
@@ -2955,12 +2956,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0d7917aa45ee3c21c13d36',
+            id: '01810e5e853c1fe1868249d9e5c0aa90',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.476Z',
+          last_updated: '2022-05-29T05:51:24.476Z',
         },
         'input_text.dark_badge_font_weight': {
           entity_id: 'input_text.dark_badge_font_weight',
@@ -2970,12 +2971,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0deaaca6ec00d060f5c525',
+            id: '01810e5e853c02f8362802c25e258c94',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.476Z',
+          last_updated: '2022-05-29T05:51:24.476Z',
         },
         'input_text.dark_badge_text_transform': {
           entity_id: 'input_text.dark_badge_text_transform',
@@ -2985,12 +2986,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0d72d26cad09566f27d6c4',
+            id: '01810e5e853ca3931a304cd05b8a4c5e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.476Z',
+          last_updated: '2022-05-29T05:51:24.476Z',
         },
         'input_text.dark_badge_background_color': {
           entity_id: 'input_text.dark_badge_background_color',
@@ -3000,12 +3001,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0d2b648217d6daaeddf6a5',
+            id: '01810e5e853c5f15fac8b1d49351954c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.476Z',
+          last_updated: '2022-05-29T05:51:24.476Z',
         },
         'input_text.dark_badge_text_color': {
           entity_id: 'input_text.dark_badge_text_color',
@@ -3015,12 +3016,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0dba3a6a23a4c46ca72424',
+            id: '01810e5e853c1e5efa68ab4cd616ded9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.476Z',
+          last_updated: '2022-05-29T05:51:24.476Z',
         },
         'input_text.good_morning': {
           entity_id: 'input_text.good_morning',
@@ -3030,12 +3031,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0d4eb0b14b3b4ebf86db52',
+            id: '01810e5e853ce843880485fb3c720bca',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.476Z',
+          last_updated: '2022-05-29T05:51:24.476Z',
         },
         'input_text.good_afternoon': {
           entity_id: 'input_text.good_afternoon',
@@ -3045,12 +3046,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0d61af1ab2f66f142247a9',
+            id: '01810e5e853d6fc2959bf968189b492e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.213Z',
-          last_updated: '2022-05-28T19:34:43.213Z',
+          last_changed: '2022-05-29T05:51:24.477Z',
+          last_updated: '2022-05-29T05:51:24.477Z',
         },
         'input_text.good_evening': {
           entity_id: 'input_text.good_evening',
@@ -3060,12 +3061,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0ecfcd813a3ace1ad7fea4',
+            id: '01810e5e853d25849b81778e3e8d810e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.214Z',
-          last_updated: '2022-05-28T19:34:43.214Z',
+          last_changed: '2022-05-29T05:51:24.477Z',
+          last_updated: '2022-05-29T05:51:24.477Z',
         },
         'input_text.good_night': {
           entity_id: 'input_text.good_night',
@@ -3075,12 +3076,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0e68d42f77c6444a49c546',
+            id: '01810e5e853d9b3b7eeba8195d3201b2',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.214Z',
-          last_updated: '2022-05-28T19:34:43.214Z',
+          last_changed: '2022-05-29T05:51:24.477Z',
+          last_updated: '2022-05-29T05:51:24.477Z',
         },
         'input_select.settings_light_dark': {
           entity_id: 'input_select.settings_light_dark',
@@ -3092,12 +3093,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0e1be4528099b4afca1a73',
+            id: '01810e5e853db9f18b4c71f7584da2a1',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.214Z',
-          last_updated: '2022-05-28T19:34:43.214Z',
+          last_changed: '2022-05-29T05:51:24.477Z',
+          last_updated: '2022-05-29T05:51:24.477Z',
         },
         'input_select.theme_selector_light': {
           entity_id: 'input_select.theme_selector_light',
@@ -3109,12 +3110,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0ebf218ce2eedbae1d07f7',
+            id: '01810e5e853d396b00b58bb762527ca1',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.214Z',
-          last_updated: '2022-05-28T19:34:43.214Z',
+          last_changed: '2022-05-29T05:51:24.477Z',
+          last_updated: '2022-05-29T05:51:24.477Z',
         },
         'input_select.theme_selector_dark': {
           entity_id: 'input_select.theme_selector_dark',
@@ -3126,12 +3127,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0e6c779ed40d3377169985',
+            id: '01810e5e853d4e38d396a64e69a84f3b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.214Z',
-          last_updated: '2022-05-28T19:34:43.214Z',
+          last_changed: '2022-05-29T05:51:24.477Z',
+          last_updated: '2022-05-29T05:51:24.477Z',
         },
         'input_select.navigation_bar_direction': {
           entity_id: 'input_select.navigation_bar_direction',
@@ -3142,12 +3143,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0e380503ca343cfbda3d49',
+            id: '01810e5e853d55581e2494fe60bc699f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.214Z',
-          last_updated: '2022-05-28T19:34:43.214Z',
+          last_changed: '2022-05-29T05:51:24.477Z',
+          last_updated: '2022-05-29T05:51:24.477Z',
         },
         'input_select.navigation_bar_options': {
           entity_id: 'input_select.navigation_bar_options',
@@ -3158,12 +3159,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0eea1e157292030756bbbb',
+            id: '01810e5e853ea274ef7ded940c0a7dfc',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.214Z',
-          last_updated: '2022-05-28T19:34:43.214Z',
+          last_changed: '2022-05-29T05:51:24.478Z',
+          last_updated: '2022-05-29T05:51:24.478Z',
         },
         'input_select.navigation_bar': {
           entity_id: 'input_select.navigation_bar',
@@ -3174,12 +3175,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0ed7a7bcc30e2342e493b3',
+            id: '01810e5e853e19e582eb8d946ac31593',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.478Z',
+          last_updated: '2022-05-29T05:51:24.478Z',
         },
         'input_select.find_my': {
           entity_id: 'input_select.find_my',
@@ -3190,12 +3191,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed0f465bfd0f5be8d5bc3f65',
+            id: '01810e5e853e08008007113f433b97b3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.478Z',
+          last_updated: '2022-05-29T05:51:24.478Z',
         },
         'sensor.disk_use_home': {
           entity_id: 'sensor.disk_use_home',
@@ -3209,12 +3210,12 @@ const hass = {
             unit_of_measurement: 'GiB',
           },
           context: {
-            id: '01810c29ed0f96ba4a268efc54f08044',
+            id: '01810e5e853e7ee0b3361928cc500676',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.478Z',
+          last_updated: '2022-05-29T05:51:24.478Z',
         },
         'sensor.disk_free_home': {
           entity_id: 'sensor.disk_free_home',
@@ -3228,12 +3229,12 @@ const hass = {
             unit_of_measurement: 'GiB',
           },
           context: {
-            id: '01810c29ed0f6c70294a1c0a6876ca8b',
+            id: '01810e5e853e15a179f7054e12aaa5f1',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.478Z',
+          last_updated: '2022-05-29T05:51:24.478Z',
         },
         'sensor.disk_use_percent_home': {
           entity_id: 'sensor.disk_use_percent_home',
@@ -3247,12 +3248,12 @@ const hass = {
             unit_of_measurement: '%',
           },
           context: {
-            id: '01810c29ed0fc5a323616272488809a4',
+            id: '01810e5e853ec7bce204e376f5f34ecf',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.478Z',
+          last_updated: '2022-05-29T05:51:24.478Z',
         },
         'sensor.memory_free': {
           entity_id: 'sensor.memory_free',
@@ -3266,12 +3267,12 @@ const hass = {
             unit_of_measurement: 'MiB',
           },
           context: {
-            id: '01810c29ed0f7f38a8919aec75ea2a28',
+            id: '01810e5e853e63a3272bdccae43331e5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.478Z',
+          last_updated: '2022-05-29T05:51:24.478Z',
         },
         'sensor.memory_use': {
           entity_id: 'sensor.memory_use',
@@ -3285,12 +3286,12 @@ const hass = {
             unit_of_measurement: 'MiB',
           },
           context: {
-            id: '01810c29ed0f473f41ffb834b4987f30',
+            id: '01810e5e853f0ccec9dea0b1e4d8c372',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.479Z',
+          last_updated: '2022-05-29T05:51:24.479Z',
         },
         'sensor.memory_use_percent': {
           entity_id: 'sensor.memory_use_percent',
@@ -3304,12 +3305,12 @@ const hass = {
             unit_of_measurement: '%',
           },
           context: {
-            id: '01810c29ed0fce058aa50e21c8c060f5',
+            id: '01810e5e853faa781901d3f3d894eac1',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.215Z',
-          last_updated: '2022-05-28T19:34:43.215Z',
+          last_changed: '2022-05-29T05:51:24.479Z',
+          last_updated: '2022-05-29T05:51:24.479Z',
         },
         'sensor.network_in_eth0': {
           entity_id: 'sensor.network_in_eth0',
@@ -3323,12 +3324,12 @@ const hass = {
             unit_of_measurement: 'MiB',
           },
           context: {
-            id: '01810c29ed10fcb6aa0f2282bfb8c23e',
+            id: '01810e5e853f04ea939a4ed554b61d8f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.479Z',
+          last_updated: '2022-05-29T05:51:24.479Z',
         },
         'sensor.network_out_eth0': {
           entity_id: 'sensor.network_out_eth0',
@@ -3342,12 +3343,12 @@ const hass = {
             unit_of_measurement: 'MiB',
           },
           context: {
-            id: '01810c29ed106c62fbd6d0da64da187a',
+            id: '01810e5e853f70826fa6bf54981d2301',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.479Z',
+          last_updated: '2022-05-29T05:51:24.479Z',
         },
         'sensor.network_throughput_in_eth0': {
           entity_id: 'sensor.network_throughput_in_eth0',
@@ -3361,12 +3362,12 @@ const hass = {
             unit_of_measurement: 'MB/s',
           },
           context: {
-            id: '01810c29ed108c7fe0dac9fc205c0db1',
+            id: '01810e5e853fef6a99802a796769531f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.479Z',
+          last_updated: '2022-05-29T05:51:24.479Z',
         },
         'sensor.network_throughput_out_eth0': {
           entity_id: 'sensor.network_throughput_out_eth0',
@@ -3380,12 +3381,12 @@ const hass = {
             unit_of_measurement: 'MB/s',
           },
           context: {
-            id: '01810c29ed1086209cbe76ade7a2c2d4',
+            id: '01810e5e853fc6b92475efc9085c5f71',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.479Z',
+          last_updated: '2022-05-29T05:51:24.479Z',
         },
         'sensor.ipv4_address_eth0': {
           entity_id: 'sensor.ipv4_address_eth0',
@@ -3397,12 +3398,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed10683377220d75f5f61164',
+            id: '01810e5e853fd4469e01278b66261ad6',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.479Z',
+          last_updated: '2022-05-29T05:51:24.479Z',
         },
         'sensor.packets_in_eth0': {
           entity_id: 'sensor.packets_in_eth0',
@@ -3415,12 +3416,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed1057a72f356db491784221',
+            id: '01810e5e8540977f847b4712a4f0c3b0',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.480Z',
+          last_updated: '2022-05-29T05:51:24.480Z',
         },
         'sensor.packets_out_eth0': {
           entity_id: 'sensor.packets_out_eth0',
@@ -3433,12 +3434,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed10ff33c8d276bc8f018644',
+            id: '01810e5e854014e8c05c8351fef6a98b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.480Z',
+          last_updated: '2022-05-29T05:51:24.480Z',
         },
         'sensor.processor_use': {
           entity_id: 'sensor.processor_use',
@@ -3452,12 +3453,12 @@ const hass = {
             unit_of_measurement: '%',
           },
           context: {
-            id: '01810c29ed109ba10851a7ab1b037cd8',
+            id: '01810e5e8540b3a174cb7d9ccbc4734d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.480Z',
+          last_updated: '2022-05-29T05:51:24.480Z',
         },
         'script.hki_dark_default': {
           entity_id: 'script.hki_dark_default',
@@ -3468,12 +3469,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed1017791f63c542f80b5899',
+            id: '01810e5e8540da12083aa6493512887d',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.216Z',
-          last_updated: '2022-05-28T19:34:43.216Z',
+          last_changed: '2022-05-29T05:51:24.480Z',
+          last_updated: '2022-05-29T05:51:24.480Z',
         },
         'script.hki_dark_empty': {
           entity_id: 'script.hki_dark_empty',
@@ -3484,12 +3485,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed11bd313bcf0b96da4ebdcc',
+            id: '01810e5e8540e50515d0cb888abc1c55',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.217Z',
-          last_updated: '2022-05-28T19:34:43.217Z',
+          last_changed: '2022-05-29T05:51:24.480Z',
+          last_updated: '2022-05-29T05:51:24.480Z',
         },
         'script.hki_light_default': {
           entity_id: 'script.hki_light_default',
@@ -3500,12 +3501,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed11a99953a98d996961053a',
+            id: '01810e5e8541c58b2c262d78fcac70b6',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.217Z',
-          last_updated: '2022-05-28T19:34:43.217Z',
+          last_changed: '2022-05-29T05:51:24.481Z',
+          last_updated: '2022-05-29T05:51:24.481Z',
         },
         'script.hki_light_empty': {
           entity_id: 'script.hki_light_empty',
@@ -3516,12 +3517,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed1101f0b10ccf3b0550249e',
+            id: '01810e5e854147207187225aa1522fc9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.217Z',
-          last_updated: '2022-05-28T19:34:43.217Z',
+          last_changed: '2022-05-29T05:51:24.481Z',
+          last_updated: '2022-05-29T05:51:24.481Z',
         },
         'script.hki_header_greeting_default': {
           entity_id: 'script.hki_header_greeting_default',
@@ -3532,12 +3533,12 @@ const hass = {
             supported_features: 0,
           },
           context: {
-            id: '01810c29ed1175789b71d049cb77c6e7',
+            id: '01810e5e8541803cfb51e4b4da1c6257',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:43.217Z',
-          last_updated: '2022-05-28T19:34:43.217Z',
+          last_changed: '2022-05-29T05:51:24.481Z',
+          last_updated: '2022-05-29T05:51:24.481Z',
         },
         'persistent_notification.config_entry_discovery': {
           entity_id: 'persistent_notification.config_entry_discovery',
@@ -3549,12 +3550,12 @@ const hass = {
             friendly_name: 'New devices discovered',
           },
           context: {
-            id: '01810c29fb01c46ac449509647cacd12',
+            id: '01810e5e970d7ec53a3b62100570d07e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-28T19:34:46.785Z',
-          last_updated: '2022-05-28T19:34:46.785Z',
+          last_changed: '2022-05-29T05:51:29.037Z',
+          last_updated: '2022-05-29T05:51:29.037Z',
         },
       },
     },
@@ -3575,120 +3576,120 @@ const hass = {
         location_name: 'Home',
         time_zone: 'America/New_York',
         components: [
-          'tts',
-          'rpi_power',
-          'frontend',
-          'sensor.hassio',
-          'zeroconf',
-          'system_health',
-          'camera',
-          'input_datetime',
-          'ecobee',
-          'timer',
-          'select.deebot',
-          'default_config',
-          'lovelace',
-          'input_button',
-          'sun',
-          'search',
-          'auth',
-          'binary_sensor.hassio',
-          'climate',
-          'camera.deebot',
-          'person',
-          'my',
-          'tag',
-          'counter',
-          'notify',
-          'media_source',
-          'stream',
-          'input_text',
-          'image',
-          'scene.homeassistant',
-          'system_log',
-          'remote.apple_tv',
-          'device_tracker.mobile_app',
           'switch',
-          'humidifier',
-          'notify.mobile_app',
-          'sensor.upnp',
-          'binary_sensor.ecobee',
-          'cloud',
-          'ffmpeg',
+          'default_config',
+          'input_number',
+          'input_select',
+          'select.deebot',
+          'sensor',
+          'binary_sensor.rpi_power',
+          'webhook',
+          'person',
+          'automation',
+          'dhcp',
+          'energy',
+          'tag',
+          'remote.apple_tv',
+          'binary_sensor.deebot',
+          'button.deebot',
           'diagnostics',
           'input_boolean',
-          'weather',
-          'ssdp',
-          'sensor',
-          'scene',
-          'webhook',
-          'api',
-          'usb',
-          'recorder',
-          'persistent_notification',
-          'apple_tv',
-          'update.hassio',
-          'binary_sensor.deebot',
-          'upnp',
-          'binary_sensor.mobile_app',
-          'device_automation',
-          'hassio',
-          'zone',
-          'media_player',
-          'climate.ecobee',
-          'websocket_api',
-          'sensor.mobile_app',
+          'frontend',
           'onboarding',
-          'analytics',
-          'switch.deebot',
-          'http',
-          'homeassistant',
-          'lifx',
-          'device_tracker',
-          'dhcp',
-          'button',
-          'vacuum',
-          'trace',
-          'script',
-          'sensor.deebot',
-          'light.lifx',
-          'energy',
-          'number.deebot',
-          'button.deebot',
-          'sensor.ecobee',
-          'homekit',
-          'number',
-          'light',
-          'binary_sensor.upnp',
-          'humidifier.ecobee',
+          'humidifier',
           'update',
-          'network',
-          'mobile_app',
-          'weather.ecobee',
-          'sensor.energy',
-          'logbook',
-          'binary_sensor',
-          'select',
-          'history',
-          'panel_custom',
-          'vacuum.deebot',
-          'remote',
-          'blueprint',
-          'config',
+          'stream',
+          'zone',
+          'input_datetime',
           'sensor.hacs',
-          'automation',
-          'deebot',
-          'input_number',
-          'hacs',
-          'binary_sensor.rpi_power',
+          'vacuum',
+          'remote',
+          'zeroconf',
+          'persistent_notification',
+          'system_log',
+          'trace',
+          'sensor.mobile_app',
           'tts.google_translate',
-          'media_player.apple_tv',
-          'input_select',
+          'history',
+          'sensor.ecobee',
+          'counter',
+          'climate',
+          'media_player',
+          'binary_sensor.ecobee',
+          'ssdp',
+          'binary_sensor',
+          'upnp',
+          'ecobee',
+          'lovelace',
+          'deebot',
+          'websocket_api',
+          'binary_sensor.hassio',
+          'light.lifx',
+          'sensor.energy',
+          'sensor.deebot',
+          'binary_sensor.mobile_app',
+          'hacs',
+          'camera',
+          'script',
+          'timer',
+          'api',
+          'input_button',
+          'logbook',
+          'light',
+          'media_source',
+          'sensor.hassio',
+          'weather',
+          'system_health',
+          'button',
           'map',
+          'number',
+          'weather.ecobee',
+          'panel_custom',
+          'scene',
+          'analytics',
+          'image',
+          'device_tracker',
+          'binary_sensor.upnp',
+          'switch.deebot',
+          'device_automation',
+          'notify',
+          'camera.deebot',
+          'hassio',
+          'sun',
+          'tts',
+          'update.hassio',
+          'media_player.apple_tv',
+          'rpi_power',
+          'device_tracker.mobile_app',
+          'auth',
+          'number.deebot',
+          'mobile_app',
+          'vacuum.deebot',
+          'homeassistant',
+          'apple_tv',
+          'my',
+          'config',
+          'sensor.upnp',
+          'scene.homeassistant',
+          'network',
+          'recorder',
+          'blueprint',
+          'http',
+          'input_text',
+          'humidifier.ecobee',
+          'select',
+          'lifx',
+          'climate.ecobee',
+          'ffmpeg',
+          'homekit',
+          'notify.mobile_app',
+          'search',
+          'usb',
+          'cloud',
         ],
         config_dir: '/config',
-        whitelist_external_dirs: ['/media', '/config/www'],
-        allowlist_external_dirs: ['/media', '/config/www'],
+        whitelist_external_dirs: ['/config/www', '/media'],
+        allowlist_external_dirs: ['/config/www', '/media'],
         allowlist_external_urls: [],
         version: '2022.5.5',
         config_source: 'storage',
@@ -3701,6 +3702,74 @@ const hass = {
     },
     _srv: {
       state: {
+        persistent_notification: {
+          create: {
+            name: 'Create',
+            description: 'Show a notification in the frontend.',
+            fields: {
+              message: {
+                name: 'Message',
+                description:
+                  'Message body of the notification. [Templates accepted]',
+                required: true,
+                example: 'Please check your configuration.yaml.',
+                selector: {
+                  text: null,
+                },
+              },
+              title: {
+                name: 'Title',
+                description:
+                  'Optional title for your notification. [Templates accepted]',
+                example: 'Test notification',
+                selector: {
+                  text: null,
+                },
+              },
+              notification_id: {
+                name: 'Notification ID',
+                description:
+                  'Target ID of the notification, will replace a notification with the same ID.',
+                example: 1234,
+                selector: {
+                  text: null,
+                },
+              },
+            },
+          },
+          dismiss: {
+            name: 'Dismiss',
+            description: 'Remove a notification from the frontend.',
+            fields: {
+              notification_id: {
+                name: 'Notification ID',
+                description:
+                  'Target ID of the notification, which should be removed.',
+                required: true,
+                example: 1234,
+                selector: {
+                  text: null,
+                },
+              },
+            },
+          },
+          mark_read: {
+            name: 'Mark read',
+            description: 'Mark a notification read.',
+            fields: {
+              notification_id: {
+                name: 'Notification ID',
+                description:
+                  'Target ID of the notification, which should be mark read.',
+                required: true,
+                example: 1234,
+                selector: {
+                  text: null,
+                },
+              },
+            },
+          },
+        },
         homeassistant: {
           save_persistent_states: {
             name: 'Save Persistent States',
@@ -3805,74 +3874,6 @@ const hass = {
             target: {
               entity: {},
               device: {},
-            },
-          },
-        },
-        persistent_notification: {
-          create: {
-            name: 'Create',
-            description: 'Show a notification in the frontend.',
-            fields: {
-              message: {
-                name: 'Message',
-                description:
-                  'Message body of the notification. [Templates accepted]',
-                required: true,
-                example: 'Please check your configuration.yaml.',
-                selector: {
-                  text: null,
-                },
-              },
-              title: {
-                name: 'Title',
-                description:
-                  'Optional title for your notification. [Templates accepted]',
-                example: 'Test notification',
-                selector: {
-                  text: null,
-                },
-              },
-              notification_id: {
-                name: 'Notification ID',
-                description:
-                  'Target ID of the notification, will replace a notification with the same ID.',
-                example: 1234,
-                selector: {
-                  text: null,
-                },
-              },
-            },
-          },
-          dismiss: {
-            name: 'Dismiss',
-            description: 'Remove a notification from the frontend.',
-            fields: {
-              notification_id: {
-                name: 'Notification ID',
-                description:
-                  'Target ID of the notification, which should be removed.',
-                required: true,
-                example: 1234,
-                selector: {
-                  text: null,
-                },
-              },
-            },
-          },
-          mark_read: {
-            name: 'Mark read',
-            description: 'Mark a notification read.',
-            fields: {
-              notification_id: {
-                name: 'Notification ID',
-                description:
-                  'Target ID of the notification, which should be mark read.',
-                required: true,
-                example: 1234,
-                selector: {
-                  text: null,
-                },
-              },
             },
           },
         },
@@ -4016,68 +4017,6 @@ const hass = {
           disable: {
             name: 'Disable',
             description: 'Stop the recording of events and state changes',
-            fields: {},
-          },
-        },
-        cloud: {
-          remote_connect: {
-            name: 'Remote connect',
-            description:
-              'Make instance UI available outside over NabuCasa cloud',
-            fields: {},
-          },
-          remote_disconnect: {
-            name: 'Remote disconnect',
-            description: 'Disconnect UI from NabuCasa cloud',
-            fields: {},
-          },
-        },
-        person: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the person configuration.',
-            fields: {},
-          },
-        },
-        frontend: {
-          set_theme: {
-            name: 'Set theme',
-            description:
-              'Set a theme unless the client selected per-device theme.',
-            fields: {
-              name: {
-                name: 'Theme',
-                description: 'Name of a predefined theme',
-                required: true,
-                example: 'default',
-                selector: {
-                  theme: null,
-                },
-              },
-              mode: {
-                name: 'Mode',
-                description: 'The mode the theme is for.',
-                default: 'light',
-                selector: {
-                  select: {
-                    options: [
-                      {
-                        label: 'Dark',
-                        value: 'dark',
-                      },
-                      {
-                        label: 'Light',
-                        value: 'light',
-                      },
-                    ],
-                  },
-                },
-              },
-            },
-          },
-          reload_themes: {
-            name: 'Reload themes',
-            description: 'Reload themes from YAML configuration.',
             fields: {},
           },
         },
@@ -4317,6 +4256,68 @@ const hass = {
                 },
               },
             },
+          },
+        },
+        cloud: {
+          remote_connect: {
+            name: 'Remote connect',
+            description:
+              'Make instance UI available outside over NabuCasa cloud',
+            fields: {},
+          },
+          remote_disconnect: {
+            name: 'Remote disconnect',
+            description: 'Disconnect UI from NabuCasa cloud',
+            fields: {},
+          },
+        },
+        person: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the person configuration.',
+            fields: {},
+          },
+        },
+        frontend: {
+          set_theme: {
+            name: 'Set theme',
+            description:
+              'Set a theme unless the client selected per-device theme.',
+            fields: {
+              name: {
+                name: 'Theme',
+                description: 'Name of a predefined theme',
+                required: true,
+                example: 'default',
+                selector: {
+                  theme: null,
+                },
+              },
+              mode: {
+                name: 'Mode',
+                description: 'The mode the theme is for.',
+                default: 'light',
+                selector: {
+                  select: {
+                    options: [
+                      {
+                        label: 'Dark',
+                        value: 'dark',
+                      },
+                      {
+                        label: 'Light',
+                        value: 'light',
+                      },
+                    ],
+                  },
+                },
+              },
+            },
+          },
+          reload_themes: {
+            name: 'Reload themes',
+            description: 'Reload themes from YAML configuration.',
+            fields: {},
           },
         },
         update: {
@@ -4731,108 +4732,6 @@ const hass = {
             fields: {},
           },
         },
-        automation: {
-          trigger: {
-            name: 'Trigger',
-            description: 'Trigger the actions of an automation.',
-            fields: {
-              skip_condition: {
-                name: 'Skip conditions',
-                description: 'Whether or not the conditions will be skipped.',
-                default: true,
-                selector: {
-                  boolean: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          toggle: {
-            name: 'Toggle',
-            description: 'Toggle (enable / disable) an automation.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          turn_on: {
-            name: 'Turn on',
-            description: 'Enable an automation.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          turn_off: {
-            name: 'Turn off',
-            description: 'Disable an automation.',
-            fields: {
-              stop_actions: {
-                name: 'Stop actions',
-                description: 'Stop currently running actions.',
-                default: true,
-                selector: {
-                  boolean: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          reload: {
-            name: 'Reload',
-            description: 'Reload the automation configuration.',
-            fields: {},
-          },
-        },
-        script: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload all the available scripts',
-            fields: {},
-          },
-          turn_on: {
-            name: 'Turn on',
-            description: 'Turn on script',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'script',
-              },
-            },
-          },
-          turn_off: {
-            name: 'Turn off',
-            description: 'Turn off script',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'script',
-              },
-            },
-          },
-          toggle: {
-            name: 'Toggle',
-            description: 'Toggle script',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'script',
-              },
-            },
-          },
-        },
         media_player: {
           turn_on: {
             name: 'Turn on',
@@ -5186,139 +5085,104 @@ const hass = {
             },
           },
         },
-        input_text: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the input_text configuration.',
-            fields: {},
-          },
-          set_value: {
-            name: 'Set',
-            description: 'Set the value of an input text entity.',
+        automation: {
+          trigger: {
+            name: 'Trigger',
+            description: 'Trigger the actions of an automation.',
             fields: {
-              value: {
-                name: 'Value',
-                description: 'The target value the entity should be set to.',
-                required: true,
-                example: 'This is an example text',
+              skip_condition: {
+                name: 'Skip conditions',
+                description: 'Whether or not the conditions will be skipped.',
+                default: true,
                 selector: {
-                  text: null,
+                  boolean: null,
                 },
               },
             },
             target: {
               entity: {
-                domain: 'input_text',
-              },
-            },
-          },
-        },
-        input_datetime: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the input_datetime configuration.',
-            fields: {},
-          },
-          set_datetime: {
-            name: 'Set',
-            description:
-              'This can be used to dynamically set the date and/or time.',
-            fields: {
-              date: {
-                name: 'Date',
-                description: 'The target date the entity should be set to.',
-                example: '"2019-04-20"',
-                selector: {
-                  text: null,
-                },
-              },
-              time: {
-                name: 'Time',
-                description: 'The target time the entity should be set to.',
-                example: '"05:04:20"',
-                selector: {
-                  time: null,
-                },
-              },
-              datetime: {
-                name: 'Date & Time',
-                description:
-                  'The target date & time the entity should be set to.',
-                example: '"2019-04-20 05:04:20"',
-                selector: {
-                  text: null,
-                },
-              },
-              timestamp: {
-                name: 'Timestamp',
-                description:
-                  'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
-                selector: {
-                  number: {
-                    min: 0,
-                    max: 9223372036854776000,
-                    mode: 'box',
-                  },
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_datetime',
-              },
-            },
-          },
-        },
-        input_boolean: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the input_boolean configuration',
-            fields: {},
-          },
-          turn_on: {
-            name: 'Turn on',
-            description: 'Turn on an input boolean',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_boolean',
-              },
-            },
-          },
-          turn_off: {
-            name: 'Turn off',
-            description: 'Turn off an input boolean',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_boolean',
+                domain: 'automation',
               },
             },
           },
           toggle: {
             name: 'Toggle',
-            description: 'Toggle an input boolean',
+            description: 'Toggle (enable / disable) an automation.',
             fields: {},
             target: {
               entity: {
-                domain: 'input_boolean',
+                domain: 'automation',
               },
             },
           },
-        },
-        input_button: {
-          reload: {
-            name: '',
-            description: '',
-            fields: {},
-          },
-          press: {
-            name: 'Press',
-            description: 'Press the input button entity.',
+          turn_on: {
+            name: 'Turn on',
+            description: 'Enable an automation.',
             fields: {},
             target: {
               entity: {
-                domain: 'input_button',
+                domain: 'automation',
+              },
+            },
+          },
+          turn_off: {
+            name: 'Turn off',
+            description: 'Disable an automation.',
+            fields: {
+              stop_actions: {
+                name: 'Stop actions',
+                description: 'Stop currently running actions.',
+                default: true,
+                selector: {
+                  boolean: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'automation',
+              },
+            },
+          },
+          reload: {
+            name: 'Reload',
+            description: 'Reload the automation configuration.',
+            fields: {},
+          },
+        },
+        script: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload all the available scripts',
+            fields: {},
+          },
+          turn_on: {
+            name: 'Turn on',
+            description: 'Turn on script',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'script',
+              },
+            },
+          },
+          turn_off: {
+            name: 'Turn off',
+            description: 'Turn off script',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'script',
+              },
+            },
+          },
+          toggle: {
+            name: 'Toggle',
+            description: 'Toggle script',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'script',
               },
             },
           },
@@ -5517,6 +5381,221 @@ const hass = {
             target: {
               entity: {
                 domain: 'remote',
+              },
+            },
+          },
+        },
+        input_number: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_number configuration.',
+            fields: {},
+          },
+          set_value: {
+            name: 'Set',
+            description: 'Set the value of an input number entity.',
+            fields: {
+              value: {
+                name: 'Value',
+                description: 'The target value the entity should be set to.',
+                required: true,
+                selector: {
+                  number: {
+                    min: 0,
+                    max: 9223372036854776000,
+                    step: 0.001,
+                    mode: 'box',
+                  },
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_number',
+              },
+            },
+          },
+          increment: {
+            name: 'Increment',
+            description:
+              'Increment the value of an input number entity by its stepping.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_number',
+              },
+            },
+          },
+          decrement: {
+            name: 'Decrement',
+            description:
+              'Decrement the value of an input number entity by its stepping.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_number',
+              },
+            },
+          },
+        },
+        input_select: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_select configuration.',
+            fields: {},
+          },
+          select_option: {
+            name: 'Select',
+            description: 'Select an option of an input select entity.',
+            fields: {
+              option: {
+                name: 'Option',
+                description: 'Option to be selected.',
+                required: true,
+                example: '"Item A"',
+                selector: {
+                  text: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_next: {
+            name: 'Next',
+            description: 'Select the next options of an input select entity.',
+            fields: {
+              cycle: {
+                name: 'Cycle',
+                description:
+                  'If the option should cycle from the last to the first.',
+                default: true,
+                selector: {
+                  boolean: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_previous: {
+            name: 'Previous',
+            description:
+              'Select the previous options of an input select entity.',
+            fields: {
+              cycle: {
+                name: 'Cycle',
+                description:
+                  'If the option should cycle from the first to the last.',
+                default: true,
+                selector: {
+                  boolean: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_first: {
+            name: 'First',
+            description: 'Select the first option of an input select entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_last: {
+            name: 'Last',
+            description: 'Select the last option of an input select entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          set_options: {
+            name: 'Set options',
+            description: 'Set the options of an input select entity.',
+            fields: {
+              options: {
+                name: 'Options',
+                description: 'Options for the input select entity.',
+                required: true,
+                example: '["Item A", "Item B", "Item C"]',
+                selector: {
+                  object: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+        },
+        input_button: {
+          reload: {
+            name: '',
+            description: '',
+            fields: {},
+          },
+          press: {
+            name: 'Press',
+            description: 'Press the input button entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_button',
+              },
+            },
+          },
+        },
+        input_boolean: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_boolean configuration',
+            fields: {},
+          },
+          turn_on: {
+            name: 'Turn on',
+            description: 'Turn on an input boolean',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_boolean',
+              },
+            },
+          },
+          turn_off: {
+            name: 'Turn off',
+            description: 'Turn off an input boolean',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_boolean',
+              },
+            },
+          },
+          toggle: {
+            name: 'Toggle',
+            description: 'Toggle an input boolean',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_boolean',
               },
             },
           },
@@ -6269,6 +6348,89 @@ const hass = {
             fields: {},
           },
         },
+        input_text: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_text configuration.',
+            fields: {},
+          },
+          set_value: {
+            name: 'Set',
+            description: 'Set the value of an input text entity.',
+            fields: {
+              value: {
+                name: 'Value',
+                description: 'The target value the entity should be set to.',
+                required: true,
+                example: 'This is an example text',
+                selector: {
+                  text: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_text',
+              },
+            },
+          },
+        },
+        input_datetime: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_datetime configuration.',
+            fields: {},
+          },
+          set_datetime: {
+            name: 'Set',
+            description:
+              'This can be used to dynamically set the date and/or time.',
+            fields: {
+              date: {
+                name: 'Date',
+                description: 'The target date the entity should be set to.',
+                example: '"2019-04-20"',
+                selector: {
+                  text: null,
+                },
+              },
+              time: {
+                name: 'Time',
+                description: 'The target time the entity should be set to.',
+                example: '"05:04:20"',
+                selector: {
+                  time: null,
+                },
+              },
+              datetime: {
+                name: 'Date & Time',
+                description:
+                  'The target date & time the entity should be set to.',
+                example: '"2019-04-20 05:04:20"',
+                selector: {
+                  text: null,
+                },
+              },
+              timestamp: {
+                name: 'Timestamp',
+                description:
+                  'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
+                selector: {
+                  number: {
+                    min: 0,
+                    max: 9223372036854776000,
+                    mode: 'box',
+                  },
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_datetime',
+              },
+            },
+          },
+        },
         homekit: {
           reset_accessory: {
             name: 'Reset accessory',
@@ -6293,167 +6455,6 @@ const hass = {
             name: 'Reload',
             description: 'Reload homekit and re-process YAML configuration',
             fields: {},
-          },
-        },
-        input_number: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the input_number configuration.',
-            fields: {},
-          },
-          set_value: {
-            name: 'Set',
-            description: 'Set the value of an input number entity.',
-            fields: {
-              value: {
-                name: 'Value',
-                description: 'The target value the entity should be set to.',
-                required: true,
-                selector: {
-                  number: {
-                    min: 0,
-                    max: 9223372036854776000,
-                    step: 0.001,
-                    mode: 'box',
-                  },
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_number',
-              },
-            },
-          },
-          increment: {
-            name: 'Increment',
-            description:
-              'Increment the value of an input number entity by its stepping.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_number',
-              },
-            },
-          },
-          decrement: {
-            name: 'Decrement',
-            description:
-              'Decrement the value of an input number entity by its stepping.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_number',
-              },
-            },
-          },
-        },
-        input_select: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the input_select configuration.',
-            fields: {},
-          },
-          select_option: {
-            name: 'Select',
-            description: 'Select an option of an input select entity.',
-            fields: {
-              option: {
-                name: 'Option',
-                description: 'Option to be selected.',
-                required: true,
-                example: '"Item A"',
-                selector: {
-                  text: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          select_next: {
-            name: 'Next',
-            description: 'Select the next options of an input select entity.',
-            fields: {
-              cycle: {
-                name: 'Cycle',
-                description:
-                  'If the option should cycle from the last to the first.',
-                default: true,
-                selector: {
-                  boolean: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          select_previous: {
-            name: 'Previous',
-            description:
-              'Select the previous options of an input select entity.',
-            fields: {
-              cycle: {
-                name: 'Cycle',
-                description:
-                  'If the option should cycle from the first to the last.',
-                default: true,
-                selector: {
-                  boolean: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          select_first: {
-            name: 'First',
-            description: 'Select the first option of an input select entity.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          select_last: {
-            name: 'Last',
-            description: 'Select the last option of an input select entity.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          set_options: {
-            name: 'Set options',
-            description: 'Set the options of an input select entity.',
-            fields: {
-              options: {
-                name: 'Options',
-                description: 'Options for the input select entity.',
-                required: true,
-                example: '["Item A", "Item B", "Item C"]',
-                selector: {
-                  object: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
           },
         },
         lifx: {
@@ -6855,79 +6856,6 @@ const hass = {
             },
           },
         },
-        humidifier: {
-          turn_on: {
-            name: 'Turn on',
-            description: 'Turn humidifier device on.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'humidifier',
-              },
-            },
-          },
-          turn_off: {
-            name: 'Turn off',
-            description: 'Turn humidifier device off.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'humidifier',
-              },
-            },
-          },
-          toggle: {
-            name: 'Toggle',
-            description: 'Toggles a humidifier device.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'humidifier',
-              },
-            },
-          },
-          set_mode: {
-            name: 'Set mode',
-            description: 'Set mode for humidifier device.',
-            fields: {
-              mode: {
-                description: 'New mode',
-                required: true,
-                example: 'away',
-                selector: {
-                  text: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'humidifier',
-              },
-            },
-          },
-          set_humidity: {
-            name: 'Set humidity',
-            description: 'Set target humidity of humidifier device.',
-            fields: {
-              humidity: {
-                description: 'New target humidity for humidifier device.',
-                required: true,
-                selector: {
-                  number: {
-                    min: 0,
-                    max: 100,
-                    unit_of_measurement: '%',
-                  },
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'humidifier',
-              },
-            },
-          },
-        },
         climate: {
           turn_on: {
             name: 'Turn on',
@@ -7184,6 +7112,79 @@ const hass = {
             target: {
               entity: {
                 domain: 'climate',
+              },
+            },
+          },
+        },
+        humidifier: {
+          turn_on: {
+            name: 'Turn on',
+            description: 'Turn humidifier device on.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'humidifier',
+              },
+            },
+          },
+          turn_off: {
+            name: 'Turn off',
+            description: 'Turn humidifier device off.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'humidifier',
+              },
+            },
+          },
+          toggle: {
+            name: 'Toggle',
+            description: 'Toggles a humidifier device.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'humidifier',
+              },
+            },
+          },
+          set_mode: {
+            name: 'Set mode',
+            description: 'Set mode for humidifier device.',
+            fields: {
+              mode: {
+                description: 'New mode',
+                required: true,
+                example: 'away',
+                selector: {
+                  text: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'humidifier',
+              },
+            },
+          },
+          set_humidity: {
+            name: 'Set humidity',
+            description: 'Set target humidity of humidifier device.',
+            fields: {
+              humidity: {
+                description: 'New target humidity for humidifier device.',
+                required: true,
+                selector: {
+                  number: {
+                    min: 0,
+                    max: 100,
+                    unit_of_measurement: '%',
+                  },
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'humidifier',
               },
             },
           },
@@ -7451,6 +7452,28 @@ const hass = {
             },
           },
         },
+        select: {
+          select_option: {
+            name: 'Select',
+            description: 'Select an option of an select entity.',
+            fields: {
+              option: {
+                name: 'Option',
+                description: 'Option to be selected.',
+                required: true,
+                example: '"Item A"',
+                selector: {
+                  text: null,
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'select',
+              },
+            },
+          },
+        },
         number: {
           set_value: {
             name: 'Set',
@@ -7468,50 +7491,6 @@ const hass = {
             target: {
               entity: {
                 domain: 'number',
-              },
-            },
-          },
-        },
-        button: {
-          press: {
-            name: 'Press',
-            description: 'Press the button entity.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'button',
-              },
-            },
-          },
-        },
-        switch: {
-          turn_off: {
-            name: 'Turn off',
-            description: 'Turn a switch off',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'switch',
-              },
-            },
-          },
-          turn_on: {
-            name: 'Turn on',
-            description: 'Turn a switch on',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'switch',
-              },
-            },
-          },
-          toggle: {
-            name: 'Toggle',
-            description: 'Toggles a switch state',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'switch',
               },
             },
           },
@@ -7662,24 +7641,46 @@ const hass = {
             },
           },
         },
-        select: {
-          select_option: {
-            name: 'Select',
-            description: 'Select an option of an select entity.',
-            fields: {
-              option: {
-                name: 'Option',
-                description: 'Option to be selected.',
-                required: true,
-                example: '"Item A"',
-                selector: {
-                  text: null,
-                },
-              },
-            },
+        switch: {
+          turn_off: {
+            name: 'Turn off',
+            description: 'Turn a switch off',
+            fields: {},
             target: {
               entity: {
-                domain: 'select',
+                domain: 'switch',
+              },
+            },
+          },
+          turn_on: {
+            name: 'Turn on',
+            description: 'Turn a switch on',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'switch',
+              },
+            },
+          },
+          toggle: {
+            name: 'Toggle',
+            description: 'Toggles a switch state',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'switch',
+              },
+            },
+          },
+        },
+        button: {
+          press: {
+            name: 'Press',
+            description: 'Press the button entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'button',
               },
             },
           },
@@ -7875,16 +7876,6 @@ const hass = {
           url_path: 'lovelace',
           require_admin: false,
         },
-        'lovelace-homekit': {
-          component_name: 'lovelace',
-          icon: 'mdi:home-assistant',
-          title: 'Homekit',
-          config: {
-            mode: 'storage',
-          },
-          url_path: 'lovelace-homekit',
-          require_admin: false,
-        },
         config: {
           component_name: 'config',
           icon: 'hass:cog',
@@ -7948,30 +7939,6 @@ const hass = {
           url_path: 'history',
           require_admin: false,
         },
-        'react-panel-prod': {
-          component_name: 'custom',
-          icon: 'mdi:react',
-          title: 'React Panel',
-          config: {
-            name: 'World',
-            _panel_custom: {
-              name: 'react-panel',
-              embed_iframe: true,
-              trust_external: false,
-              js_url: '/local/react-panel/index.js',
-            },
-          },
-          url_path: 'react-panel-prod',
-          require_admin: false,
-        },
-        map: {
-          component_name: 'map',
-          icon: 'hass:tooltip-account',
-          title: 'map',
-          config: null,
-          url_path: 'map',
-          require_admin: false,
-        },
         _my_redirect: {
           component_name: 'my',
           icon: null,
@@ -7994,6 +7961,30 @@ const hass = {
           title: 'media_browser',
           config: null,
           url_path: 'media-browser',
+          require_admin: false,
+        },
+        map: {
+          component_name: 'map',
+          icon: 'hass:tooltip-account',
+          title: 'map',
+          config: null,
+          url_path: 'map',
+          require_admin: false,
+        },
+        'react-panel-prod': {
+          component_name: 'custom',
+          icon: 'mdi:react',
+          title: 'React Panel',
+          config: {
+            name: 'World',
+            _panel_custom: {
+              name: 'react-panel',
+              embed_iframe: true,
+              trust_external: false,
+              js_url: '/local/react-panel/assets/index.js',
+            },
+          },
+          url_path: 'react-panel-prod',
           require_admin: false,
         },
         energy: {
@@ -8068,7 +8059,7 @@ const hass = {
             'We have discovered new devices on your network. [Check it out](/config/integrations).',
           status: 'unread',
           title: 'New devices discovered',
-          created_at: '2022-05-28T19:35:20.408941+00:00',
+          created_at: '2022-05-29T05:52:00.272972+00:00',
         },
       ],
     },
@@ -8076,24 +8067,24 @@ const hass = {
   },
   connected: true,
   states: {
-    'person.first_last': {
-      entity_id: 'person.first_last',
+    'person.mark_lyck': {
+      entity_id: 'person.mark_lyck',
       state: 'unknown',
       attributes: {
         editable: false,
-        id: 'first_last',
+        id: 'mark_lyck',
         user_id: 'fefe8d8a7bec4ab9ad5ca86ac9734a4c',
         entity_picture:
           '/api/image/serve/40a12e595b7c321dcbc108342b96d3d9/512x512',
         friendly_name: 'Mark',
       },
       context: {
-        id: '01810c29ed25e513b417fba55a640827',
+        id: '01810e5e8559fb4f835c64b7147d7dc6',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:33.052Z',
-      last_updated: '2022-05-28T19:34:43.237Z',
+      last_changed: '2022-05-29T05:51:12.942Z',
+      last_updated: '2022-05-29T05:51:24.505Z',
     },
     'person.grace_park': {
       entity_id: 'person.grace_park',
@@ -8105,12 +8096,12 @@ const hass = {
         friendly_name: 'Grace',
       },
       context: {
-        id: '01810c29ed254197c2392ad9c3d6bf87',
+        id: '01810e5e85599dd8f9c66b52ff5c886a',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:33.054Z',
-      last_updated: '2022-05-28T19:34:43.237Z',
+      last_changed: '2022-05-29T05:51:12.952Z',
+      last_updated: '2022-05-29T05:51:24.505Z',
     },
     'update.home_assistant_supervisor_update': {
       entity_id: 'update.home_assistant_supervisor_update',
@@ -8130,12 +8121,12 @@ const hass = {
         supported_features: 1,
       },
       context: {
-        id: '01810c29ddf2b297519669d398b83ec6',
+        id: '01810e5e74271109899ffb69bc190efd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.346Z',
-      last_updated: '2022-05-28T19:34:39.346Z',
+      last_changed: '2022-05-29T05:51:20.103Z',
+      last_updated: '2022-05-29T05:51:20.103Z',
     },
     'update.home_assistant_core_update': {
       entity_id: 'update.home_assistant_core_update',
@@ -8155,12 +8146,12 @@ const hass = {
         supported_features: 11,
       },
       context: {
-        id: '01810c29ddf34d1a1e9b7adbdea96838',
+        id: '01810e5e7428ee3d210a6edbb704f906',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.347Z',
-      last_updated: '2022-05-28T19:34:39.347Z',
+      last_changed: '2022-05-29T05:51:20.104Z',
+      last_updated: '2022-05-29T05:51:20.104Z',
     },
     'update.terminal_ssh_update': {
       entity_id: 'update.terminal_ssh_update',
@@ -8180,12 +8171,12 @@ const hass = {
         supported_features: 25,
       },
       context: {
-        id: '01810c29ddf38424b84c4ab2ab7c8a19',
+        id: '01810e5e7428b2c7d1a0dd2824d9543f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.348Z',
-      last_updated: '2022-05-28T19:34:39.348Z',
+      last_changed: '2022-05-29T05:51:20.104Z',
+      last_updated: '2022-05-29T05:51:20.104Z',
     },
     'update.file_editor_update': {
       entity_id: 'update.file_editor_update',
@@ -8204,12 +8195,12 @@ const hass = {
         supported_features: 25,
       },
       context: {
-        id: '01810c29ddf4558a26d6582b76373383',
+        id: '01810e5e74289142e7f7fd5050338fc8',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.348Z',
-      last_updated: '2022-05-28T19:34:39.348Z',
+      last_changed: '2022-05-29T05:51:20.105Z',
+      last_updated: '2022-05-29T05:51:20.105Z',
     },
     'update.samba_share_update': {
       entity_id: 'update.samba_share_update',
@@ -8229,12 +8220,12 @@ const hass = {
         supported_features: 25,
       },
       context: {
-        id: '01810c29ddf461d53c930afbd842864f',
+        id: '01810e5e7429841a868ee13c4cfe3cc4',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.348Z',
-      last_updated: '2022-05-28T19:34:39.348Z',
+      last_changed: '2022-05-29T05:51:20.105Z',
+      last_updated: '2022-05-29T05:51:20.105Z',
     },
     'update.home_assistant_operating_system_update': {
       entity_id: 'update.home_assistant_operating_system_update',
@@ -8255,35 +8246,35 @@ const hass = {
         supported_features: 3,
       },
       context: {
-        id: '01810c29ddf58b9801383f60f7b19257',
+        id: '01810e5e742a7c808a5ef450880adba0',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.349Z',
-      last_updated: '2022-05-28T19:34:39.349Z',
+      last_changed: '2022-05-29T05:51:20.106Z',
+      last_updated: '2022-05-29T05:51:20.106Z',
     },
     'sun.sun': {
       entity_id: 'sun.sun',
-      state: 'above_horizon',
+      state: 'below_horizon',
       attributes: {
         next_dawn: '2022-05-29T09:12:36.366587+00:00',
-        next_dusk: '2022-05-29T00:59:45.451871+00:00',
-        next_midnight: '2022-05-29T05:06:22+00:00',
+        next_dusk: '2022-05-30T01:00:35.085666+00:00',
+        next_midnight: '2022-05-30T05:06:30+00:00',
         next_noon: '2022-05-29T17:06:16+00:00',
         next_rising: '2022-05-29T09:44:42.442374+00:00',
-        next_setting: '2022-05-29T00:27:39.027454+00:00',
-        elevation: 53.9,
-        azimuth: 252.18,
-        rising: false,
+        next_setting: '2022-05-30T00:28:24.126536+00:00',
+        elevation: -28.53,
+        azimuth: 11.92,
+        rising: true,
         friendly_name: 'Sun',
       },
       context: {
-        id: '01810c29de3ebb05b47670119f424ce3',
+        id: '01810e5e746eeb501064ff4045448e33',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.422Z',
-      last_updated: '2022-05-28T19:34:39.422Z',
+      last_changed: '2022-05-29T05:51:20.174Z',
+      last_updated: '2022-05-29T05:51:20.174Z',
     },
     'zone.home': {
       entity_id: 'zone.home',
@@ -8299,12 +8290,12 @@ const hass = {
         friendly_name: 'Home',
       },
       context: {
-        id: '01810c29df2620182824cd16f3f8dcca',
+        id: '01810e5e746f61615054fad69dae9072',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.654Z',
-      last_updated: '2022-05-28T19:34:39.654Z',
+      last_changed: '2022-05-29T05:51:20.176Z',
+      last_updated: '2022-05-29T05:51:20.176Z',
     },
     'binary_sensor.rpi_power_status': {
       entity_id: 'binary_sensor.rpi_power_status',
@@ -8315,12 +8306,12 @@ const hass = {
         friendly_name: 'RPi Power status',
       },
       context: {
-        id: '01810c29df60e16206ae6532cd3d8e0b',
+        id: '01810e5e75c666bcfff5e82e208806f0',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:39.712Z',
-      last_updated: '2022-05-28T19:34:39.712Z',
+      last_changed: '2022-05-29T05:51:20.518Z',
+      last_updated: '2022-05-29T05:51:20.518Z',
     },
     'media_player.living_room': {
       entity_id: 'media_player.living_room',
@@ -8344,29 +8335,26 @@ const hass = {
           'TV Shows',
           'YouTube',
         ],
-        media_content_type: 'music',
-        media_duration: 264,
-        media_position: 32,
-        media_position_updated_at: '2022-05-28T19:34:41.222884+00:00',
-        media_title: 'Sad Song feat. Elena Coats',
-        media_artist: 'We the Kings',
-        media_album_name: 'Stripped',
-        app_id: 'com.apple.TVMusic',
-        app_name: 'Music',
-        shuffle: true,
-        repeat: 'off',
+        media_content_id: 'D8258E02',
+        media_content_type: 'video',
+        media_duration: 5629,
+        media_position: 1,
+        media_position_updated_at: '2022-05-29T05:51:23.307316+00:00',
+        media_title: 'Midsomer Murders',
+        app_id: 'com.apple.TVWatchList',
+        app_name: 'TV',
         entity_picture:
-          '/api/media_player_proxy/media_player.living_room?token=5e06197296f0a29b234b18e04d73493d17edc05a9eb1d89566a3ad3d21b68ccf&cache=Music125/v4/ac/8d/da/ac8ddad8-cf5a-4c9c-0833-8c0c7dcc61c5/stripped_cover_1600x1600.jpg',
+          '/api/media_player_proxy/media_player.living_room?token=2f84e13d3cdebffe1191672954470fe088906bdf4c97d3a65fb037885d75495b&cache=D8258E02',
         friendly_name: 'Living Room',
         supported_features: 450487,
       },
       context: {
-        id: '01810c29e547cd92bb826864ff25606b',
+        id: '01810e5e80ac5a955a0f2681f3b532cf',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:41.213Z',
-      last_updated: '2022-05-28T19:34:41.223Z',
+      last_changed: '2022-05-29T05:51:23.296Z',
+      last_updated: '2022-05-29T05:51:23.308Z',
     },
     'remote.living_room': {
       entity_id: 'remote.living_room',
@@ -8376,93 +8364,93 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29e538def7fa6317531d19592e',
+        id: '01810e5e809b08696b74cb48a2c27f2d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:41.208Z',
-      last_updated: '2022-05-28T19:34:41.208Z',
+      last_changed: '2022-05-29T05:51:23.291Z',
+      last_updated: '2022-05-29T05:51:23.291Z',
     },
     'sensor.iphone_mark_activity': {
       entity_id: 'sensor.iphone_mark_activity',
-      state: 'Walking',
+      state: 'Stationary',
       attributes: {
         Confidence: 'High',
-        Types: ['Walking'],
-        icon: 'mdi:walk',
+        Types: ['Stationary'],
+        icon: 'mdi:human-male',
         friendly_name: 'iphone mark Activity',
       },
       context: {
-        id: '01810c29e298ad92cb812d9c16c37903',
+        id: '01810e5e7d0aa1d28d881b5c4d29918a',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.537Z',
-      last_updated: '2022-05-28T19:34:40.537Z',
+      last_changed: '2022-05-29T05:51:22.378Z',
+      last_updated: '2022-05-29T05:51:22.378Z',
     },
     'sensor.iphone_mark_average_active_pace': {
       entity_id: 'sensor.iphone_mark_average_active_pace',
-      state: '1',
+      state: '0',
       attributes: {
         unit_of_measurement: 'm/s',
         icon: 'mdi:speedometer',
         friendly_name: 'iphone mark Average Active Pace',
       },
       context: {
-        id: '01810c29e2995e60204cbc991acaa1f9',
+        id: '01810e5e7d0bce487bdf49d5d3f712f9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.537Z',
-      last_updated: '2022-05-28T19:34:40.537Z',
+      last_changed: '2022-05-29T05:51:22.379Z',
+      last_updated: '2022-05-29T05:51:22.379Z',
     },
     'sensor.iphone_mark_bssid': {
       entity_id: 'sensor.iphone_mark_bssid',
-      state: '6c:ae:f6:ca:75:88',
+      state: '6c:ae:f6:ca:75:86',
       attributes: {
         icon: 'mdi:wifi-star',
         friendly_name: 'iphone mark BSSID',
       },
       context: {
-        id: '01810c29e299a288a5c3b26fd5cd47a5',
+        id: '01810e5e7d0bc316efe43b2e454c0b1c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.537Z',
-      last_updated: '2022-05-28T19:34:40.537Z',
+      last_changed: '2022-05-29T05:51:22.379Z',
+      last_updated: '2022-05-29T05:51:22.379Z',
     },
     'sensor.iphone_mark_battery_level': {
       entity_id: 'sensor.iphone_mark_battery_level',
-      state: '85',
+      state: '60',
       attributes: {
         unit_of_measurement: '%',
         device_class: 'battery',
-        icon: 'mdi:battery-80',
+        icon: 'mdi:battery-60',
         friendly_name: 'iphone mark Battery Level',
       },
       context: {
-        id: '01810c29e29a5b90be9dc73c15153538',
+        id: '01810e5e7d0c147d1f472fdc974a9fe5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.538Z',
-      last_updated: '2022-05-28T19:34:40.538Z',
+      last_changed: '2022-05-29T05:51:22.380Z',
+      last_updated: '2022-05-29T05:51:22.380Z',
     },
     'sensor.iphone_mark_battery_state': {
       entity_id: 'sensor.iphone_mark_battery_state',
       state: 'Not Charging',
       attributes: {
         'Low Power Mode': false,
-        icon: 'mdi:battery-80',
+        icon: 'mdi:battery-60',
         friendly_name: 'iphone mark Battery State',
       },
       context: {
-        id: '01810c29e29a4bdab3bb7753b3f867ee',
+        id: '01810e5e7d0c016393e4c981e960de31',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.538Z',
-      last_updated: '2022-05-28T19:34:40.538Z',
+      last_changed: '2022-05-29T05:51:22.380Z',
+      last_updated: '2022-05-29T05:51:22.380Z',
     },
     'sensor.iphone_mark_connection_type': {
       entity_id: 'sensor.iphone_mark_connection_type',
@@ -8472,28 +8460,28 @@ const hass = {
         friendly_name: 'iphone mark Connection Type',
       },
       context: {
-        id: '01810c29e29a1212f5243677be59d594',
+        id: '01810e5e7d0df9c1473d3308a2c2457f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.538Z',
-      last_updated: '2022-05-28T19:34:40.538Z',
+      last_changed: '2022-05-29T05:51:22.381Z',
+      last_updated: '2022-05-29T05:51:22.381Z',
     },
     'sensor.iphone_mark_distance': {
       entity_id: 'sensor.iphone_mark_distance',
-      state: '1029',
+      state: '0',
       attributes: {
         unit_of_measurement: 'm',
         icon: 'mdi:hiking',
         friendly_name: 'iphone mark Distance',
       },
       context: {
-        id: '01810c29e29be32642c30c8241c08241',
+        id: '01810e5e7d0dc7cba330be0210ef4c4b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.539Z',
-      last_updated: '2022-05-28T19:34:40.539Z',
+      last_changed: '2022-05-29T05:51:22.381Z',
+      last_updated: '2022-05-29T05:51:22.381Z',
     },
     'sensor.iphone_mark_floors_ascended': {
       entity_id: 'sensor.iphone_mark_floors_ascended',
@@ -8504,12 +8492,12 @@ const hass = {
         friendly_name: 'iphone mark Floors Ascended',
       },
       context: {
-        id: '01810c29e29bbfd9a5c6f847b4d02412',
+        id: '01810e5e7d0da13b49877867178b7812',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.539Z',
-      last_updated: '2022-05-28T19:34:40.539Z',
+      last_changed: '2022-05-29T05:51:22.381Z',
+      last_updated: '2022-05-29T05:51:22.381Z',
     },
     'sensor.iphone_mark_floors_descended': {
       entity_id: 'sensor.iphone_mark_floors_descended',
@@ -8520,12 +8508,12 @@ const hass = {
         friendly_name: 'iphone mark Floors Descended',
       },
       context: {
-        id: '01810c29e29c29c9582530c8c3fe78a5',
+        id: '01810e5e7d0e9d1936088105b3ebb838',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.540Z',
-      last_updated: '2022-05-28T19:34:40.540Z',
+      last_changed: '2022-05-29T05:51:22.382Z',
+      last_updated: '2022-05-29T05:51:22.382Z',
     },
     'sensor.iphone_mark_geocoded_location': {
       entity_id: 'sensor.iphone_mark_geocoded_location',
@@ -8537,7 +8525,7 @@ const hass = {
         'Inland Water': 'N/A',
         'ISO Country Code': 'US',
         Locality: 'McLean',
-        Location: [38.929229736328125, -77.22927715772039],
+        Location: [38.92922506774823, -77.22944354122387],
         Name: '8231 Crestwood Heights Dr',
         Ocean: 'N/A',
         'Postal Code': '22102',
@@ -8551,27 +8539,27 @@ const hass = {
         friendly_name: 'iphone mark Geocoded Location',
       },
       context: {
-        id: '01810c29e29caef34e45a103fc9418f5',
+        id: '01810e5e7d0eaa2f9b494d056abdb34c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.540Z',
-      last_updated: '2022-05-28T19:34:40.540Z',
+      last_changed: '2022-05-29T05:51:22.382Z',
+      last_updated: '2022-05-29T05:51:22.382Z',
     },
     'sensor.iphone_mark_last_update_trigger': {
       entity_id: 'sensor.iphone_mark_last_update_trigger',
-      state: 'Launch',
+      state: 'Manual',
       attributes: {
         icon: 'mdi:cellphone-wireless',
         friendly_name: 'iphone mark Last Update Trigger',
       },
       context: {
-        id: '01810c29e29ca1412c1f05242cfff27a',
+        id: '01810e5e7d0e5e52d2e1ec57d04116ee',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.540Z',
-      last_updated: '2022-05-28T19:34:40.540Z',
+      last_changed: '2022-05-29T05:51:22.382Z',
+      last_updated: '2022-05-29T05:51:22.382Z',
     },
     'sensor.iphone_mark_sim_1': {
       entity_id: 'sensor.iphone_mark_sim_1',
@@ -8587,12 +8575,12 @@ const hass = {
         friendly_name: 'iphone mark SIM 1',
       },
       context: {
-        id: '01810c29e29df9b98f50cabd163e0311',
+        id: '01810e5e7d0fec1b7445d8d1fa249d47',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.541Z',
-      last_updated: '2022-05-28T19:34:40.541Z',
+      last_changed: '2022-05-29T05:51:22.383Z',
+      last_updated: '2022-05-29T05:51:22.383Z',
     },
     'sensor.iphone_mark_sim_2': {
       entity_id: 'sensor.iphone_mark_sim_2',
@@ -8609,12 +8597,12 @@ const hass = {
         friendly_name: 'iphone mark SIM 2',
       },
       context: {
-        id: '01810c29e29daf8dd95ab746708175d6',
+        id: '01810e5e7d0fc6845fd838fae477670e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.541Z',
-      last_updated: '2022-05-28T19:34:40.541Z',
+      last_changed: '2022-05-29T05:51:22.383Z',
+      last_updated: '2022-05-29T05:51:22.383Z',
     },
     'sensor.iphone_mark_ssid': {
       entity_id: 'sensor.iphone_mark_ssid',
@@ -8624,133 +8612,112 @@ const hass = {
         friendly_name: 'iphone mark SSID',
       },
       context: {
-        id: '01810c29e29e9a56d2bab2b3529d7583',
+        id: '01810e5e7d0fc3c08a45151df18f70ac',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.542Z',
-      last_updated: '2022-05-28T19:34:40.542Z',
+      last_changed: '2022-05-29T05:51:22.383Z',
+      last_updated: '2022-05-29T05:51:22.383Z',
     },
     'sensor.iphone_mark_steps': {
       entity_id: 'sensor.iphone_mark_steps',
-      state: '1285',
+      state: '0',
       attributes: {
         unit_of_measurement: 'steps',
         icon: 'mdi:walk',
         friendly_name: 'iphone mark Steps',
       },
       context: {
-        id: '01810c29e29e39031d4867281ce3d46c',
+        id: '01810e5e7d10a2574818d38c7a6f1d8a',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.542Z',
-      last_updated: '2022-05-28T19:34:40.542Z',
+      last_changed: '2022-05-29T05:51:22.384Z',
+      last_updated: '2022-05-29T05:51:22.384Z',
     },
     'sensor.iphone_mark_storage': {
       entity_id: 'sensor.iphone_mark_storage',
-      state: '62.69',
+      state: '62.60',
       attributes: {
-        Available: '60.56 GB',
-        'Available (Important)': '164.99 GB',
-        'Available (Opportunistic)': '160.42 GB',
+        Available: '60.31 GB',
+        'Available (Important)': '164.29 GB',
+        'Available (Opportunistic)': '160.17 GB',
         Total: '255.88 GB',
         unit_of_measurement: '% available',
         icon: 'mdi:database',
         friendly_name: 'iphone mark Storage',
       },
       context: {
-        id: '01810c29e29ec43eb5a4c04514246d1b',
+        id: '01810e5e7d109be619306a65f4bb8ac4',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.542Z',
-      last_updated: '2022-05-28T19:34:40.542Z',
+      last_changed: '2022-05-29T05:51:22.384Z',
+      last_updated: '2022-05-29T05:51:22.384Z',
     },
     'binary_sensor.iphone_mark_focus': {
       entity_id: 'binary_sensor.iphone_mark_focus',
-      state: 'off',
+      state: 'on',
       attributes: {
         icon: 'mdi:moon-waning-crescent',
         friendly_name: 'iphone mark Focus',
       },
       context: {
-        id: '01810c29e29fdd203566c8c07da861ea',
+        id: '01810e5e7d11d9acb72ad62a58738509',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.543Z',
-      last_updated: '2022-05-28T19:34:40.543Z',
+      last_changed: '2022-05-29T05:51:22.385Z',
+      last_updated: '2022-05-29T05:51:22.385Z',
     },
-    'device_tracker.iphone_mark': {
-      entity_id: 'device_tracker.iphone_mark',
-      state: 'home',
-      attributes: {
-        source_type: 'gps',
-        battery_level: 80,
-        latitude: 38.929229736328125,
-        longitude: -77.22927715772039,
-        gps_accuracy: 35,
-        altitude: 162.77061462402344,
-        vertical_accuracy: 5.059759616851807,
-        friendly_name: 'iphone mark',
-      },
-      context: {
-        id: '01810c29e409a6418bdd976cffa4e772',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-28T19:34:40.905Z',
-      last_updated: '2022-05-28T19:34:40.905Z',
-    },
-    'binary_sensor.ecobee_occupancy': {
-      entity_id: 'binary_sensor.ecobee_occupancy',
-      state: 'on',
+    'binary_sensor.my_ecobee_occupancy': {
+      entity_id: 'binary_sensor.my_ecobee_occupancy',
+      state: 'off',
       attributes: {
         device_class: 'occupancy',
         friendly_name: 'My ecobee Occupancy',
       },
       context: {
-        id: '01810c29e42be52bd6e0896717655b12',
+        id: '01810e5e7e5409aa90ecf99e39ceaaaa',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.939Z',
-      last_updated: '2022-05-28T19:34:40.939Z',
+      last_changed: '2022-05-29T05:51:22.708Z',
+      last_updated: '2022-05-29T05:51:22.708Z',
     },
     'binary_sensor.bedroom_sensor_occupancy': {
       entity_id: 'binary_sensor.bedroom_sensor_occupancy',
-      state: 'off',
+      state: 'on',
       attributes: {
         device_class: 'occupancy',
         friendly_name: 'bedroom sensor Occupancy',
       },
       context: {
-        id: '01810c29e42cda5fc7f41f27f46cb642',
+        id: '01810e5e7e55a3a1931ab0556c66ed34',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.940Z',
-      last_updated: '2022-05-28T19:34:40.940Z',
+      last_changed: '2022-05-29T05:51:22.709Z',
+      last_updated: '2022-05-29T05:51:22.709Z',
     },
     'binary_sensor.office_occupancy': {
       entity_id: 'binary_sensor.office_occupancy',
-      state: 'on',
+      state: 'off',
       attributes: {
         device_class: 'occupancy',
         friendly_name: 'Office Occupancy',
       },
       context: {
-        id: '01810c29e42d096fd5849073b10acdeb',
+        id: '01810e5e7e567e180fd646b6a6317de8',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.941Z',
-      last_updated: '2022-05-28T19:34:40.941Z',
+      last_changed: '2022-05-29T05:51:22.710Z',
+      last_updated: '2022-05-29T05:51:22.710Z',
     },
-    'sensor.ecobee_temperature': {
-      entity_id: 'sensor.ecobee_temperature',
-      state: '75.3',
+    'sensor.my_ecobee_temperature': {
+      entity_id: 'sensor.my_ecobee_temperature',
+      state: '77.3',
       attributes: {
         state_class: 'measurement',
         unit_of_measurement: '°F',
@@ -8758,16 +8725,16 @@ const hass = {
         friendly_name: 'My ecobee Temperature',
       },
       context: {
-        id: '01810c29e42dc85c587f46915a1b0481',
+        id: '01810e63879b75a4d23406e2669fb02b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.941Z',
-      last_updated: '2022-05-28T19:34:40.941Z',
+      last_changed: '2022-05-29T05:56:52.763Z',
+      last_updated: '2022-05-29T05:56:52.763Z',
     },
-    'sensor.ecobee_humidity': {
-      entity_id: 'sensor.ecobee_humidity',
-      state: '54',
+    'sensor.my_ecobee_humidity': {
+      entity_id: 'sensor.my_ecobee_humidity',
+      state: '51',
       attributes: {
         state_class: 'measurement',
         unit_of_measurement: '%',
@@ -8775,16 +8742,16 @@ const hass = {
         friendly_name: 'My ecobee Humidity',
       },
       context: {
-        id: '01810c29e42e27356bf1b307ea0ff9d9',
+        id: '01810e5e7e574597d69b03c6613d0de3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.942Z',
-      last_updated: '2022-05-28T19:34:40.942Z',
+      last_changed: '2022-05-29T05:51:22.711Z',
+      last_updated: '2022-05-29T05:51:22.711Z',
     },
     'sensor.bedroom_sensor_temperature': {
       entity_id: 'sensor.bedroom_sensor_temperature',
-      state: '75.3',
+      state: '76.0',
       attributes: {
         state_class: 'measurement',
         unit_of_measurement: '°F',
@@ -8792,16 +8759,16 @@ const hass = {
         friendly_name: 'bedroom sensor Temperature',
       },
       context: {
-        id: '01810c29e42fbaf0150d29a99d256e3a',
+        id: '01810e63879c128ba735f53b6d4f5217',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.943Z',
-      last_updated: '2022-05-28T19:34:40.943Z',
+      last_changed: '2022-05-29T05:56:52.764Z',
+      last_updated: '2022-05-29T05:56:52.764Z',
     },
     'sensor.office_temperature': {
       entity_id: 'sensor.office_temperature',
-      state: '76.9',
+      state: '77.0',
       attributes: {
         state_class: 'measurement',
         unit_of_measurement: '°F',
@@ -8809,80 +8776,37 @@ const hass = {
         friendly_name: 'Office Temperature',
       },
       context: {
-        id: '01810c29e430acef2b91050ace33d1e0',
+        id: '01810e605344a617c7999f468da5e437',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.944Z',
-      last_updated: '2022-05-28T19:34:40.944Z',
+      last_changed: '2022-05-29T05:53:22.756Z',
+      last_updated: '2022-05-29T05:53:22.756Z',
     },
-    'weather.ecobee': {
-      entity_id: 'weather.ecobee',
-      state: 'partlycloudy',
+    'device_tracker.iphone_mark': {
+      entity_id: 'device_tracker.iphone_mark',
+      state: 'home',
       attributes: {
-        temperature: 79,
-        humidity: 46,
-        pressure: 29.83,
-        wind_bearing: 289,
-        wind_speed: 9,
-        visibility: 13,
-        forecast: [
-          {
-            condition: 'partlycloudy',
-            temperature: 79,
-            templow: 64,
-            wind_bearing: 289,
-            wind_speed: 9,
-            datetime: '2022-05-28T19:34:40.962620+00:00',
-          },
-          {
-            condition: 'sunny',
-            temperature: 81,
-            templow: 66,
-            wind_bearing: 96,
-            wind_speed: 3,
-            datetime: '2022-05-29T19:34:40.962620+00:00',
-          },
-          {
-            condition: 'sunny',
-            temperature: 87,
-            templow: 69,
-            wind_bearing: 195,
-            wind_speed: 4,
-            datetime: '2022-05-30T19:34:40.962620+00:00',
-          },
-          {
-            condition: 'sunny',
-            temperature: 90,
-            templow: 73,
-            wind_bearing: 251,
-            wind_speed: 4,
-            datetime: '2022-05-31T19:34:40.962620+00:00',
-          },
-          {
-            condition: 'partlycloudy',
-            temperature: 88,
-            templow: 77,
-            wind_bearing: 43,
-            wind_speed: 4,
-            datetime: '2022-06-01T19:34:40.962620+00:00',
-          },
-        ],
-        attribution:
-          'Ecobee weather provided by FI:NDV at 2022-05-28 19:30:45 UTC',
-        friendly_name: 'My ecobee',
+        source_type: 'gps',
+        battery_level: 60,
+        latitude: 38.92922506774823,
+        longitude: -77.22944354122387,
+        gps_accuracy: 35.07095741880386,
+        altitude: 161.7546157836914,
+        vertical_accuracy: 3.979067802429199,
+        friendly_name: 'iphone mark',
       },
       context: {
-        id: '01810c29e442fed14febad0befe9b36f',
+        id: '01810e5e7e735fdb50391b0d9421d0ee',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.962Z',
-      last_updated: '2022-05-28T19:34:40.962Z',
+      last_changed: '2022-05-29T05:51:22.739Z',
+      last_updated: '2022-05-29T05:51:22.739Z',
     },
     'climate.ecobee': {
       entity_id: 'climate.ecobee',
-      state: 'cool',
+      state: 'off',
       attributes: {
         hvac_modes: ['heat_cool', 'heat', 'cool', 'off'],
         min_temp: 44.6,
@@ -8890,17 +8814,17 @@ const hass = {
         target_temp_step: 0.5,
         fan_modes: ['auto', 'on'],
         preset_modes: ['Away', 'Home', 'Sleep'],
-        current_temperature: 76.1,
-        temperature: 77,
+        current_temperature: 76,
+        temperature: null,
         target_temp_high: null,
         target_temp_low: null,
-        current_humidity: 54,
+        current_humidity: 51,
         fan_mode: 'auto',
         hvac_action: 'idle',
         preset_mode: 'temp',
         aux_heat: 'off',
         fan: 'off',
-        climate_mode: 'Home',
+        climate_mode: 'Sleep',
         equipment_running: '',
         fan_min_on_time: 0,
         icon: 'thermo',
@@ -8908,12 +8832,76 @@ const hass = {
         supported_features: 91,
       },
       context: {
-        id: '01810c29e4445057ccad10e676a4b1ae',
+        id: '01810e63fcd42c6d48aa5520bf2e3603',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:40.964Z',
-      last_updated: '2022-05-28T19:34:40.964Z',
+      last_changed: '2022-05-29T05:53:17.686Z',
+      last_updated: '2022-05-29T05:57:22.772Z',
+    },
+    'weather.my_ecobee': {
+      entity_id: 'weather.my_ecobee',
+      state: 'partlycloudy',
+      attributes: {
+        temperature: 68,
+        humidity: 70,
+        pressure: 29.94,
+        wind_bearing: 28,
+        wind_speed: 0,
+        visibility: 10,
+        forecast: [
+          {
+            condition: 'partlycloudy',
+            temperature: 82,
+            templow: 65,
+            wind_bearing: 28,
+            wind_speed: 0,
+            datetime: '2022-05-29T05:58:22.774640+00:00',
+          },
+          {
+            condition: 'sunny',
+            temperature: 87,
+            templow: 69,
+            wind_bearing: 195,
+            wind_speed: 4,
+            datetime: '2022-05-30T05:58:22.774640+00:00',
+          },
+          {
+            condition: 'sunny',
+            temperature: 91,
+            templow: 73,
+            wind_bearing: 249,
+            wind_speed: 4,
+            datetime: '2022-05-31T05:58:22.774640+00:00',
+          },
+          {
+            condition: 'partlycloudy',
+            temperature: 92,
+            templow: 76,
+            wind_bearing: 259,
+            wind_speed: 5,
+            datetime: '2022-06-01T05:58:22.774640+00:00',
+          },
+          {
+            condition: 'rainy',
+            temperature: 81,
+            templow: 71,
+            wind_bearing: 321,
+            wind_speed: 7,
+            datetime: '2022-06-02T05:58:22.774640+00:00',
+          },
+        ],
+        attribution:
+          'Ecobee weather provided by FI:NDV at 2022-05-29 05:30:51 UTC',
+        friendly_name: 'My ecobee',
+      },
+      context: {
+        id: '01810e64e7372ea6e96a7f37e3db8e0d',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-29T05:51:22.747Z',
+      last_updated: '2022-05-29T05:58:22.775Z',
     },
     'light.couch_lamp': {
       entity_id: 'light.couch_lamp',
@@ -8925,57 +8913,12 @@ const hass = {
         supported_features: 37,
       },
       context: {
-        id: '01810c29e477afc62c4959dcbf4a1487',
+        id: '01810e5e7f49b308fda04f9ea94ca630',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:41.015Z',
-      last_updated: '2022-05-28T19:34:41.015Z',
-    },
-    'binary_sensor.eero_wan_status': {
-      entity_id: 'binary_sensor.eero_wan_status',
-      state: 'on',
-      attributes: {
-        device_class: 'connectivity',
-        friendly_name: 'eero wan status',
-      },
-      context: {
-        id: '01810c29e47f4da6a27a7e686fd6dc5f',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-28T19:34:41.023Z',
-      last_updated: '2022-05-28T19:34:41.023Z',
-    },
-    'sensor.eero_external_ip': {
-      entity_id: 'sensor.eero_external_ip',
-      state: '108.28.69.66',
-      attributes: {
-        icon: 'mdi:server-network',
-        friendly_name: 'eero External IP',
-      },
-      context: {
-        id: '01810c29e4808fb518280984b9782bb5',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-28T19:34:41.024Z',
-      last_updated: '2022-05-28T19:34:41.024Z',
-    },
-    'sensor.eero_wan_status': {
-      entity_id: 'sensor.eero_wan_status',
-      state: 'Connected',
-      attributes: {
-        icon: 'mdi:server-network',
-        friendly_name: 'eero wan status',
-      },
-      context: {
-        id: '01810c29e481c5d6c71dc9397c039aa0',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-28T19:34:41.025Z',
-      last_updated: '2022-05-28T19:34:41.025Z',
+      last_changed: '2022-05-29T05:51:22.953Z',
+      last_updated: '2022-05-29T05:51:22.953Z',
     },
     'light.desk_light': {
       entity_id: 'light.desk_light',
@@ -8986,7 +8929,7 @@ const hass = {
         effect_list: ['effect_colorloop', 'effect_pulse', 'effect_stop'],
         supported_color_modes: ['color_temp', 'hs'],
         color_mode: 'color_temp',
-        brightness: 255,
+        brightness: 84,
         color_temp: 364,
         hs_color: [28.295, 64.242],
         rgb_color: [255, 168, 91],
@@ -8996,12 +8939,57 @@ const hass = {
         supported_features: 55,
       },
       context: {
-        id: '01810c29e484982c85c74ffe6d7f4756',
+        id: '01810e5e7fd8cdc79e799b570a97eb3f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:41.029Z',
-      last_updated: '2022-05-28T19:34:41.029Z',
+      last_changed: '2022-05-29T05:51:23.096Z',
+      last_updated: '2022-05-29T05:51:23.096Z',
+    },
+    'binary_sensor.eero_wan_status': {
+      entity_id: 'binary_sensor.eero_wan_status',
+      state: 'on',
+      attributes: {
+        device_class: 'connectivity',
+        friendly_name: 'eero wan status',
+      },
+      context: {
+        id: '01810e5e7fda5acce1d786080d4ed20b',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-29T05:51:23.098Z',
+      last_updated: '2022-05-29T05:51:23.098Z',
+    },
+    'sensor.eero_external_ip': {
+      entity_id: 'sensor.eero_external_ip',
+      state: '108.28.69.66',
+      attributes: {
+        icon: 'mdi:server-network',
+        friendly_name: 'eero External IP',
+      },
+      context: {
+        id: '01810e5e7fdb750859c1e6b037aa258c',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-29T05:51:23.099Z',
+      last_updated: '2022-05-29T05:51:23.099Z',
+    },
+    'sensor.eero_wan_status': {
+      entity_id: 'sensor.eero_wan_status',
+      state: 'Connected',
+      attributes: {
+        icon: 'mdi:server-network',
+        friendly_name: 'eero wan status',
+      },
+      context: {
+        id: '01810e5e7fdca00d964e9533def18351',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-29T05:51:23.100Z',
+      last_updated: '2022-05-29T05:51:23.100Z',
     },
     'sensor.hacs': {
       entity_id: 'sensor.hacs',
@@ -9013,35 +9001,35 @@ const hass = {
         friendly_name: 'hacs',
       },
       context: {
-        id: '01810c2a08aa49416de8ea07e011f5cc',
+        id: '01810e5e9cfda6b01ea9aa7b22d2f590',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:50.282Z',
-      last_updated: '2022-05-28T19:34:50.282Z',
+      last_changed: '2022-05-29T05:51:30.557Z',
+      last_updated: '2022-05-29T05:51:30.557Z',
     },
     'vacuum.alfred_2': {
       entity_id: 'vacuum.alfred_2',
       state: 'error',
       attributes: {
         fan_speed_list: ['quiet', 'normal', 'max', 'max+'],
-        battery_level: 87,
-        battery_icon: 'mdi:battery-90',
+        battery_level: 100,
+        battery_icon: 'mdi:battery',
         fan_speed: 'max',
         rooms: {
-          default: [0, 1, 2, 3],
+          default: [0, 1, 3, 2],
         },
         last_error: 'WheelAbnormal: Driving Wheel malfunction (103)',
         friendly_name: 'Alfred',
         supported_features: 15228,
       },
       context: {
-        id: '01810c2a1fc680d477f5304c2c5dbcf5',
+        id: '01810e5e9c82b5414ada246cb5916ccd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:46.142Z',
-      last_updated: '2022-05-28T19:34:56.198Z',
+      last_changed: '2022-05-29T05:51:27.016Z',
+      last_updated: '2022-05-29T05:51:30.434Z',
     },
     'button.alfred_life_span_side_brush_reset': {
       entity_id: 'button.alfred_life_span_side_brush_reset',
@@ -9051,12 +9039,12 @@ const hass = {
         friendly_name: 'Alfred life span side brush reset',
       },
       context: {
-        id: '01810c29ecf7cc1b3d70d99d2e83019c',
+        id: '01810e5e842b1effeefa72064e39e024',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.191Z',
-      last_updated: '2022-05-28T19:34:43.191Z',
+      last_changed: '2022-05-29T05:51:24.203Z',
+      last_updated: '2022-05-29T05:51:24.203Z',
     },
     'button.alfred_life_span_brush_reset': {
       entity_id: 'button.alfred_life_span_brush_reset',
@@ -9066,12 +9054,12 @@ const hass = {
         friendly_name: 'Alfred life span brush reset',
       },
       context: {
-        id: '01810c29ecf76e2d852d107ce0d62a6b',
+        id: '01810e5e842bafe0aebe4f3fb3c5e973',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.191Z',
-      last_updated: '2022-05-28T19:34:43.191Z',
+      last_changed: '2022-05-29T05:51:24.203Z',
+      last_updated: '2022-05-29T05:51:24.203Z',
     },
     'button.alfred_life_span_filter_reset': {
       entity_id: 'button.alfred_life_span_filter_reset',
@@ -9081,12 +9069,12 @@ const hass = {
         friendly_name: 'Alfred life span filter reset',
       },
       context: {
-        id: '01810c29ecf87df21b5daff0fc279364',
+        id: '01810e5e842c80fb908ad477642f04cb',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.192Z',
-      last_updated: '2022-05-28T19:34:43.192Z',
+      last_changed: '2022-05-29T05:51:24.204Z',
+      last_updated: '2022-05-29T05:51:24.204Z',
     },
     'button.alfred_relocate': {
       entity_id: 'button.alfred_relocate',
@@ -9096,12 +9084,12 @@ const hass = {
         friendly_name: 'Alfred relocate',
       },
       context: {
-        id: '01810c29ecf8de927ab9c6974b2d3e90',
+        id: '01810e5e842cdf404f74079de56a19f0',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.192Z',
-      last_updated: '2022-05-28T19:34:43.192Z',
+      last_changed: '2022-05-29T05:51:24.204Z',
+      last_updated: '2022-05-29T05:51:24.204Z',
     },
     'input_number.empty': {
       entity_id: 'input_number.empty',
@@ -9111,12 +9099,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfc01e769c133ba80c281d5',
+        id: '01810e5e8431dcf17f803939a4ab544f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.196Z',
-      last_updated: '2022-05-28T19:34:43.196Z',
+      last_changed: '2022-05-29T05:51:24.209Z',
+      last_updated: '2022-05-29T05:51:24.209Z',
     },
     'input_boolean.dummy1': {
       entity_id: 'input_boolean.dummy1',
@@ -9126,12 +9114,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfdb0ad16a1c5de30cc6ad8',
+        id: '01810e5e84318bf3736bff0d8e91ad83',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.209Z',
+      last_updated: '2022-05-29T05:51:24.209Z',
     },
     'input_boolean.empty': {
       entity_id: 'input_boolean.empty',
@@ -9141,12 +9129,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfdca903690d221d4852642',
+        id: '01810e5e8432e14b7d6f0835351eb71d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.210Z',
+      last_updated: '2022-05-29T05:51:24.210Z',
     },
     'input_boolean.remote_control': {
       entity_id: 'input_boolean.remote_control',
@@ -9156,12 +9144,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfd9c13b670a5c48d7a51ff',
+        id: '01810e5e8432ed545babf251fc99683e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.210Z',
+      last_updated: '2022-05-29T05:51:24.210Z',
     },
     'input_text.opacity_on': {
       entity_id: 'input_text.opacity_on',
@@ -9171,12 +9159,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfda895812952ce4e9d730e',
+        id: '01810e5e84325e64eac9717f84ebc0ad',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.210Z',
+      last_updated: '2022-05-29T05:51:24.210Z',
     },
     'input_text.opacity_off': {
       entity_id: 'input_text.opacity_off',
@@ -9186,12 +9174,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfd8e0e7293dd6a622ee279',
+        id: '01810e5e8432a6790a6650b136ca3609',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.210Z',
+      last_updated: '2022-05-29T05:51:24.210Z',
     },
     'input_text.opacity_unavailable': {
       entity_id: 'input_text.opacity_unavailable',
@@ -9201,12 +9189,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfd8bdc0e88aa07c9c8d767',
+        id: '01810e5e8432329b0159cf0e948cea81',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.210Z',
+      last_updated: '2022-05-29T05:51:24.210Z',
     },
     'input_text.card_box_shadow_light_color': {
       entity_id: 'input_text.card_box_shadow_light_color',
@@ -9216,12 +9204,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfd67419d1e18379b934c6e',
+        id: '01810e5e8432fa9f08804b256ec4ee00',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.210Z',
+      last_updated: '2022-05-29T05:51:24.210Z',
     },
     'input_text.color_unavailable': {
       entity_id: 'input_text.color_unavailable',
@@ -9231,12 +9219,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfd8d1b61cf6998141fa464',
+        id: '01810e5e84328f4efc5cfb8c62c53eae',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.197Z',
-      last_updated: '2022-05-28T19:34:43.197Z',
+      last_changed: '2022-05-29T05:51:24.210Z',
+      last_updated: '2022-05-29T05:51:24.210Z',
     },
     'input_text.header_badge_icon_color': {
       entity_id: 'input_text.header_badge_icon_color',
@@ -9246,12 +9234,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfe86b3bda2530afcba38e2',
+        id: '01810e5e8433208812d62c1de74d5fdd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.211Z',
+      last_updated: '2022-05-29T05:51:24.211Z',
     },
     'input_text.header_badge_background': {
       entity_id: 'input_text.header_badge_background',
@@ -9261,12 +9249,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfe48ddeab71fe9d91cea6b',
+        id: '01810e5e8433cd24c7e203abac551870',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.211Z',
+      last_updated: '2022-05-29T05:51:24.211Z',
     },
     'input_text.header_badge_color': {
       entity_id: 'input_text.header_badge_color',
@@ -9276,12 +9264,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfecb9465525555a3e086a8',
+        id: '01810e5e843355a94f7cdd1282624da5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.211Z',
+      last_updated: '2022-05-29T05:51:24.211Z',
     },
     'input_text.header_badge_text_color': {
       entity_id: 'input_text.header_badge_text_color',
@@ -9291,12 +9279,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfebbec72721ee684f23e66',
+        id: '01810e5e8433f9c45fce216d7bfbd586',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.211Z',
+      last_updated: '2022-05-29T05:51:24.211Z',
     },
     'input_text.header_border_radius': {
       entity_id: 'input_text.header_border_radius',
@@ -9306,12 +9294,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfe30eb4880d5489947dd04',
+        id: '01810e5e843356bb264ef002b6ec0372',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.211Z',
+      last_updated: '2022-05-29T05:51:24.211Z',
     },
     'input_text.header_box_shadow': {
       entity_id: 'input_text.header_box_shadow',
@@ -9321,12 +9309,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfedc836070fd634e737673',
+        id: '01810e5e8433480ef82f33f4b47fcf66',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.211Z',
+      last_updated: '2022-05-29T05:51:24.211Z',
     },
     'input_text.footer_box_shadow': {
       entity_id: 'input_text.footer_box_shadow',
@@ -9336,12 +9324,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfe2033b36df3a8f769c402',
+        id: '01810e5e8434d8594531b0d81534ee8f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.212Z',
+      last_updated: '2022-05-29T05:51:24.212Z',
     },
     'input_text.nav_bar_color': {
       entity_id: 'input_text.nav_bar_color',
@@ -9351,12 +9339,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfef1afbe15c618f6ac04bb',
+        id: '01810e5e8434720ec2514ca90bbc774c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.198Z',
-      last_updated: '2022-05-28T19:34:43.198Z',
+      last_changed: '2022-05-29T05:51:24.212Z',
+      last_updated: '2022-05-29T05:51:24.212Z',
     },
     'input_text.nav_bar_text_color': {
       entity_id: 'input_text.nav_bar_text_color',
@@ -9366,12 +9354,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecff36ce6809f72ca85cd317',
+        id: '01810e5e8434414c722955d439ef0519',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.212Z',
+      last_updated: '2022-05-29T05:51:24.212Z',
     },
     'input_text.card_color': {
       entity_id: 'input_text.card_color',
@@ -9381,12 +9369,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecff5225bed88905d333e0b4',
+        id: '01810e5e84349c4abdec7c2ab269e208',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.212Z',
+      last_updated: '2022-05-29T05:51:24.212Z',
     },
     'input_text.card_border_style': {
       entity_id: 'input_text.card_border_style',
@@ -9396,12 +9384,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecffc4e527d9fe017a8467d6',
+        id: '01810e5e843455f35f3c3a9adc62a8a7',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.212Z',
+      last_updated: '2022-05-29T05:51:24.212Z',
     },
     'input_text.card_border_width': {
       entity_id: 'input_text.card_border_width',
@@ -9411,12 +9399,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecfff562de26cb322abbe965',
+        id: '01810e5e84343e5220fef42bc97420e3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.212Z',
+      last_updated: '2022-05-29T05:51:24.212Z',
     },
     'input_text.card_border_color': {
       entity_id: 'input_text.card_border_color',
@@ -9426,12 +9414,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecffb0a172148f83115824f2',
+        id: '01810e5e843470143706b95143f73244',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.212Z',
+      last_updated: '2022-05-29T05:51:24.212Z',
     },
     'input_text.card_border_radius': {
       entity_id: 'input_text.card_border_radius',
@@ -9441,12 +9429,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecffcf971cd436786953c8dd',
+        id: '01810e5e84356bf11bede973817df8d3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.213Z',
+      last_updated: '2022-05-29T05:51:24.213Z',
     },
     'input_text.card_box_shadow': {
       entity_id: 'input_text.card_box_shadow',
@@ -9456,12 +9444,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecff1b1920614a6d187f1310',
+        id: '01810e5e84351ed602ed3836060c0645',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.213Z',
+      last_updated: '2022-05-29T05:51:24.213Z',
     },
     'input_text.header_color': {
       entity_id: 'input_text.header_color',
@@ -9471,12 +9459,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ecffecb71a6724bc95c79055',
+        id: '01810e5e84354bde502eb50eabb0a94c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.199Z',
-      last_updated: '2022-05-28T19:34:43.199Z',
+      last_changed: '2022-05-29T05:51:24.213Z',
+      last_updated: '2022-05-29T05:51:24.213Z',
     },
     'input_text.header_text_color': {
       entity_id: 'input_text.header_text_color',
@@ -9486,12 +9474,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed00f4c062b92007e46e8e28',
+        id: '01810e5e843521cc6a00b2678206df2b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.213Z',
+      last_updated: '2022-05-29T05:51:24.213Z',
     },
     'input_text.text_color': {
       entity_id: 'input_text.text_color',
@@ -9501,12 +9489,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed001a765781ddf54014a1f4',
+        id: '01810e5e843568e724caa4a725f9357e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.213Z',
+      last_updated: '2022-05-29T05:51:24.213Z',
     },
     'input_text.secondary_text_color': {
       entity_id: 'input_text.secondary_text_color',
@@ -9516,12 +9504,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed00280f889b0c47d083810f',
+        id: '01810e5e8435522deaa04084b29b9a48',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.213Z',
+      last_updated: '2022-05-29T05:51:24.213Z',
     },
     'input_text.background_image': {
       entity_id: 'input_text.background_image',
@@ -9531,12 +9519,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0036826a2a479923deff2e',
+        id: '01810e5e843523f551505082b033de85',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.213Z',
+      last_updated: '2022-05-29T05:51:24.213Z',
     },
     'input_text.icon_color_default': {
       entity_id: 'input_text.icon_color_default',
@@ -9546,12 +9534,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed004c5fc80861401b43b798',
+        id: '01810e5e8436a36ae809972f049edbac',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.214Z',
+      last_updated: '2022-05-29T05:51:24.214Z',
     },
     'input_text.icon_color_active': {
       entity_id: 'input_text.icon_color_active',
@@ -9561,12 +9549,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed00987998a8fb7c1e69b100',
+        id: '01810e5e8436d1db869756bd0fe576b2',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.214Z',
+      last_updated: '2022-05-29T05:51:24.214Z',
     },
     'input_text.font_family': {
       entity_id: 'input_text.font_family',
@@ -9576,12 +9564,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed00512bdf60f1fe28d6b3aa',
+        id: '01810e5e843671e23361b1ce81285bcf',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.214Z',
+      last_updated: '2022-05-29T05:51:24.214Z',
     },
     'input_text.header_font_size': {
       entity_id: 'input_text.header_font_size',
@@ -9591,12 +9579,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed00ec36c2fded6efe2bf79e',
+        id: '01810e5e8436457f6cee5fe3da237376',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.200Z',
-      last_updated: '2022-05-28T19:34:43.200Z',
+      last_changed: '2022-05-29T05:51:24.214Z',
+      last_updated: '2022-05-29T05:51:24.214Z',
     },
     'input_text.header_font_weight': {
       entity_id: 'input_text.header_font_weight',
@@ -9606,12 +9594,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed01fda261ca8425ab99d7b7',
+        id: '01810e5e8436846f2c612b2912a1ebc5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.214Z',
+      last_updated: '2022-05-29T05:51:24.214Z',
     },
     'input_text.subtitle_font_size': {
       entity_id: 'input_text.subtitle_font_size',
@@ -9621,12 +9609,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed01d57f265605b10c263e31',
+        id: '01810e5e843676d767495c97d438bf24',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.214Z',
+      last_updated: '2022-05-29T05:51:24.214Z',
     },
     'input_text.subtitle_font_weight': {
       entity_id: 'input_text.subtitle_font_weight',
@@ -9636,12 +9624,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0120b16356344b6ec62e02',
+        id: '01810e5e84366eca7629c22b004dd74c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.214Z',
+      last_updated: '2022-05-29T05:51:24.214Z',
     },
     'input_text.subtitle_text_color': {
       entity_id: 'input_text.subtitle_text_color',
@@ -9651,12 +9639,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed01b1c8cf9077cdcb7400f4',
+        id: '01810e5e8437450d28b020fc26bcc7a8',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.215Z',
+      last_updated: '2022-05-29T05:51:24.215Z',
     },
     'input_text.title_text_color': {
       entity_id: 'input_text.title_text_color',
@@ -9666,12 +9654,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed01c765baa50a33c0c15fdc',
+        id: '01810e5e8437f3d31c18995de3efff01',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.215Z',
+      last_updated: '2022-05-29T05:51:24.215Z',
     },
     'input_text.title_text_font_size': {
       entity_id: 'input_text.title_text_font_size',
@@ -9681,12 +9669,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed01188bbaab97e1ee42d29d',
+        id: '01810e5e8437951176c70a41892ae626',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.215Z',
+      last_updated: '2022-05-29T05:51:24.215Z',
     },
     'input_text.title_text_font_weight': {
       entity_id: 'input_text.title_text_font_weight',
@@ -9696,12 +9684,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed01e2b204a4d1b2cd3fc565',
+        id: '01810e5e84376be2607c471d394bceb6',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.215Z',
+      last_updated: '2022-05-29T05:51:24.215Z',
     },
     'input_text.title_text_background_color': {
       entity_id: 'input_text.title_text_background_color',
@@ -9711,12 +9699,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed019266b4acb19d778594e7',
+        id: '01810e5e8437c9bb13453afbd6398f9c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.201Z',
-      last_updated: '2022-05-28T19:34:43.201Z',
+      last_changed: '2022-05-29T05:51:24.215Z',
+      last_updated: '2022-05-29T05:51:24.215Z',
     },
     'input_text.title_text_justify_self': {
       entity_id: 'input_text.title_text_justify_self',
@@ -9726,12 +9714,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed01462b8bdd76816d8b6a58',
+        id: '01810e5e843779c757bf82985e510d7f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.215Z',
+      last_updated: '2022-05-29T05:51:24.215Z',
     },
     'input_text.title_text_border_radius': {
       entity_id: 'input_text.title_text_border_radius',
@@ -9741,12 +9729,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed02f33ed4b3301a3ff17dc4',
+        id: '01810e5e8437dc27e71cb1e899e21d58',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.title_text_box_shadow': {
       entity_id: 'input_text.title_text_box_shadow',
@@ -9756,12 +9744,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed02100aaab573a9335471f8',
+        id: '01810e5e843885f51e7acab3b3ecb7b2',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.title_text_padding': {
       entity_id: 'input_text.title_text_padding',
@@ -9771,12 +9759,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed02af2751ca1390954e71fc',
+        id: '01810e5e84386ee61d261fcad8491c40',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.title_text_border_style': {
       entity_id: 'input_text.title_text_border_style',
@@ -9786,12 +9774,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed02e5fddf2a3b28ff83059f',
+        id: '01810e5e8438af55b3f7215b1808a2ce',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.title_text_border_width': {
       entity_id: 'input_text.title_text_border_width',
@@ -9801,12 +9789,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed02eb8c3c3d50c3b30e1496',
+        id: '01810e5e843873885f81e44ac3706c65',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.title_text_border_color': {
       entity_id: 'input_text.title_text_border_color',
@@ -9816,12 +9804,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed024bca8d9abdfed8f7c7d3',
+        id: '01810e5e8438338869a12d5f58408860',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.button_color_active': {
       entity_id: 'input_text.button_color_active',
@@ -9831,12 +9819,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed025e4bddd014dc77b5611f',
+        id: '01810e5e8438173541356f2d27e8c74e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.button_name_font_size': {
       entity_id: 'input_text.button_name_font_size',
@@ -9846,12 +9834,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed02d63fa7a45223f15616e8',
+        id: '01810e5e84383b51e9634c7007202578',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.202Z',
-      last_updated: '2022-05-28T19:34:43.202Z',
+      last_changed: '2022-05-29T05:51:24.216Z',
+      last_updated: '2022-05-29T05:51:24.216Z',
     },
     'input_text.button_name_font_weight': {
       entity_id: 'input_text.button_name_font_weight',
@@ -9861,12 +9849,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed03afb865fb80510730038b',
+        id: '01810e5e8439a0b2ed37d66c9fd24937',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.217Z',
+      last_updated: '2022-05-29T05:51:24.217Z',
     },
     'input_text.button_label_font_size': {
       entity_id: 'input_text.button_label_font_size',
@@ -9876,12 +9864,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0375f77007af07b9c2fb47',
+        id: '01810e5e8439262f430ee6b5dad54861',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.217Z',
+      last_updated: '2022-05-29T05:51:24.217Z',
     },
     'input_text.button_label_font_weight': {
       entity_id: 'input_text.button_label_font_weight',
@@ -9891,12 +9879,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed032666e02d6dee3feb40d6',
+        id: '01810e5e8439bc1071e0fa889572bc93',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.217Z',
+      last_updated: '2022-05-29T05:51:24.217Z',
     },
     'input_text.button_state_font_size': {
       entity_id: 'input_text.button_state_font_size',
@@ -9906,12 +9894,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed03780bf99a4a2f6b7722db',
+        id: '01810e5e84394be6f4d597fff3149b2a',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.217Z',
+      last_updated: '2022-05-29T05:51:24.217Z',
     },
     'input_text.button_state_font_weight': {
       entity_id: 'input_text.button_state_font_weight',
@@ -9921,12 +9909,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed03b5009a92fbec53efff9c',
+        id: '01810e5e8439c0fd3dd63c5741a16f4d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.217Z',
+      last_updated: '2022-05-29T05:51:24.217Z',
     },
     'input_text.button_name_color': {
       entity_id: 'input_text.button_name_color',
@@ -9936,12 +9924,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed032a82494bf88ff0168ac0',
+        id: '01810e5e8439b74fd4e7ed281d84e2dc',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.217Z',
+      last_updated: '2022-05-29T05:51:24.217Z',
     },
     'input_text.button_name_color_active': {
       entity_id: 'input_text.button_name_color_active',
@@ -9951,12 +9939,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed03c7f83e9158549c2fd676',
+        id: '01810e5e84390de1247b5714861fee76',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.217Z',
+      last_updated: '2022-05-29T05:51:24.217Z',
     },
     'input_text.button_label_color': {
       entity_id: 'input_text.button_label_color',
@@ -9966,12 +9954,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed030386c3b4ebb9c31e874f',
+        id: '01810e5e843aac0596fd220e71eedb3d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.203Z',
-      last_updated: '2022-05-28T19:34:43.203Z',
+      last_changed: '2022-05-29T05:51:24.218Z',
+      last_updated: '2022-05-29T05:51:24.218Z',
     },
     'input_text.button_label_color_active': {
       entity_id: 'input_text.button_label_color_active',
@@ -9981,12 +9969,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed04a16e0560b0329a1ed831',
+        id: '01810e5e843a0f60caaca974db3fd7bb',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.218Z',
+      last_updated: '2022-05-29T05:51:24.218Z',
     },
     'input_text.button_state_color': {
       entity_id: 'input_text.button_state_color',
@@ -9996,12 +9984,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed049b0064dd356ecf2d7009',
+        id: '01810e5e843a3ed080aed77bb3174df9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.218Z',
+      last_updated: '2022-05-29T05:51:24.218Z',
     },
     'input_text.button_state_color_active': {
       entity_id: 'input_text.button_state_color_active',
@@ -10011,12 +9999,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed042ac31a541d428bafdc30',
+        id: '01810e5e843a08dfd73a32c9e0deb1f5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.218Z',
+      last_updated: '2022-05-29T05:51:24.218Z',
     },
     'input_text.badge_background_color': {
       entity_id: 'input_text.badge_background_color',
@@ -10026,12 +10014,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed041a4e3641371813ab14ff',
+        id: '01810e5e843af407efb5f96f5ea049c9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.218Z',
+      last_updated: '2022-05-29T05:51:24.218Z',
     },
     'input_text.badge_text_color': {
       entity_id: 'input_text.badge_text_color',
@@ -10041,12 +10029,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed042bd7e861cbd928c5c3cc',
+        id: '01810e5e843aaeb48411b901b4e94fab',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.218Z',
+      last_updated: '2022-05-29T05:51:24.218Z',
     },
     'input_text.badge_font_size': {
       entity_id: 'input_text.badge_font_size',
@@ -10056,12 +10044,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed04f8ec98ff53911789ec19',
+        id: '01810e5e843a2b26d6f30c005c31f6a4',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.218Z',
+      last_updated: '2022-05-29T05:51:24.218Z',
     },
     'input_text.badge_font_weight': {
       entity_id: 'input_text.badge_font_weight',
@@ -10071,12 +10059,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed043555101a180522ba15cd',
+        id: '01810e5e843bf742e970acc0ac169c3d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.219Z',
+      last_updated: '2022-05-29T05:51:24.219Z',
     },
     'input_text.badge_text_transform': {
       entity_id: 'input_text.badge_text_transform',
@@ -10086,12 +10074,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed04ac212c2617b611186a6e',
+        id: '01810e5e843b5e7f314fcd33b9768d79',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.204Z',
-      last_updated: '2022-05-28T19:34:43.204Z',
+      last_changed: '2022-05-29T05:51:24.219Z',
+      last_updated: '2022-05-29T05:51:24.219Z',
     },
     'input_text.button_box_shadow_active': {
       entity_id: 'input_text.button_box_shadow_active',
@@ -10101,12 +10089,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05d4fbb9c076db9f4155d4',
+        id: '01810e5e843b40925a587c82b69a55c5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.219Z',
+      last_updated: '2022-05-29T05:51:24.219Z',
     },
     'input_text.lock_color_active': {
       entity_id: 'input_text.lock_color_active',
@@ -10116,12 +10104,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05994fd37c81ac5ea4e311',
+        id: '01810e5e843b6d42253d2cc64353151f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.219Z',
+      last_updated: '2022-05-29T05:51:24.219Z',
     },
     'input_text.lock_color_inactive': {
       entity_id: 'input_text.lock_color_inactive',
@@ -10131,12 +10119,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed059fefda59ffb375037cd4',
+        id: '01810e5e843b4fcffaf415c7587cc320',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.219Z',
+      last_updated: '2022-05-29T05:51:24.219Z',
     },
     'input_text.dark_color_unavailable': {
       entity_id: 'input_text.dark_color_unavailable',
@@ -10146,12 +10134,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05d32356e384964dc313e6',
+        id: '01810e5e843b8bc6afe1692c305d76f6',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.219Z',
+      last_updated: '2022-05-29T05:51:24.219Z',
     },
     'input_text.dark_lock_color_active': {
       entity_id: 'input_text.dark_lock_color_active',
@@ -10161,12 +10149,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05df3958b7844ef01ebdb7',
+        id: '01810e5e843cfd0cd6c21673ccba2073',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.220Z',
+      last_updated: '2022-05-29T05:51:24.220Z',
     },
     'input_text.dark_lock_color_inactive': {
       entity_id: 'input_text.dark_lock_color_inactive',
@@ -10176,12 +10164,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05de373ccd6cd26d773258',
+        id: '01810e5e843cd1b822f5aba71e6494b6',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.220Z',
+      last_updated: '2022-05-29T05:51:24.220Z',
     },
     'input_text.dark_header_box_shadow': {
       entity_id: 'input_text.dark_header_box_shadow',
@@ -10191,12 +10179,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05c6ab96e910cce2313221',
+        id: '01810e5e843c34b9619b4abb7c713d12',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.220Z',
+      last_updated: '2022-05-29T05:51:24.220Z',
     },
     'input_text.dark_button_box_shadow_active': {
       entity_id: 'input_text.dark_button_box_shadow_active',
@@ -10206,12 +10194,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05c6b5b98ba8be5353772e',
+        id: '01810e5e8534a6421e3220b19265a18d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.468Z',
+      last_updated: '2022-05-29T05:51:24.468Z',
     },
     'input_text.dark_footer_box_shadow': {
       entity_id: 'input_text.dark_footer_box_shadow',
@@ -10221,12 +10209,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed05224ef58422ecab37a8dc',
+        id: '01810e5e85344b990bdf769644b94e41',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.205Z',
-      last_updated: '2022-05-28T19:34:43.205Z',
+      last_changed: '2022-05-29T05:51:24.468Z',
+      last_updated: '2022-05-29T05:51:24.468Z',
     },
     'input_text.dark_header_border_radius': {
       entity_id: 'input_text.dark_header_border_radius',
@@ -10236,12 +10224,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed06e7fc704d705fc8ea2e74',
+        id: '01810e5e853412c8fbec5c201d09340e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.206Z',
-      last_updated: '2022-05-28T19:34:43.206Z',
+      last_changed: '2022-05-29T05:51:24.468Z',
+      last_updated: '2022-05-29T05:51:24.468Z',
     },
     'input_text.dark_header_badge_icon_color': {
       entity_id: 'input_text.dark_header_badge_icon_color',
@@ -10251,12 +10239,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0657f704de0bbfe7a63111',
+        id: '01810e5e853426fd80b7cb31141cd555',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.206Z',
-      last_updated: '2022-05-28T19:34:43.206Z',
+      last_changed: '2022-05-29T05:51:24.468Z',
+      last_updated: '2022-05-29T05:51:24.468Z',
     },
     'input_text.dark_header_badge_background': {
       entity_id: 'input_text.dark_header_badge_background',
@@ -10266,12 +10254,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed06da7fb3a66db627d700ee',
+        id: '01810e5e8534d8b91d1246b455152024',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.206Z',
-      last_updated: '2022-05-28T19:34:43.206Z',
+      last_changed: '2022-05-29T05:51:24.468Z',
+      last_updated: '2022-05-29T05:51:24.468Z',
     },
     'input_text.dark_header_badge_color': {
       entity_id: 'input_text.dark_header_badge_color',
@@ -10281,12 +10269,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed07c97a98e6f3ce7076c506',
+        id: '01810e5e85353bfda541f8a14fe1185d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.207Z',
-      last_updated: '2022-05-28T19:34:43.207Z',
+      last_changed: '2022-05-29T05:51:24.469Z',
+      last_updated: '2022-05-29T05:51:24.469Z',
     },
     'input_text.dark_header_badge_text_color': {
       entity_id: 'input_text.dark_header_badge_text_color',
@@ -10296,12 +10284,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed07142018efa63dd2718ff7',
+        id: '01810e5e853511f967967539a90c7924',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.207Z',
-      last_updated: '2022-05-28T19:34:43.207Z',
+      last_changed: '2022-05-29T05:51:24.469Z',
+      last_updated: '2022-05-29T05:51:24.469Z',
     },
     'input_text.dark_nav_bar_color': {
       entity_id: 'input_text.dark_nav_bar_color',
@@ -10311,12 +10299,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed078dc993d03816291ebe40',
+        id: '01810e5e85352f30ee3ddd8f8fecab58',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.207Z',
-      last_updated: '2022-05-28T19:34:43.207Z',
+      last_changed: '2022-05-29T05:51:24.469Z',
+      last_updated: '2022-05-29T05:51:24.469Z',
     },
     'input_text.dark_nav_bar_text_color': {
       entity_id: 'input_text.dark_nav_bar_text_color',
@@ -10326,12 +10314,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed07de0b3abe9bf2dbf0c13a',
+        id: '01810e5e85356c91a84a73f01662c06d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.207Z',
-      last_updated: '2022-05-28T19:34:43.207Z',
+      last_changed: '2022-05-29T05:51:24.469Z',
+      last_updated: '2022-05-29T05:51:24.469Z',
     },
     'input_text.dark_card_color': {
       entity_id: 'input_text.dark_card_color',
@@ -10341,12 +10329,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed087d2740c78b2e36898da4',
+        id: '01810e5e85352e72aa0da3a730bcfdf5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.469Z',
+      last_updated: '2022-05-29T05:51:24.469Z',
     },
     'input_text.dark_card_border_style': {
       entity_id: 'input_text.dark_card_border_style',
@@ -10356,12 +10344,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed08869604f2060e40865a86',
+        id: '01810e5e85358770e9ce8de25c9075fc',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.469Z',
+      last_updated: '2022-05-29T05:51:24.469Z',
     },
     'input_text.dark_card_border_width': {
       entity_id: 'input_text.dark_card_border_width',
@@ -10371,12 +10359,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed086e69c537f1dd4d8c40b2',
+        id: '01810e5e8535af3e986c56ee6635169b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.469Z',
+      last_updated: '2022-05-29T05:51:24.469Z',
     },
     'input_text.dark_card_border_color': {
       entity_id: 'input_text.dark_card_border_color',
@@ -10386,12 +10374,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed08f01951e0d373f6767f5f',
+        id: '01810e5e853612f107c904929485d8ef',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.470Z',
+      last_updated: '2022-05-29T05:51:24.470Z',
     },
     'input_text.dark_card_border_radius': {
       entity_id: 'input_text.dark_card_border_radius',
@@ -10401,12 +10389,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0842d24dd872a81c050083',
+        id: '01810e5e8536c230e8c623cad44c347e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.470Z',
+      last_updated: '2022-05-29T05:51:24.470Z',
     },
     'input_text.dark_card_box_shadow': {
       entity_id: 'input_text.dark_card_box_shadow',
@@ -10416,12 +10404,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed08cd51da6d7b8c444a65a1',
+        id: '01810e5e8536f23fabe2b46b34ea361b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.470Z',
+      last_updated: '2022-05-29T05:51:24.470Z',
     },
     'input_text.dark_header_color': {
       entity_id: 'input_text.dark_header_color',
@@ -10431,12 +10419,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed08a2679d004a492648662e',
+        id: '01810e5e8536b835837f28a2a3180905',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.470Z',
+      last_updated: '2022-05-29T05:51:24.470Z',
     },
     'input_text.dark_header_text_color': {
       entity_id: 'input_text.dark_header_text_color',
@@ -10446,12 +10434,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed08239027f2b6af38f44c02',
+        id: '01810e5e8536cc96883bd601d3ae4c88',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.470Z',
+      last_updated: '2022-05-29T05:51:24.470Z',
     },
     'input_text.dark_text_color': {
       entity_id: 'input_text.dark_text_color',
@@ -10461,12 +10449,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed08bcf0b001d6e00396f8fe',
+        id: '01810e5e85361a5078b65f9a15715d49',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.208Z',
-      last_updated: '2022-05-28T19:34:43.208Z',
+      last_changed: '2022-05-29T05:51:24.470Z',
+      last_updated: '2022-05-29T05:51:24.470Z',
     },
     'input_text.dark_secondary_text_color': {
       entity_id: 'input_text.dark_secondary_text_color',
@@ -10476,12 +10464,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed09d555b9f30a057e1e9819',
+        id: '01810e5e8536f425a8ce4b392003ebb2',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.470Z',
+      last_updated: '2022-05-29T05:51:24.470Z',
     },
     'input_text.dark_background_image': {
       entity_id: 'input_text.dark_background_image',
@@ -10491,12 +10479,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0938cb9b9c48a9963e678c',
+        id: '01810e5e8537cfbd550c6ed79db2ed99',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.471Z',
+      last_updated: '2022-05-29T05:51:24.471Z',
     },
     'input_text.dark_icon_color_default': {
       entity_id: 'input_text.dark_icon_color_default',
@@ -10506,12 +10494,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed096daec5c3f6d35951fc8d',
+        id: '01810e5e85370203a3a1390a8de0742a',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.471Z',
+      last_updated: '2022-05-29T05:51:24.471Z',
     },
     'input_text.dark_icon_color_active': {
       entity_id: 'input_text.dark_icon_color_active',
@@ -10521,12 +10509,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed098707e163505426a6d5df',
+        id: '01810e5e8537fb2130ba9fba3f1312d5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.471Z',
+      last_updated: '2022-05-29T05:51:24.471Z',
     },
     'input_text.dark_font_family': {
       entity_id: 'input_text.dark_font_family',
@@ -10536,12 +10524,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0958bbf7a301b1ff50b525',
+        id: '01810e5e853730fe8d0d6174cad560af',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.471Z',
+      last_updated: '2022-05-29T05:51:24.471Z',
     },
     'input_text.dark_header_font_size': {
       entity_id: 'input_text.dark_header_font_size',
@@ -10551,12 +10539,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed09e9b2c0e54327b2a9f5d5',
+        id: '01810e5e8537b02b76874952f769021d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.471Z',
+      last_updated: '2022-05-29T05:51:24.471Z',
     },
     'input_text.dark_header_font_weight': {
       entity_id: 'input_text.dark_header_font_weight',
@@ -10566,12 +10554,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed09ff057c5d02fe35e1aba9',
+        id: '01810e5e8537cb04bff9de000d8880bd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.471Z',
+      last_updated: '2022-05-29T05:51:24.471Z',
     },
     'input_text.dark_subtitle_font_size': {
       entity_id: 'input_text.dark_subtitle_font_size',
@@ -10581,12 +10569,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed092eab3083a0db399ea27c',
+        id: '01810e5e8538f141c9e36b9faefdd2d3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.209Z',
-      last_updated: '2022-05-28T19:34:43.209Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_subtitle_font_weight': {
       entity_id: 'input_text.dark_subtitle_font_weight',
@@ -10596,12 +10584,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0a7ce4f588d98fd6c6f55d',
+        id: '01810e5e85382fc9abeb638f5dc34c44',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_subtitle_text_color': {
       entity_id: 'input_text.dark_subtitle_text_color',
@@ -10611,12 +10599,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0ac84f5c94eb18d1e6e60e',
+        id: '01810e5e85383976d3d8e22f35789e44',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_title_text_color': {
       entity_id: 'input_text.dark_title_text_color',
@@ -10626,12 +10614,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0a33f51c1d9667db8b8d6b',
+        id: '01810e5e853888760016938a9dc74593',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_title_text_font_size': {
       entity_id: 'input_text.dark_title_text_font_size',
@@ -10641,12 +10629,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0a18c0f4f5abf2b9ff1ba3',
+        id: '01810e5e8538db8d4d551cd6b25bd5cb',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_title_text_font_weight': {
       entity_id: 'input_text.dark_title_text_font_weight',
@@ -10656,12 +10644,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0a86a308bf45419a46a721',
+        id: '01810e5e8538640705336e9281e6a3db',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_title_text_background_color': {
       entity_id: 'input_text.dark_title_text_background_color',
@@ -10671,12 +10659,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0a82648fd7e1cb713798e3',
+        id: '01810e5e8538905417ef28ac9dfd075b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_title_text_justify_self': {
       entity_id: 'input_text.dark_title_text_justify_self',
@@ -10686,12 +10674,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0a4a3e4f9d671cae9ea924',
+        id: '01810e5e8538884febc8a16aacd95f81',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.472Z',
+      last_updated: '2022-05-29T05:51:24.472Z',
     },
     'input_text.dark_title_text_border_radius': {
       entity_id: 'input_text.dark_title_text_border_radius',
@@ -10701,12 +10689,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0af48d5543fe894ed77de4',
+        id: '01810e5e85394e9dfc7c73816589014f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.473Z',
+      last_updated: '2022-05-29T05:51:24.473Z',
     },
     'input_text.dark_title_text_box_shadow': {
       entity_id: 'input_text.dark_title_text_box_shadow',
@@ -10716,12 +10704,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0a54f8d11732d02c0734d3',
+        id: '01810e5e85399c124e40cf03819f2dfd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.210Z',
-      last_updated: '2022-05-28T19:34:43.210Z',
+      last_changed: '2022-05-29T05:51:24.473Z',
+      last_updated: '2022-05-29T05:51:24.473Z',
     },
     'input_text.dark_title_text_padding': {
       entity_id: 'input_text.dark_title_text_padding',
@@ -10731,12 +10719,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0b1c67461b2d5d1d8b306c',
+        id: '01810e5e8539c2cf40c5e96182cee0ee',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.473Z',
+      last_updated: '2022-05-29T05:51:24.473Z',
     },
     'input_text.dark_title_text_border_style': {
       entity_id: 'input_text.dark_title_text_border_style',
@@ -10746,12 +10734,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0bd05912cfb5d1b77a424c',
+        id: '01810e5e8539e9e239631261e1bb5527',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.473Z',
+      last_updated: '2022-05-29T05:51:24.473Z',
     },
     'input_text.dark_title_text_border_width': {
       entity_id: 'input_text.dark_title_text_border_width',
@@ -10761,12 +10749,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0b7a3b55e05ba79a6086c1',
+        id: '01810e5e853939ade7deae0150d81cb9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.473Z',
+      last_updated: '2022-05-29T05:51:24.473Z',
     },
     'input_text.dark_title_text_border_color': {
       entity_id: 'input_text.dark_title_text_border_color',
@@ -10776,12 +10764,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0b6de64994a0bcce0b34c2',
+        id: '01810e5e85399d105ad6d6d0f032c784',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.473Z',
+      last_updated: '2022-05-29T05:51:24.473Z',
     },
     'input_text.dark_button_color_active': {
       entity_id: 'input_text.dark_button_color_active',
@@ -10791,12 +10779,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0b545aa0583239d59c2953',
+        id: '01810e5e8539f9a761a5702ca655440e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.473Z',
+      last_updated: '2022-05-29T05:51:24.473Z',
     },
     'input_text.dark_button_name_font_size': {
       entity_id: 'input_text.dark_button_name_font_size',
@@ -10806,12 +10794,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0bf4257823bb3120bbcfbd',
+        id: '01810e5e853a83a271d398535d7260a9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.474Z',
+      last_updated: '2022-05-29T05:51:24.474Z',
     },
     'input_text.dark_button_name_font_weight': {
       entity_id: 'input_text.dark_button_name_font_weight',
@@ -10821,12 +10809,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0bc52063e18e9b49a2d92d',
+        id: '01810e5e853aafc0f9b64cd25e0aa5e0',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.474Z',
+      last_updated: '2022-05-29T05:51:24.474Z',
     },
     'input_text.dark_button_label_font_size': {
       entity_id: 'input_text.dark_button_label_font_size',
@@ -10836,12 +10824,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0b922adcc1e675decc7da6',
+        id: '01810e5e853aefcc472ebcb797ec308d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.211Z',
-      last_updated: '2022-05-28T19:34:43.211Z',
+      last_changed: '2022-05-29T05:51:24.474Z',
+      last_updated: '2022-05-29T05:51:24.474Z',
     },
     'input_text.dark_button_label_font_weight': {
       entity_id: 'input_text.dark_button_label_font_weight',
@@ -10851,12 +10839,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0c7352df3208edc94e818e',
+        id: '01810e5e853a8cadfd44cccb72df45ba',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.474Z',
+      last_updated: '2022-05-29T05:51:24.474Z',
     },
     'input_text.dark_button_state_font_size': {
       entity_id: 'input_text.dark_button_state_font_size',
@@ -10866,12 +10854,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0c9ef5f6cd7571899cb342',
+        id: '01810e5e853a063d0d998c3d915e0b18',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.474Z',
+      last_updated: '2022-05-29T05:51:24.474Z',
     },
     'input_text.dark_button_state_font_weight': {
       entity_id: 'input_text.dark_button_state_font_weight',
@@ -10881,12 +10869,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0cd0b12b3100325559ec24',
+        id: '01810e5e853a58661ea8735b0d7f4988',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.474Z',
+      last_updated: '2022-05-29T05:51:24.474Z',
     },
     'input_text.dark_button_name_color': {
       entity_id: 'input_text.dark_button_name_color',
@@ -10896,12 +10884,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0c2bc243fc95bc252362ba',
+        id: '01810e5e853b275df72dfcf5cf5f041b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.475Z',
+      last_updated: '2022-05-29T05:51:24.475Z',
     },
     'input_text.dark_button_name_color_active': {
       entity_id: 'input_text.dark_button_name_color_active',
@@ -10911,12 +10899,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0c03cbdd8c75537e753af1',
+        id: '01810e5e853bda3c523defa362a55952',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.475Z',
+      last_updated: '2022-05-29T05:51:24.475Z',
     },
     'input_text.dark_button_label_color': {
       entity_id: 'input_text.dark_button_label_color',
@@ -10926,12 +10914,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0c10a98dd655ece98edb93',
+        id: '01810e5e853bcd08de7e4a635eaab6f3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.475Z',
+      last_updated: '2022-05-29T05:51:24.475Z',
     },
     'input_text.dark_button_label_color_active': {
       entity_id: 'input_text.dark_button_label_color_active',
@@ -10941,12 +10929,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0c6662e8af0d60a6fde06d',
+        id: '01810e5e853bad7af0aa961ba8552c91',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.475Z',
+      last_updated: '2022-05-29T05:51:24.475Z',
     },
     'input_text.dark_button_state_color': {
       entity_id: 'input_text.dark_button_state_color',
@@ -10956,12 +10944,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0ceb751fd39b7bb4fbe981',
+        id: '01810e5e853b9e1da26727e0e5cb50c5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.212Z',
-      last_updated: '2022-05-28T19:34:43.212Z',
+      last_changed: '2022-05-29T05:51:24.475Z',
+      last_updated: '2022-05-29T05:51:24.475Z',
     },
     'input_text.dark_button_state_color_active': {
       entity_id: 'input_text.dark_button_state_color_active',
@@ -10971,12 +10959,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0dcd3c749fe121f40ece77',
+        id: '01810e5e853ca4f8bc2618560c961eab',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.476Z',
+      last_updated: '2022-05-29T05:51:24.476Z',
     },
     'input_text.dark_badge_font_size': {
       entity_id: 'input_text.dark_badge_font_size',
@@ -10986,12 +10974,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0d7917aa45ee3c21c13d36',
+        id: '01810e5e853c1fe1868249d9e5c0aa90',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.476Z',
+      last_updated: '2022-05-29T05:51:24.476Z',
     },
     'input_text.dark_badge_font_weight': {
       entity_id: 'input_text.dark_badge_font_weight',
@@ -11001,12 +10989,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0deaaca6ec00d060f5c525',
+        id: '01810e5e853c02f8362802c25e258c94',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.476Z',
+      last_updated: '2022-05-29T05:51:24.476Z',
     },
     'input_text.dark_badge_text_transform': {
       entity_id: 'input_text.dark_badge_text_transform',
@@ -11016,12 +11004,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0d72d26cad09566f27d6c4',
+        id: '01810e5e853ca3931a304cd05b8a4c5e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.476Z',
+      last_updated: '2022-05-29T05:51:24.476Z',
     },
     'input_text.dark_badge_background_color': {
       entity_id: 'input_text.dark_badge_background_color',
@@ -11031,12 +11019,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0d2b648217d6daaeddf6a5',
+        id: '01810e5e853c5f15fac8b1d49351954c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.476Z',
+      last_updated: '2022-05-29T05:51:24.476Z',
     },
     'input_text.dark_badge_text_color': {
       entity_id: 'input_text.dark_badge_text_color',
@@ -11046,12 +11034,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0dba3a6a23a4c46ca72424',
+        id: '01810e5e853c1e5efa68ab4cd616ded9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.476Z',
+      last_updated: '2022-05-29T05:51:24.476Z',
     },
     'input_text.good_morning': {
       entity_id: 'input_text.good_morning',
@@ -11061,12 +11049,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0d4eb0b14b3b4ebf86db52',
+        id: '01810e5e853ce843880485fb3c720bca',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.476Z',
+      last_updated: '2022-05-29T05:51:24.476Z',
     },
     'input_text.good_afternoon': {
       entity_id: 'input_text.good_afternoon',
@@ -11076,12 +11064,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0d61af1ab2f66f142247a9',
+        id: '01810e5e853d6fc2959bf968189b492e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.213Z',
-      last_updated: '2022-05-28T19:34:43.213Z',
+      last_changed: '2022-05-29T05:51:24.477Z',
+      last_updated: '2022-05-29T05:51:24.477Z',
     },
     'input_text.good_evening': {
       entity_id: 'input_text.good_evening',
@@ -11091,12 +11079,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0ecfcd813a3ace1ad7fea4',
+        id: '01810e5e853d25849b81778e3e8d810e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.214Z',
-      last_updated: '2022-05-28T19:34:43.214Z',
+      last_changed: '2022-05-29T05:51:24.477Z',
+      last_updated: '2022-05-29T05:51:24.477Z',
     },
     'input_text.good_night': {
       entity_id: 'input_text.good_night',
@@ -11106,12 +11094,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0e68d42f77c6444a49c546',
+        id: '01810e5e853d9b3b7eeba8195d3201b2',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.214Z',
-      last_updated: '2022-05-28T19:34:43.214Z',
+      last_changed: '2022-05-29T05:51:24.477Z',
+      last_updated: '2022-05-29T05:51:24.477Z',
     },
     'input_select.settings_light_dark': {
       entity_id: 'input_select.settings_light_dark',
@@ -11123,12 +11111,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0e1be4528099b4afca1a73',
+        id: '01810e5e853db9f18b4c71f7584da2a1',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.214Z',
-      last_updated: '2022-05-28T19:34:43.214Z',
+      last_changed: '2022-05-29T05:51:24.477Z',
+      last_updated: '2022-05-29T05:51:24.477Z',
     },
     'input_select.theme_selector_light': {
       entity_id: 'input_select.theme_selector_light',
@@ -11140,12 +11128,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0ebf218ce2eedbae1d07f7',
+        id: '01810e5e853d396b00b58bb762527ca1',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.214Z',
-      last_updated: '2022-05-28T19:34:43.214Z',
+      last_changed: '2022-05-29T05:51:24.477Z',
+      last_updated: '2022-05-29T05:51:24.477Z',
     },
     'input_select.theme_selector_dark': {
       entity_id: 'input_select.theme_selector_dark',
@@ -11157,12 +11145,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0e6c779ed40d3377169985',
+        id: '01810e5e853d4e38d396a64e69a84f3b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.214Z',
-      last_updated: '2022-05-28T19:34:43.214Z',
+      last_changed: '2022-05-29T05:51:24.477Z',
+      last_updated: '2022-05-29T05:51:24.477Z',
     },
     'input_select.navigation_bar_direction': {
       entity_id: 'input_select.navigation_bar_direction',
@@ -11173,12 +11161,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0e380503ca343cfbda3d49',
+        id: '01810e5e853d55581e2494fe60bc699f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.214Z',
-      last_updated: '2022-05-28T19:34:43.214Z',
+      last_changed: '2022-05-29T05:51:24.477Z',
+      last_updated: '2022-05-29T05:51:24.477Z',
     },
     'input_select.navigation_bar_options': {
       entity_id: 'input_select.navigation_bar_options',
@@ -11189,12 +11177,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0eea1e157292030756bbbb',
+        id: '01810e5e853ea274ef7ded940c0a7dfc',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.214Z',
-      last_updated: '2022-05-28T19:34:43.214Z',
+      last_changed: '2022-05-29T05:51:24.478Z',
+      last_updated: '2022-05-29T05:51:24.478Z',
     },
     'input_select.navigation_bar': {
       entity_id: 'input_select.navigation_bar',
@@ -11205,12 +11193,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0ed7a7bcc30e2342e493b3',
+        id: '01810e5e853e19e582eb8d946ac31593',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.478Z',
+      last_updated: '2022-05-29T05:51:24.478Z',
     },
     'input_select.find_my': {
       entity_id: 'input_select.find_my',
@@ -11221,12 +11209,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed0f465bfd0f5be8d5bc3f65',
+        id: '01810e5e853e08008007113f433b97b3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.478Z',
+      last_updated: '2022-05-29T05:51:24.478Z',
     },
     'sensor.disk_use_home': {
       entity_id: 'sensor.disk_use_home',
@@ -11240,12 +11228,12 @@ const hass = {
         unit_of_measurement: 'GiB',
       },
       context: {
-        id: '01810c29ed0f96ba4a268efc54f08044',
+        id: '01810e5e853e7ee0b3361928cc500676',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.478Z',
+      last_updated: '2022-05-29T05:51:24.478Z',
     },
     'sensor.disk_free_home': {
       entity_id: 'sensor.disk_free_home',
@@ -11259,12 +11247,12 @@ const hass = {
         unit_of_measurement: 'GiB',
       },
       context: {
-        id: '01810c29ed0f6c70294a1c0a6876ca8b',
+        id: '01810e5e853e15a179f7054e12aaa5f1',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.478Z',
+      last_updated: '2022-05-29T05:51:24.478Z',
     },
     'sensor.disk_use_percent_home': {
       entity_id: 'sensor.disk_use_percent_home',
@@ -11278,12 +11266,12 @@ const hass = {
         unit_of_measurement: '%',
       },
       context: {
-        id: '01810c29ed0fc5a323616272488809a4',
+        id: '01810e5e853ec7bce204e376f5f34ecf',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.478Z',
+      last_updated: '2022-05-29T05:51:24.478Z',
     },
     'sensor.memory_free': {
       entity_id: 'sensor.memory_free',
@@ -11297,12 +11285,12 @@ const hass = {
         unit_of_measurement: 'MiB',
       },
       context: {
-        id: '01810c29ed0f7f38a8919aec75ea2a28',
+        id: '01810e5e853e63a3272bdccae43331e5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.478Z',
+      last_updated: '2022-05-29T05:51:24.478Z',
     },
     'sensor.memory_use': {
       entity_id: 'sensor.memory_use',
@@ -11316,12 +11304,12 @@ const hass = {
         unit_of_measurement: 'MiB',
       },
       context: {
-        id: '01810c29ed0f473f41ffb834b4987f30',
+        id: '01810e5e853f0ccec9dea0b1e4d8c372',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.479Z',
+      last_updated: '2022-05-29T05:51:24.479Z',
     },
     'sensor.memory_use_percent': {
       entity_id: 'sensor.memory_use_percent',
@@ -11335,12 +11323,12 @@ const hass = {
         unit_of_measurement: '%',
       },
       context: {
-        id: '01810c29ed0fce058aa50e21c8c060f5',
+        id: '01810e5e853faa781901d3f3d894eac1',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.215Z',
-      last_updated: '2022-05-28T19:34:43.215Z',
+      last_changed: '2022-05-29T05:51:24.479Z',
+      last_updated: '2022-05-29T05:51:24.479Z',
     },
     'sensor.network_in_eth0': {
       entity_id: 'sensor.network_in_eth0',
@@ -11354,12 +11342,12 @@ const hass = {
         unit_of_measurement: 'MiB',
       },
       context: {
-        id: '01810c29ed10fcb6aa0f2282bfb8c23e',
+        id: '01810e5e853f04ea939a4ed554b61d8f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.479Z',
+      last_updated: '2022-05-29T05:51:24.479Z',
     },
     'sensor.network_out_eth0': {
       entity_id: 'sensor.network_out_eth0',
@@ -11373,12 +11361,12 @@ const hass = {
         unit_of_measurement: 'MiB',
       },
       context: {
-        id: '01810c29ed106c62fbd6d0da64da187a',
+        id: '01810e5e853f70826fa6bf54981d2301',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.479Z',
+      last_updated: '2022-05-29T05:51:24.479Z',
     },
     'sensor.network_throughput_in_eth0': {
       entity_id: 'sensor.network_throughput_in_eth0',
@@ -11392,12 +11380,12 @@ const hass = {
         unit_of_measurement: 'MB/s',
       },
       context: {
-        id: '01810c29ed108c7fe0dac9fc205c0db1',
+        id: '01810e5e853fef6a99802a796769531f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.479Z',
+      last_updated: '2022-05-29T05:51:24.479Z',
     },
     'sensor.network_throughput_out_eth0': {
       entity_id: 'sensor.network_throughput_out_eth0',
@@ -11411,12 +11399,12 @@ const hass = {
         unit_of_measurement: 'MB/s',
       },
       context: {
-        id: '01810c29ed1086209cbe76ade7a2c2d4',
+        id: '01810e5e853fc6b92475efc9085c5f71',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.479Z',
+      last_updated: '2022-05-29T05:51:24.479Z',
     },
     'sensor.ipv4_address_eth0': {
       entity_id: 'sensor.ipv4_address_eth0',
@@ -11428,12 +11416,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed10683377220d75f5f61164',
+        id: '01810e5e853fd4469e01278b66261ad6',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.479Z',
+      last_updated: '2022-05-29T05:51:24.479Z',
     },
     'sensor.packets_in_eth0': {
       entity_id: 'sensor.packets_in_eth0',
@@ -11446,12 +11434,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed1057a72f356db491784221',
+        id: '01810e5e8540977f847b4712a4f0c3b0',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.480Z',
+      last_updated: '2022-05-29T05:51:24.480Z',
     },
     'sensor.packets_out_eth0': {
       entity_id: 'sensor.packets_out_eth0',
@@ -11464,12 +11452,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed10ff33c8d276bc8f018644',
+        id: '01810e5e854014e8c05c8351fef6a98b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.480Z',
+      last_updated: '2022-05-29T05:51:24.480Z',
     },
     'sensor.processor_use': {
       entity_id: 'sensor.processor_use',
@@ -11483,12 +11471,12 @@ const hass = {
         unit_of_measurement: '%',
       },
       context: {
-        id: '01810c29ed109ba10851a7ab1b037cd8',
+        id: '01810e5e8540b3a174cb7d9ccbc4734d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.480Z',
+      last_updated: '2022-05-29T05:51:24.480Z',
     },
     'script.hki_dark_default': {
       entity_id: 'script.hki_dark_default',
@@ -11499,12 +11487,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed1017791f63c542f80b5899',
+        id: '01810e5e8540da12083aa6493512887d',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.216Z',
-      last_updated: '2022-05-28T19:34:43.216Z',
+      last_changed: '2022-05-29T05:51:24.480Z',
+      last_updated: '2022-05-29T05:51:24.480Z',
     },
     'script.hki_dark_empty': {
       entity_id: 'script.hki_dark_empty',
@@ -11515,12 +11503,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed11bd313bcf0b96da4ebdcc',
+        id: '01810e5e8540e50515d0cb888abc1c55',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.217Z',
-      last_updated: '2022-05-28T19:34:43.217Z',
+      last_changed: '2022-05-29T05:51:24.480Z',
+      last_updated: '2022-05-29T05:51:24.480Z',
     },
     'script.hki_light_default': {
       entity_id: 'script.hki_light_default',
@@ -11531,12 +11519,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed11a99953a98d996961053a',
+        id: '01810e5e8541c58b2c262d78fcac70b6',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.217Z',
-      last_updated: '2022-05-28T19:34:43.217Z',
+      last_changed: '2022-05-29T05:51:24.481Z',
+      last_updated: '2022-05-29T05:51:24.481Z',
     },
     'script.hki_light_empty': {
       entity_id: 'script.hki_light_empty',
@@ -11547,12 +11535,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed1101f0b10ccf3b0550249e',
+        id: '01810e5e854147207187225aa1522fc9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.217Z',
-      last_updated: '2022-05-28T19:34:43.217Z',
+      last_changed: '2022-05-29T05:51:24.481Z',
+      last_updated: '2022-05-29T05:51:24.481Z',
     },
     'script.hki_header_greeting_default': {
       entity_id: 'script.hki_header_greeting_default',
@@ -11563,12 +11551,12 @@ const hass = {
         supported_features: 0,
       },
       context: {
-        id: '01810c29ed1175789b71d049cb77c6e7',
+        id: '01810e5e8541803cfb51e4b4da1c6257',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:43.217Z',
-      last_updated: '2022-05-28T19:34:43.217Z',
+      last_changed: '2022-05-29T05:51:24.481Z',
+      last_updated: '2022-05-29T05:51:24.481Z',
     },
     'persistent_notification.config_entry_discovery': {
       entity_id: 'persistent_notification.config_entry_discovery',
@@ -11580,12 +11568,12 @@ const hass = {
         friendly_name: 'New devices discovered',
       },
       context: {
-        id: '01810c29fb01c46ac449509647cacd12',
+        id: '01810e5e970d7ec53a3b62100570d07e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-28T19:34:46.785Z',
-      last_updated: '2022-05-28T19:34:46.785Z',
+      last_changed: '2022-05-29T05:51:29.037Z',
+      last_updated: '2022-05-29T05:51:29.037Z',
     },
   },
   config: {
@@ -11604,120 +11592,120 @@ const hass = {
     location_name: 'Home',
     time_zone: 'America/New_York',
     components: [
-      'tts',
-      'rpi_power',
-      'frontend',
-      'sensor.hassio',
-      'zeroconf',
-      'system_health',
-      'camera',
-      'input_datetime',
-      'ecobee',
-      'timer',
-      'select.deebot',
-      'default_config',
-      'lovelace',
-      'input_button',
-      'sun',
-      'search',
-      'auth',
-      'binary_sensor.hassio',
-      'climate',
-      'camera.deebot',
-      'person',
-      'my',
-      'tag',
-      'counter',
-      'notify',
-      'media_source',
-      'stream',
-      'input_text',
-      'image',
-      'scene.homeassistant',
-      'system_log',
-      'remote.apple_tv',
-      'device_tracker.mobile_app',
       'switch',
-      'humidifier',
-      'notify.mobile_app',
-      'sensor.upnp',
-      'binary_sensor.ecobee',
-      'cloud',
-      'ffmpeg',
+      'default_config',
+      'input_number',
+      'input_select',
+      'select.deebot',
+      'sensor',
+      'binary_sensor.rpi_power',
+      'webhook',
+      'person',
+      'automation',
+      'dhcp',
+      'energy',
+      'tag',
+      'remote.apple_tv',
+      'binary_sensor.deebot',
+      'button.deebot',
       'diagnostics',
       'input_boolean',
-      'weather',
-      'ssdp',
-      'sensor',
-      'scene',
-      'webhook',
-      'api',
-      'usb',
-      'recorder',
-      'persistent_notification',
-      'apple_tv',
-      'update.hassio',
-      'binary_sensor.deebot',
-      'upnp',
-      'binary_sensor.mobile_app',
-      'device_automation',
-      'hassio',
-      'zone',
-      'media_player',
-      'climate.ecobee',
-      'websocket_api',
-      'sensor.mobile_app',
+      'frontend',
       'onboarding',
-      'analytics',
-      'switch.deebot',
-      'http',
-      'homeassistant',
-      'lifx',
-      'device_tracker',
-      'dhcp',
-      'button',
-      'vacuum',
-      'trace',
-      'script',
-      'sensor.deebot',
-      'light.lifx',
-      'energy',
-      'number.deebot',
-      'button.deebot',
-      'sensor.ecobee',
-      'homekit',
-      'number',
-      'light',
-      'binary_sensor.upnp',
-      'humidifier.ecobee',
+      'humidifier',
       'update',
-      'network',
-      'mobile_app',
-      'weather.ecobee',
-      'sensor.energy',
-      'logbook',
-      'binary_sensor',
-      'select',
-      'history',
-      'panel_custom',
-      'vacuum.deebot',
-      'remote',
-      'blueprint',
-      'config',
+      'stream',
+      'zone',
+      'input_datetime',
       'sensor.hacs',
-      'automation',
-      'deebot',
-      'input_number',
-      'hacs',
-      'binary_sensor.rpi_power',
+      'vacuum',
+      'remote',
+      'zeroconf',
+      'persistent_notification',
+      'system_log',
+      'trace',
+      'sensor.mobile_app',
       'tts.google_translate',
-      'media_player.apple_tv',
-      'input_select',
+      'history',
+      'sensor.ecobee',
+      'counter',
+      'climate',
+      'media_player',
+      'binary_sensor.ecobee',
+      'ssdp',
+      'binary_sensor',
+      'upnp',
+      'ecobee',
+      'lovelace',
+      'deebot',
+      'websocket_api',
+      'binary_sensor.hassio',
+      'light.lifx',
+      'sensor.energy',
+      'sensor.deebot',
+      'binary_sensor.mobile_app',
+      'hacs',
+      'camera',
+      'script',
+      'timer',
+      'api',
+      'input_button',
+      'logbook',
+      'light',
+      'media_source',
+      'sensor.hassio',
+      'weather',
+      'system_health',
+      'button',
       'map',
+      'number',
+      'weather.ecobee',
+      'panel_custom',
+      'scene',
+      'analytics',
+      'image',
+      'device_tracker',
+      'binary_sensor.upnp',
+      'switch.deebot',
+      'device_automation',
+      'notify',
+      'camera.deebot',
+      'hassio',
+      'sun',
+      'tts',
+      'update.hassio',
+      'media_player.apple_tv',
+      'rpi_power',
+      'device_tracker.mobile_app',
+      'auth',
+      'number.deebot',
+      'mobile_app',
+      'vacuum.deebot',
+      'homeassistant',
+      'apple_tv',
+      'my',
+      'config',
+      'sensor.upnp',
+      'scene.homeassistant',
+      'network',
+      'recorder',
+      'blueprint',
+      'http',
+      'input_text',
+      'humidifier.ecobee',
+      'select',
+      'lifx',
+      'climate.ecobee',
+      'ffmpeg',
+      'homekit',
+      'notify.mobile_app',
+      'search',
+      'usb',
+      'cloud',
     ],
     config_dir: '/config',
-    whitelist_external_dirs: ['/media', '/config/www'],
-    allowlist_external_dirs: ['/media', '/config/www'],
+    whitelist_external_dirs: ['/config/www', '/media'],
+    allowlist_external_dirs: ['/config/www', '/media'],
     allowlist_external_urls: [],
     version: '2022.5.5',
     config_source: 'storage',
@@ -11744,16 +11732,6 @@ const hass = {
         mode: 'storage',
       },
       url_path: 'lovelace',
-      require_admin: false,
-    },
-    'lovelace-homekit': {
-      component_name: 'lovelace',
-      icon: 'mdi:home-assistant',
-      title: 'Homekit',
-      config: {
-        mode: 'storage',
-      },
-      url_path: 'lovelace-homekit',
       require_admin: false,
     },
     config: {
@@ -11819,30 +11797,6 @@ const hass = {
       url_path: 'history',
       require_admin: false,
     },
-    'react-panel-prod': {
-      component_name: 'custom',
-      icon: 'mdi:react',
-      title: 'React Panel',
-      config: {
-        name: 'World',
-        _panel_custom: {
-          name: 'react-panel',
-          embed_iframe: true,
-          trust_external: false,
-          js_url: '/local/react-panel/index.js',
-        },
-      },
-      url_path: 'react-panel-prod',
-      require_admin: false,
-    },
-    map: {
-      component_name: 'map',
-      icon: 'hass:tooltip-account',
-      title: 'map',
-      config: null,
-      url_path: 'map',
-      require_admin: false,
-    },
     _my_redirect: {
       component_name: 'my',
       icon: null,
@@ -11865,6 +11819,30 @@ const hass = {
       title: 'media_browser',
       config: null,
       url_path: 'media-browser',
+      require_admin: false,
+    },
+    map: {
+      component_name: 'map',
+      icon: 'hass:tooltip-account',
+      title: 'map',
+      config: null,
+      url_path: 'map',
+      require_admin: false,
+    },
+    'react-panel-prod': {
+      component_name: 'custom',
+      icon: 'mdi:react',
+      title: 'React Panel',
+      config: {
+        name: 'World',
+        _panel_custom: {
+          name: 'react-panel',
+          embed_iframe: true,
+          trust_external: false,
+          js_url: '/local/react-panel/assets/index.js',
+        },
+      },
+      url_path: 'react-panel-prod',
       require_admin: false,
     },
     energy: {
@@ -11892,6 +11870,74 @@ const hass = {
     },
   },
   services: {
+    persistent_notification: {
+      create: {
+        name: 'Create',
+        description: 'Show a notification in the frontend.',
+        fields: {
+          message: {
+            name: 'Message',
+            description:
+              'Message body of the notification. [Templates accepted]',
+            required: true,
+            example: 'Please check your configuration.yaml.',
+            selector: {
+              text: null,
+            },
+          },
+          title: {
+            name: 'Title',
+            description:
+              'Optional title for your notification. [Templates accepted]',
+            example: 'Test notification',
+            selector: {
+              text: null,
+            },
+          },
+          notification_id: {
+            name: 'Notification ID',
+            description:
+              'Target ID of the notification, will replace a notification with the same ID.',
+            example: 1234,
+            selector: {
+              text: null,
+            },
+          },
+        },
+      },
+      dismiss: {
+        name: 'Dismiss',
+        description: 'Remove a notification from the frontend.',
+        fields: {
+          notification_id: {
+            name: 'Notification ID',
+            description:
+              'Target ID of the notification, which should be removed.',
+            required: true,
+            example: 1234,
+            selector: {
+              text: null,
+            },
+          },
+        },
+      },
+      mark_read: {
+        name: 'Mark read',
+        description: 'Mark a notification read.',
+        fields: {
+          notification_id: {
+            name: 'Notification ID',
+            description:
+              'Target ID of the notification, which should be mark read.',
+            required: true,
+            example: 1234,
+            selector: {
+              text: null,
+            },
+          },
+        },
+      },
+    },
     homeassistant: {
       save_persistent_states: {
         name: 'Save Persistent States',
@@ -11995,74 +12041,6 @@ const hass = {
         target: {
           entity: {},
           device: {},
-        },
-      },
-    },
-    persistent_notification: {
-      create: {
-        name: 'Create',
-        description: 'Show a notification in the frontend.',
-        fields: {
-          message: {
-            name: 'Message',
-            description:
-              'Message body of the notification. [Templates accepted]',
-            required: true,
-            example: 'Please check your configuration.yaml.',
-            selector: {
-              text: null,
-            },
-          },
-          title: {
-            name: 'Title',
-            description:
-              'Optional title for your notification. [Templates accepted]',
-            example: 'Test notification',
-            selector: {
-              text: null,
-            },
-          },
-          notification_id: {
-            name: 'Notification ID',
-            description:
-              'Target ID of the notification, will replace a notification with the same ID.',
-            example: 1234,
-            selector: {
-              text: null,
-            },
-          },
-        },
-      },
-      dismiss: {
-        name: 'Dismiss',
-        description: 'Remove a notification from the frontend.',
-        fields: {
-          notification_id: {
-            name: 'Notification ID',
-            description:
-              'Target ID of the notification, which should be removed.',
-            required: true,
-            example: 1234,
-            selector: {
-              text: null,
-            },
-          },
-        },
-      },
-      mark_read: {
-        name: 'Mark read',
-        description: 'Mark a notification read.',
-        fields: {
-          notification_id: {
-            name: 'Notification ID',
-            description:
-              'Target ID of the notification, which should be mark read.',
-            required: true,
-            example: 1234,
-            selector: {
-              text: null,
-            },
-          },
         },
       },
     },
@@ -12206,66 +12184,6 @@ const hass = {
       disable: {
         name: 'Disable',
         description: 'Stop the recording of events and state changes',
-        fields: {},
-      },
-    },
-    cloud: {
-      remote_connect: {
-        name: 'Remote connect',
-        description: 'Make instance UI available outside over NabuCasa cloud',
-        fields: {},
-      },
-      remote_disconnect: {
-        name: 'Remote disconnect',
-        description: 'Disconnect UI from NabuCasa cloud',
-        fields: {},
-      },
-    },
-    person: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the person configuration.',
-        fields: {},
-      },
-    },
-    frontend: {
-      set_theme: {
-        name: 'Set theme',
-        description: 'Set a theme unless the client selected per-device theme.',
-        fields: {
-          name: {
-            name: 'Theme',
-            description: 'Name of a predefined theme',
-            required: true,
-            example: 'default',
-            selector: {
-              theme: null,
-            },
-          },
-          mode: {
-            name: 'Mode',
-            description: 'The mode the theme is for.',
-            default: 'light',
-            selector: {
-              select: {
-                options: [
-                  {
-                    label: 'Dark',
-                    value: 'dark',
-                  },
-                  {
-                    label: 'Light',
-                    value: 'light',
-                  },
-                ],
-              },
-            },
-          },
-        },
-      },
-      reload_themes: {
-        name: 'Reload themes',
-        description: 'Reload themes from YAML configuration.',
         fields: {},
       },
     },
@@ -12505,6 +12423,66 @@ const hass = {
             },
           },
         },
+      },
+    },
+    cloud: {
+      remote_connect: {
+        name: 'Remote connect',
+        description: 'Make instance UI available outside over NabuCasa cloud',
+        fields: {},
+      },
+      remote_disconnect: {
+        name: 'Remote disconnect',
+        description: 'Disconnect UI from NabuCasa cloud',
+        fields: {},
+      },
+    },
+    person: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the person configuration.',
+        fields: {},
+      },
+    },
+    frontend: {
+      set_theme: {
+        name: 'Set theme',
+        description: 'Set a theme unless the client selected per-device theme.',
+        fields: {
+          name: {
+            name: 'Theme',
+            description: 'Name of a predefined theme',
+            required: true,
+            example: 'default',
+            selector: {
+              theme: null,
+            },
+          },
+          mode: {
+            name: 'Mode',
+            description: 'The mode the theme is for.',
+            default: 'light',
+            selector: {
+              select: {
+                options: [
+                  {
+                    label: 'Dark',
+                    value: 'dark',
+                  },
+                  {
+                    label: 'Light',
+                    value: 'light',
+                  },
+                ],
+              },
+            },
+          },
+        },
+      },
+      reload_themes: {
+        name: 'Reload themes',
+        description: 'Reload themes from YAML configuration.',
+        fields: {},
       },
     },
     update: {
@@ -12915,108 +12893,6 @@ const hass = {
         fields: {},
       },
     },
-    automation: {
-      trigger: {
-        name: 'Trigger',
-        description: 'Trigger the actions of an automation.',
-        fields: {
-          skip_condition: {
-            name: 'Skip conditions',
-            description: 'Whether or not the conditions will be skipped.',
-            default: true,
-            selector: {
-              boolean: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      toggle: {
-        name: 'Toggle',
-        description: 'Toggle (enable / disable) an automation.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      turn_on: {
-        name: 'Turn on',
-        description: 'Enable an automation.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      turn_off: {
-        name: 'Turn off',
-        description: 'Disable an automation.',
-        fields: {
-          stop_actions: {
-            name: 'Stop actions',
-            description: 'Stop currently running actions.',
-            default: true,
-            selector: {
-              boolean: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      reload: {
-        name: 'Reload',
-        description: 'Reload the automation configuration.',
-        fields: {},
-      },
-    },
-    script: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload all the available scripts',
-        fields: {},
-      },
-      turn_on: {
-        name: 'Turn on',
-        description: 'Turn on script',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'script',
-          },
-        },
-      },
-      turn_off: {
-        name: 'Turn off',
-        description: 'Turn off script',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'script',
-          },
-        },
-      },
-      toggle: {
-        name: 'Toggle',
-        description: 'Toggle script',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'script',
-          },
-        },
-      },
-    },
     media_player: {
       turn_on: {
         name: 'Turn on',
@@ -13366,138 +13242,104 @@ const hass = {
         },
       },
     },
-    input_text: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the input_text configuration.',
-        fields: {},
-      },
-      set_value: {
-        name: 'Set',
-        description: 'Set the value of an input text entity.',
+    automation: {
+      trigger: {
+        name: 'Trigger',
+        description: 'Trigger the actions of an automation.',
         fields: {
-          value: {
-            name: 'Value',
-            description: 'The target value the entity should be set to.',
-            required: true,
-            example: 'This is an example text',
+          skip_condition: {
+            name: 'Skip conditions',
+            description: 'Whether or not the conditions will be skipped.',
+            default: true,
             selector: {
-              text: null,
+              boolean: null,
             },
           },
         },
         target: {
           entity: {
-            domain: 'input_text',
-          },
-        },
-      },
-    },
-    input_datetime: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the input_datetime configuration.',
-        fields: {},
-      },
-      set_datetime: {
-        name: 'Set',
-        description:
-          'This can be used to dynamically set the date and/or time.',
-        fields: {
-          date: {
-            name: 'Date',
-            description: 'The target date the entity should be set to.',
-            example: '"2019-04-20"',
-            selector: {
-              text: null,
-            },
-          },
-          time: {
-            name: 'Time',
-            description: 'The target time the entity should be set to.',
-            example: '"05:04:20"',
-            selector: {
-              time: null,
-            },
-          },
-          datetime: {
-            name: 'Date & Time',
-            description: 'The target date & time the entity should be set to.',
-            example: '"2019-04-20 05:04:20"',
-            selector: {
-              text: null,
-            },
-          },
-          timestamp: {
-            name: 'Timestamp',
-            description:
-              'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
-            selector: {
-              number: {
-                min: 0,
-                max: 9223372036854776000,
-                mode: 'box',
-              },
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_datetime',
-          },
-        },
-      },
-    },
-    input_boolean: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the input_boolean configuration',
-        fields: {},
-      },
-      turn_on: {
-        name: 'Turn on',
-        description: 'Turn on an input boolean',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_boolean',
-          },
-        },
-      },
-      turn_off: {
-        name: 'Turn off',
-        description: 'Turn off an input boolean',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_boolean',
+            domain: 'automation',
           },
         },
       },
       toggle: {
         name: 'Toggle',
-        description: 'Toggle an input boolean',
+        description: 'Toggle (enable / disable) an automation.',
         fields: {},
         target: {
           entity: {
-            domain: 'input_boolean',
+            domain: 'automation',
           },
         },
       },
-    },
-    input_button: {
-      reload: {
-        name: '',
-        description: '',
-        fields: {},
-      },
-      press: {
-        name: 'Press',
-        description: 'Press the input button entity.',
+      turn_on: {
+        name: 'Turn on',
+        description: 'Enable an automation.',
         fields: {},
         target: {
           entity: {
-            domain: 'input_button',
+            domain: 'automation',
+          },
+        },
+      },
+      turn_off: {
+        name: 'Turn off',
+        description: 'Disable an automation.',
+        fields: {
+          stop_actions: {
+            name: 'Stop actions',
+            description: 'Stop currently running actions.',
+            default: true,
+            selector: {
+              boolean: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'automation',
+          },
+        },
+      },
+      reload: {
+        name: 'Reload',
+        description: 'Reload the automation configuration.',
+        fields: {},
+      },
+    },
+    script: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload all the available scripts',
+        fields: {},
+      },
+      turn_on: {
+        name: 'Turn on',
+        description: 'Turn on script',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'script',
+          },
+        },
+      },
+      turn_off: {
+        name: 'Turn off',
+        description: 'Turn off script',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'script',
+          },
+        },
+      },
+      toggle: {
+        name: 'Toggle',
+        description: 'Toggle script',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'script',
           },
         },
       },
@@ -13694,6 +13536,220 @@ const hass = {
         target: {
           entity: {
             domain: 'remote',
+          },
+        },
+      },
+    },
+    input_number: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_number configuration.',
+        fields: {},
+      },
+      set_value: {
+        name: 'Set',
+        description: 'Set the value of an input number entity.',
+        fields: {
+          value: {
+            name: 'Value',
+            description: 'The target value the entity should be set to.',
+            required: true,
+            selector: {
+              number: {
+                min: 0,
+                max: 9223372036854776000,
+                step: 0.001,
+                mode: 'box',
+              },
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_number',
+          },
+        },
+      },
+      increment: {
+        name: 'Increment',
+        description:
+          'Increment the value of an input number entity by its stepping.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_number',
+          },
+        },
+      },
+      decrement: {
+        name: 'Decrement',
+        description:
+          'Decrement the value of an input number entity by its stepping.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_number',
+          },
+        },
+      },
+    },
+    input_select: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_select configuration.',
+        fields: {},
+      },
+      select_option: {
+        name: 'Select',
+        description: 'Select an option of an input select entity.',
+        fields: {
+          option: {
+            name: 'Option',
+            description: 'Option to be selected.',
+            required: true,
+            example: '"Item A"',
+            selector: {
+              text: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_next: {
+        name: 'Next',
+        description: 'Select the next options of an input select entity.',
+        fields: {
+          cycle: {
+            name: 'Cycle',
+            description:
+              'If the option should cycle from the last to the first.',
+            default: true,
+            selector: {
+              boolean: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_previous: {
+        name: 'Previous',
+        description: 'Select the previous options of an input select entity.',
+        fields: {
+          cycle: {
+            name: 'Cycle',
+            description:
+              'If the option should cycle from the first to the last.',
+            default: true,
+            selector: {
+              boolean: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_first: {
+        name: 'First',
+        description: 'Select the first option of an input select entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_last: {
+        name: 'Last',
+        description: 'Select the last option of an input select entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      set_options: {
+        name: 'Set options',
+        description: 'Set the options of an input select entity.',
+        fields: {
+          options: {
+            name: 'Options',
+            description: 'Options for the input select entity.',
+            required: true,
+            example: '["Item A", "Item B", "Item C"]',
+            selector: {
+              object: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+    },
+    input_button: {
+      reload: {
+        name: '',
+        description: '',
+        fields: {},
+      },
+      press: {
+        name: 'Press',
+        description: 'Press the input button entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_button',
+          },
+        },
+      },
+    },
+    input_boolean: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_boolean configuration',
+        fields: {},
+      },
+      turn_on: {
+        name: 'Turn on',
+        description: 'Turn on an input boolean',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_boolean',
+          },
+        },
+      },
+      turn_off: {
+        name: 'Turn off',
+        description: 'Turn off an input boolean',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_boolean',
+          },
+        },
+      },
+      toggle: {
+        name: 'Toggle',
+        description: 'Toggle an input boolean',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_boolean',
           },
         },
       },
@@ -14446,6 +14502,88 @@ const hass = {
         fields: {},
       },
     },
+    input_text: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_text configuration.',
+        fields: {},
+      },
+      set_value: {
+        name: 'Set',
+        description: 'Set the value of an input text entity.',
+        fields: {
+          value: {
+            name: 'Value',
+            description: 'The target value the entity should be set to.',
+            required: true,
+            example: 'This is an example text',
+            selector: {
+              text: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_text',
+          },
+        },
+      },
+    },
+    input_datetime: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_datetime configuration.',
+        fields: {},
+      },
+      set_datetime: {
+        name: 'Set',
+        description:
+          'This can be used to dynamically set the date and/or time.',
+        fields: {
+          date: {
+            name: 'Date',
+            description: 'The target date the entity should be set to.',
+            example: '"2019-04-20"',
+            selector: {
+              text: null,
+            },
+          },
+          time: {
+            name: 'Time',
+            description: 'The target time the entity should be set to.',
+            example: '"05:04:20"',
+            selector: {
+              time: null,
+            },
+          },
+          datetime: {
+            name: 'Date & Time',
+            description: 'The target date & time the entity should be set to.',
+            example: '"2019-04-20 05:04:20"',
+            selector: {
+              text: null,
+            },
+          },
+          timestamp: {
+            name: 'Timestamp',
+            description:
+              'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
+            selector: {
+              number: {
+                min: 0,
+                max: 9223372036854776000,
+                mode: 'box',
+              },
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_datetime',
+          },
+        },
+      },
+    },
     homekit: {
       reset_accessory: {
         name: 'Reset accessory',
@@ -14470,166 +14608,6 @@ const hass = {
         name: 'Reload',
         description: 'Reload homekit and re-process YAML configuration',
         fields: {},
-      },
-    },
-    input_number: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the input_number configuration.',
-        fields: {},
-      },
-      set_value: {
-        name: 'Set',
-        description: 'Set the value of an input number entity.',
-        fields: {
-          value: {
-            name: 'Value',
-            description: 'The target value the entity should be set to.',
-            required: true,
-            selector: {
-              number: {
-                min: 0,
-                max: 9223372036854776000,
-                step: 0.001,
-                mode: 'box',
-              },
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_number',
-          },
-        },
-      },
-      increment: {
-        name: 'Increment',
-        description:
-          'Increment the value of an input number entity by its stepping.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_number',
-          },
-        },
-      },
-      decrement: {
-        name: 'Decrement',
-        description:
-          'Decrement the value of an input number entity by its stepping.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_number',
-          },
-        },
-      },
-    },
-    input_select: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the input_select configuration.',
-        fields: {},
-      },
-      select_option: {
-        name: 'Select',
-        description: 'Select an option of an input select entity.',
-        fields: {
-          option: {
-            name: 'Option',
-            description: 'Option to be selected.',
-            required: true,
-            example: '"Item A"',
-            selector: {
-              text: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      select_next: {
-        name: 'Next',
-        description: 'Select the next options of an input select entity.',
-        fields: {
-          cycle: {
-            name: 'Cycle',
-            description:
-              'If the option should cycle from the last to the first.',
-            default: true,
-            selector: {
-              boolean: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      select_previous: {
-        name: 'Previous',
-        description: 'Select the previous options of an input select entity.',
-        fields: {
-          cycle: {
-            name: 'Cycle',
-            description:
-              'If the option should cycle from the first to the last.',
-            default: true,
-            selector: {
-              boolean: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      select_first: {
-        name: 'First',
-        description: 'Select the first option of an input select entity.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      select_last: {
-        name: 'Last',
-        description: 'Select the last option of an input select entity.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      set_options: {
-        name: 'Set options',
-        description: 'Set the options of an input select entity.',
-        fields: {
-          options: {
-            name: 'Options',
-            description: 'Options for the input select entity.',
-            required: true,
-            example: '["Item A", "Item B", "Item C"]',
-            selector: {
-              object: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
       },
     },
     lifx: {
@@ -15028,79 +15006,6 @@ const hass = {
         },
       },
     },
-    humidifier: {
-      turn_on: {
-        name: 'Turn on',
-        description: 'Turn humidifier device on.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'humidifier',
-          },
-        },
-      },
-      turn_off: {
-        name: 'Turn off',
-        description: 'Turn humidifier device off.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'humidifier',
-          },
-        },
-      },
-      toggle: {
-        name: 'Toggle',
-        description: 'Toggles a humidifier device.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'humidifier',
-          },
-        },
-      },
-      set_mode: {
-        name: 'Set mode',
-        description: 'Set mode for humidifier device.',
-        fields: {
-          mode: {
-            description: 'New mode',
-            required: true,
-            example: 'away',
-            selector: {
-              text: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'humidifier',
-          },
-        },
-      },
-      set_humidity: {
-        name: 'Set humidity',
-        description: 'Set target humidity of humidifier device.',
-        fields: {
-          humidity: {
-            description: 'New target humidity for humidifier device.',
-            required: true,
-            selector: {
-              number: {
-                min: 0,
-                max: 100,
-                unit_of_measurement: '%',
-              },
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'humidifier',
-          },
-        },
-      },
-    },
     climate: {
       turn_on: {
         name: 'Turn on',
@@ -15357,6 +15262,79 @@ const hass = {
         target: {
           entity: {
             domain: 'climate',
+          },
+        },
+      },
+    },
+    humidifier: {
+      turn_on: {
+        name: 'Turn on',
+        description: 'Turn humidifier device on.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'humidifier',
+          },
+        },
+      },
+      turn_off: {
+        name: 'Turn off',
+        description: 'Turn humidifier device off.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'humidifier',
+          },
+        },
+      },
+      toggle: {
+        name: 'Toggle',
+        description: 'Toggles a humidifier device.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'humidifier',
+          },
+        },
+      },
+      set_mode: {
+        name: 'Set mode',
+        description: 'Set mode for humidifier device.',
+        fields: {
+          mode: {
+            description: 'New mode',
+            required: true,
+            example: 'away',
+            selector: {
+              text: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'humidifier',
+          },
+        },
+      },
+      set_humidity: {
+        name: 'Set humidity',
+        description: 'Set target humidity of humidifier device.',
+        fields: {
+          humidity: {
+            description: 'New target humidity for humidifier device.',
+            required: true,
+            selector: {
+              number: {
+                min: 0,
+                max: 100,
+                unit_of_measurement: '%',
+              },
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'humidifier',
           },
         },
       },
@@ -15622,6 +15600,28 @@ const hass = {
         },
       },
     },
+    select: {
+      select_option: {
+        name: 'Select',
+        description: 'Select an option of an select entity.',
+        fields: {
+          option: {
+            name: 'Option',
+            description: 'Option to be selected.',
+            required: true,
+            example: '"Item A"',
+            selector: {
+              text: null,
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'select',
+          },
+        },
+      },
+    },
     number: {
       set_value: {
         name: 'Set',
@@ -15639,50 +15639,6 @@ const hass = {
         target: {
           entity: {
             domain: 'number',
-          },
-        },
-      },
-    },
-    button: {
-      press: {
-        name: 'Press',
-        description: 'Press the button entity.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'button',
-          },
-        },
-      },
-    },
-    switch: {
-      turn_off: {
-        name: 'Turn off',
-        description: 'Turn a switch off',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'switch',
-          },
-        },
-      },
-      turn_on: {
-        name: 'Turn on',
-        description: 'Turn a switch on',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'switch',
-          },
-        },
-      },
-      toggle: {
-        name: 'Toggle',
-        description: 'Toggles a switch state',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'switch',
           },
         },
       },
@@ -15833,24 +15789,46 @@ const hass = {
         },
       },
     },
-    select: {
-      select_option: {
-        name: 'Select',
-        description: 'Select an option of an select entity.',
-        fields: {
-          option: {
-            name: 'Option',
-            description: 'Option to be selected.',
-            required: true,
-            example: '"Item A"',
-            selector: {
-              text: null,
-            },
-          },
-        },
+    switch: {
+      turn_off: {
+        name: 'Turn off',
+        description: 'Turn a switch off',
+        fields: {},
         target: {
           entity: {
-            domain: 'select',
+            domain: 'switch',
+          },
+        },
+      },
+      turn_on: {
+        name: 'Turn on',
+        description: 'Turn a switch on',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'switch',
+          },
+        },
+      },
+      toggle: {
+        name: 'Toggle',
+        description: 'Toggles a switch state',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'switch',
+          },
+        },
+      },
+    },
+    button: {
+      press: {
+        name: 'Press',
+        description: 'Press the button entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'button',
           },
         },
       },
@@ -17069,40 +17047,6 @@ const hass = {
         "Press 'e' on any page to open the entity search dialog",
       'ui.tips.key_m_hint':
         "Press 'm' on any page to get the My Home Assistant link",
-      'component.media_player.state._.buffering': 'Buffering',
-      'component.media_player.state._.idle': 'Idle',
-      'component.media_player.state._.off': 'Off',
-      'component.media_player.state._.on': 'On',
-      'component.media_player.state._.paused': 'Paused',
-      'component.media_player.state._.playing': 'Playing',
-      'component.media_player.state._.standby': 'Standby',
-      'component.sensor.state._.off': 'Off',
-      'component.sensor.state._.on': 'On',
-      'component.weather.state._.clear-night': 'Clear, night',
-      'component.weather.state._.cloudy': 'Cloudy',
-      'component.weather.state._.exceptional': 'Exceptional',
-      'component.weather.state._.fog': 'Fog',
-      'component.weather.state._.hail': 'Hail',
-      'component.weather.state._.lightning': 'Lightning',
-      'component.weather.state._.lightning-rainy': 'Lightning, rainy',
-      'component.weather.state._.partlycloudy': 'Partly cloudy',
-      'component.weather.state._.pouring': 'Pouring',
-      'component.weather.state._.rainy': 'Rainy',
-      'component.weather.state._.snowy': 'Snowy',
-      'component.weather.state._.snowy-rainy': 'Snowy, rainy',
-      'component.weather.state._.sunny': 'Sunny',
-      'component.weather.state._.windy': 'Windy',
-      'component.weather.state._.windy-variant': 'Windy',
-      'component.input_boolean.state._.off': 'Off',
-      'component.input_boolean.state._.on': 'On',
-      'component.automation.state._.off': 'Off',
-      'component.automation.state._.on': 'On',
-      'component.humidifier.state._.off': 'Off',
-      'component.humidifier.state._.on': 'On',
-      'component.switch.state._.off': 'Off',
-      'component.switch.state._.on': 'On',
-      'component.remote.state._.off': 'Off',
-      'component.remote.state._.on': 'On',
       'component.binary_sensor.state._.off': 'Off',
       'component.binary_sensor.state._.on': 'On',
       'component.binary_sensor.state.battery.off': 'Normal',
@@ -17159,10 +17103,13 @@ const hass = {
       'component.binary_sensor.state.vibration.on': 'Detected',
       'component.binary_sensor.state.window.off': 'Closed',
       'component.binary_sensor.state.window.on': 'Open',
-      'component.person.state._.home': 'Home',
-      'component.person.state._.not_home': 'Away',
-      'component.light.state._.off': 'Off',
-      'component.light.state._.on': 'On',
+      'component.media_player.state._.buffering': 'Buffering',
+      'component.media_player.state._.idle': 'Idle',
+      'component.media_player.state._.off': 'Off',
+      'component.media_player.state._.on': 'On',
+      'component.media_player.state._.paused': 'Paused',
+      'component.media_player.state._.playing': 'Playing',
+      'component.media_player.state._.standby': 'Standby',
       'component.climate.state._.auto': 'Auto',
       'component.climate.state._.cool': 'Cool',
       'component.climate.state._.dry': 'Dry',
@@ -17170,16 +17117,8 @@ const hass = {
       'component.climate.state._.heat': 'Heat',
       'component.climate.state._.heat_cool': 'Heat/Cool',
       'component.climate.state._.off': 'Off',
-      'component.sun.state._.above_horizon': 'Above horizon',
-      'component.sun.state._.below_horizon': 'Below horizon',
-      'component.timer.state._.active': 'Active',
-      'component.timer.state._.idle': 'Idle',
-      'component.timer.state._.paused': 'Paused',
-      'component.script.state._.off': 'Off',
-      'component.script.state._.on': 'On',
-      'component.camera.state._.idle': 'Idle',
-      'component.camera.state._.recording': 'Recording',
-      'component.camera.state._.streaming': 'Streaming',
+      'component.remote.state._.off': 'Off',
+      'component.remote.state._.on': 'On',
       'component.vacuum.state._.cleaning': 'Cleaning',
       'component.vacuum.state._.docked': 'Docked',
       'component.vacuum.state._.error': 'Error',
@@ -17188,8 +17127,47 @@ const hass = {
       'component.vacuum.state._.on': 'On',
       'component.vacuum.state._.paused': 'Paused',
       'component.vacuum.state._.returning': 'Returning to dock',
+      'component.sun.state._.above_horizon': 'Above horizon',
+      'component.sun.state._.below_horizon': 'Below horizon',
       'component.device_tracker.state._.home': 'Home',
       'component.device_tracker.state._.not_home': 'Away',
+      'component.humidifier.state._.off': 'Off',
+      'component.humidifier.state._.on': 'On',
+      'component.input_boolean.state._.off': 'Off',
+      'component.input_boolean.state._.on': 'On',
+      'component.weather.state._.clear-night': 'Clear, night',
+      'component.weather.state._.cloudy': 'Cloudy',
+      'component.weather.state._.exceptional': 'Exceptional',
+      'component.weather.state._.fog': 'Fog',
+      'component.weather.state._.hail': 'Hail',
+      'component.weather.state._.lightning': 'Lightning',
+      'component.weather.state._.lightning-rainy': 'Lightning, rainy',
+      'component.weather.state._.partlycloudy': 'Partly cloudy',
+      'component.weather.state._.pouring': 'Pouring',
+      'component.weather.state._.rainy': 'Rainy',
+      'component.weather.state._.snowy': 'Snowy',
+      'component.weather.state._.snowy-rainy': 'Snowy, rainy',
+      'component.weather.state._.sunny': 'Sunny',
+      'component.weather.state._.windy': 'Windy',
+      'component.weather.state._.windy-variant': 'Windy',
+      'component.light.state._.off': 'Off',
+      'component.light.state._.on': 'On',
+      'component.timer.state._.active': 'Active',
+      'component.timer.state._.idle': 'Idle',
+      'component.timer.state._.paused': 'Paused',
+      'component.automation.state._.off': 'Off',
+      'component.automation.state._.on': 'On',
+      'component.person.state._.home': 'Home',
+      'component.person.state._.not_home': 'Away',
+      'component.sensor.state._.off': 'Off',
+      'component.sensor.state._.on': 'On',
+      'component.script.state._.off': 'Off',
+      'component.script.state._.on': 'On',
+      'component.camera.state._.idle': 'Idle',
+      'component.camera.state._.recording': 'Recording',
+      'component.camera.state._.streaming': 'Streaming',
+      'component.switch.state._.off': 'Off',
+      'component.switch.state._.on': 'On',
       'ui.panel.custom.external_panel.question_trust':
         'Do you trust the external panel {name} at {link}?',
       'ui.panel.custom.external_panel.complete_access':
@@ -17465,7 +17443,7 @@ const hass = {
       },
     },
   },
-  dockedSidebar: 'auto',
+  dockedSidebar: 'docked',
   vibrate: true,
   suspendWhenHidden: true,
   enableShortcuts: true,

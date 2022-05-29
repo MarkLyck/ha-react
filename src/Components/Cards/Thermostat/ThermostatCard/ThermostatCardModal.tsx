@@ -113,7 +113,7 @@ export const ThermostatCardModal: FC<ThermostatCardModalProps> = ({
         close={close}
         icon={
           <TemperatureIcon
-            temperature={targetTemperature}
+            temperature={on ? targetTemperature : currentTemperature}
             // @ts-ignore
             state={currentMode}
           />
@@ -126,13 +126,13 @@ export const ThermostatCardModal: FC<ThermostatCardModalProps> = ({
         <ButtonContainer>
           <Button
             onClick={handleDecreaseTemperature}
-            disabled={targetTemperature <= Number(tempMin)}
+            disabled={!on || targetTemperature <= Number(tempMin)}
           >
             <FontAwesomeIcon icon={['fal', 'angle-down']} />
           </Button>
           <Button
             onClick={handleIncreaseTemperature}
-            disabled={targetTemperature >= Number(tempMax)}
+            disabled={!on || targetTemperature >= Number(tempMax)}
           >
             <FontAwesomeIcon icon={['fal', 'angle-up']} />
           </Button>
