@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Dashboard from './Dashboard'
-import ReactPanelElement from './ReactPanelElement'
+import ReactPanelElement from './lib/ReactPanelElement'
 
 import hassMock from '../mocks/hass'
 import entityMock from '../mocks/entity.json'
