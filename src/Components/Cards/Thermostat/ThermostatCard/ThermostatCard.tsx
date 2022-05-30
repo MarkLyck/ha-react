@@ -39,10 +39,8 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
   const isOn = currentMode !== 'off'
 
   let statusLabel = 'Off'
-  if (currentMode === 'heat')
-    statusLabel = `Heat to ${entity.attributes.temperature}°`
-  if (currentMode === 'cool')
-    statusLabel = `Cool to ${entity.attributes.temperature}°`
+  if (currentMode === 'heat') statusLabel = `Heat to ${targetTemperature}°`
+  if (currentMode === 'cool') statusLabel = `Cool to ${targetTemperature}°`
   if (currentMode === 'heat_cool') statusLabel = `Auto`
 
   return (
@@ -63,8 +61,8 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
         name={name}
         state={statusLabel}
         isActive={currentMode !== 'off'}
-        handlePress={openModal}
-        handleLongPress={openModal}
+        onPress={openModal}
+        onLongPress={openModal}
       />
       <ThermostatCardModal
         name={name}

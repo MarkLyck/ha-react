@@ -51,8 +51,8 @@ export const LightCard: FC<LightCardProps> = ({
         name={name}
         state={stateLabel}
         isActive={on}
-        handlePress={onToggle}
-        handleLongPress={openModal}
+        onPress={onToggle}
+        onLongPress={openModal}
       />
       <LightCardModal
         name={name}

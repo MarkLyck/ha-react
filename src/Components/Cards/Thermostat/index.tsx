@@ -38,10 +38,14 @@ const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
   }
 
   const handleModeChange = (value: string) => {
+    let newTemp = Math.floor(entity.attributes.current_temperature)
     setCurrentMode(value)
+    setTargetTemperature(newTemp)
+
     hass.callService('climate', 'set_hvac_mode', {
       entity_id: entity.entity_id,
       hvac_mode: value,
+      temperature: newTemp,
     })
   }
 

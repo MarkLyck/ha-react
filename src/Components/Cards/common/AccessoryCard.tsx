@@ -35,6 +35,7 @@ export const AccessoryCardStatus = styled(CardState)`
   justify-self: start;
   align-self: center;
   grid-area: status;
+  text-transform: capitalize;
 `
 
 export const AccessoryCardIcon = styled(CardIcon)`
@@ -52,9 +53,9 @@ export interface AccessoryCardProps {
   /** Custom className */
   readonly className?: string
   /** Action triggered on long press */
-  readonly handleLongPress?: () => void
+  readonly onLongPress?: () => void
   /** Action triggered on press */
-  readonly handlePress?: () => void
+  readonly onPress?: () => void
   /** Icon for active state */
   readonly iconActive?: ReactNode
   /** Icon for inactive state */
@@ -68,16 +69,16 @@ export interface AccessoryCardProps {
 }
 
 export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
-  function handlePress() {
-    if (props.handlePress) {
-      props.handlePress()
+  function onPress() {
+    if (props.onPress) {
+      props.onPress()
     }
   }
 
   function handleButtonPress() {
-    if (props.handleLongPress) {
+    if (props.onLongPress) {
       buttonPressTimer = setTimeout(
-        () => props.handleLongPress && props.handleLongPress(),
+        () => props.onLongPress && props.onLongPress(),
         200
       )
     }
@@ -93,7 +94,7 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
     <AccessoryCardContainer
       className={props.className}
       isActive={props.isActive}
-      onClick={handlePress}
+      onClick={onPress}
       onTouchStart={handleButtonPress}
       onTouchEnd={handleButtonRelease}
       onMouseDown={handleButtonPress}

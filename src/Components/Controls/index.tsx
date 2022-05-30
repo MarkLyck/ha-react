@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
-import { Alert } from 'antd'
-import { LightCard, ThermostatCard } from 'src/Components/Cards'
+import { LightCard, ThermostatCard, VacuumCard } from 'src/Components/Cards'
 import ControlsSection from './ControlsSection'
 // import {
 //   CameraCard,
@@ -38,6 +37,7 @@ type ControlsProps = {
 }
 
 const Controls = ({ hass }: ControlsProps) => {
+  console.log('🔈 ~ hass', hass)
   return (
     <ControlsContainer>
       <ControlsLeft>
@@ -53,6 +53,11 @@ const Controls = ({ hass }: ControlsProps) => {
         <ControlsSection title="Hallway">
           <Components>
             <ThermostatCard hass={hass} entityId="climate.ecobee" />
+          </Components>
+        </ControlsSection>
+        <ControlsSection title="Living Room">
+          <Components>
+            <VacuumCard hass={hass} entityId="vacuum.alfred" />
           </Components>
         </ControlsSection>
         {/* <ControlsSection>
