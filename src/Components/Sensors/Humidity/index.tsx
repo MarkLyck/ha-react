@@ -30,7 +30,6 @@ const Sensor = ({ hass, entityId }: HumiditySensorProps) => {
 
   const Humidity = entity.state
 
-  console.log('🔈 ~ entity', entity)
   return (
     <SensorCard>
       <FontAwesomeIcon icon={['fal', 'droplet']} />

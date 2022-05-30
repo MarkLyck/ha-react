@@ -5,6 +5,7 @@ import {
   faAngleUp,
   faAngleDown,
   faDroplet,
+  faPersonWalking,
   faTemperatureHalf,
 } from '@fortawesome/pro-light-svg-icons'
 
@@ -13,5 +14,6 @@ library.add(
   faAngleUp,
   faAngleDown,
   faDroplet,
+  faPersonWalking,
   faTemperatureHalf
 )

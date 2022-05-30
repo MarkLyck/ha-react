@@ -1,25 +1,35 @@
-import { styled } from '@stitches/react'
+import styled from '@emotion/styled'
 
-const Title = styled('div', {
-  fontSize: 20,
-  fontWeight: 'bold',
-  color: '$neutral100',
-  marginBottom: 10,
-  position: 'relative',
-})
+const Header = styled.div`
+  display: flex;
+  alignt-items: center;
+`
 
-const Container = styled('div', {
-  marginBottom: 20,
-})
+const Title = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 12px;
+`
+
+const Container = styled.div`
+  margin-bottom: 20px;
+`
 
 type ControlsSectionProps = {
   title: string
   children: any
+  extra?: any
 }
 
-const ControlsSection = ({ title, children }: ControlsSectionProps) => (
+const ControlsSection = ({ title, extra, children }: ControlsSectionProps) => (
   <Container>
-    <Title>{title}</Title>
+    <Header>
+      <Title>{title}</Title>
+      {extra}
+    </Header>
     {children}
   </Container>
 )

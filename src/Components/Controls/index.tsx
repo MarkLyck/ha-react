@@ -1,7 +1,11 @@
 import styled from '@emotion/styled'
 import ControlsSection from './ControlsSection'
 import { LightCard, ThermostatCard, VacuumCard } from 'src/Components/Cards'
-import { TemperatureSensor, HumiditySensor } from 'src/Components/Sensors'
+import {
+  TemperatureSensor,
+  HumiditySensor,
+  OccupancySensor,
+} from 'src/Components/Sensors'
 // import {
 //   CameraCard,
 //   FanCard,
@@ -49,13 +53,21 @@ const Controls = ({ hass }: ControlsProps) => {
   return (
     <ControlsContainer>
       <ControlsLeft>
-        <ControlsSection title="Office">
-          <Sensors>
-            <TemperatureSensor
-              hass={hass}
-              entityId="sensor.office_temperature"
-            />
-          </Sensors>
+        <ControlsSection
+          title="Office"
+          extra={
+            <Sensors>
+              <TemperatureSensor
+                hass={hass}
+                entityId="sensor.office_temperature"
+              />
+              <OccupancySensor
+                hass={hass}
+                entityId="binary_sensor.office_occupancy"
+              />
+            </Sensors>
+          }
+        >
           <Components>
             <LightCard hass={hass} entityId="light.desk_light" />
             {/* <ThermostatCard
@@ -64,14 +76,25 @@ const Controls = ({ hass }: ControlsProps) => {
             /> */}
           </Components>
         </ControlsSection>
-        <ControlsSection title="Hallway">
-          <Sensors>
-            <TemperatureSensor
-              hass={hass}
-              entityId="sensor.my_ecobee_temperature"
-            />
-            <HumiditySensor hass={hass} entityId="sensor.my_ecobee_humidity" />
-          </Sensors>
+        <ControlsSection
+          title="Hallway"
+          extra={
+            <Sensors>
+              <TemperatureSensor
+                hass={hass}
+                entityId="sensor.my_ecobee_temperature"
+              />
+              <HumiditySensor
+                hass={hass}
+                entityId="sensor.my_ecobee_humidity"
+              />
+              <OccupancySensor
+                hass={hass}
+                entityId="binary_sensor.my_ecobee_occupancy"
+              />
+            </Sensors>
+          }
+        >
           <Components>
             <ThermostatCard hass={hass} entityId="climate.ecobee" />
           </Components>
@@ -81,13 +104,21 @@ const Controls = ({ hass }: ControlsProps) => {
             <VacuumCard hass={hass} entityId="vacuum.vacuum" />
           </Components>
         </ControlsSection>
-        <ControlsSection title="Bedroom">
-          <Sensors>
-            <TemperatureSensor
-              hass={hass}
-              entityId="sensor.bedroom_sensor_temperature"
-            />
-          </Sensors>
+        <ControlsSection
+          title="Bedroom"
+          extra={
+            <Sensors>
+              <TemperatureSensor
+                hass={hass}
+                entityId="sensor.bedroom_sensor_temperature"
+              />
+              <OccupancySensor
+                hass={hass}
+                entityId="binary_sensor.bedroom_sensor_occupancy"
+              />
+            </Sensors>
+          }
+        >
           <Components>
             <LightCard hass={hass} entityId="light.bedroom" />
             <LightCard hass={hass} entityId="light.bedroom_lamp" />

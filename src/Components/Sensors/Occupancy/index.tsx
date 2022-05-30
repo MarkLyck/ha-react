@@ -8,12 +8,12 @@ const Text = styled.b`
   margin-left: 8px;
 `
 
-type TemperatureSensorProps = {
+type OccupancySensorProps = {
   hass: any
   entityId: string
 }
 
-const Sensor = ({ hass, entityId }: TemperatureSensorProps) => {
+const Sensor = ({ hass, entityId }: OccupancySensorProps) => {
   const entity = hass.states[entityId]
   if (!entityId) {
     return <Alert message="Missing entityId" type="error" showIcon />
@@ -28,17 +28,17 @@ const Sensor = ({ hass, entityId }: TemperatureSensorProps) => {
     )
   }
 
-  const temperature = entity.state
+  const occupied = entity.state
 
   return (
     <SensorCard>
-      <FontAwesomeIcon icon={['fal', 'temperature-half']} />
-      <Text>{Number(temperature).toFixed(0)}°</Text>
+      <FontAwesomeIcon icon={['fal', 'person-walking']} />
+      <Text>{occupied ? 'Occupied' : 'empty'}</Text>
     </SensorCard>
   )
 }
 
-export const TemperatureSensor = (props: TemperatureSensorProps) => (
+export const OccupancySensor = (props: OccupancySensorProps) => (
   <ErrorBoundary
     fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
   >

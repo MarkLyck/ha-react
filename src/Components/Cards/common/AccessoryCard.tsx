@@ -29,6 +29,7 @@ export const AccessoryCardName = styled(CardName)`
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 13px;
 `
 
 export const AccessoryCardStatus = styled(CardState)`
