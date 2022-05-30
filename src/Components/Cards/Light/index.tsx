@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { LightCard as HomekitLightCard } from './LightCard'
 import { Alert } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
@@ -9,6 +10,10 @@ type HassLightCardProps = {
 
 const Light = ({ hass, entityId }: HassLightCardProps) => {
   const entity = hass.states[entityId]
+  const [isOn, setIsOn] = useState(
+    entity.state && entity.state !== 'off' && entity.state != 'unavailable'
+  )
+  const [brightness, setBrightness] = useState(entity.attributes.brightness)
 
   if (!entityId) {
     return <Alert message="Missing entityId" type="error" showIcon />
@@ -23,29 +28,28 @@ const Light = ({ hass, entityId }: HassLightCardProps) => {
     )
   }
 
-  const { friendly_name, brightness } = entity.attributes
-  const on =
-    entity.state && entity.state !== 'off' && entity.state != 'unavailable'
   const brightnessPercentage = Math.floor((brightness * 100) / 255)
 
   function handleToggle() {
+    setIsOn(!isOn)
     hass.callService('light', 'toggle', {
       entity_id: entity.entity_id,
     })
   }
 
   function handlePercentageChange(value: number) {
-    const brightness = Math.floor((value * 255) / 100)
+    const newBrightness = Math.floor((value * 255) / 100)
+    setBrightness(newBrightness)
     hass.callService('light', 'turn_on', {
       entity_id: entityId,
-      brightness: brightness,
+      brightness: newBrightness,
     })
   }
 
   return (
     <HomekitLightCard
-      name={friendly_name}
-      on={on}
+      name={entity.attributes.friendly_name}
+      on={isOn}
       brightness={brightnessPercentage}
       onBrightnessChange={handlePercentageChange}
       onToggle={handleToggle}

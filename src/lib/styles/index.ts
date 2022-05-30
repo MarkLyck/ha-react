@@ -7,6 +7,7 @@ const globalStyles = css`
   .App {
     height: 100%;
     width: 100%;
+    overflow-y: auto;
     margin: 0;
     padding: 0;
 

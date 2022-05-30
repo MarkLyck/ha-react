@@ -6,14 +6,7 @@ import {
   HumiditySensor,
   OccupancySensor,
 } from 'src/Components/Sensors'
-// import {
-//   CameraCard,
-//   FanCard,
-//   LightCard,
-//   SceneCard,
-//   SensorCard,
-//   ThermostatCard,
-// } from '../../packages/hass-homekit-react-components/src'
+import Test from '../Test'
 
 const ControlsContainer = styled.div`
   height: 100%;
@@ -124,61 +117,8 @@ const Controls = ({ hass }: ControlsProps) => {
             <LightCard hass={hass} entityId="light.bedroom_lamp" />
           </Components>
         </ControlsSection>
-        {/* <ControlsSection>
-          <Title>Chambre</Title>
-          <Components>
-            <LightCard hass={hass} entityId="light.lumiere_chambre" />
-            <LightCard hass={hass} entityId="light.lampe_chevet_gauche" />
-            <LightCard hass={hass} entityId="light.lampe_chevet_droite" />
-          </Components>
-        </ControlsSection> */}
-        {/* <ControlsSection>
-          <Title>Bureau</Title>
-          <Components>
-            <LightCard hass={hass} entityId="light.lumiere_bureau" />
-          </Components>
-        </ControlsSection> */}
-        {/* <ControlsSection>
-          <Title>Salle de bain</Title>
-          <Components>
-            <LightCard hass={hass} entityId="light.lumiere_salledebain" />
-            <SensorCard
-              hass={hass}
-              name="Temperature"
-              entityId="sensor.capteur_temp_sdb_temperature"
-              value="temperature"
-              unit="°"
-            />
-            <SensorCard
-              hass={hass}
-              name="Humidité"
-              entityId="sensor.capteur_temp_sdb_temperature"
-              value="humidity"
-              unit="%"
-            />
-            <FanCard hass={hass} entityId="switch.ventilation_salle_de_bain" />
-          </Components>
-        </ControlsSection> */}
+        <Test hass={hass} />
       </ControlsLeft>
-      <ControlsRight>
-        {/* <ControlsSection>
-          <Title>Scènes</Title>
-          <CardContainers>
-            <SceneCard
-              hass={hass}
-              entityId="scene.cozy"
-              icon={<FontAwesomeIcon icon={faMoon} />}
-            />
-          </CardContainers>
-        </ControlsSection> */}
-        {/* <ControlsSection>
-          <Title>Caméra</Title>
-          <Components>
-            <CameraCard hass={hass} entityId="camera.camera_sejour" />
-            <CameraCard hass={hass} entityId="camera.camera_balcon" />
-          </Components>
-        </ControlsSection> */}
-      </ControlsRight>
     </ControlsContainer>
   )
 }

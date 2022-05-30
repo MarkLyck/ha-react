@@ -4,9 +4,7 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SensorCard from '../Card'
 
-const Text = styled.b`
-  margin-left: 8px;
-`
+const Text = styled.b``
 
 type HumiditySensorProps = {
   hass: any
@@ -32,8 +30,7 @@ const Sensor = ({ hass, entityId }: HumiditySensorProps) => {
 
   return (
     <SensorCard>
-      <FontAwesomeIcon icon={['fal', 'droplet']} />
-      <Text>{Number(Humidity).toFixed(0)}%</Text>
+      <Text>💧 {Number(Humidity).toFixed(0)}%</Text>
     </SensorCard>
   )
 }

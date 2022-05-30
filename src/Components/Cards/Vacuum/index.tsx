@@ -37,11 +37,11 @@ const Vacuum = ({ hass, entityId }: VacuumCardProps) => {
 
   const onPress = () => {
     if (isActive) {
-      hass.callService('vacuum', 'turn_off', {
+      hass.callService('homeassistant', 'turn_off', {
         entity_id: entityId,
       })
     } else {
-      hass.callService('vacuum', 'turn_on', {
+      hass.callService('homeassistant', 'turn_on', {
         entity_id: entityId,
       })
     }
