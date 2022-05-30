@@ -43,6 +43,10 @@ export const AccessoryCardIcon = styled(CardIcon)`
   grid-area: icon;
   width: 1.8rem;
   margin-bottom: 0.5rem;
+
+  svg {
+    width: auto;
+  }
 `
 
 let buttonPressTimer: any

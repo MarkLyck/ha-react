@@ -2,6 +2,7 @@
 import { Alert } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
 import { AccessoryCard } from 'src/Components/Cards/common/AccessoryCard'
+// @ts-ignore
 import VacuumIcon from './vacuum.svg?component'
 
 type VacuumCardProps = {
