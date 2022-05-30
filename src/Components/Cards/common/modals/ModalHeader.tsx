@@ -32,6 +32,7 @@ const Subtitle = styled.div`
   color: ${(props) => props.theme.modal.header.subtitle.color};
   font-size: ${(props) => props.theme.modal.header.subtitle.size};
   font-weight: ${(props) => props.theme.modal.header.subtitle.weight};
+  text-transform: capitalize;
 `
 
 interface ModalHeaderProps {

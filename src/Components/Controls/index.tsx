@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
-import { LightCard, ThermostatCard, VacuumCard } from 'src/Components/Cards'
 import ControlsSection from './ControlsSection'
+import { LightCard, ThermostatCard, VacuumCard } from 'src/Components/Cards'
+import { TemperatureSensor, HumiditySensor } from 'src/Components/Sensors'
 // import {
 //   CameraCard,
 //   FanCard,
@@ -32,6 +33,13 @@ const Components = styled.div`
   gap: 12px;
 `
 
+const Sensors = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+`
+
 type ControlsProps = {
   hass: any
 }
@@ -42,6 +50,12 @@ const Controls = ({ hass }: ControlsProps) => {
     <ControlsContainer>
       <ControlsLeft>
         <ControlsSection title="Office">
+          <Sensors>
+            <TemperatureSensor
+              hass={hass}
+              entityId="sensor.office_temperature"
+            />
+          </Sensors>
           <Components>
             <LightCard hass={hass} entityId="light.desk_light" />
             {/* <ThermostatCard
@@ -51,13 +65,32 @@ const Controls = ({ hass }: ControlsProps) => {
           </Components>
         </ControlsSection>
         <ControlsSection title="Hallway">
+          <Sensors>
+            <TemperatureSensor
+              hass={hass}
+              entityId="sensor.my_ecobee_temperature"
+            />
+            <HumiditySensor hass={hass} entityId="sensor.my_ecobee_humidity" />
+          </Sensors>
           <Components>
             <ThermostatCard hass={hass} entityId="climate.ecobee" />
           </Components>
         </ControlsSection>
-        <ControlsSection title="Living Room">
+        <ControlsSection title="Living room">
           <Components>
-            <VacuumCard hass={hass} entityId="vacuum.alfred" />
+            <VacuumCard hass={hass} entityId="vacuum.vacuum" />
+          </Components>
+        </ControlsSection>
+        <ControlsSection title="Bedroom">
+          <Sensors>
+            <TemperatureSensor
+              hass={hass}
+              entityId="sensor.bedroom_sensor_temperature"
+            />
+          </Sensors>
+          <Components>
+            <LightCard hass={hass} entityId="light.bedroom" />
+            <LightCard hass={hass} entityId="light.bedroom_lamp" />
           </Components>
         </ControlsSection>
         {/* <ControlsSection>

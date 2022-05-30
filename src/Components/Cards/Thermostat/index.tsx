@@ -11,7 +11,6 @@ type ThermostatCardCardProps = {
 
 const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
   const entity = hass.states[entityId]
-  console.log('🔈 ~ entity', entity)
   const [currentMode, setCurrentMode] = useState(entity?.state || 'off')
   const [targetTemperature, setTargetTemperature] = useState(
     entity?.attributes?.temperature || 0
