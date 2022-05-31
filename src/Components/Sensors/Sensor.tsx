@@ -12,7 +12,6 @@ type SensorProps = {
   entityId: string
 }
 const Sensor = ({ entityId }: SensorProps) => {
-  console.log('🔈 ~ entityId', entityId)
   if (entityId.includes('temp')) {
     return <TemperatureSensor entityId={entityId} />
   }

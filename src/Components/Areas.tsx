@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Spin } from 'antd'
 import useStore from 'src/lib/useStore'
 import ControlsSection from './Controls/ControlsSection'
 import Sensor from './Sensors/Sensor'
@@ -24,15 +25,32 @@ const Devices = styled.div`
   gap: 12px;
 `
 
+const Loading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+`
+
 const SENSOR_TYPES = ['binary_sensor', 'sensor']
 const DEVICE_TYPES = ['light', 'climate', 'vacuum', 'button', 'media_player']
 
 const Areas = () => {
+  const state = useStore()
+  console.log('🔈 ~ state', state)
   const { areas } = useStore((state: any) => ({
     areas: state.areas,
   }))
 
-  if (!areas) return null
+  if (Object.keys(areas).length === 0) {
+    return (
+      <Loading>
+        <Spin size="large" />
+      </Loading>
+    )
+  }
+
   const areasList = Object.keys(areas).map((key: string) => areas[key])
 
   return (

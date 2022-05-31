@@ -31,7 +31,7 @@ const handleEvents = (message: any) => {
 
 const handleServices = (message: any) => {
   if (!message.result) return
-  useStore.getState().setEntities(message.result)
+  useStore.getState().setServices(message.result)
 }
 const handleStates = (message: any) => {
   console.log('🔈 ~ handleStates', message)
