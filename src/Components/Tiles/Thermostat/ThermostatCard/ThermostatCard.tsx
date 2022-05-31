@@ -39,8 +39,10 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
   const isOn = currentMode !== 'off'
 
   let statusLabel = 'Off'
-  if (currentMode === 'heat') statusLabel = `Heat to ${targetTemperature}°`
-  if (currentMode === 'cool') statusLabel = `Cool to ${targetTemperature}°`
+  if (currentMode === 'heat')
+    statusLabel = `Heat to ${Number(targetTemperature).toFixed(0)}°`
+  if (currentMode === 'cool')
+    statusLabel = `Cool to ${Number(targetTemperature).toFixed(0)}°`
   if (currentMode === 'heat_cool') statusLabel = `Auto`
 
   return (

@@ -1,6 +1,6 @@
 import { Alert } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
-import { LightCard, ThermostatCard, VacuumCard } from 'src/Components/Cards'
+import { LightCard, ThermostatCard, VacuumCard } from 'src/Components/Tiles'
 type DeviceProps = {
   entityId: string
 }

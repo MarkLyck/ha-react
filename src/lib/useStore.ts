@@ -1,10 +1,31 @@
 import create from 'zustand'
 
-let messageId = 0
+let messageId = 1
+
+const waitForMessage = (socket: any, id: number) => {
+  return new Promise((resolve, reject) => {
+    let messageListener: any = null
+    messageListener = socket.addEventListener('message', (message: any) => {
+      const data = JSON.parse(message.data)
+
+      if (data.id === id) {
+        if (data.error) {
+          console.error(data.error)
+          reject(data)
+        } else {
+          resolve(data)
+        }
+        socket.removeEventListener('message', messageListener)
+      }
+    })
+  })
+}
 
 const useStore: any = create((set: any, get: any) => ({
   socket: null,
-  setSocket: (socket: any) => set({ socket }),
+  setSocket: (socket: any) => {
+    return set({ socket })
+  },
   messageIds: {},
   sendSocket: (message: any) => {
     const socket = get().socket
@@ -14,7 +35,9 @@ const useStore: any = create((set: any, get: any) => ({
     delete message.uid
 
     set({ messageIds: { ...messageIds, [messageId]: messageUID } })
-    socket.send(JSON.stringify({ ...message, id: messageId++ }))
+    const newId = messageId++
+    socket.send(JSON.stringify({ ...message, id: newId }))
+    return waitForMessage(socket, newId)
   },
   areas: {},
   setAreas: (areas: any) => set(() => ({ areas })),

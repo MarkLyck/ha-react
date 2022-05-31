@@ -6,6 +6,7 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': ^6.1.1
   '@fortawesome/free-solid-svg-icons': 6.1.1
   '@fortawesome/pro-light-svg-icons': ^6.1.1
+  '@fortawesome/pro-regular-svg-icons': ^6.1.1
   '@fortawesome/react-fontawesome': 0.1.18
   '@honkhonk/vite-plugin-svgr': 1.1.0
   '@stitches/react': 1.2.8
@@ -38,6 +39,7 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 6.1.1
   '@fortawesome/free-solid-svg-icons': 6.1.1
   '@fortawesome/pro-light-svg-icons': 6.1.1
+  '@fortawesome/pro-regular-svg-icons': 6.1.1
   '@fortawesome/react-fontawesome': 0.1.18_ale3w4t32h5v6dbzn5wc64akdu
   '@stitches/react': 1.2.8_react@18.0.0
   antd: 4.20.6_zpnidt7m3osuk7shl3s4oenomq
@@ -547,6 +549,14 @@ packages:
 
   /@fortawesome/pro-light-svg-icons/6.1.1:
     resolution: {integrity: sha512-PSo6AdC4NK+kO5Q0xmD6oALJRhfVSp6doaIso6/LS6UDrpzZI7NBvBMZnIir/sJcTwjO52z00TGybijlVkP5Ow==, tarball: '@fortawesome/pro-light-svg-icons/-/6.1.1/pro-light-svg-icons-6.1.1.tgz'}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.1.1
+    dev: false
+
+  /@fortawesome/pro-regular-svg-icons/6.1.1:
+    resolution: {integrity: sha512-8kKFn8eA1sLtc5zu6Z/LvWZPNpS8CRL8c8JuXAG3HwIwZB7L27b8l6BJC5jC3zRwJw7TXk1wi1CKTsLxmtHcgw==, tarball: '@fortawesome/pro-regular-svg-icons/-/6.1.1/pro-regular-svg-icons-6.1.1.tgz'}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:

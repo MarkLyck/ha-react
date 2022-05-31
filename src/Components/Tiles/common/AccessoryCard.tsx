@@ -1,9 +1,11 @@
 import { FC, ReactNode } from 'react'
+import { Spin } from 'antd'
 import styled from '@emotion/styled'
 
 import { ActionableCardContainer, CardIcon, CardName, CardState } from './Card'
 
 export const AccessoryCardContainer = styled(ActionableCardContainer)`
+  position: relative;
   display: grid;
   padding: 10px;
   grid-template-areas:
@@ -50,6 +52,12 @@ export const AccessoryCardIcon = styled(CardIcon)`
   }
 `
 
+const AccessoryLoading = styled.div`
+  position: absolute;
+  top: 12px;
+  right: 12px;
+`
+
 let buttonPressTimer: any
 
 export interface AccessoryCardProps {
@@ -71,6 +79,8 @@ export interface AccessoryCardProps {
   readonly name: string
   /** State label of the card */
   readonly state: string
+  /** State label of the card */
+  readonly loading?: boolean
 }
 
 export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
@@ -106,6 +116,11 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
       onMouseUp={handleButtonRelease}
       onMouseLeave={handleButtonRelease}
     >
+      {props.loading && (
+        <AccessoryLoading>
+          <Spin />
+        </AccessoryLoading>
+      )}
       <AccessoryCardIcon isActive={props.isActive}>{icon}</AccessoryCardIcon>
       <AccessoryCardName isActive={props.isActive}>
         {props.name}

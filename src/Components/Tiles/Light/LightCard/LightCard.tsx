@@ -2,9 +2,9 @@ import React, { FC, ReactNode } from 'react'
 
 // @ts-ignore
 import LightIconSvg from './light-bulb.svg?component'
-import { AccessoryCard } from 'src/Components/Cards/common/AccessoryCard'
-import { useModalHelper } from 'src/Components/Cards/common/hooks'
-import { Capabilities } from 'src/Components/Cards/common/types'
+import { AccessoryCard } from 'src/Components/Tiles/common/AccessoryCard'
+import { useModalHelper } from 'src/Components/Tiles/common/hooks'
+import { Capabilities } from 'src/Components/Tiles/common/types'
 import { LightCardModal } from './LightCardModal'
 
 interface LightCardProps {

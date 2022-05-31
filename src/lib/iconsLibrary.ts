@@ -7,7 +7,8 @@ import {
   faDroplet,
   faPersonWalking,
   faTemperatureHalf,
-} from '@fortawesome/pro-light-svg-icons'
+  faWifi,
+} from '@fortawesome/pro-regular-svg-icons'
 
 library.add(
   // Light
@@ -15,5 +16,6 @@ library.add(
   faAngleDown,
   faDroplet,
   faPersonWalking,
-  faTemperatureHalf
+  faTemperatureHalf,
+  faWifi
 )

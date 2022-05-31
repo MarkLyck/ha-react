@@ -17,11 +17,24 @@ const handleEntities = (message: any) => {
   useStore.getState().setEntities({ ...currentEntities, ...entitiesMap })
 }
 
+const handleEvents = (message: any) => {
+  const { event } = message
+  if (event.event_type === 'state_changed') {
+    const currentStates = useStore.getState().states
+    const entityId = event.data.entity_id
+    const newStates: any = {}
+    newStates[entityId] = event.data.new_state
+
+    useStore.getState().setStates({ ...currentStates, ...newStates })
+  }
+}
+
 const handleServices = (message: any) => {
   if (!message.result) return
   useStore.getState().setEntities(message.result)
 }
 const handleStates = (message: any) => {
+  console.log('🔈 ~ handleStates', message)
   if (!message.result) return
   const statesList = message.result
   const statesMap = statesList.reduce((acc: any, state: any) => {
@@ -81,6 +94,7 @@ async function connectManual() {
     sendSocket({ type: 'config/area_registry/list' })
     sendSocket({ type: 'config/device_registry/list' })
     sendSocket({ type: 'config/entity_registry/list' })
+    sendSocket({ type: 'subscribe_events' })
   }
 
   socket.onerror = (error) => {
@@ -98,14 +112,13 @@ async function connectManual() {
   socket.onmessage = (event) => {
     const messageIds = useStore.getState().messageIds
     const message = JSON.parse(event.data)
-    console.log('🔈 ~ messageIds', messageIds)
-    console.log('🔈 ~ message', message)
     if (message.type === 'auth_ok') onAuth()
 
     if (messageIds[message.id] === 'subscribe_entities') handleEntities(message)
     if (messageIds[message.id] === 'get_services') handleServices(message)
     if (messageIds[message.id] === 'get_states') handleStates(message)
     if (messageIds[message.id] === 'get_config') handleConfig(message)
+    if (messageIds[message.id] === 'subscribe_events') handleEvents(message)
     if (messageIds[message.id] === 'config/area_registry/list') {
       if (message.result) {
         handleAreas(message)

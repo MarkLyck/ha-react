@@ -2,6 +2,7 @@ import {
   TemperatureSensor,
   HumiditySensor,
   OccupancySensor,
+  WifiSensor,
 } from 'src/Components/Sensors'
 import { Alert } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
@@ -11,6 +12,7 @@ type SensorProps = {
   entityId: string
 }
 const Sensor = ({ entityId }: SensorProps) => {
+  console.log('🔈 ~ entityId', entityId)
   if (entityId.includes('temp')) {
     return <TemperatureSensor entityId={entityId} />
   }
@@ -19,6 +21,9 @@ const Sensor = ({ entityId }: SensorProps) => {
   }
   if (entityId.includes('occupancy')) {
     return <OccupancySensor entityId={entityId} />
+  }
+  if (entityId.includes('wan') || entityId.includes('external_ip')) {
+    return <WifiSensor entityId={entityId} />
   }
 
   return (

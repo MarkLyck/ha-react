@@ -18,14 +18,15 @@ const Light = ({ entityId }: HassLightCardProps) => {
   const [brightness, setBrightness] = useState(entity.attributes.brightness)
   const brightnessPercentage = Math.floor((brightness * 100) / 255)
 
-  function handleToggle() {
+  const handleToggle = async () => {
     setIsOn(!isOn)
-    sendSocket({
+    const result = await sendSocket({
       domain: 'light',
       service: 'toggle',
       service_data: { entity_id: entityId },
       type: 'call_service',
     })
+    console.log('🔈 ~ result', result)
   }
 
   function handlePercentageChange(value: number) {

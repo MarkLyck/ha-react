@@ -25,7 +25,7 @@ const Devices = styled.div`
 `
 
 const SENSOR_TYPES = ['binary_sensor', 'sensor']
-const DEVICE_TYPES = ['light', 'climate', 'vacuum']
+const DEVICE_TYPES = ['light', 'climate', 'vacuum', 'button', 'media_player']
 
 const Areas = () => {
   const { areas } = useStore((state: any) => ({
@@ -38,7 +38,6 @@ const Areas = () => {
   return (
     <ControlsContainer>
       {areasList.map((area: any) => {
-        console.log('🔈 ~ area', area.entities)
         const sensors: string[] =
           area.entities?.filter((entityId: string) =>
             SENSOR_TYPES.includes(entityId.split('.')[0])

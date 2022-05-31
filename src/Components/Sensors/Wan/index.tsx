@@ -7,21 +7,21 @@ const Text = styled.b`
   margin-left: 8px;
 `
 
-type TemperatureSensorProps = {
+type WanStatusSensorProps = {
   entityId: string
 }
 
-export const TemperatureSensor = ({ entityId }: TemperatureSensorProps) => {
+export const WifiSensor = ({ entityId }: WanStatusSensorProps) => {
   const states = useStore((state: any) => state.states)
   const entity = states[entityId]
   if (!entity) return null
 
-  const temperature = entity.state
+  const status = entity.state
 
   return (
     <SensorCard>
-      <FontAwesomeIcon icon={['far', 'temperature-half']} />
-      <Text>{Number(temperature).toFixed(0)}°</Text>
+      <FontAwesomeIcon icon={['far', 'wifi']} />
+      <Text>{status}</Text>
     </SensorCard>
   )
 }

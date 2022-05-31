@@ -26,7 +26,7 @@ type VacuumModalProps = {
   entity: any
 }
 
-const VacuumModal = ({ visible, close, entity }: VacuumModalProps) => {
+const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
   const { friendly_name, battery_level, fan_speed } = entity.attributes
 
   return (
