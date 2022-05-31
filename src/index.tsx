@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom/client'
 import Dashboard from './Dashboard'
 import ReactPanelElement from './lib/ReactPanelElement'
 
-import hassMock from '../mocks/hass'
-import entityMock from '../mocks/entity.json'
-
 import './index.css'
 import 'antd/dist/antd.css'
 import 'src/lib/iconsLibrary'
@@ -16,7 +13,7 @@ if (window.location.hostname.includes('localhost')) {
   // render standalone with mocks
   ReactDOM.createRoot(container!).render(
     <React.StrictMode>
-      <Dashboard hass={hassMock} entity={entityMock} />
+      <Dashboard />
     </React.StrictMode>
   )
 } else {
