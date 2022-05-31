@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Alert } from 'antd'
-import { ErrorBoundary } from 'react-error-boundary'
+import CardWrapper from '../common/CardWrapper'
 
 import { ThermostatCard as HomekitThermostatCard } from './ThermostatCard'
 
@@ -15,18 +14,6 @@ const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
   const [targetTemperature, setTargetTemperature] = useState(
     entity?.attributes?.temperature || 0
   )
-  if (!entityId) {
-    return <Alert message="Missing entityId" type="error" showIcon />
-  }
-  if (!entity) {
-    return (
-      <Alert
-        message={`Entity with id "${entityId}" not found`}
-        type="error"
-        showIcon
-      />
-    )
-  }
 
   const handleTemperatureChange = (value: number) => {
     setTargetTemperature(value)
@@ -60,10 +47,4 @@ const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
   )
 }
 
-export const ThermostatCard = (props: ThermostatCardCardProps) => (
-  <ErrorBoundary
-    fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
-  >
-    <Thermostat {...props} />
-  </ErrorBoundary>
-)
+export const ThermostatCard = CardWrapper(Thermostat)

@@ -94,7 +94,7 @@ const Controls = ({ hass }: ControlsProps) => {
         </ControlsSection>
         <ControlsSection title="Living room">
           <Components>
-            <VacuumCard hass={hass} entityId="vacuum.vacuum" />
+            <VacuumCard hass={hass} entityId="vacuum.alfred" />
           </Components>
         </ControlsSection>
         <ControlsSection

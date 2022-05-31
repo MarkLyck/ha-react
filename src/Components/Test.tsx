@@ -3,13 +3,17 @@ import { Button, Modal, Input, Select, Space, Typography } from 'antd'
 import styled from '@emotion/styled'
 
 const { Text } = Typography
+const { TextArea } = Input
 
 const StyledButton = styled(Button)`
   border-radius: 8px;
   width: 100px;
   font-weight: bold;
-  opacity: 10%;
   font-size: 12px;
+  &&& {
+    border-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.08);
+  }
 `
 
 const Test = ({ hass }: any) => {
@@ -17,11 +21,16 @@ const Test = ({ hass }: any) => {
   const [domain, setDomain] = useState('homeassistant')
   const [service, setService] = useState('turn_on')
   const [entityId, setEntityId] = useState('vacuum.vacuum')
-  console.log('🔈 ~ hass', hass)
+  const [extraData, setExtraData] = useState('')
+  console.log('🔈 ~ extraData', extraData)
 
   const onSubmit = () => {
-    hass.callService(domain, 'turn_on', {
+    const jsonData = extraData ? JSON.parse(extraData) : {}
+    console.log('🚀', domain, service, { entity_id: entityId, ...jsonData })
+
+    hass.callService(domain, service, {
       entity_id: entityId,
+      ...jsonData,
     })
   }
 
@@ -71,6 +80,13 @@ const Test = ({ hass }: any) => {
             value={entityId}
             options={entityOptions}
             onChange={setEntityId}
+          />
+          <Text>Data</Text>
+          <TextArea
+            rows={4}
+            placeholder="{ data: true }"
+            value={extraData}
+            onChange={(e) => setExtraData(e.target.value)}
           />
         </Space>
       </Modal>

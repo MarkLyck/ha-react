@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { LightCard as HomekitLightCard } from './LightCard'
-import { Alert } from 'antd'
-import { ErrorBoundary } from 'react-error-boundary'
+import CardWrapper from '../common/CardWrapper'
 
 type HassLightCardProps = {
   hass: any
@@ -14,20 +13,6 @@ const Light = ({ hass, entityId }: HassLightCardProps) => {
     entity.state && entity.state !== 'off' && entity.state != 'unavailable'
   )
   const [brightness, setBrightness] = useState(entity.attributes.brightness)
-
-  if (!entityId) {
-    return <Alert message="Missing entityId" type="error" showIcon />
-  }
-  if (!entity) {
-    return (
-      <Alert
-        message={`Entity with id "${entityId}" not found`}
-        type="error"
-        showIcon
-      />
-    )
-  }
-
   const brightnessPercentage = Math.floor((brightness * 100) / 255)
 
   function handleToggle() {
@@ -60,10 +45,4 @@ const Light = ({ hass, entityId }: HassLightCardProps) => {
   )
 }
 
-export const LightCard = (props: HassLightCardProps) => (
-  <ErrorBoundary
-    fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
-  >
-    <Light {...props} />
-  </ErrorBoundary>
-)
+export const LightCard = CardWrapper(Light)
