@@ -5,6 +5,7 @@ import ReactPanelElement from './lib/ReactPanelElement'
 
 import './index.css'
 import 'antd/dist/antd.css'
+import 'src/lib/prototypes'
 import 'src/lib/iconsLibrary'
 import 'src/lib/hass'
 

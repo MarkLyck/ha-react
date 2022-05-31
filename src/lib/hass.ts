@@ -34,7 +34,6 @@ const handleServices = (message: any) => {
   useStore.getState().setServices(message.result)
 }
 const handleStates = (message: any) => {
-  console.log('🔈 ~ handleStates', message)
   if (!message.result) return
   const statesList = message.result
   const statesMap = statesList.reduce((acc: any, state: any) => {

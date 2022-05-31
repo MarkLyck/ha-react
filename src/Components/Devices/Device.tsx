@@ -1,6 +1,14 @@
 import { Alert } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
-import { LightCard, ThermostatCard, VacuumCard } from 'src/Components/Tiles'
+import {
+  LightCard,
+  ThermostatCard,
+  VacuumCard,
+  MediaPlayerTile,
+} from 'src/Components/Tiles'
+
+import FallbackTile from './Fallback'
+
 type DeviceProps = {
   entityId: string
 }
@@ -10,12 +18,9 @@ const Device = ({ entityId }: DeviceProps) => {
   if (domain === 'light') return <LightCard entityId={entityId} />
   if (domain === 'climate') return <ThermostatCard entityId={entityId} />
   if (domain === 'vacuum') return <VacuumCard entityId={entityId} />
+  if (domain === 'media_player') return <MediaPlayerTile entityId={entityId} />
 
-  return (
-    <div>
-      <b>?</b>
-    </div>
-  )
+  return <FallbackTile entityId={entityId} />
 }
 
 const DeviceWrapper = (props: DeviceProps) => (

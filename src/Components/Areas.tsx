@@ -38,7 +38,6 @@ const DEVICE_TYPES = ['light', 'climate', 'vacuum', 'button', 'media_player']
 
 const Areas = () => {
   const state = useStore()
-  console.log('🔈 ~ state', state)
   const { areas } = useStore((state: any) => ({
     areas: state.areas,
   }))

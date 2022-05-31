@@ -2,9 +2,9 @@ import { FC, ReactNode } from 'react'
 import { Spin } from 'antd'
 import styled from '@emotion/styled'
 
-import { ActionableCardContainer, CardIcon, CardName, CardState } from './Card'
+import { ActionableTileContainer, TileIcon, TileName, TileState } from './Tile'
 
-export const AccessoryCardContainer = styled(ActionableCardContainer)`
+export const AccessoryCardContainer = styled(ActionableTileContainer)`
   position: relative;
   display: grid;
   padding: 10px;
@@ -22,7 +22,7 @@ export const AccessoryCardContainer = styled(ActionableCardContainer)`
   cursor: pointer;
 `
 
-export const AccessoryCardName = styled(CardName)`
+export const AccessoryCardName = styled(TileName)`
   justify-self: start;
   align-self: flex-end;
   grid-area: name;
@@ -34,14 +34,14 @@ export const AccessoryCardName = styled(CardName)`
   line-height: 13px;
 `
 
-export const AccessoryCardStatus = styled(CardState)`
+export const AccessoryCardStatus = styled(TileState)`
   justify-self: start;
   align-self: center;
   grid-area: status;
   text-transform: capitalize;
 `
 
-export const AccessoryCardIcon = styled(CardIcon)`
+export const AccessoryCardIcon = styled(TileIcon)`
   justify-self: start;
   grid-area: icon;
   width: 1.8rem;

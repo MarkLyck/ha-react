@@ -17,6 +17,7 @@ specifiers:
   '@vitejs/plugin-react': 1.3.0
   antd: 4.20.6
   axios: 0.27.2
+  dayjs: ^1.11.2
   framer-motion: 6.3.4
   gitmoji-cli: 5.0.0
   home-assistant-js-websocket: ^7.1.0
@@ -43,6 +44,7 @@ dependencies:
   '@stitches/react': 1.2.8_react@18.0.0
   antd: 4.20.6_zpnidt7m3osuk7shl3s4oenomq
   axios: 0.27.2
+  dayjs: 1.11.2
   framer-motion: 6.3.4_zpnidt7m3osuk7shl3s4oenomq
   home-assistant-js-websocket: 7.1.0
   homekit-react-components: 1.0.0_oyjifrd6uj5j6qhbgrbtpeigja

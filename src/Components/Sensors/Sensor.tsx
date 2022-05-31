@@ -3,8 +3,11 @@ import {
   HumiditySensor,
   OccupancySensor,
   WifiSensor,
+  PowerSensor,
+  FallbackSensor,
+  UptimeSensor,
 } from 'src/Components/Sensors'
-import { Alert } from 'antd'
+import { Alert, Tooltip } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
 import SensorCard from './Card'
 
@@ -12,23 +15,32 @@ type SensorProps = {
   entityId: string
 }
 const Sensor = ({ entityId }: SensorProps) => {
-  if (entityId.includes('temp')) {
-    return <TemperatureSensor entityId={entityId} />
-  }
-  if (entityId.includes('humid')) {
-    return <HumiditySensor entityId={entityId} />
-  }
-  if (entityId.includes('occupancy')) {
-    return <OccupancySensor entityId={entityId} />
-  }
+  let SensorType = null
+  if (entityId.includes('temp')) SensorType = TemperatureSensor
+  if (entityId.includes('humid')) SensorType = HumiditySensor
+  if (entityId.includes('occupancy')) SensorType = OccupancySensor
   if (entityId.includes('wan') || entityId.includes('external_ip')) {
-    return <WifiSensor entityId={entityId} />
+    SensorType = WifiSensor
+  }
+  if (entityId.includes('power')) SensorType = PowerSensor
+  if (entityId.includes('uptime')) SensorType = UptimeSensor
+
+  if (SensorType) {
+    return (
+      <Tooltip title={entityId}>
+        <div>
+          <SensorType entityId={entityId} />
+        </div>
+      </Tooltip>
+    )
   }
 
   return (
-    <SensorCard>
-      <b>?</b>
-    </SensorCard>
+    <Tooltip title={entityId}>
+      <div>
+        <FallbackSensor entityId={entityId} />
+      </div>
+    </Tooltip>
   )
 }
 

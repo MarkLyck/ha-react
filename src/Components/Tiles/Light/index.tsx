@@ -26,7 +26,6 @@ const Light = ({ entityId }: HassLightCardProps) => {
       service_data: { entity_id: entityId },
       type: 'call_service',
     })
-    console.log('🔈 ~ result', result)
   }
 
   function handlePercentageChange(value: number) {

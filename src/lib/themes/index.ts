@@ -92,7 +92,7 @@ const theme = {
       size: '12px',
       weight: 'bold',
       colorActive: colors.textDark,
-      colorInactive: colors.textDark,
+      colorInactive: 'rgba(255,255,255, 0.75)',
     },
     state: {
       size: '12px',

@@ -16,10 +16,12 @@ import {
   faHouseChimney,
   faLocationCrosshairs,
   faPersonWalking,
+  faPowerOff,
   faPause,
   faPlay,
   faStop,
   faTemperatureHalf,
+  faTimer,
   faWifi,
 } from '@fortawesome/pro-regular-svg-icons'
 
@@ -39,9 +41,11 @@ library.add(
   faHouseChimney,
   faLocationCrosshairs,
   faPersonWalking,
+  faPowerOff,
   faPause,
   faPlay,
   faStop,
   faTemperatureHalf,
+  faTimer,
   faWifi
 )

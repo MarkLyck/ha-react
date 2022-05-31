@@ -7,21 +7,21 @@ const Text = styled.b`
   margin-left: 8px;
 `
 
-type OccupancySensorProps = {
+type PowerSensorProps = {
   entityId: string
 }
 
-export const OccupancySensor = ({ entityId }: OccupancySensorProps) => {
-  const states = useStore((state: any) => state?.states)
+export const PowerSensor = ({ entityId }: PowerSensorProps) => {
+  const states = useStore((state: any) => state.states)
   const entity = states[entityId]
   if (!entity) return null
 
-  const occupied = entity.state === 'on'
+  const status = entity.state
 
   return (
     <SensorCard>
-      <FontAwesomeIcon icon={['far', 'person-walking']} />
-      <Text>{occupied ? 'Occupied' : 'Empty'}</Text>
+      <FontAwesomeIcon icon={['far', 'power-off']} />
+      <Text>{status}</Text>
     </SensorCard>
   )
 }
