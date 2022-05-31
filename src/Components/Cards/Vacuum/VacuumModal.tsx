@@ -4,6 +4,8 @@ import { ModalHeader } from '../common/modals'
 // @ts-ignore
 import VacuumIcon from './vacuum.svg?component'
 
+import { useHistory } from 'src/queries/history'
+
 const StyledModal = styled(Modal)`
   .ant-modal-content {
     width: 300px;
@@ -28,6 +30,8 @@ type VacuumModalProps = {
 
 const VacuumModal = ({ visible, close, entity }: VacuumModalProps) => {
   const { friendly_name, battery_level, fan_speed } = entity.attributes
+  const { data } = useHistory()
+  console.log('🔈 ~ data', data)
 
   return (
     <StyledModal visible={visible} onCancel={close} footer={null}>

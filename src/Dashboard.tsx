@@ -2,6 +2,8 @@ import { ThemeProvider, Global } from '@emotion/react'
 import theme from 'src/lib/themes'
 import Controls from './Components/Controls'
 import globalStyles from './lib/styles'
+import { QueryClientProvider } from 'react-query'
+import queryClient from './queries/client'
 
 type DashboardProps = {
   hass: any
@@ -10,15 +12,18 @@ type DashboardProps = {
 
 const Dashboard = (props: DashboardProps) => {
   console.log('🔧 hass: ', props.hass)
+
   return (
-    <ThemeProvider theme={theme}>
-      <>
-        <div className="App">
-          <Controls {...props} />
-        </div>
-        <Global styles={globalStyles} />
-      </>
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <>
+          <div className="App">
+            <Controls {...props} />
+          </div>
+          <Global styles={globalStyles} />
+        </>
+      </ThemeProvider>
+    </QueryClientProvider>
   )
 }
 
