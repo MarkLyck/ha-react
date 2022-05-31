@@ -73,6 +73,10 @@ const colors = {
 
   lightActive: '#ECC344',
   fanActive: 'blue',
+
+  success: {
+    600: '#38B700',
+  },
 }
 
 const theme = {

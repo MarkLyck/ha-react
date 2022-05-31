@@ -18,7 +18,6 @@ const Vacuum = ({ entityId }: VacuumCardProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
-  console.log('🔈 ~ entity', entity)
   const [loading, setLoading] = useState(false)
   const [isActive, setisActive] = useState(
     !INACTIVE_STATES.includes(entity.state)
@@ -40,7 +39,7 @@ const Vacuum = ({ entityId }: VacuumCardProps) => {
     } else {
       await sendSocket({
         domain: 'vacuum',
-        service: 'stop',
+        service: 'return_to_base',
         service_data: { entity_id: entityId },
         type: 'call_service',
       })
