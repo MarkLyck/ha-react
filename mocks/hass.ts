@@ -4,14 +4,14 @@ const hass: any = {
   auth: {
     data: {
       access_token:
-        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIyYzU2ZjE5YzM5Mjk0MDIwYTkyMzU2OTE5OGRhNzM4YiIsImlhdCI6MTY1Mzk1Mzk2NiwiZXhwIjoxNjUzOTU1NzY2fQ.U23DivgHw3w7t_5swhUFNdgxkpAEvTsoTMEaB3dl28Q',
+        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIyYzU2ZjE5YzM5Mjk0MDIwYTkyMzU2OTE5OGRhNzM4YiIsImlhdCI6MTY1Mzk2Mjg0NCwiZXhwIjoxNjUzOTY0NjQ0fQ.3iWFU6HzaSNr760YA8C088Pl3WsQSFVUAaZoFgWkwkU',
       token_type: 'Bearer',
-      refresh_token:
-        'ff06b58f36251cbf398a3e64464e16d5378160a47e88e9590cf229451bba27c6779383bff9435272ee2360078f3b3132233ceac5d7a79a1c20927c7b7b572dd8',
       expires_in: 1800,
       hassUrl: 'http://homeassistant.local:8123',
       clientId: 'http://homeassistant.local:8123/',
-      expires: 1653955766785,
+      expires: 1653964644924,
+      refresh_token:
+        'ff06b58f36251cbf398a3e64464e16d5378160a47e88e9590cf229451bba27c6779383bff9435272ee2360078f3b3132233ceac5d7a79a1c20927c7b7b572dd8',
     },
   },
   connection: {
@@ -20,18 +20,18 @@ const hass: any = {
       auth: {
         data: {
           access_token:
-            'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIyYzU2ZjE5YzM5Mjk0MDIwYTkyMzU2OTE5OGRhNzM4YiIsImlhdCI6MTY1Mzk1Mzk2NiwiZXhwIjoxNjUzOTU1NzY2fQ.U23DivgHw3w7t_5swhUFNdgxkpAEvTsoTMEaB3dl28Q',
+            'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIyYzU2ZjE5YzM5Mjk0MDIwYTkyMzU2OTE5OGRhNzM4YiIsImlhdCI6MTY1Mzk2Mjg0NCwiZXhwIjoxNjUzOTY0NjQ0fQ.3iWFU6HzaSNr760YA8C088Pl3WsQSFVUAaZoFgWkwkU',
           token_type: 'Bearer',
-          refresh_token:
-            'ff06b58f36251cbf398a3e64464e16d5378160a47e88e9590cf229451bba27c6779383bff9435272ee2360078f3b3132233ceac5d7a79a1c20927c7b7b572dd8',
           expires_in: 1800,
           hassUrl: 'http://homeassistant.local:8123',
           clientId: 'http://homeassistant.local:8123/',
-          expires: 1653955766785,
+          expires: 1653964644924,
+          refresh_token:
+            'ff06b58f36251cbf398a3e64464e16d5378160a47e88e9590cf229451bba27c6779383bff9435272ee2360078f3b3132233ceac5d7a79a1c20927c7b7b572dd8',
         },
       },
     },
-    commandId: 19,
+    commandId: 20,
     commands: {},
     eventListeners: {},
     closeRequested: false,
@@ -57,12 +57,12 @@ const hass: any = {
             friendly_name: 'Mark',
           },
           context: {
-            id: '018117516b8a57f3081332a983363010',
+            id: '0181178cc443be0dc9e8503baf209b55',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:29.365Z',
-          last_updated: '2022-05-30T23:33:40.874Z',
+          last_changed: '2022-05-31T00:38:15.704Z',
+          last_updated: '2022-05-31T00:38:30.211Z',
         },
         'person.grace_park': {
           entity_id: 'person.grace_park',
@@ -74,12 +74,12 @@ const hass: any = {
             friendly_name: 'Grace',
           },
           context: {
-            id: '018117516b8bcdd09884e7c66d282ee6',
+            id: '0181178cc4436098fdb40b2537bddf42',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:29.371Z',
-          last_updated: '2022-05-30T23:33:40.875Z',
+          last_changed: '2022-05-31T00:38:15.706Z',
+          last_updated: '2022-05-31T00:38:30.211Z',
         },
         'update.home_assistant_supervisor_update': {
           entity_id: 'update.home_assistant_supervisor_update',
@@ -99,12 +99,12 @@ const hass: any = {
             supported_features: 1,
           },
           context: {
-            id: '018117515e199812a3e016a0264fcaed',
+            id: '0181178caa6e55f82a41261b2079e189',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.433Z',
-          last_updated: '2022-05-30T23:33:37.433Z',
+          last_changed: '2022-05-31T00:38:23.598Z',
+          last_updated: '2022-05-31T00:38:23.598Z',
         },
         'update.home_assistant_core_update': {
           entity_id: 'update.home_assistant_core_update',
@@ -124,12 +124,12 @@ const hass: any = {
             supported_features: 11,
           },
           context: {
-            id: '018117515e1ab3b53d92e76db29e54f1',
+            id: '0181178caa6f54594eb33bbbcffa23d3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.434Z',
-          last_updated: '2022-05-30T23:33:37.434Z',
+          last_changed: '2022-05-31T00:38:23.599Z',
+          last_updated: '2022-05-31T00:38:23.599Z',
         },
         'update.terminal_ssh_update': {
           entity_id: 'update.terminal_ssh_update',
@@ -149,12 +149,12 @@ const hass: any = {
             supported_features: 25,
           },
           context: {
-            id: '018117515e1a45f4f4b8175ed0683aa3',
+            id: '0181178caa70f712b0b7f24dd041b7fa',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.434Z',
-          last_updated: '2022-05-30T23:33:37.434Z',
+          last_changed: '2022-05-31T00:38:23.600Z',
+          last_updated: '2022-05-31T00:38:23.600Z',
         },
         'update.file_editor_update': {
           entity_id: 'update.file_editor_update',
@@ -173,12 +173,12 @@ const hass: any = {
             supported_features: 25,
           },
           context: {
-            id: '018117515e1be5e29096d97a52f5a0e5',
+            id: '0181178caa701b1f80a603eef15f6355',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.435Z',
-          last_updated: '2022-05-30T23:33:37.435Z',
+          last_changed: '2022-05-31T00:38:23.600Z',
+          last_updated: '2022-05-31T00:38:23.600Z',
         },
         'update.samba_share_update': {
           entity_id: 'update.samba_share_update',
@@ -198,12 +198,12 @@ const hass: any = {
             supported_features: 25,
           },
           context: {
-            id: '018117515e1b6bb56d19c65b5dec252c',
+            id: '0181178caa706f5e99578a4a1d669dbd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.435Z',
-          last_updated: '2022-05-30T23:33:37.435Z',
+          last_changed: '2022-05-31T00:38:23.600Z',
+          last_updated: '2022-05-31T00:38:23.600Z',
         },
         'update.home_assistant_operating_system_update': {
           entity_id: 'update.home_assistant_operating_system_update',
@@ -224,35 +224,12 @@ const hass: any = {
             supported_features: 3,
           },
           context: {
-            id: '018117515e1cc6a51277f05946553432',
+            id: '0181178caa713dc23156fd4ce0737835',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.436Z',
-          last_updated: '2022-05-30T23:33:37.436Z',
-        },
-        'sun.sun': {
-          entity_id: 'sun.sun',
-          state: 'above_horizon',
-          attributes: {
-            next_dawn: '2022-05-31T09:11:32.573530+00:00',
-            next_dusk: '2022-05-31T01:01:23.597978+00:00',
-            next_midnight: '2022-05-31T05:06:39+00:00',
-            next_noon: '2022-05-31T17:06:32+00:00',
-            next_rising: '2022-05-31T09:43:47.617117+00:00',
-            next_setting: '2022-05-31T00:29:08.241159+00:00',
-            elevation: 3.11,
-            azimuth: 296.05,
-            rising: false,
-            friendly_name: 'Sun',
-          },
-          context: {
-            id: '0181176eaa64dfd5a16f9621d5a2861e',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:37.488Z',
-          last_updated: '2022-05-31T00:05:37.509Z',
+          last_changed: '2022-05-31T00:38:23.601Z',
+          last_updated: '2022-05-31T00:38:23.601Z',
         },
         'zone.home': {
           entity_id: 'zone.home',
@@ -268,12 +245,35 @@ const hass: any = {
             friendly_name: 'Home',
           },
           context: {
-            id: '018117515e70e5b5ac75cc795834bf8b',
+            id: '0181178caa9c6ab1d819108a63d151c2',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.520Z',
-          last_updated: '2022-05-30T23:33:37.520Z',
+          last_changed: '2022-05-31T00:38:23.644Z',
+          last_updated: '2022-05-31T00:38:23.644Z',
+        },
+        'sun.sun': {
+          entity_id: 'sun.sun',
+          state: 'below_horizon',
+          attributes: {
+            next_dawn: '2022-05-31T09:11:32.573530+00:00',
+            next_dusk: '2022-06-01T01:02:10.940255+00:00',
+            next_midnight: '2022-05-31T05:06:39+00:00',
+            next_noon: '2022-05-31T17:06:32+00:00',
+            next_rising: '2022-05-31T09:43:47.617117+00:00',
+            next_setting: '2022-06-01T00:29:51.330322+00:00',
+            elevation: -15.75,
+            azimuth: 316.58,
+            rising: false,
+            friendly_name: 'Sun',
+          },
+          context: {
+            id: '018117dba6c6de2952f017db57d7ecbc',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:23.681Z',
+          last_updated: '2022-05-31T02:04:40.006Z',
         },
         'binary_sensor.rpi_power_status': {
           entity_id: 'binary_sensor.rpi_power_status',
@@ -284,16 +284,16 @@ const hass: any = {
             friendly_name: 'RPi Power status',
           },
           context: {
-            id: '018117515ebcc949f0f2f02f5d1848e3',
+            id: '0181178cab496109b48627fa1e2f1191',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:37.597Z',
-          last_updated: '2022-05-30T23:33:37.597Z',
+          last_changed: '2022-05-31T00:38:23.817Z',
+          last_updated: '2022-05-31T00:38:23.817Z',
         },
         'media_player.living_room': {
           entity_id: 'media_player.living_room',
-          state: 'standby',
+          state: 'playing',
           attributes: {
             source_list: [
               'App Store',
@@ -313,17 +313,23 @@ const hass: any = {
               'TV Shows',
               'YouTube',
             ],
-            app_id: '',
+            media_content_type: 'video',
+            media_duration: 5743,
+            media_position: 3,
+            media_position_updated_at: '2022-05-31T01:42:01.546890+00:00',
+            media_title: '',
+            app_id: 'com.apple.TVAirPlay',
+            app_name: 'Safari',
             friendly_name: 'Living Room',
             supported_features: 450487,
           },
           context: {
-            id: '01811756bf97f3289839dc9bf8e5a448',
+            id: '018117c6ec4cc573cde347c70b0f2996',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:39:30.071Z',
-          last_updated: '2022-05-30T23:39:30.071Z',
+          last_changed: '2022-05-31T01:42:00.826Z',
+          last_updated: '2022-05-31T01:42:01.548Z',
         },
         'media_player.kitchen': {
           entity_id: 'media_player.kitchen',
@@ -334,12 +340,12 @@ const hass: any = {
             supported_features: 448439,
           },
           context: {
-            id: '018117516610c4bde0ddc338c4ec1df3',
+            id: '0181178cc27084e39a64b521e07a6a66',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:39.472Z',
-          last_updated: '2022-05-30T23:33:39.472Z',
+          last_changed: '2022-05-31T00:38:29.744Z',
+          last_updated: '2022-05-31T00:38:29.744Z',
         },
         'remote.living_room': {
           entity_id: 'remote.living_room',
@@ -349,12 +355,12 @@ const hass: any = {
             supported_features: 0,
           },
           context: {
-            id: '0181175165e63fc9b3afc0557b668dc6',
+            id: '0181178cc3264f7e0809c72bc8064c43',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:39.430Z',
-          last_updated: '2022-05-30T23:33:39.430Z',
+          last_changed: '2022-05-31T00:38:29.926Z',
+          last_updated: '2022-05-31T00:38:29.926Z',
         },
         'remote.kitchen': {
           entity_id: 'remote.kitchen',
@@ -364,12 +370,12 @@ const hass: any = {
             supported_features: 0,
           },
           context: {
-            id: '01811751660c3955009a7f78b76042f6',
+            id: '0181178cc20f15733fd3526d99edc4ec',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:39.468Z',
-          last_updated: '2022-05-30T23:33:39.468Z',
+          last_changed: '2022-05-31T00:38:29.647Z',
+          last_updated: '2022-05-31T00:38:29.647Z',
         },
         'sensor.iphone_mark_activity': {
           entity_id: 'sensor.iphone_mark_activity',
@@ -381,12 +387,12 @@ const hass: any = {
             friendly_name: 'iphone mark Activity',
           },
           context: {
-            id: '0181175163a1253295920bc9d2d15cbd',
+            id: '0181178cafdfe9f46c59f1fc922d8bca',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.849Z',
-          last_updated: '2022-05-30T23:33:38.849Z',
+          last_changed: '2022-05-31T00:38:24.991Z',
+          last_updated: '2022-05-31T00:38:24.991Z',
         },
         'sensor.iphone_mark_average_active_pace': {
           entity_id: 'sensor.iphone_mark_average_active_pace',
@@ -397,12 +403,12 @@ const hass: any = {
             friendly_name: 'iphone mark Average Active Pace',
           },
           context: {
-            id: '0181175163a26c93b9da3e7af8d7559a',
+            id: '0181178cafdf129a9db506b14368af3c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.850Z',
-          last_updated: '2022-05-30T23:33:38.850Z',
+          last_changed: '2022-05-31T00:38:24.991Z',
+          last_updated: '2022-05-31T00:38:24.991Z',
         },
         'sensor.iphone_mark_bssid': {
           entity_id: 'sensor.iphone_mark_bssid',
@@ -412,12 +418,12 @@ const hass: any = {
             friendly_name: 'iphone mark BSSID',
           },
           context: {
-            id: '0181175163a291bd937ac3883a61a61d',
+            id: '0181178cafe0bf438d045c1c46058906',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.850Z',
-          last_updated: '2022-05-30T23:33:38.850Z',
+          last_changed: '2022-05-31T00:38:24.992Z',
+          last_updated: '2022-05-31T00:38:24.992Z',
         },
         'sensor.iphone_mark_battery_level': {
           entity_id: 'sensor.iphone_mark_battery_level',
@@ -429,12 +435,12 @@ const hass: any = {
             friendly_name: 'iphone mark Battery Level',
           },
           context: {
-            id: '0181175163a267455a5f9ec7f6349136',
+            id: '0181178cafe0d0698ad6ae867d962d0a',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.850Z',
-          last_updated: '2022-05-30T23:33:38.850Z',
+          last_changed: '2022-05-31T00:38:24.992Z',
+          last_updated: '2022-05-31T00:38:24.992Z',
         },
         'sensor.iphone_mark_battery_state': {
           entity_id: 'sensor.iphone_mark_battery_state',
@@ -445,12 +451,12 @@ const hass: any = {
             friendly_name: 'iphone mark Battery State',
           },
           context: {
-            id: '0181175163a3507497a668bcf75b2c0e',
+            id: '0181178cafe093be96238d03d98ef0d9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.851Z',
-          last_updated: '2022-05-30T23:33:38.851Z',
+          last_changed: '2022-05-31T00:38:24.992Z',
+          last_updated: '2022-05-31T00:38:24.992Z',
         },
         'sensor.iphone_mark_connection_type': {
           entity_id: 'sensor.iphone_mark_connection_type',
@@ -460,12 +466,12 @@ const hass: any = {
             friendly_name: 'iphone mark Connection Type',
           },
           context: {
-            id: '0181175163a3024e29ee926199e10ead',
+            id: '0181178cafe106f6810e1004ed10e3b3',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.851Z',
-          last_updated: '2022-05-30T23:33:38.851Z',
+          last_changed: '2022-05-31T00:38:24.993Z',
+          last_updated: '2022-05-31T00:38:24.993Z',
         },
         'sensor.iphone_mark_distance': {
           entity_id: 'sensor.iphone_mark_distance',
@@ -476,12 +482,12 @@ const hass: any = {
             friendly_name: 'iphone mark Distance',
           },
           context: {
-            id: '0181175163a3754f8f2dcc1366fcbde8',
+            id: '0181178cafe1246f51dad543756896c6',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.851Z',
-          last_updated: '2022-05-30T23:33:38.851Z',
+          last_changed: '2022-05-31T00:38:24.993Z',
+          last_updated: '2022-05-31T00:38:24.993Z',
         },
         'sensor.iphone_mark_floors_ascended': {
           entity_id: 'sensor.iphone_mark_floors_ascended',
@@ -492,12 +498,12 @@ const hass: any = {
             friendly_name: 'iphone mark Floors Ascended',
           },
           context: {
-            id: '0181175163a4bd3f4fc23a5a9da73c77',
+            id: '0181178cafe2f0d044186e5ff1a3eb02',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.852Z',
-          last_updated: '2022-05-30T23:33:38.852Z',
+          last_changed: '2022-05-31T00:38:24.994Z',
+          last_updated: '2022-05-31T00:38:24.994Z',
         },
         'sensor.iphone_mark_floors_descended': {
           entity_id: 'sensor.iphone_mark_floors_descended',
@@ -508,12 +514,12 @@ const hass: any = {
             friendly_name: 'iphone mark Floors Descended',
           },
           context: {
-            id: '0181175163a43cc810d8d24502e08eff',
+            id: '0181178cafe2d8d447d095ece8f555da',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.852Z',
-          last_updated: '2022-05-30T23:33:38.852Z',
+          last_changed: '2022-05-31T00:38:24.994Z',
+          last_updated: '2022-05-31T00:38:24.994Z',
         },
         'sensor.iphone_mark_geocoded_location': {
           entity_id: 'sensor.iphone_mark_geocoded_location',
@@ -539,12 +545,12 @@ const hass: any = {
             friendly_name: 'iphone mark Geocoded Location',
           },
           context: {
-            id: '0181175163a42c0ae1cc28d0185dbba6',
+            id: '0181178cafe2891bb00f71df7579ad52',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.852Z',
-          last_updated: '2022-05-30T23:33:38.852Z',
+          last_changed: '2022-05-31T00:38:24.994Z',
+          last_updated: '2022-05-31T00:38:24.994Z',
         },
         'sensor.iphone_mark_last_update_trigger': {
           entity_id: 'sensor.iphone_mark_last_update_trigger',
@@ -554,12 +560,12 @@ const hass: any = {
             friendly_name: 'iphone mark Last Update Trigger',
           },
           context: {
-            id: '0181175163a5e6ad6fddecf23bd16d57',
+            id: '0181178cafe349e62523693cfa96ddcf',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.853Z',
-          last_updated: '2022-05-30T23:33:38.853Z',
+          last_changed: '2022-05-31T00:38:24.995Z',
+          last_updated: '2022-05-31T00:38:24.995Z',
         },
         'sensor.iphone_mark_sim_1': {
           entity_id: 'sensor.iphone_mark_sim_1',
@@ -575,12 +581,12 @@ const hass: any = {
             friendly_name: 'iphone mark SIM 1',
           },
           context: {
-            id: '0181175163a5be76423f185c82ec5e6a',
+            id: '0181178cafe3df46c0cd65c76bd5c531',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.853Z',
-          last_updated: '2022-05-30T23:33:38.853Z',
+          last_changed: '2022-05-31T00:38:24.995Z',
+          last_updated: '2022-05-31T00:38:24.995Z',
         },
         'sensor.iphone_mark_sim_2': {
           entity_id: 'sensor.iphone_mark_sim_2',
@@ -597,12 +603,12 @@ const hass: any = {
             friendly_name: 'iphone mark SIM 2',
           },
           context: {
-            id: '0181175163a5bf7dda671caae6327b1c',
+            id: '0181178cafe3f56472659cd6f405ccb9',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.853Z',
-          last_updated: '2022-05-30T23:33:38.853Z',
+          last_changed: '2022-05-31T00:38:24.995Z',
+          last_updated: '2022-05-31T00:38:24.995Z',
         },
         'sensor.iphone_mark_ssid': {
           entity_id: 'sensor.iphone_mark_ssid',
@@ -612,12 +618,12 @@ const hass: any = {
             friendly_name: 'iphone mark SSID',
           },
           context: {
-            id: '0181175163a608549df461f05e8c0fe3',
+            id: '0181178cafe4beae28e4a3b5c0042ffd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.854Z',
-          last_updated: '2022-05-30T23:33:38.854Z',
+          last_changed: '2022-05-31T00:38:24.996Z',
+          last_updated: '2022-05-31T00:38:24.996Z',
         },
         'sensor.iphone_mark_steps': {
           entity_id: 'sensor.iphone_mark_steps',
@@ -628,12 +634,12 @@ const hass: any = {
             friendly_name: 'iphone mark Steps',
           },
           context: {
-            id: '0181175163a6e0170fcb9e7e99e53f06',
+            id: '0181178cafe4fce548c25d0478f8d69e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.854Z',
-          last_updated: '2022-05-30T23:33:38.854Z',
+          last_changed: '2022-05-31T00:38:24.996Z',
+          last_updated: '2022-05-31T00:38:24.996Z',
         },
         'sensor.iphone_mark_storage': {
           entity_id: 'sensor.iphone_mark_storage',
@@ -648,12 +654,12 @@ const hass: any = {
             friendly_name: 'iphone mark Storage',
           },
           context: {
-            id: '0181175163a6efdeb39d636faac0f12e',
+            id: '0181178cafe5630645bb9d5fe48ec2bb',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.854Z',
-          last_updated: '2022-05-30T23:33:38.854Z',
+          last_changed: '2022-05-31T00:38:24.997Z',
+          last_updated: '2022-05-31T00:38:24.997Z',
         },
         'binary_sensor.iphone_mark_focus': {
           entity_id: 'binary_sensor.iphone_mark_focus',
@@ -663,12 +669,12 @@ const hass: any = {
             friendly_name: 'iphone mark Focus',
           },
           context: {
-            id: '0181175163a60e66fe53b24172f04fe4',
+            id: '0181178cafe5369bb068458ac7683920',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.854Z',
-          last_updated: '2022-05-30T23:33:38.854Z',
+          last_changed: '2022-05-31T00:38:24.997Z',
+          last_updated: '2022-05-31T00:38:24.997Z',
         },
         'sensor.mark_lycks_ipad_battery_level': {
           entity_id: 'sensor.mark_lycks_ipad_battery_level',
@@ -680,12 +686,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Battery Level',
           },
           context: {
-            id: '0181175163a759fdf3f6f2ea20a49998',
+            id: '0181178cafe5525d670961ba58b61568',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.855Z',
-          last_updated: '2022-05-30T23:33:38.855Z',
+          last_changed: '2022-05-31T00:38:24.997Z',
+          last_updated: '2022-05-31T00:38:24.997Z',
         },
         'sensor.mark_lycks_ipad_battery_state': {
           entity_id: 'sensor.mark_lycks_ipad_battery_state',
@@ -696,12 +702,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Battery State',
           },
           context: {
-            id: '0181175163a705fe5ac5832837ec5cbb',
+            id: '0181178cafe69cd592961ba32e988d7f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.855Z',
-          last_updated: '2022-05-30T23:33:38.855Z',
+          last_changed: '2022-05-31T00:38:24.998Z',
+          last_updated: '2022-05-31T00:38:24.998Z',
         },
         'sensor.mark_lycks_ipad_storage': {
           entity_id: 'sensor.mark_lycks_ipad_storage',
@@ -716,12 +722,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Storage',
           },
           context: {
-            id: '0181175163a7c7e743a71a7df4d7b9b4',
+            id: '0181178cafe6dbddaa2b18b898e12f0a',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.855Z',
-          last_updated: '2022-05-30T23:33:38.855Z',
+          last_changed: '2022-05-31T00:38:24.998Z',
+          last_updated: '2022-05-31T00:38:24.998Z',
         },
         'sensor.mark_lycks_ipad_ssid': {
           entity_id: 'sensor.mark_lycks_ipad_ssid',
@@ -731,12 +737,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad SSID',
           },
           context: {
-            id: '0181175163a8341660d2cd96e06fb10c',
+            id: '0181178cafe6161f02fb493a1e903310',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.856Z',
-          last_updated: '2022-05-30T23:33:38.856Z',
+          last_changed: '2022-05-31T00:38:24.998Z',
+          last_updated: '2022-05-31T00:38:24.998Z',
         },
         'sensor.mark_lycks_ipad_geocoded_location': {
           entity_id: 'sensor.mark_lycks_ipad_geocoded_location',
@@ -762,12 +768,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Geocoded Location',
           },
           context: {
-            id: '0181175163a806b6d93b48eb671001b4',
+            id: '0181178cafe7b8366ca3dbdecc422f34',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.856Z',
-          last_updated: '2022-05-30T23:33:38.856Z',
+          last_changed: '2022-05-31T00:38:24.999Z',
+          last_updated: '2022-05-31T00:38:24.999Z',
         },
         'sensor.mark_lycks_ipad_last_update_trigger': {
           entity_id: 'sensor.mark_lycks_ipad_last_update_trigger',
@@ -777,12 +783,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Last Update Trigger',
           },
           context: {
-            id: '0181175163a979ec83edf9b5dd628859',
+            id: '0181178cafe7023c26b45a988c026312',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.857Z',
-          last_updated: '2022-05-30T23:33:38.857Z',
+          last_changed: '2022-05-31T00:38:24.999Z',
+          last_updated: '2022-05-31T00:38:24.999Z',
         },
         'sensor.mark_lycks_ipad_bssid': {
           entity_id: 'sensor.mark_lycks_ipad_bssid',
@@ -792,12 +798,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad BSSID',
           },
           context: {
-            id: '0181175163a910539cf2f1a50e12ad3e',
+            id: '0181178cafe751ef8512488f29bbe61b',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.857Z',
-          last_updated: '2022-05-30T23:33:38.857Z',
+          last_changed: '2022-05-31T00:38:24.999Z',
+          last_updated: '2022-05-31T00:38:24.999Z',
         },
         'sensor.mark_lycks_ipad_connection_type': {
           entity_id: 'sensor.mark_lycks_ipad_connection_type',
@@ -807,12 +813,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Connection Type',
           },
           context: {
-            id: '0181175163a9391740f74af44c7de669',
+            id: '0181178cafe8a509405b812ae036ee9f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.857Z',
-          last_updated: '2022-05-30T23:33:38.857Z',
+          last_changed: '2022-05-31T00:38:25.000Z',
+          last_updated: '2022-05-31T00:38:25.000Z',
         },
         'sensor.mark_lycks_ipad_activity': {
           entity_id: 'sensor.mark_lycks_ipad_activity',
@@ -824,12 +830,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Activity',
           },
           context: {
-            id: '0181175163a95134eaab0d6d79c7e123',
+            id: '0181178cafe87462a24c3407c5e782b5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.857Z',
-          last_updated: '2022-05-30T23:33:38.857Z',
+          last_changed: '2022-05-31T00:38:25.000Z',
+          last_updated: '2022-05-31T00:38:25.000Z',
         },
         'binary_sensor.mark_lycks_ipad_focus': {
           entity_id: 'binary_sensor.mark_lycks_ipad_focus',
@@ -839,12 +845,12 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad Focus',
           },
           context: {
-            id: '0181175163aae462c75461b56470f5b1',
+            id: '0181178cafe80d8d80d512d9746d1193',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.858Z',
-          last_updated: '2022-05-30T23:33:38.858Z',
+          last_changed: '2022-05-31T00:38:25.000Z',
+          last_updated: '2022-05-31T00:38:25.000Z',
         },
         'light.lamp': {
           entity_id: 'light.lamp',
@@ -860,12 +866,12 @@ const hass: any = {
             supported_features: 44,
           },
           context: {
-            id: '0181175163dcc9575682e92a627c4e22',
+            id: '0181178cb0203f90dbf314a86860abf0',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.908Z',
-          last_updated: '2022-05-30T23:33:38.908Z',
+          last_changed: '2022-05-31T00:38:25.056Z',
+          last_updated: '2022-05-31T00:38:25.056Z',
         },
         'light.bedroom': {
           entity_id: 'light.bedroom',
@@ -875,7 +881,7 @@ const hass: any = {
             max_mireds: 500,
             supported_color_modes: ['color_temp', 'xy'],
             is_hue_group: true,
-            hue_scenes: ['Bright', 'Nightlight', 'Dimmed'],
+            hue_scenes: ['Dimmed', 'Nightlight', 'Bright'],
             hue_type: 'room',
             lights: ['Lamp'],
             dynamics: false,
@@ -884,12 +890,12 @@ const hass: any = {
             supported_features: 40,
           },
           context: {
-            id: '0181175163dd3135861291e0e42c8879',
+            id: '0181178cb021941391fb3e109282d241',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.909Z',
-          last_updated: '2022-05-30T23:33:38.909Z',
+          last_changed: '2022-05-31T00:38:25.057Z',
+          last_updated: '2022-05-31T00:38:25.057Z',
         },
         'device_tracker.iphone_mark': {
           entity_id: 'device_tracker.iphone_mark',
@@ -905,12 +911,12 @@ const hass: any = {
             friendly_name: 'iphone mark',
           },
           context: {
-            id: '0181175163eb03a681a3badb38163cf6',
+            id: '0181178cb0415742a8a61f7229a560b8',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.923Z',
-          last_updated: '2022-05-30T23:33:38.923Z',
+          last_changed: '2022-05-31T00:38:25.089Z',
+          last_updated: '2022-05-31T00:38:25.089Z',
         },
         'device_tracker.mark_lycks_ipad': {
           entity_id: 'device_tracker.mark_lycks_ipad',
@@ -926,12 +932,93 @@ const hass: any = {
             friendly_name: 'Mark Lyck’s iPad',
           },
           context: {
-            id: '0181175163ec5071e3c0755e6cbcf935',
+            id: '0181178cb042674167b98a7dec7c9ca5',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.924Z',
-          last_updated: '2022-05-30T23:33:38.924Z',
+          last_changed: '2022-05-31T00:38:25.090Z',
+          last_updated: '2022-05-31T00:38:25.090Z',
+        },
+        'binary_sensor.my_ecobee_occupancy': {
+          entity_id: 'binary_sensor.my_ecobee_occupancy',
+          state: 'on',
+          attributes: {
+            device_class: 'occupancy',
+            friendly_name: 'My ecobee Occupancy',
+          },
+          context: {
+            id: '0181178f710719adc92a39799efc9fa5',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:41:25.511Z',
+          last_updated: '2022-05-31T00:41:25.511Z',
+        },
+        'binary_sensor.bedroom_sensor_occupancy': {
+          entity_id: 'binary_sensor.bedroom_sensor_occupancy',
+          state: 'on',
+          attributes: {
+            device_class: 'occupancy',
+            friendly_name: 'bedroom sensor Occupancy',
+          },
+          context: {
+            id: '018117a05fdd2260bedea4a12e8db11a',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:59:55.229Z',
+          last_updated: '2022-05-31T00:59:55.229Z',
+        },
+        'sensor.my_ecobee_temperature': {
+          entity_id: 'sensor.my_ecobee_temperature',
+          state: '76.8',
+          attributes: {
+            state_class: 'measurement',
+            unit_of_measurement: '°F',
+            device_class: 'temperature',
+            friendly_name: 'My ecobee Temperature',
+          },
+          context: {
+            id: '018117dea1ea31504042fa9a2660e5a0',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T02:07:55.370Z',
+          last_updated: '2022-05-31T02:07:55.370Z',
+        },
+        'sensor.my_ecobee_humidity': {
+          entity_id: 'sensor.my_ecobee_humidity',
+          state: '51',
+          attributes: {
+            state_class: 'measurement',
+            unit_of_measurement: '%',
+            device_class: 'humidity',
+            friendly_name: 'My ecobee Humidity',
+          },
+          context: {
+            id: '018117dccd28084a050349761664264d',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T02:05:55.368Z',
+          last_updated: '2022-05-31T02:05:55.368Z',
+        },
+        'sensor.bedroom_sensor_temperature': {
+          entity_id: 'sensor.bedroom_sensor_temperature',
+          state: '75.8',
+          attributes: {
+            state_class: 'measurement',
+            unit_of_measurement: '°F',
+            device_class: 'temperature',
+            friendly_name: 'bedroom sensor Temperature',
+          },
+          context: {
+            id: '018117dccd280264ea2b62ef6099e62e',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T02:05:55.368Z',
+          last_updated: '2022-05-31T02:05:55.368Z',
         },
         'scene.bedroom_bright': {
           entity_id: 'scene.bedroom_bright',
@@ -946,12 +1033,12 @@ const hass: any = {
             friendly_name: 'Bedroom Bright',
           },
           context: {
-            id: '01811751640c080464ef07c6c6759b87',
+            id: '0181178cb06a988e891ef49870eca909',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.956Z',
-          last_updated: '2022-05-30T23:33:38.956Z',
+          last_changed: '2022-05-31T00:38:25.130Z',
+          last_updated: '2022-05-31T00:38:25.130Z',
         },
         'scene.bedroom_nightlight': {
           entity_id: 'scene.bedroom_nightlight',
@@ -966,12 +1053,12 @@ const hass: any = {
             friendly_name: 'Bedroom Nightlight',
           },
           context: {
-            id: '01811751640da6b3c0f2882639315bb3',
+            id: '0181178cb06add1baf728284cf3e9c74',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.957Z',
-          last_updated: '2022-05-30T23:33:38.957Z',
+          last_changed: '2022-05-31T00:38:25.130Z',
+          last_updated: '2022-05-31T00:38:25.130Z',
         },
         'scene.bedroom_dimmed': {
           entity_id: 'scene.bedroom_dimmed',
@@ -986,125 +1073,12 @@ const hass: any = {
             friendly_name: 'Bedroom Dimmed',
           },
           context: {
-            id: '01811751640d4459fee7a0f74820e0ba',
+            id: '0181178cb06a81d929a99545edb35e76',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:38.957Z',
-          last_updated: '2022-05-30T23:33:38.957Z',
-        },
-        'binary_sensor.my_ecobee_occupancy': {
-          entity_id: 'binary_sensor.my_ecobee_occupancy',
-          state: 'on',
-          attributes: {
-            device_class: 'occupancy',
-            friendly_name: 'My ecobee Occupancy',
-          },
-          context: {
-            id: '0181175164380ed4239f455764d8c764',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:39.000Z',
-          last_updated: '2022-05-30T23:33:39.000Z',
-        },
-        'binary_sensor.bedroom_sensor_occupancy': {
-          entity_id: 'binary_sensor.bedroom_sensor_occupancy',
-          state: 'on',
-          attributes: {
-            device_class: 'occupancy',
-            friendly_name: 'bedroom sensor Occupancy',
-          },
-          context: {
-            id: '01811751643959cbf247bd04279c236f',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:39.001Z',
-          last_updated: '2022-05-30T23:33:39.001Z',
-        },
-        'binary_sensor.office_occupancy': {
-          entity_id: 'binary_sensor.office_occupancy',
-          state: 'on',
-          attributes: {
-            device_class: 'occupancy',
-            friendly_name: 'Office Occupancy',
-          },
-          context: {
-            id: '01811751643ac702e09998134ef895d0',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:39.002Z',
-          last_updated: '2022-05-30T23:33:39.002Z',
-        },
-        'sensor.my_ecobee_temperature': {
-          entity_id: 'sensor.my_ecobee_temperature',
-          state: '75.5',
-          attributes: {
-            state_class: 'measurement',
-            unit_of_measurement: '°F',
-            device_class: 'temperature',
-            friendly_name: 'My ecobee Temperature',
-          },
-          context: {
-            id: '01811770102c75da8d01264fec57c55a',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-31T00:07:09.100Z',
-          last_updated: '2022-05-31T00:07:09.100Z',
-        },
-        'sensor.my_ecobee_humidity': {
-          entity_id: 'sensor.my_ecobee_humidity',
-          state: '52',
-          attributes: {
-            state_class: 'measurement',
-            unit_of_measurement: '%',
-            device_class: 'humidity',
-            friendly_name: 'My ecobee Humidity',
-          },
-          context: {
-            id: '01811770102d9139f770a93b355704c9',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-31T00:07:09.101Z',
-          last_updated: '2022-05-31T00:07:09.101Z',
-        },
-        'sensor.bedroom_sensor_temperature': {
-          entity_id: 'sensor.bedroom_sensor_temperature',
-          state: '76.0',
-          attributes: {
-            state_class: 'measurement',
-            unit_of_measurement: '°F',
-            device_class: 'temperature',
-            friendly_name: 'bedroom sensor Temperature',
-          },
-          context: {
-            id: '0181176d5107d9c9fd774810f8f0a77c',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-31T00:04:09.095Z',
-          last_updated: '2022-05-31T00:04:09.095Z',
-        },
-        'sensor.office_temperature': {
-          entity_id: 'sensor.office_temperature',
-          state: '76.6',
-          attributes: {
-            state_class: 'measurement',
-            unit_of_measurement: '°F',
-            device_class: 'temperature',
-            friendly_name: 'Office Temperature',
-          },
-          context: {
-            id: '01811770102eb24beffe6e17a2ebdd88',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-31T00:07:09.102Z',
-          last_updated: '2022-05-31T00:07:09.102Z',
+          last_changed: '2022-05-31T00:38:25.131Z',
+          last_updated: '2022-05-31T00:38:25.131Z',
         },
         'climate.ecobee': {
           entity_id: 'climate.ecobee',
@@ -1116,11 +1090,11 @@ const hass: any = {
             target_temp_step: 0.5,
             fan_modes: ['auto', 'on'],
             preset_modes: ['Away', 'Home', 'Sleep'],
-            current_temperature: 76,
-            temperature: 76,
+            current_temperature: 76.6,
+            temperature: 75,
             target_temp_high: null,
             target_temp_low: null,
-            current_humidity: 52,
+            current_humidity: 51,
             fan_mode: 'auto',
             hvac_action: 'idle',
             preset_mode: 'temp',
@@ -1134,47 +1108,47 @@ const hass: any = {
             supported_features: 91,
           },
           context: {
-            id: '0181176f9c524605a55e89a8029e5286',
+            id: '018117de4ac3e1d06dfdcd1ceef1eb6d',
             parent_id: null,
-            user_id: null,
+            user_id: 'fefe8d8a7bec4ab9ad5ca86ac9734a4c',
           },
-          last_changed: '2022-05-30T23:33:39.018Z',
-          last_updated: '2022-05-31T00:06:39.442Z',
+          last_changed: '2022-05-31T00:38:25.185Z',
+          last_updated: '2022-05-31T02:07:34.161Z',
         },
         'weather.my_ecobee': {
           entity_id: 'weather.my_ecobee',
           state: 'sunny',
           attributes: {
-            temperature: 82,
-            humidity: 60,
+            temperature: 78,
+            humidity: 69,
             pressure: 30.06,
-            wind_bearing: 174,
-            wind_speed: 7,
-            visibility: 9,
+            wind_bearing: 181,
+            wind_speed: 5,
+            visibility: 10,
             forecast: [
               {
                 condition: 'sunny',
                 temperature: 89,
                 templow: 67,
-                wind_bearing: 174,
-                wind_speed: 7,
-                datetime: '2022-05-31T00:07:09.111721+00:00',
+                wind_bearing: 181,
+                wind_speed: 5,
+                datetime: '2022-05-31T02:09:25.809080+00:00',
               },
               {
                 condition: 'sunny',
-                temperature: 91,
+                temperature: 90,
                 templow: 73,
                 wind_bearing: 251,
                 wind_speed: 4,
-                datetime: '2022-06-01T00:07:09.111721+00:00',
+                datetime: '2022-06-01T02:09:25.809080+00:00',
               },
               {
                 condition: 'partlycloudy',
                 temperature: 90,
                 templow: 77,
-                wind_bearing: 274,
+                wind_bearing: 275,
                 wind_speed: 5,
-                datetime: '2022-06-02T00:07:09.111721+00:00',
+                datetime: '2022-06-02T02:09:25.809080+00:00',
               },
               {
                 condition: 'rainy',
@@ -1182,28 +1156,28 @@ const hass: any = {
                 templow: 74,
                 wind_bearing: 328,
                 wind_speed: 5,
-                datetime: '2022-06-03T00:07:09.111721+00:00',
+                datetime: '2022-06-03T02:09:25.809080+00:00',
               },
               {
                 condition: 'rainy',
                 temperature: 76,
                 templow: 67,
-                wind_bearing: 331,
+                wind_bearing: 325,
                 wind_speed: 6,
-                datetime: '2022-06-04T00:07:09.111721+00:00',
+                datetime: '2022-06-04T02:09:25.809080+00:00',
               },
             ],
             attribution:
-              'Ecobee weather provided by FI:NDV at 2022-05-31 00:00:39 UTC',
+              'Ecobee weather provided by FI:NDV at 2022-05-31 02:00:49 UTC',
             friendly_name: 'My ecobee',
           },
           context: {
-            id: '0181177010382e9ca027082120691ff9',
+            id: '018117e00331739e803ea5025ff67902',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:39.019Z',
-          last_updated: '2022-05-31T00:07:09.112Z',
+          last_changed: '2022-05-31T00:38:25.186Z',
+          last_updated: '2022-05-31T02:09:25.809Z',
         },
         'light.bedroom_lamp': {
           entity_id: 'light.bedroom_lamp',
@@ -1215,82 +1189,12 @@ const hass: any = {
             supported_features: 37,
           },
           context: {
-            id: '01811751646212a19a7bad5ce1d69bc2',
+            id: '0181178cb3048bccd84c90d1047368e0',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:39.042Z',
-          last_updated: '2022-05-30T23:33:39.042Z',
-        },
-        'binary_sensor.eero_wan_status': {
-          entity_id: 'binary_sensor.eero_wan_status',
-          state: 'on',
-          attributes: {
-            device_class: 'connectivity',
-            friendly_name: 'eero wan status',
-          },
-          context: {
-            id: '018117516476da691dcec11aef14f262',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:39.062Z',
-          last_updated: '2022-05-30T23:33:39.062Z',
-        },
-        'sensor.eero_external_ip': {
-          entity_id: 'sensor.eero_external_ip',
-          state: '108.28.69.66',
-          attributes: {
-            icon: 'mdi:server-network',
-            friendly_name: 'eero External IP',
-          },
-          context: {
-            id: '01811751647709edbd0d6b3775896d77',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:39.063Z',
-          last_updated: '2022-05-30T23:33:39.063Z',
-        },
-        'sensor.eero_wan_status': {
-          entity_id: 'sensor.eero_wan_status',
-          state: 'Connected',
-          attributes: {
-            icon: 'mdi:server-network',
-            friendly_name: 'eero wan status',
-          },
-          context: {
-            id: '018117516478f178aafa8c1c133e0808',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:39.064Z',
-          last_updated: '2022-05-30T23:33:39.064Z',
-        },
-        'light.desk_light': {
-          entity_id: 'light.desk_light',
-          state: 'on',
-          attributes: {
-            min_mireds: 111,
-            max_mireds: 666,
-            effect_list: ['effect_colorloop', 'effect_pulse', 'effect_stop'],
-            supported_color_modes: ['color_temp', 'hs'],
-            color_mode: 'hs',
-            brightness: 255,
-            hs_color: [27.999, 26],
-            rgb_color: [255, 219, 188],
-            xy_color: [0.392, 0.358],
-            icon: 'mdi:led-strip-variant',
-            friendly_name: 'Desk light',
-            supported_features: 55,
-          },
-          context: {
-            id: '0181176d83bf5d1c23be6c88bf9f3826',
-            parent_id: null,
-            user_id: 'fefe8d8a7bec4ab9ad5ca86ac9734a4c',
-          },
-          last_changed: '2022-05-31T00:04:22.420Z',
-          last_updated: '2022-05-31T00:04:22.420Z',
+          last_changed: '2022-05-31T00:38:25.796Z',
+          last_updated: '2022-05-31T00:38:25.796Z',
         },
         'sensor.hacs': {
           entity_id: 'sensor.hacs',
@@ -1321,291 +1225,82 @@ const hass: any = {
             friendly_name: 'hacs',
           },
           context: {
-            id: '018117517ea5ae60b6f4dc21fa5268e6',
+            id: '0181178cd853a2ad7c2b35663a12f4bd',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:45.765Z',
-          last_updated: '2022-05-30T23:33:45.765Z',
+          last_changed: '2022-05-31T00:38:35.347Z',
+          last_updated: '2022-05-31T00:38:35.347Z',
         },
-        'sensor.disk_use_home': {
-          entity_id: 'sensor.disk_use_home',
-          state: 'unavailable',
+        'light.desk_light': {
+          entity_id: 'light.desk_light',
+          state: 'on',
           attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:harddisk',
-            friendly_name: 'Disk use /home',
-            supported_features: 0,
-            unit_of_measurement: 'GiB',
+            min_mireds: 111,
+            max_mireds: 666,
+            effect_list: ['effect_colorloop', 'effect_pulse', 'effect_stop'],
+            supported_color_modes: ['color_temp', 'hs'],
+            color_mode: 'hs',
+            brightness: 255,
+            hs_color: [27.999, 26],
+            rgb_color: [255, 219, 188],
+            xy_color: [0.392, 0.358],
+            icon: 'mdi:led-strip-variant',
+            friendly_name: 'Desk light',
+            supported_features: 55,
           },
           context: {
-            id: '018117516b864b65c810483d1adb46d5',
+            id: '0181178cb7301e244a98a5ae478af52c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:40.870Z',
-          last_updated: '2022-05-30T23:33:40.870Z',
+          last_changed: '2022-05-31T00:38:26.864Z',
+          last_updated: '2022-05-31T00:38:26.864Z',
         },
-        'sensor.disk_free_home': {
-          entity_id: 'sensor.disk_free_home',
-          state: 'unavailable',
+        'binary_sensor.eero_wan_status': {
+          entity_id: 'binary_sensor.eero_wan_status',
+          state: 'on',
           attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:harddisk',
-            friendly_name: 'Disk free /home',
-            supported_features: 0,
-            unit_of_measurement: 'GiB',
+            device_class: 'connectivity',
+            friendly_name: 'eero wan status',
           },
           context: {
-            id: '018117516b86cdb077867674b38ed432',
+            id: '0181178cb7e018e469c92f6ebba95e0e',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:40.870Z',
-          last_updated: '2022-05-30T23:33:40.870Z',
+          last_changed: '2022-05-31T00:38:27.040Z',
+          last_updated: '2022-05-31T00:38:27.040Z',
         },
-        'sensor.disk_use_percent_home': {
-          entity_id: 'sensor.disk_use_percent_home',
-          state: 'unavailable',
+        'sensor.eero_external_ip': {
+          entity_id: 'sensor.eero_external_ip',
+          state: '108.28.69.66',
           attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:harddisk',
-            friendly_name: 'Disk use (percent) /home',
-            supported_features: 0,
-            unit_of_measurement: '%',
-          },
-          context: {
-            id: '018117516b861ab62d402852b94267da',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.870Z',
-          last_updated: '2022-05-30T23:33:40.870Z',
-        },
-        'sensor.memory_free': {
-          entity_id: 'sensor.memory_free',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:memory',
-            friendly_name: 'Memory free',
-            supported_features: 0,
-            unit_of_measurement: 'MiB',
-          },
-          context: {
-            id: '018117516b872c75f2d871e612c3efa5',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
-        },
-        'sensor.memory_use': {
-          entity_id: 'sensor.memory_use',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:memory',
-            friendly_name: 'Memory use',
-            supported_features: 0,
-            unit_of_measurement: 'MiB',
-          },
-          context: {
-            id: '018117516b87720b6cfa0a2b4105ecfa',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
-        },
-        'sensor.memory_use_percent': {
-          entity_id: 'sensor.memory_use_percent',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:memory',
-            friendly_name: 'Memory use (percent)',
-            supported_features: 0,
-            unit_of_measurement: '%',
-          },
-          context: {
-            id: '018117516b87e43b2e7260f0e7252402',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
-        },
-        'sensor.network_in_eth0': {
-          entity_id: 'sensor.network_in_eth0',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'total_increasing',
             icon: 'mdi:server-network',
-            friendly_name: 'Network in eth0',
-            supported_features: 0,
-            unit_of_measurement: 'MiB',
+            friendly_name: 'eero External IP',
           },
           context: {
-            id: '018117516b874d302ff722f11ca1b5f5',
+            id: '0181178cb7e207c9d51844e0ab8131ec',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
+          last_changed: '2022-05-31T00:38:27.042Z',
+          last_updated: '2022-05-31T00:38:27.042Z',
         },
-        'sensor.network_out_eth0': {
-          entity_id: 'sensor.network_out_eth0',
-          state: 'unavailable',
+        'sensor.eero_wan_status': {
+          entity_id: 'sensor.eero_wan_status',
+          state: 'Connected',
           attributes: {
-            restored: true,
-            state_class: 'total_increasing',
             icon: 'mdi:server-network',
-            friendly_name: 'Network out eth0',
-            supported_features: 0,
-            unit_of_measurement: 'MiB',
+            friendly_name: 'eero wan status',
           },
           context: {
-            id: '018117516b87103c26e9391970e57a29',
+            id: '0181178cb7e31ecc6e130b6c31723b4f',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
-        },
-        'sensor.network_throughput_in_eth0': {
-          entity_id: 'sensor.network_throughput_in_eth0',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:server-network',
-            friendly_name: 'Network throughput in eth0',
-            supported_features: 0,
-            unit_of_measurement: 'MB/s',
-          },
-          context: {
-            id: '018117516b87687ea76758a2b1a9a78a',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
-        },
-        'sensor.network_throughput_out_eth0': {
-          entity_id: 'sensor.network_throughput_out_eth0',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:server-network',
-            friendly_name: 'Network throughput out eth0',
-            supported_features: 0,
-            unit_of_measurement: 'MB/s',
-          },
-          context: {
-            id: '018117516b878f2723ecf9d63cc49bcb',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
-        },
-        'sensor.ipv4_address_eth0': {
-          entity_id: 'sensor.ipv4_address_eth0',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            icon: 'mdi:server-network',
-            friendly_name: 'IPv4 address eth0',
-            supported_features: 0,
-          },
-          context: {
-            id: '018117516b87434b0a889f7669f7a048',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.871Z',
-          last_updated: '2022-05-30T23:33:40.871Z',
-        },
-        'sensor.packets_in_eth0': {
-          entity_id: 'sensor.packets_in_eth0',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'total_increasing',
-            icon: 'mdi:server-network',
-            friendly_name: 'Packets in eth0',
-            supported_features: 0,
-          },
-          context: {
-            id: '018117516b8885d7d9457cbd4b26576c',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.872Z',
-          last_updated: '2022-05-30T23:33:40.872Z',
-        },
-        'sensor.packets_out_eth0': {
-          entity_id: 'sensor.packets_out_eth0',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'total_increasing',
-            icon: 'mdi:server-network',
-            friendly_name: 'Packets out eth0',
-            supported_features: 0,
-          },
-          context: {
-            id: '018117516b884ddf33fdd48eaadb559c',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.872Z',
-          last_updated: '2022-05-30T23:33:40.872Z',
-        },
-        'sensor.processor_use': {
-          entity_id: 'sensor.processor_use',
-          state: 'unavailable',
-          attributes: {
-            restored: true,
-            state_class: 'measurement',
-            icon: 'mdi:cpu-64-bit',
-            friendly_name: 'Processor use',
-            supported_features: 0,
-            unit_of_measurement: '%',
-          },
-          context: {
-            id: '018117516b88464be621ecc362639220',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:33:40.872Z',
-          last_updated: '2022-05-30T23:33:40.872Z',
-        },
-        'persistent_notification.config_entry_discovery': {
-          entity_id: 'persistent_notification.config_entry_discovery',
-          state: 'notifying',
-          attributes: {
-            message:
-              'We have discovered new devices on your network. [Check it out](/config/integrations).',
-            title: 'New devices discovered',
-            friendly_name: 'New devices discovered',
-          },
-          context: {
-            id: '01811751b904b9ca2c6d06e20a509cf4',
-            parent_id: null,
-            user_id: null,
-          },
-          last_changed: '2022-05-30T23:34:00.708Z',
-          last_updated: '2022-05-30T23:34:00.708Z',
+          last_changed: '2022-05-31T00:38:27.043Z',
+          last_updated: '2022-05-31T00:38:27.043Z',
         },
         'vacuum.alfred': {
           entity_id: 'vacuum.alfred',
@@ -1619,12 +1314,12 @@ const hass: any = {
             supported_features: 15228,
           },
           context: {
-            id: '018117693cfdc9e8e786b7f323044de5',
+            id: '0181178cc42c611e27f6da73aada24a8',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:59:41.821Z',
-          last_updated: '2022-05-30T23:59:41.821Z',
+          last_changed: '2022-05-31T00:38:30.188Z',
+          last_updated: '2022-05-31T00:38:30.188Z',
         },
         'button.alfred_life_span_side_brush_reset': {
           entity_id: 'button.alfred_life_span_side_brush_reset',
@@ -1634,12 +1329,12 @@ const hass: any = {
             friendly_name: 'Alfred life span side brush reset',
           },
           context: {
-            id: '018117693d1161538bf2866555448183',
+            id: '0181178cc437fed36ae21d6b06bb96ce',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:59:41.841Z',
-          last_updated: '2022-05-30T23:59:41.841Z',
+          last_changed: '2022-05-31T00:38:30.199Z',
+          last_updated: '2022-05-31T00:38:30.199Z',
         },
         'button.alfred_life_span_brush_reset': {
           entity_id: 'button.alfred_life_span_brush_reset',
@@ -1649,12 +1344,12 @@ const hass: any = {
             friendly_name: 'Alfred life span brush reset',
           },
           context: {
-            id: '018117693d12127ed0ead8ba752f1baa',
+            id: '0181178cc437dc1c8e5d3b8876b165ed',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:59:41.842Z',
-          last_updated: '2022-05-30T23:59:41.842Z',
+          last_changed: '2022-05-31T00:38:30.200Z',
+          last_updated: '2022-05-31T00:38:30.200Z',
         },
         'button.alfred_life_span_filter_reset': {
           entity_id: 'button.alfred_life_span_filter_reset',
@@ -1664,12 +1359,12 @@ const hass: any = {
             friendly_name: 'Alfred life span filter reset',
           },
           context: {
-            id: '018117693d12d3edfd449919983f529c',
+            id: '0181178cc4386743ccd67789dfeb2692',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:59:41.842Z',
-          last_updated: '2022-05-30T23:59:41.842Z',
+          last_changed: '2022-05-31T00:38:30.200Z',
+          last_updated: '2022-05-31T00:38:30.200Z',
         },
         'button.alfred_relocate': {
           entity_id: 'button.alfred_relocate',
@@ -1679,12 +1374,340 @@ const hass: any = {
             friendly_name: 'Alfred relocate',
           },
           context: {
-            id: '018117693d134252d7f61bcfca1e723f',
+            id: '0181178cc43814c3e16ecc1e139c8c5c',
             parent_id: null,
             user_id: null,
           },
-          last_changed: '2022-05-30T23:59:41.843Z',
-          last_updated: '2022-05-30T23:59:41.843Z',
+          last_changed: '2022-05-31T00:38:30.200Z',
+          last_updated: '2022-05-31T00:38:30.200Z',
+        },
+        'sensor.disk_use_home': {
+          entity_id: 'sensor.disk_use_home',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:harddisk',
+            friendly_name: 'Disk use /home',
+            supported_features: 0,
+            unit_of_measurement: 'GiB',
+          },
+          context: {
+            id: '0181178cc43d6e449dff395380d05732',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.205Z',
+          last_updated: '2022-05-31T00:38:30.205Z',
+        },
+        'sensor.disk_free_home': {
+          entity_id: 'sensor.disk_free_home',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:harddisk',
+            friendly_name: 'Disk free /home',
+            supported_features: 0,
+            unit_of_measurement: 'GiB',
+          },
+          context: {
+            id: '0181178cc43db31e6a2462f4c0581adc',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.205Z',
+          last_updated: '2022-05-31T00:38:30.205Z',
+        },
+        'sensor.disk_use_percent_home': {
+          entity_id: 'sensor.disk_use_percent_home',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:harddisk',
+            friendly_name: 'Disk use (percent) /home',
+            supported_features: 0,
+            unit_of_measurement: '%',
+          },
+          context: {
+            id: '0181178cc43d965e3f5973b000a8d5fd',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.205Z',
+          last_updated: '2022-05-31T00:38:30.205Z',
+        },
+        'sensor.memory_free': {
+          entity_id: 'sensor.memory_free',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:memory',
+            friendly_name: 'Memory free',
+            supported_features: 0,
+            unit_of_measurement: 'MiB',
+          },
+          context: {
+            id: '0181178cc43d01ee2729a214c30c2ed2',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.205Z',
+          last_updated: '2022-05-31T00:38:30.205Z',
+        },
+        'sensor.memory_use': {
+          entity_id: 'sensor.memory_use',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:memory',
+            friendly_name: 'Memory use',
+            supported_features: 0,
+            unit_of_measurement: 'MiB',
+          },
+          context: {
+            id: '0181178cc43e5e3c596e62f10a64bd10',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.memory_use_percent': {
+          entity_id: 'sensor.memory_use_percent',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:memory',
+            friendly_name: 'Memory use (percent)',
+            supported_features: 0,
+            unit_of_measurement: '%',
+          },
+          context: {
+            id: '0181178cc43e9497d62dbcb6afe82629',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.network_in_eth0': {
+          entity_id: 'sensor.network_in_eth0',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'total_increasing',
+            icon: 'mdi:server-network',
+            friendly_name: 'Network in eth0',
+            supported_features: 0,
+            unit_of_measurement: 'MiB',
+          },
+          context: {
+            id: '0181178cc43e92a9d2deafa50058e25c',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.network_out_eth0': {
+          entity_id: 'sensor.network_out_eth0',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'total_increasing',
+            icon: 'mdi:server-network',
+            friendly_name: 'Network out eth0',
+            supported_features: 0,
+            unit_of_measurement: 'MiB',
+          },
+          context: {
+            id: '0181178cc43ede9b06de8334c5c6b17a',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.network_throughput_in_eth0': {
+          entity_id: 'sensor.network_throughput_in_eth0',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:server-network',
+            friendly_name: 'Network throughput in eth0',
+            supported_features: 0,
+            unit_of_measurement: 'MB/s',
+          },
+          context: {
+            id: '0181178cc43e00375357c50e7ece5624',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.network_throughput_out_eth0': {
+          entity_id: 'sensor.network_throughput_out_eth0',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:server-network',
+            friendly_name: 'Network throughput out eth0',
+            supported_features: 0,
+            unit_of_measurement: 'MB/s',
+          },
+          context: {
+            id: '0181178cc43e602d9c172afc32ffc984',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.ipv4_address_eth0': {
+          entity_id: 'sensor.ipv4_address_eth0',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            icon: 'mdi:server-network',
+            friendly_name: 'IPv4 address eth0',
+            supported_features: 0,
+          },
+          context: {
+            id: '0181178cc43edce810f6606da105fe68',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.packets_in_eth0': {
+          entity_id: 'sensor.packets_in_eth0',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'total_increasing',
+            icon: 'mdi:server-network',
+            friendly_name: 'Packets in eth0',
+            supported_features: 0,
+          },
+          context: {
+            id: '0181178cc43edd1d7ba615758b671b12',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.206Z',
+          last_updated: '2022-05-31T00:38:30.206Z',
+        },
+        'sensor.packets_out_eth0': {
+          entity_id: 'sensor.packets_out_eth0',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'total_increasing',
+            icon: 'mdi:server-network',
+            friendly_name: 'Packets out eth0',
+            supported_features: 0,
+          },
+          context: {
+            id: '0181178cc43fe044c6289bcb101c1405',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.207Z',
+          last_updated: '2022-05-31T00:38:30.207Z',
+        },
+        'sensor.processor_use': {
+          entity_id: 'sensor.processor_use',
+          state: 'unavailable',
+          attributes: {
+            restored: true,
+            state_class: 'measurement',
+            icon: 'mdi:cpu-64-bit',
+            friendly_name: 'Processor use',
+            supported_features: 0,
+            unit_of_measurement: '%',
+          },
+          context: {
+            id: '0181178cc43fa4c65130e2bbd43d2279',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:30.207Z',
+          last_updated: '2022-05-31T00:38:30.207Z',
+        },
+        'persistent_notification.config_entry_discovery': {
+          entity_id: 'persistent_notification.config_entry_discovery',
+          state: 'notifying',
+          attributes: {
+            message:
+              'We have discovered new devices on your network. [Check it out](/config/integrations).',
+            title: 'New devices discovered',
+            friendly_name: 'New devices discovered',
+          },
+          context: {
+            id: '0181178d11e862b718128b711133db3d',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:38:50.088Z',
+          last_updated: '2022-05-31T00:38:50.088Z',
+        },
+        'persistent_notification.http_login': {
+          entity_id: 'persistent_notification.http_login',
+          state: 'notifying',
+          attributes: {
+            message:
+              'Login attempt or request with invalid authentication from 192.168.4.100 (192.168.4.100). See the log for details.',
+            title: 'Login attempt failed',
+            friendly_name: 'Login attempt failed',
+          },
+          context: {
+            id: '0181179de813b1e7d4b0348778d64a72',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T00:57:13.491Z',
+          last_updated: '2022-05-31T00:57:13.491Z',
+        },
+        'binary_sensor.office_ecobee_sensor_occupancy': {
+          entity_id: 'binary_sensor.office_ecobee_sensor_occupancy',
+          state: 'on',
+          attributes: {
+            device_class: 'occupancy',
+            friendly_name: 'office_ecobee_sensor Occupancy',
+          },
+          context: {
+            id: '018117d5089a0cca87be328337597afb',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T01:57:26.298Z',
+          last_updated: '2022-05-31T01:57:26.298Z',
+        },
+        'sensor.office_ecobee_sensor_temperature': {
+          entity_id: 'sensor.office_ecobee_sensor_temperature',
+          state: '77.2',
+          attributes: {
+            state_class: 'measurement',
+            unit_of_measurement: '°F',
+            device_class: 'temperature',
+            friendly_name: 'office_ecobee_sensor Temperature',
+          },
+          context: {
+            id: '018117dea1ecbc4f6fb6579d7f38004c',
+            parent_id: null,
+            user_id: null,
+          },
+          last_changed: '2022-05-31T02:07:55.372Z',
+          last_updated: '2022-05-31T02:07:55.372Z',
         },
       },
     },
@@ -1705,122 +1728,122 @@ const hass: any = {
         location_name: 'Home',
         time_zone: 'America/New_York',
         components: [
-          'lifx',
-          'button.deebot',
-          'vacuum.deebot',
-          'sensor.ecobee',
-          'number.deebot',
-          'upnp',
-          'light.hue',
-          'analytics',
-          'persistent_notification',
-          'script',
-          'tag',
-          'config',
-          'image',
-          'mobile_app',
-          'trace',
-          'counter',
-          'history',
-          'homekit',
-          'vacuum',
-          'scene.hue',
-          'weather.ecobee',
-          'energy',
-          'binary_sensor.mobile_app',
-          'apple_tv',
-          'ssdp',
-          'sensor.energy',
-          'light',
-          'sensor.hassio',
-          'tts.google_translate',
-          'dhcp',
-          'hacs',
-          'map',
-          'input_text',
-          'binary_sensor.upnp',
-          'media_source',
-          'ecobee',
-          'usb',
-          'deebot',
-          'blueprint',
-          'input_datetime',
-          'cloud',
-          'device_tracker.mobile_app',
-          'automation',
-          'api',
-          'climate.ecobee',
-          'search',
-          'switch',
-          'media_player',
-          'input_number',
-          'switch.hue',
-          'device_automation',
-          'onboarding',
-          'media_player.apple_tv',
-          'select.deebot',
-          'auth',
-          'select',
-          'input_button',
-          'rpi_power',
-          'input_select',
-          'device_tracker',
-          'number',
-          'webhook',
-          'climate',
-          'sensor.upnp',
-          'websocket_api',
-          'diagnostics',
-          'person',
-          'system_health',
-          'update',
-          'logbook',
-          'zeroconf',
-          'light.lifx',
-          'camera',
-          'camera.deebot',
-          'my',
           'timer',
-          'notify',
-          'network',
-          'hassio',
-          'recorder',
-          'sensor.deebot',
-          'hue',
-          'tts',
-          'homeassistant',
-          'humidifier.ecobee',
-          'sensor.hacs',
-          'scene',
-          'update.hassio',
-          'binary_sensor',
-          'remote',
-          'weather',
-          'humidifier',
-          'sun',
-          'stream',
-          'panel_custom',
-          'notify.mobile_app',
-          'sensor.mobile_app',
-          'binary_sensor.rpi_power',
+          'climate.ecobee',
+          'device_tracker',
           'binary_sensor.hue',
-          'binary_sensor.ecobee',
-          'input_boolean',
-          'zone',
-          'ffmpeg',
-          'http',
-          'scene.homeassistant',
+          'system_log',
           'sensor',
-          'default_config',
-          'button',
-          'switch.deebot',
-          'binary_sensor.deebot',
+          'hacs',
+          'input_select',
+          'binary_sensor.rpi_power',
+          'recorder',
+          'sensor.upnp',
+          'binary_sensor.upnp',
+          'light',
           'sensor.hue',
+          'history',
+          'notify.mobile_app',
+          'camera.deebot',
+          'tts',
+          'input_number',
+          'select.deebot',
+          'logbook',
+          'button',
+          'default_config',
+          'vacuum.deebot',
+          'scene.hue',
+          'websocket_api',
+          'search',
+          'number',
+          'persistent_notification',
+          'tts.google_translate',
+          'binary_sensor.mobile_app',
+          'ecobee',
+          'sensor.deebot',
+          'input_datetime',
+          'device_automation',
+          'lovelace',
+          'zeroconf',
+          'my',
+          'analytics',
+          'blueprint',
+          'input_button',
+          'humidifier.ecobee',
+          'counter',
+          'media_source',
+          'http',
+          'sensor.energy',
+          'notify',
+          'webhook',
+          'sensor.hacs',
+          'select',
+          'camera',
+          'sensor.mobile_app',
+          'hue',
           'frontend',
           'binary_sensor.hassio',
-          'lovelace',
+          'scene',
+          'weather',
+          'person',
+          'image',
+          'sun',
+          'binary_sensor.ecobee',
           'remote.apple_tv',
-          'system_log',
+          'automation',
+          'media_player.apple_tv',
+          'sensor.ecobee',
+          'media_player',
+          'binary_sensor.deebot',
+          'deebot',
+          'remote',
+          'tag',
+          'device_tracker.mobile_app',
+          'vacuum',
+          'config',
+          'rpi_power',
+          'auth',
+          'update',
+          'scene.homeassistant',
+          'input_text',
+          'network',
+          'switch',
+          'climate',
+          'sensor.hassio',
+          'api',
+          'trace',
+          'switch.hue',
+          'diagnostics',
+          'dhcp',
+          'number.deebot',
+          'button.deebot',
+          'usb',
+          'input_boolean',
+          'switch.deebot',
+          'upnp',
+          'humidifier',
+          'zone',
+          'cloud',
+          'onboarding',
+          'apple_tv',
+          'ffmpeg',
+          'system_health',
+          'binary_sensor',
+          'homeassistant',
+          'lifx',
+          'energy',
+          'ssdp',
+          'update.hassio',
+          'weather.ecobee',
+          'light.hue',
+          'light.lifx',
+          'script',
+          'homekit',
+          'hassio',
+          'panel_custom',
+          'map',
+          'mobile_app',
+          'stream',
         ],
         config_dir: '/config',
         whitelist_external_dirs: ['/config/www', '/media'],
@@ -2012,6 +2035,68 @@ const hass: any = {
             },
           },
         },
+        system_log: {
+          clear: {
+            name: 'Clear all',
+            description: 'Clear all log entries.',
+            fields: {},
+          },
+          write: {
+            name: 'Write',
+            description: 'Write log entry.',
+            fields: {
+              message: {
+                name: 'Message',
+                description: 'Message to log.',
+                required: true,
+                example: 'Something went wrong',
+                selector: {
+                  text: null,
+                },
+              },
+              level: {
+                name: 'Level',
+                description: 'Log level.',
+                default: 'error',
+                selector: {
+                  select: {
+                    options: [
+                      {
+                        label: 'Debug',
+                        value: 'debug',
+                      },
+                      {
+                        label: 'Info',
+                        value: 'info',
+                      },
+                      {
+                        label: 'Warning',
+                        value: 'warning',
+                      },
+                      {
+                        label: 'Error',
+                        value: 'error',
+                      },
+                      {
+                        label: 'Critical',
+                        value: 'critical',
+                      },
+                    ],
+                  },
+                },
+              },
+              logger: {
+                name: 'Logger',
+                description:
+                  "Logger name under which to log the message. Defaults to 'system_log.external'.",
+                example: 'mycomponent.myplatform',
+                selector: {
+                  text: null,
+                },
+              },
+            },
+          },
+        },
         recorder: {
           purge: {
             name: 'Purge',
@@ -2091,68 +2176,6 @@ const hass: any = {
             name: 'Disable',
             description: 'Stop the recording of events and state changes',
             fields: {},
-          },
-        },
-        system_log: {
-          clear: {
-            name: 'Clear all',
-            description: 'Clear all log entries.',
-            fields: {},
-          },
-          write: {
-            name: 'Write',
-            description: 'Write log entry.',
-            fields: {
-              message: {
-                name: 'Message',
-                description: 'Message to log.',
-                required: true,
-                example: 'Something went wrong',
-                selector: {
-                  text: null,
-                },
-              },
-              level: {
-                name: 'Level',
-                description: 'Log level.',
-                default: 'error',
-                selector: {
-                  select: {
-                    options: [
-                      {
-                        label: 'Debug',
-                        value: 'debug',
-                      },
-                      {
-                        label: 'Info',
-                        value: 'info',
-                      },
-                      {
-                        label: 'Warning',
-                        value: 'warning',
-                      },
-                      {
-                        label: 'Error',
-                        value: 'error',
-                      },
-                      {
-                        label: 'Critical',
-                        value: 'critical',
-                      },
-                    ],
-                  },
-                },
-              },
-              logger: {
-                name: 'Logger',
-                description:
-                  "Logger name under which to log the message. Defaults to 'system_log.external'.",
-                example: 'mycomponent.myplatform',
-                selector: {
-                  text: null,
-                },
-              },
-            },
           },
         },
         cloud: {
@@ -2760,6 +2783,13 @@ const hass: any = {
             },
           },
         },
+        zone: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the YAML-based zone configuration.',
+            fields: {},
+          },
+        },
         counter: {
           increment: {
             name: 'Increment',
@@ -2858,78 +2888,6 @@ const hass: any = {
                 domain: 'counter',
               },
             },
-          },
-        },
-        zone: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the YAML-based zone configuration.',
-            fields: {},
-          },
-        },
-        automation: {
-          trigger: {
-            name: 'Trigger',
-            description: 'Trigger the actions of an automation.',
-            fields: {
-              skip_condition: {
-                name: 'Skip conditions',
-                description: 'Whether or not the conditions will be skipped.',
-                default: true,
-                selector: {
-                  boolean: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          toggle: {
-            name: 'Toggle',
-            description: 'Toggle (enable / disable) an automation.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          turn_on: {
-            name: 'Turn on',
-            description: 'Enable an automation.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          turn_off: {
-            name: 'Turn off',
-            description: 'Disable an automation.',
-            fields: {
-              stop_actions: {
-                name: 'Stop actions',
-                description: 'Stop currently running actions.',
-                default: true,
-                selector: {
-                  boolean: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'automation',
-              },
-            },
-          },
-          reload: {
-            name: 'Reload',
-            description: 'Reload the automation configuration.',
-            fields: {},
           },
         },
         media_player: {
@@ -3322,84 +3280,14 @@ const hass: any = {
             },
           },
         },
-        input_text: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the input_text configuration.',
-            fields: {},
-          },
-          set_value: {
-            name: 'Set',
-            description: 'Set the value of an input text entity.',
+        automation: {
+          trigger: {
+            name: 'Trigger',
+            description: 'Trigger the actions of an automation.',
             fields: {
-              value: {
-                name: 'Value',
-                description: 'The target value the entity should be set to.',
-                required: true,
-                example: 'This is an example text',
-                selector: {
-                  text: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_text',
-              },
-            },
-          },
-        },
-        input_button: {
-          reload: {
-            name: '',
-            description: '',
-            fields: {},
-          },
-          press: {
-            name: 'Press',
-            description: 'Press the input button entity.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_button',
-              },
-            },
-          },
-        },
-        input_select: {
-          reload: {
-            name: 'Reload',
-            description: 'Reload the input_select configuration.',
-            fields: {},
-          },
-          select_option: {
-            name: 'Select',
-            description: 'Select an option of an input select entity.',
-            fields: {
-              option: {
-                name: 'Option',
-                description: 'Option to be selected.',
-                required: true,
-                example: '"Item A"',
-                selector: {
-                  text: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          select_next: {
-            name: 'Next',
-            description: 'Select the next options of an input select entity.',
-            fields: {
-              cycle: {
-                name: 'Cycle',
-                description:
-                  'If the option should cycle from the last to the first.',
+              skip_condition: {
+                name: 'Skip conditions',
+                description: 'Whether or not the conditions will be skipped.',
                 default: true,
                 selector: {
                   boolean: null,
@@ -3408,19 +3296,37 @@ const hass: any = {
             },
             target: {
               entity: {
-                domain: 'input_select',
+                domain: 'automation',
               },
             },
           },
-          select_previous: {
-            name: 'Previous',
-            description:
-              'Select the previous options of an input select entity.',
+          toggle: {
+            name: 'Toggle',
+            description: 'Toggle (enable / disable) an automation.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'automation',
+              },
+            },
+          },
+          turn_on: {
+            name: 'Turn on',
+            description: 'Enable an automation.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'automation',
+              },
+            },
+          },
+          turn_off: {
+            name: 'Turn off',
+            description: 'Disable an automation.',
             fields: {
-              cycle: {
-                name: 'Cycle',
-                description:
-                  'If the option should cycle from the first to the last.',
+              stop_actions: {
+                name: 'Stop actions',
+                description: 'Stop currently running actions.',
                 default: true,
                 selector: {
                   boolean: null,
@@ -3429,105 +3335,14 @@ const hass: any = {
             },
             target: {
               entity: {
-                domain: 'input_select',
+                domain: 'automation',
               },
             },
           },
-          select_first: {
-            name: 'First',
-            description: 'Select the first option of an input select entity.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          select_last: {
-            name: 'Last',
-            description: 'Select the last option of an input select entity.',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-          set_options: {
-            name: 'Set options',
-            description: 'Set the options of an input select entity.',
-            fields: {
-              options: {
-                name: 'Options',
-                description: 'Options for the input select entity.',
-                required: true,
-                example: '["Item A", "Item B", "Item C"]',
-                selector: {
-                  object: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_select',
-              },
-            },
-          },
-        },
-        input_datetime: {
           reload: {
             name: 'Reload',
-            description: 'Reload the input_datetime configuration.',
+            description: 'Reload the automation configuration.',
             fields: {},
-          },
-          set_datetime: {
-            name: 'Set',
-            description:
-              'This can be used to dynamically set the date and/or time.',
-            fields: {
-              date: {
-                name: 'Date',
-                description: 'The target date the entity should be set to.',
-                example: '"2019-04-20"',
-                selector: {
-                  text: null,
-                },
-              },
-              time: {
-                name: 'Time',
-                description: 'The target time the entity should be set to.',
-                example: '"05:04:20"',
-                selector: {
-                  time: null,
-                },
-              },
-              datetime: {
-                name: 'Date & Time',
-                description:
-                  'The target date & time the entity should be set to.',
-                example: '"2019-04-20 05:04:20"',
-                selector: {
-                  text: null,
-                },
-              },
-              timestamp: {
-                name: 'Timestamp',
-                description:
-                  'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
-                selector: {
-                  number: {
-                    min: 0,
-                    max: 9223372036854776000,
-                    mode: 'box',
-                  },
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'input_datetime',
-              },
-            },
           },
         },
         remote: {
@@ -3728,63 +3543,222 @@ const hass: any = {
             },
           },
         },
-        tts: {
-          google_translate_say: {
-            name: 'Say an TTS message with google_translate',
-            description:
-              'Say something using text-to-speech on a media player with google_translate.',
+        input_select: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_select configuration.',
+            fields: {},
+          },
+          select_option: {
+            name: 'Select',
+            description: 'Select an option of an input select entity.',
             fields: {
-              entity_id: {
-                name: 'Entity',
-                description: 'Name(s) of media player entities.',
+              option: {
+                name: 'Option',
+                description: 'Option to be selected.',
                 required: true,
-                selector: {
-                  entity: {
-                    domain: 'media_player',
-                  },
-                },
-              },
-              message: {
-                name: 'Message',
-                description: 'Text to speak on devices.',
-                example: 'My name is hanna',
-                required: true,
+                example: '"Item A"',
                 selector: {
                   text: null,
                 },
               },
-              cache: {
-                name: 'Cache',
-                description: 'Control file cache of this message.',
-                default: false,
+            },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_next: {
+            name: 'Next',
+            description: 'Select the next options of an input select entity.',
+            fields: {
+              cycle: {
+                name: 'Cycle',
+                description:
+                  'If the option should cycle from the last to the first.',
+                default: true,
                 selector: {
                   boolean: null,
                 },
               },
-              language: {
-                name: 'Language',
-                description: 'Language to use for speech generation.',
-                example: 'ru',
+            },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_previous: {
+            name: 'Previous',
+            description:
+              'Select the previous options of an input select entity.',
+            fields: {
+              cycle: {
+                name: 'Cycle',
+                description:
+                  'If the option should cycle from the first to the last.',
+                default: true,
                 selector: {
-                  text: null,
+                  boolean: null,
                 },
               },
+            },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_first: {
+            name: 'First',
+            description: 'Select the first option of an input select entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          select_last: {
+            name: 'Last',
+            description: 'Select the last option of an input select entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
+          },
+          set_options: {
+            name: 'Set options',
+            description: 'Set the options of an input select entity.',
+            fields: {
               options: {
                 name: 'Options',
-                description:
-                  'A dictionary containing platform-specific options. Optional depending on the platform.',
-                advanced: true,
-                example: 'platform specific',
+                description: 'Options for the input select entity.',
+                required: true,
+                example: '["Item A", "Item B", "Item C"]',
                 selector: {
                   object: null,
                 },
               },
             },
+            target: {
+              entity: {
+                domain: 'input_select',
+              },
+            },
           },
-          clear_cache: {
-            name: 'Clear TTS cache',
-            description: 'Remove all text-to-speech cache files and RAM cache.',
+        },
+        input_button: {
+          reload: {
+            name: '',
+            description: '',
             fields: {},
+          },
+          press: {
+            name: 'Press',
+            description: 'Press the input button entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_button',
+              },
+            },
+          },
+        },
+        input_datetime: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_datetime configuration.',
+            fields: {},
+          },
+          set_datetime: {
+            name: 'Set',
+            description:
+              'This can be used to dynamically set the date and/or time.',
+            fields: {
+              date: {
+                name: 'Date',
+                description: 'The target date the entity should be set to.',
+                example: '"2019-04-20"',
+                selector: {
+                  text: null,
+                },
+              },
+              time: {
+                name: 'Time',
+                description: 'The target time the entity should be set to.',
+                example: '"05:04:20"',
+                selector: {
+                  time: null,
+                },
+              },
+              datetime: {
+                name: 'Date & Time',
+                description:
+                  'The target date & time the entity should be set to.',
+                example: '"2019-04-20 05:04:20"',
+                selector: {
+                  text: null,
+                },
+              },
+              timestamp: {
+                name: 'Timestamp',
+                description:
+                  'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
+                selector: {
+                  number: {
+                    min: 0,
+                    max: 9223372036854776000,
+                    mode: 'box',
+                  },
+                },
+              },
+            },
+            target: {
+              entity: {
+                domain: 'input_datetime',
+              },
+            },
+          },
+        },
+        input_boolean: {
+          reload: {
+            name: 'Reload',
+            description: 'Reload the input_boolean configuration',
+            fields: {},
+          },
+          turn_on: {
+            name: 'Turn on',
+            description: 'Turn on an input boolean',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_boolean',
+              },
+            },
+          },
+          turn_off: {
+            name: 'Turn off',
+            description: 'Turn off an input boolean',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_boolean',
+              },
+            },
+          },
+          toggle: {
+            name: 'Toggle',
+            description: 'Toggle an input boolean',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'input_boolean',
+              },
+            },
           },
         },
         light: {
@@ -4476,39 +4450,88 @@ const hass: any = {
             },
           },
         },
-        input_boolean: {
+        tts: {
+          google_translate_say: {
+            name: 'Say an TTS message with google_translate',
+            description:
+              'Say something using text-to-speech on a media player with google_translate.',
+            fields: {
+              entity_id: {
+                name: 'Entity',
+                description: 'Name(s) of media player entities.',
+                required: true,
+                selector: {
+                  entity: {
+                    domain: 'media_player',
+                  },
+                },
+              },
+              message: {
+                name: 'Message',
+                description: 'Text to speak on devices.',
+                example: 'My name is hanna',
+                required: true,
+                selector: {
+                  text: null,
+                },
+              },
+              cache: {
+                name: 'Cache',
+                description: 'Control file cache of this message.',
+                default: false,
+                selector: {
+                  boolean: null,
+                },
+              },
+              language: {
+                name: 'Language',
+                description: 'Language to use for speech generation.',
+                example: 'ru',
+                selector: {
+                  text: null,
+                },
+              },
+              options: {
+                name: 'Options',
+                description:
+                  'A dictionary containing platform-specific options. Optional depending on the platform.',
+                advanced: true,
+                example: 'platform specific',
+                selector: {
+                  object: null,
+                },
+              },
+            },
+          },
+          clear_cache: {
+            name: 'Clear TTS cache',
+            description: 'Remove all text-to-speech cache files and RAM cache.',
+            fields: {},
+          },
+        },
+        input_text: {
           reload: {
             name: 'Reload',
-            description: 'Reload the input_boolean configuration',
+            description: 'Reload the input_text configuration.',
             fields: {},
           },
-          turn_on: {
-            name: 'Turn on',
-            description: 'Turn on an input boolean',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_boolean',
+          set_value: {
+            name: 'Set',
+            description: 'Set the value of an input text entity.',
+            fields: {
+              value: {
+                name: 'Value',
+                description: 'The target value the entity should be set to.',
+                required: true,
+                example: 'This is an example text',
+                selector: {
+                  text: null,
+                },
               },
             },
-          },
-          turn_off: {
-            name: 'Turn off',
-            description: 'Turn off an input boolean',
-            fields: {},
             target: {
               entity: {
-                domain: 'input_boolean',
-              },
-            },
-          },
-          toggle: {
-            name: 'Toggle',
-            description: 'Toggle an input boolean',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'input_boolean',
+                domain: 'input_text',
               },
             },
           },
@@ -5119,38 +5142,6 @@ const hass: any = {
             },
           },
         },
-        switch: {
-          turn_off: {
-            name: 'Turn off',
-            description: 'Turn a switch off',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'switch',
-              },
-            },
-          },
-          turn_on: {
-            name: 'Turn on',
-            description: 'Turn a switch on',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'switch',
-              },
-            },
-          },
-          toggle: {
-            name: 'Toggle',
-            description: 'Toggles a switch state',
-            fields: {},
-            target: {
-              entity: {
-                domain: 'switch',
-              },
-            },
-          },
-        },
         climate: {
           turn_on: {
             name: 'Turn on',
@@ -5484,6 +5475,38 @@ const hass: any = {
             },
           },
         },
+        switch: {
+          turn_off: {
+            name: 'Turn off',
+            description: 'Turn a switch off',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'switch',
+              },
+            },
+          },
+          turn_on: {
+            name: 'Turn on',
+            description: 'Turn a switch on',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'switch',
+              },
+            },
+          },
+          toggle: {
+            name: 'Toggle',
+            description: 'Toggles a switch state',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'switch',
+              },
+            },
+          },
+        },
         ecobee: {
           create_vacation: {
             name: 'Create vacation',
@@ -5747,28 +5770,6 @@ const hass: any = {
             },
           },
         },
-        select: {
-          select_option: {
-            name: 'Select',
-            description: 'Select an option of an select entity.',
-            fields: {
-              option: {
-                name: 'Option',
-                description: 'Option to be selected.',
-                required: true,
-                example: '"Item A"',
-                selector: {
-                  text: null,
-                },
-              },
-            },
-            target: {
-              entity: {
-                domain: 'select',
-              },
-            },
-          },
-        },
         number: {
           set_value: {
             name: 'Set',
@@ -5790,14 +5791,24 @@ const hass: any = {
             },
           },
         },
-        button: {
-          press: {
-            name: 'Press',
-            description: 'Press the button entity.',
-            fields: {},
+        select: {
+          select_option: {
+            name: 'Select',
+            description: 'Select an option of an select entity.',
+            fields: {
+              option: {
+                name: 'Option',
+                description: 'Option to be selected.',
+                required: true,
+                example: '"Item A"',
+                selector: {
+                  text: null,
+                },
+              },
+            },
             target: {
               entity: {
-                domain: 'button',
+                domain: 'select',
               },
             },
           },
@@ -5944,6 +5955,18 @@ const hass: any = {
             target: {
               entity: {
                 domain: 'vacuum',
+              },
+            },
+          },
+        },
+        button: {
+          press: {
+            name: 'Press',
+            description: 'Press the button entity.',
+            fields: {},
+            target: {
+              entity: {
+                domain: 'button',
               },
             },
           },
@@ -6194,12 +6217,12 @@ const hass: any = {
           url_path: 'core_ssh',
           require_admin: true,
         },
-        map: {
-          component_name: 'map',
-          icon: 'hass:tooltip-account',
-          title: 'map',
+        _my_redirect: {
+          component_name: 'my',
+          icon: null,
+          title: null,
           config: null,
-          url_path: 'map',
+          url_path: '_my_redirect',
           require_admin: false,
         },
         'media-browser': {
@@ -6210,12 +6233,12 @@ const hass: any = {
           url_path: 'media-browser',
           require_admin: false,
         },
-        logbook: {
-          component_name: 'logbook',
-          icon: 'hass:format-list-bulleted-type',
-          title: 'logbook',
+        history: {
+          component_name: 'history',
+          icon: 'hass:chart-box',
+          title: 'history',
           config: null,
-          url_path: 'logbook',
+          url_path: 'history',
           require_admin: false,
         },
         'react-panel-prod': {
@@ -6234,20 +6257,20 @@ const hass: any = {
           url_path: 'react-panel-prod',
           require_admin: false,
         },
-        _my_redirect: {
-          component_name: 'my',
-          icon: null,
-          title: null,
+        map: {
+          component_name: 'map',
+          icon: 'hass:tooltip-account',
+          title: 'map',
           config: null,
-          url_path: '_my_redirect',
+          url_path: 'map',
           require_admin: false,
         },
-        history: {
-          component_name: 'history',
-          icon: 'hass:chart-box',
-          title: 'history',
+        logbook: {
+          component_name: 'logbook',
+          icon: 'hass:format-list-bulleted-type',
+          title: 'logbook',
           config: null,
-          url_path: 'history',
+          url_path: 'logbook',
           require_admin: false,
         },
         energy: {
@@ -6322,7 +6345,15 @@ const hass: any = {
             'We have discovered new devices on your network. [Check it out](/config/integrations).',
           status: 'unread',
           title: 'New devices discovered',
-          created_at: '2022-05-30T23:34:01.261288+00:00',
+          created_at: '2022-05-31T00:38:50.088967+00:00',
+        },
+        {
+          notification_id: 'http-login',
+          message:
+            'Login attempt or request with invalid authentication from 192.168.4.100 (192.168.4.100). See the log for details.',
+          status: 'unread',
+          title: 'Login attempt failed',
+          created_at: '2022-05-31T00:57:42.275575+00:00',
         },
       ],
     },
@@ -6346,12 +6377,12 @@ const hass: any = {
         friendly_name: 'Mark',
       },
       context: {
-        id: '018117516b8a57f3081332a983363010',
+        id: '0181178cc443be0dc9e8503baf209b55',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:29.365Z',
-      last_updated: '2022-05-30T23:33:40.874Z',
+      last_changed: '2022-05-31T00:38:15.704Z',
+      last_updated: '2022-05-31T00:38:30.211Z',
     },
     'person.grace_park': {
       entity_id: 'person.grace_park',
@@ -6363,12 +6394,12 @@ const hass: any = {
         friendly_name: 'Grace',
       },
       context: {
-        id: '018117516b8bcdd09884e7c66d282ee6',
+        id: '0181178cc4436098fdb40b2537bddf42',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:29.371Z',
-      last_updated: '2022-05-30T23:33:40.875Z',
+      last_changed: '2022-05-31T00:38:15.706Z',
+      last_updated: '2022-05-31T00:38:30.211Z',
     },
     'update.home_assistant_supervisor_update': {
       entity_id: 'update.home_assistant_supervisor_update',
@@ -6388,12 +6419,12 @@ const hass: any = {
         supported_features: 1,
       },
       context: {
-        id: '018117515e199812a3e016a0264fcaed',
+        id: '0181178caa6e55f82a41261b2079e189',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.433Z',
-      last_updated: '2022-05-30T23:33:37.433Z',
+      last_changed: '2022-05-31T00:38:23.598Z',
+      last_updated: '2022-05-31T00:38:23.598Z',
     },
     'update.home_assistant_core_update': {
       entity_id: 'update.home_assistant_core_update',
@@ -6413,12 +6444,12 @@ const hass: any = {
         supported_features: 11,
       },
       context: {
-        id: '018117515e1ab3b53d92e76db29e54f1',
+        id: '0181178caa6f54594eb33bbbcffa23d3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.434Z',
-      last_updated: '2022-05-30T23:33:37.434Z',
+      last_changed: '2022-05-31T00:38:23.599Z',
+      last_updated: '2022-05-31T00:38:23.599Z',
     },
     'update.terminal_ssh_update': {
       entity_id: 'update.terminal_ssh_update',
@@ -6438,12 +6469,12 @@ const hass: any = {
         supported_features: 25,
       },
       context: {
-        id: '018117515e1a45f4f4b8175ed0683aa3',
+        id: '0181178caa70f712b0b7f24dd041b7fa',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.434Z',
-      last_updated: '2022-05-30T23:33:37.434Z',
+      last_changed: '2022-05-31T00:38:23.600Z',
+      last_updated: '2022-05-31T00:38:23.600Z',
     },
     'update.file_editor_update': {
       entity_id: 'update.file_editor_update',
@@ -6462,12 +6493,12 @@ const hass: any = {
         supported_features: 25,
       },
       context: {
-        id: '018117515e1be5e29096d97a52f5a0e5',
+        id: '0181178caa701b1f80a603eef15f6355',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.435Z',
-      last_updated: '2022-05-30T23:33:37.435Z',
+      last_changed: '2022-05-31T00:38:23.600Z',
+      last_updated: '2022-05-31T00:38:23.600Z',
     },
     'update.samba_share_update': {
       entity_id: 'update.samba_share_update',
@@ -6487,12 +6518,12 @@ const hass: any = {
         supported_features: 25,
       },
       context: {
-        id: '018117515e1b6bb56d19c65b5dec252c',
+        id: '0181178caa706f5e99578a4a1d669dbd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.435Z',
-      last_updated: '2022-05-30T23:33:37.435Z',
+      last_changed: '2022-05-31T00:38:23.600Z',
+      last_updated: '2022-05-31T00:38:23.600Z',
     },
     'update.home_assistant_operating_system_update': {
       entity_id: 'update.home_assistant_operating_system_update',
@@ -6513,35 +6544,12 @@ const hass: any = {
         supported_features: 3,
       },
       context: {
-        id: '018117515e1cc6a51277f05946553432',
+        id: '0181178caa713dc23156fd4ce0737835',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.436Z',
-      last_updated: '2022-05-30T23:33:37.436Z',
-    },
-    'sun.sun': {
-      entity_id: 'sun.sun',
-      state: 'above_horizon',
-      attributes: {
-        next_dawn: '2022-05-31T09:11:32.573530+00:00',
-        next_dusk: '2022-05-31T01:01:23.597978+00:00',
-        next_midnight: '2022-05-31T05:06:39+00:00',
-        next_noon: '2022-05-31T17:06:32+00:00',
-        next_rising: '2022-05-31T09:43:47.617117+00:00',
-        next_setting: '2022-05-31T00:29:08.241159+00:00',
-        elevation: 3.11,
-        azimuth: 296.05,
-        rising: false,
-        friendly_name: 'Sun',
-      },
-      context: {
-        id: '0181176eaa64dfd5a16f9621d5a2861e',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:37.488Z',
-      last_updated: '2022-05-31T00:05:37.509Z',
+      last_changed: '2022-05-31T00:38:23.601Z',
+      last_updated: '2022-05-31T00:38:23.601Z',
     },
     'zone.home': {
       entity_id: 'zone.home',
@@ -6557,12 +6565,35 @@ const hass: any = {
         friendly_name: 'Home',
       },
       context: {
-        id: '018117515e70e5b5ac75cc795834bf8b',
+        id: '0181178caa9c6ab1d819108a63d151c2',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.520Z',
-      last_updated: '2022-05-30T23:33:37.520Z',
+      last_changed: '2022-05-31T00:38:23.644Z',
+      last_updated: '2022-05-31T00:38:23.644Z',
+    },
+    'sun.sun': {
+      entity_id: 'sun.sun',
+      state: 'below_horizon',
+      attributes: {
+        next_dawn: '2022-05-31T09:11:32.573530+00:00',
+        next_dusk: '2022-06-01T01:02:10.940255+00:00',
+        next_midnight: '2022-05-31T05:06:39+00:00',
+        next_noon: '2022-05-31T17:06:32+00:00',
+        next_rising: '2022-05-31T09:43:47.617117+00:00',
+        next_setting: '2022-06-01T00:29:51.330322+00:00',
+        elevation: -15.75,
+        azimuth: 316.58,
+        rising: false,
+        friendly_name: 'Sun',
+      },
+      context: {
+        id: '018117dba6c6de2952f017db57d7ecbc',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:23.681Z',
+      last_updated: '2022-05-31T02:04:40.006Z',
     },
     'binary_sensor.rpi_power_status': {
       entity_id: 'binary_sensor.rpi_power_status',
@@ -6573,16 +6604,16 @@ const hass: any = {
         friendly_name: 'RPi Power status',
       },
       context: {
-        id: '018117515ebcc949f0f2f02f5d1848e3',
+        id: '0181178cab496109b48627fa1e2f1191',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:37.597Z',
-      last_updated: '2022-05-30T23:33:37.597Z',
+      last_changed: '2022-05-31T00:38:23.817Z',
+      last_updated: '2022-05-31T00:38:23.817Z',
     },
     'media_player.living_room': {
       entity_id: 'media_player.living_room',
-      state: 'standby',
+      state: 'playing',
       attributes: {
         source_list: [
           'App Store',
@@ -6602,17 +6633,23 @@ const hass: any = {
           'TV Shows',
           'YouTube',
         ],
-        app_id: '',
+        media_content_type: 'video',
+        media_duration: 5743,
+        media_position: 3,
+        media_position_updated_at: '2022-05-31T01:42:01.546890+00:00',
+        media_title: '',
+        app_id: 'com.apple.TVAirPlay',
+        app_name: 'Safari',
         friendly_name: 'Living Room',
         supported_features: 450487,
       },
       context: {
-        id: '01811756bf97f3289839dc9bf8e5a448',
+        id: '018117c6ec4cc573cde347c70b0f2996',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:39:30.071Z',
-      last_updated: '2022-05-30T23:39:30.071Z',
+      last_changed: '2022-05-31T01:42:00.826Z',
+      last_updated: '2022-05-31T01:42:01.548Z',
     },
     'media_player.kitchen': {
       entity_id: 'media_player.kitchen',
@@ -6623,12 +6660,12 @@ const hass: any = {
         supported_features: 448439,
       },
       context: {
-        id: '018117516610c4bde0ddc338c4ec1df3',
+        id: '0181178cc27084e39a64b521e07a6a66',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:39.472Z',
-      last_updated: '2022-05-30T23:33:39.472Z',
+      last_changed: '2022-05-31T00:38:29.744Z',
+      last_updated: '2022-05-31T00:38:29.744Z',
     },
     'remote.living_room': {
       entity_id: 'remote.living_room',
@@ -6638,12 +6675,12 @@ const hass: any = {
         supported_features: 0,
       },
       context: {
-        id: '0181175165e63fc9b3afc0557b668dc6',
+        id: '0181178cc3264f7e0809c72bc8064c43',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:39.430Z',
-      last_updated: '2022-05-30T23:33:39.430Z',
+      last_changed: '2022-05-31T00:38:29.926Z',
+      last_updated: '2022-05-31T00:38:29.926Z',
     },
     'remote.kitchen': {
       entity_id: 'remote.kitchen',
@@ -6653,12 +6690,12 @@ const hass: any = {
         supported_features: 0,
       },
       context: {
-        id: '01811751660c3955009a7f78b76042f6',
+        id: '0181178cc20f15733fd3526d99edc4ec',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:39.468Z',
-      last_updated: '2022-05-30T23:33:39.468Z',
+      last_changed: '2022-05-31T00:38:29.647Z',
+      last_updated: '2022-05-31T00:38:29.647Z',
     },
     'sensor.iphone_mark_activity': {
       entity_id: 'sensor.iphone_mark_activity',
@@ -6670,12 +6707,12 @@ const hass: any = {
         friendly_name: 'iphone mark Activity',
       },
       context: {
-        id: '0181175163a1253295920bc9d2d15cbd',
+        id: '0181178cafdfe9f46c59f1fc922d8bca',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.849Z',
-      last_updated: '2022-05-30T23:33:38.849Z',
+      last_changed: '2022-05-31T00:38:24.991Z',
+      last_updated: '2022-05-31T00:38:24.991Z',
     },
     'sensor.iphone_mark_average_active_pace': {
       entity_id: 'sensor.iphone_mark_average_active_pace',
@@ -6686,12 +6723,12 @@ const hass: any = {
         friendly_name: 'iphone mark Average Active Pace',
       },
       context: {
-        id: '0181175163a26c93b9da3e7af8d7559a',
+        id: '0181178cafdf129a9db506b14368af3c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.850Z',
-      last_updated: '2022-05-30T23:33:38.850Z',
+      last_changed: '2022-05-31T00:38:24.991Z',
+      last_updated: '2022-05-31T00:38:24.991Z',
     },
     'sensor.iphone_mark_bssid': {
       entity_id: 'sensor.iphone_mark_bssid',
@@ -6701,12 +6738,12 @@ const hass: any = {
         friendly_name: 'iphone mark BSSID',
       },
       context: {
-        id: '0181175163a291bd937ac3883a61a61d',
+        id: '0181178cafe0bf438d045c1c46058906',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.850Z',
-      last_updated: '2022-05-30T23:33:38.850Z',
+      last_changed: '2022-05-31T00:38:24.992Z',
+      last_updated: '2022-05-31T00:38:24.992Z',
     },
     'sensor.iphone_mark_battery_level': {
       entity_id: 'sensor.iphone_mark_battery_level',
@@ -6718,12 +6755,12 @@ const hass: any = {
         friendly_name: 'iphone mark Battery Level',
       },
       context: {
-        id: '0181175163a267455a5f9ec7f6349136',
+        id: '0181178cafe0d0698ad6ae867d962d0a',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.850Z',
-      last_updated: '2022-05-30T23:33:38.850Z',
+      last_changed: '2022-05-31T00:38:24.992Z',
+      last_updated: '2022-05-31T00:38:24.992Z',
     },
     'sensor.iphone_mark_battery_state': {
       entity_id: 'sensor.iphone_mark_battery_state',
@@ -6734,12 +6771,12 @@ const hass: any = {
         friendly_name: 'iphone mark Battery State',
       },
       context: {
-        id: '0181175163a3507497a668bcf75b2c0e',
+        id: '0181178cafe093be96238d03d98ef0d9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.851Z',
-      last_updated: '2022-05-30T23:33:38.851Z',
+      last_changed: '2022-05-31T00:38:24.992Z',
+      last_updated: '2022-05-31T00:38:24.992Z',
     },
     'sensor.iphone_mark_connection_type': {
       entity_id: 'sensor.iphone_mark_connection_type',
@@ -6749,12 +6786,12 @@ const hass: any = {
         friendly_name: 'iphone mark Connection Type',
       },
       context: {
-        id: '0181175163a3024e29ee926199e10ead',
+        id: '0181178cafe106f6810e1004ed10e3b3',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.851Z',
-      last_updated: '2022-05-30T23:33:38.851Z',
+      last_changed: '2022-05-31T00:38:24.993Z',
+      last_updated: '2022-05-31T00:38:24.993Z',
     },
     'sensor.iphone_mark_distance': {
       entity_id: 'sensor.iphone_mark_distance',
@@ -6765,12 +6802,12 @@ const hass: any = {
         friendly_name: 'iphone mark Distance',
       },
       context: {
-        id: '0181175163a3754f8f2dcc1366fcbde8',
+        id: '0181178cafe1246f51dad543756896c6',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.851Z',
-      last_updated: '2022-05-30T23:33:38.851Z',
+      last_changed: '2022-05-31T00:38:24.993Z',
+      last_updated: '2022-05-31T00:38:24.993Z',
     },
     'sensor.iphone_mark_floors_ascended': {
       entity_id: 'sensor.iphone_mark_floors_ascended',
@@ -6781,12 +6818,12 @@ const hass: any = {
         friendly_name: 'iphone mark Floors Ascended',
       },
       context: {
-        id: '0181175163a4bd3f4fc23a5a9da73c77',
+        id: '0181178cafe2f0d044186e5ff1a3eb02',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.852Z',
-      last_updated: '2022-05-30T23:33:38.852Z',
+      last_changed: '2022-05-31T00:38:24.994Z',
+      last_updated: '2022-05-31T00:38:24.994Z',
     },
     'sensor.iphone_mark_floors_descended': {
       entity_id: 'sensor.iphone_mark_floors_descended',
@@ -6797,12 +6834,12 @@ const hass: any = {
         friendly_name: 'iphone mark Floors Descended',
       },
       context: {
-        id: '0181175163a43cc810d8d24502e08eff',
+        id: '0181178cafe2d8d447d095ece8f555da',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.852Z',
-      last_updated: '2022-05-30T23:33:38.852Z',
+      last_changed: '2022-05-31T00:38:24.994Z',
+      last_updated: '2022-05-31T00:38:24.994Z',
     },
     'sensor.iphone_mark_geocoded_location': {
       entity_id: 'sensor.iphone_mark_geocoded_location',
@@ -6828,12 +6865,12 @@ const hass: any = {
         friendly_name: 'iphone mark Geocoded Location',
       },
       context: {
-        id: '0181175163a42c0ae1cc28d0185dbba6',
+        id: '0181178cafe2891bb00f71df7579ad52',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.852Z',
-      last_updated: '2022-05-30T23:33:38.852Z',
+      last_changed: '2022-05-31T00:38:24.994Z',
+      last_updated: '2022-05-31T00:38:24.994Z',
     },
     'sensor.iphone_mark_last_update_trigger': {
       entity_id: 'sensor.iphone_mark_last_update_trigger',
@@ -6843,12 +6880,12 @@ const hass: any = {
         friendly_name: 'iphone mark Last Update Trigger',
       },
       context: {
-        id: '0181175163a5e6ad6fddecf23bd16d57',
+        id: '0181178cafe349e62523693cfa96ddcf',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.853Z',
-      last_updated: '2022-05-30T23:33:38.853Z',
+      last_changed: '2022-05-31T00:38:24.995Z',
+      last_updated: '2022-05-31T00:38:24.995Z',
     },
     'sensor.iphone_mark_sim_1': {
       entity_id: 'sensor.iphone_mark_sim_1',
@@ -6864,12 +6901,12 @@ const hass: any = {
         friendly_name: 'iphone mark SIM 1',
       },
       context: {
-        id: '0181175163a5be76423f185c82ec5e6a',
+        id: '0181178cafe3df46c0cd65c76bd5c531',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.853Z',
-      last_updated: '2022-05-30T23:33:38.853Z',
+      last_changed: '2022-05-31T00:38:24.995Z',
+      last_updated: '2022-05-31T00:38:24.995Z',
     },
     'sensor.iphone_mark_sim_2': {
       entity_id: 'sensor.iphone_mark_sim_2',
@@ -6886,12 +6923,12 @@ const hass: any = {
         friendly_name: 'iphone mark SIM 2',
       },
       context: {
-        id: '0181175163a5bf7dda671caae6327b1c',
+        id: '0181178cafe3f56472659cd6f405ccb9',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.853Z',
-      last_updated: '2022-05-30T23:33:38.853Z',
+      last_changed: '2022-05-31T00:38:24.995Z',
+      last_updated: '2022-05-31T00:38:24.995Z',
     },
     'sensor.iphone_mark_ssid': {
       entity_id: 'sensor.iphone_mark_ssid',
@@ -6901,12 +6938,12 @@ const hass: any = {
         friendly_name: 'iphone mark SSID',
       },
       context: {
-        id: '0181175163a608549df461f05e8c0fe3',
+        id: '0181178cafe4beae28e4a3b5c0042ffd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.854Z',
-      last_updated: '2022-05-30T23:33:38.854Z',
+      last_changed: '2022-05-31T00:38:24.996Z',
+      last_updated: '2022-05-31T00:38:24.996Z',
     },
     'sensor.iphone_mark_steps': {
       entity_id: 'sensor.iphone_mark_steps',
@@ -6917,12 +6954,12 @@ const hass: any = {
         friendly_name: 'iphone mark Steps',
       },
       context: {
-        id: '0181175163a6e0170fcb9e7e99e53f06',
+        id: '0181178cafe4fce548c25d0478f8d69e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.854Z',
-      last_updated: '2022-05-30T23:33:38.854Z',
+      last_changed: '2022-05-31T00:38:24.996Z',
+      last_updated: '2022-05-31T00:38:24.996Z',
     },
     'sensor.iphone_mark_storage': {
       entity_id: 'sensor.iphone_mark_storage',
@@ -6937,12 +6974,12 @@ const hass: any = {
         friendly_name: 'iphone mark Storage',
       },
       context: {
-        id: '0181175163a6efdeb39d636faac0f12e',
+        id: '0181178cafe5630645bb9d5fe48ec2bb',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.854Z',
-      last_updated: '2022-05-30T23:33:38.854Z',
+      last_changed: '2022-05-31T00:38:24.997Z',
+      last_updated: '2022-05-31T00:38:24.997Z',
     },
     'binary_sensor.iphone_mark_focus': {
       entity_id: 'binary_sensor.iphone_mark_focus',
@@ -6952,12 +6989,12 @@ const hass: any = {
         friendly_name: 'iphone mark Focus',
       },
       context: {
-        id: '0181175163a60e66fe53b24172f04fe4',
+        id: '0181178cafe5369bb068458ac7683920',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.854Z',
-      last_updated: '2022-05-30T23:33:38.854Z',
+      last_changed: '2022-05-31T00:38:24.997Z',
+      last_updated: '2022-05-31T00:38:24.997Z',
     },
     'sensor.mark_lycks_ipad_battery_level': {
       entity_id: 'sensor.mark_lycks_ipad_battery_level',
@@ -6969,12 +7006,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Battery Level',
       },
       context: {
-        id: '0181175163a759fdf3f6f2ea20a49998',
+        id: '0181178cafe5525d670961ba58b61568',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.855Z',
-      last_updated: '2022-05-30T23:33:38.855Z',
+      last_changed: '2022-05-31T00:38:24.997Z',
+      last_updated: '2022-05-31T00:38:24.997Z',
     },
     'sensor.mark_lycks_ipad_battery_state': {
       entity_id: 'sensor.mark_lycks_ipad_battery_state',
@@ -6985,12 +7022,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Battery State',
       },
       context: {
-        id: '0181175163a705fe5ac5832837ec5cbb',
+        id: '0181178cafe69cd592961ba32e988d7f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.855Z',
-      last_updated: '2022-05-30T23:33:38.855Z',
+      last_changed: '2022-05-31T00:38:24.998Z',
+      last_updated: '2022-05-31T00:38:24.998Z',
     },
     'sensor.mark_lycks_ipad_storage': {
       entity_id: 'sensor.mark_lycks_ipad_storage',
@@ -7005,12 +7042,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Storage',
       },
       context: {
-        id: '0181175163a7c7e743a71a7df4d7b9b4',
+        id: '0181178cafe6dbddaa2b18b898e12f0a',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.855Z',
-      last_updated: '2022-05-30T23:33:38.855Z',
+      last_changed: '2022-05-31T00:38:24.998Z',
+      last_updated: '2022-05-31T00:38:24.998Z',
     },
     'sensor.mark_lycks_ipad_ssid': {
       entity_id: 'sensor.mark_lycks_ipad_ssid',
@@ -7020,12 +7057,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad SSID',
       },
       context: {
-        id: '0181175163a8341660d2cd96e06fb10c',
+        id: '0181178cafe6161f02fb493a1e903310',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.856Z',
-      last_updated: '2022-05-30T23:33:38.856Z',
+      last_changed: '2022-05-31T00:38:24.998Z',
+      last_updated: '2022-05-31T00:38:24.998Z',
     },
     'sensor.mark_lycks_ipad_geocoded_location': {
       entity_id: 'sensor.mark_lycks_ipad_geocoded_location',
@@ -7051,12 +7088,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Geocoded Location',
       },
       context: {
-        id: '0181175163a806b6d93b48eb671001b4',
+        id: '0181178cafe7b8366ca3dbdecc422f34',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.856Z',
-      last_updated: '2022-05-30T23:33:38.856Z',
+      last_changed: '2022-05-31T00:38:24.999Z',
+      last_updated: '2022-05-31T00:38:24.999Z',
     },
     'sensor.mark_lycks_ipad_last_update_trigger': {
       entity_id: 'sensor.mark_lycks_ipad_last_update_trigger',
@@ -7066,12 +7103,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Last Update Trigger',
       },
       context: {
-        id: '0181175163a979ec83edf9b5dd628859',
+        id: '0181178cafe7023c26b45a988c026312',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.857Z',
-      last_updated: '2022-05-30T23:33:38.857Z',
+      last_changed: '2022-05-31T00:38:24.999Z',
+      last_updated: '2022-05-31T00:38:24.999Z',
     },
     'sensor.mark_lycks_ipad_bssid': {
       entity_id: 'sensor.mark_lycks_ipad_bssid',
@@ -7081,12 +7118,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad BSSID',
       },
       context: {
-        id: '0181175163a910539cf2f1a50e12ad3e',
+        id: '0181178cafe751ef8512488f29bbe61b',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.857Z',
-      last_updated: '2022-05-30T23:33:38.857Z',
+      last_changed: '2022-05-31T00:38:24.999Z',
+      last_updated: '2022-05-31T00:38:24.999Z',
     },
     'sensor.mark_lycks_ipad_connection_type': {
       entity_id: 'sensor.mark_lycks_ipad_connection_type',
@@ -7096,12 +7133,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Connection Type',
       },
       context: {
-        id: '0181175163a9391740f74af44c7de669',
+        id: '0181178cafe8a509405b812ae036ee9f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.857Z',
-      last_updated: '2022-05-30T23:33:38.857Z',
+      last_changed: '2022-05-31T00:38:25.000Z',
+      last_updated: '2022-05-31T00:38:25.000Z',
     },
     'sensor.mark_lycks_ipad_activity': {
       entity_id: 'sensor.mark_lycks_ipad_activity',
@@ -7113,12 +7150,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Activity',
       },
       context: {
-        id: '0181175163a95134eaab0d6d79c7e123',
+        id: '0181178cafe87462a24c3407c5e782b5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.857Z',
-      last_updated: '2022-05-30T23:33:38.857Z',
+      last_changed: '2022-05-31T00:38:25.000Z',
+      last_updated: '2022-05-31T00:38:25.000Z',
     },
     'binary_sensor.mark_lycks_ipad_focus': {
       entity_id: 'binary_sensor.mark_lycks_ipad_focus',
@@ -7128,12 +7165,12 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad Focus',
       },
       context: {
-        id: '0181175163aae462c75461b56470f5b1',
+        id: '0181178cafe80d8d80d512d9746d1193',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.858Z',
-      last_updated: '2022-05-30T23:33:38.858Z',
+      last_changed: '2022-05-31T00:38:25.000Z',
+      last_updated: '2022-05-31T00:38:25.000Z',
     },
     'light.lamp': {
       entity_id: 'light.lamp',
@@ -7149,12 +7186,12 @@ const hass: any = {
         supported_features: 44,
       },
       context: {
-        id: '0181175163dcc9575682e92a627c4e22',
+        id: '0181178cb0203f90dbf314a86860abf0',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.908Z',
-      last_updated: '2022-05-30T23:33:38.908Z',
+      last_changed: '2022-05-31T00:38:25.056Z',
+      last_updated: '2022-05-31T00:38:25.056Z',
     },
     'light.bedroom': {
       entity_id: 'light.bedroom',
@@ -7164,7 +7201,7 @@ const hass: any = {
         max_mireds: 500,
         supported_color_modes: ['color_temp', 'xy'],
         is_hue_group: true,
-        hue_scenes: ['Bright', 'Nightlight', 'Dimmed'],
+        hue_scenes: ['Dimmed', 'Nightlight', 'Bright'],
         hue_type: 'room',
         lights: ['Lamp'],
         dynamics: false,
@@ -7173,12 +7210,12 @@ const hass: any = {
         supported_features: 40,
       },
       context: {
-        id: '0181175163dd3135861291e0e42c8879',
+        id: '0181178cb021941391fb3e109282d241',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.909Z',
-      last_updated: '2022-05-30T23:33:38.909Z',
+      last_changed: '2022-05-31T00:38:25.057Z',
+      last_updated: '2022-05-31T00:38:25.057Z',
     },
     'device_tracker.iphone_mark': {
       entity_id: 'device_tracker.iphone_mark',
@@ -7194,12 +7231,12 @@ const hass: any = {
         friendly_name: 'iphone mark',
       },
       context: {
-        id: '0181175163eb03a681a3badb38163cf6',
+        id: '0181178cb0415742a8a61f7229a560b8',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.923Z',
-      last_updated: '2022-05-30T23:33:38.923Z',
+      last_changed: '2022-05-31T00:38:25.089Z',
+      last_updated: '2022-05-31T00:38:25.089Z',
     },
     'device_tracker.mark_lycks_ipad': {
       entity_id: 'device_tracker.mark_lycks_ipad',
@@ -7215,12 +7252,93 @@ const hass: any = {
         friendly_name: 'Mark Lyck’s iPad',
       },
       context: {
-        id: '0181175163ec5071e3c0755e6cbcf935',
+        id: '0181178cb042674167b98a7dec7c9ca5',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.924Z',
-      last_updated: '2022-05-30T23:33:38.924Z',
+      last_changed: '2022-05-31T00:38:25.090Z',
+      last_updated: '2022-05-31T00:38:25.090Z',
+    },
+    'binary_sensor.my_ecobee_occupancy': {
+      entity_id: 'binary_sensor.my_ecobee_occupancy',
+      state: 'on',
+      attributes: {
+        device_class: 'occupancy',
+        friendly_name: 'My ecobee Occupancy',
+      },
+      context: {
+        id: '0181178f710719adc92a39799efc9fa5',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:41:25.511Z',
+      last_updated: '2022-05-31T00:41:25.511Z',
+    },
+    'binary_sensor.bedroom_sensor_occupancy': {
+      entity_id: 'binary_sensor.bedroom_sensor_occupancy',
+      state: 'on',
+      attributes: {
+        device_class: 'occupancy',
+        friendly_name: 'bedroom sensor Occupancy',
+      },
+      context: {
+        id: '018117a05fdd2260bedea4a12e8db11a',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:59:55.229Z',
+      last_updated: '2022-05-31T00:59:55.229Z',
+    },
+    'sensor.my_ecobee_temperature': {
+      entity_id: 'sensor.my_ecobee_temperature',
+      state: '76.8',
+      attributes: {
+        state_class: 'measurement',
+        unit_of_measurement: '°F',
+        device_class: 'temperature',
+        friendly_name: 'My ecobee Temperature',
+      },
+      context: {
+        id: '018117dea1ea31504042fa9a2660e5a0',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T02:07:55.370Z',
+      last_updated: '2022-05-31T02:07:55.370Z',
+    },
+    'sensor.my_ecobee_humidity': {
+      entity_id: 'sensor.my_ecobee_humidity',
+      state: '51',
+      attributes: {
+        state_class: 'measurement',
+        unit_of_measurement: '%',
+        device_class: 'humidity',
+        friendly_name: 'My ecobee Humidity',
+      },
+      context: {
+        id: '018117dccd28084a050349761664264d',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T02:05:55.368Z',
+      last_updated: '2022-05-31T02:05:55.368Z',
+    },
+    'sensor.bedroom_sensor_temperature': {
+      entity_id: 'sensor.bedroom_sensor_temperature',
+      state: '75.8',
+      attributes: {
+        state_class: 'measurement',
+        unit_of_measurement: '°F',
+        device_class: 'temperature',
+        friendly_name: 'bedroom sensor Temperature',
+      },
+      context: {
+        id: '018117dccd280264ea2b62ef6099e62e',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T02:05:55.368Z',
+      last_updated: '2022-05-31T02:05:55.368Z',
     },
     'scene.bedroom_bright': {
       entity_id: 'scene.bedroom_bright',
@@ -7235,12 +7353,12 @@ const hass: any = {
         friendly_name: 'Bedroom Bright',
       },
       context: {
-        id: '01811751640c080464ef07c6c6759b87',
+        id: '0181178cb06a988e891ef49870eca909',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.956Z',
-      last_updated: '2022-05-30T23:33:38.956Z',
+      last_changed: '2022-05-31T00:38:25.130Z',
+      last_updated: '2022-05-31T00:38:25.130Z',
     },
     'scene.bedroom_nightlight': {
       entity_id: 'scene.bedroom_nightlight',
@@ -7255,12 +7373,12 @@ const hass: any = {
         friendly_name: 'Bedroom Nightlight',
       },
       context: {
-        id: '01811751640da6b3c0f2882639315bb3',
+        id: '0181178cb06add1baf728284cf3e9c74',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.957Z',
-      last_updated: '2022-05-30T23:33:38.957Z',
+      last_changed: '2022-05-31T00:38:25.130Z',
+      last_updated: '2022-05-31T00:38:25.130Z',
     },
     'scene.bedroom_dimmed': {
       entity_id: 'scene.bedroom_dimmed',
@@ -7275,125 +7393,12 @@ const hass: any = {
         friendly_name: 'Bedroom Dimmed',
       },
       context: {
-        id: '01811751640d4459fee7a0f74820e0ba',
+        id: '0181178cb06a81d929a99545edb35e76',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:38.957Z',
-      last_updated: '2022-05-30T23:33:38.957Z',
-    },
-    'binary_sensor.my_ecobee_occupancy': {
-      entity_id: 'binary_sensor.my_ecobee_occupancy',
-      state: 'on',
-      attributes: {
-        device_class: 'occupancy',
-        friendly_name: 'My ecobee Occupancy',
-      },
-      context: {
-        id: '0181175164380ed4239f455764d8c764',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:39.000Z',
-      last_updated: '2022-05-30T23:33:39.000Z',
-    },
-    'binary_sensor.bedroom_sensor_occupancy': {
-      entity_id: 'binary_sensor.bedroom_sensor_occupancy',
-      state: 'on',
-      attributes: {
-        device_class: 'occupancy',
-        friendly_name: 'bedroom sensor Occupancy',
-      },
-      context: {
-        id: '01811751643959cbf247bd04279c236f',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:39.001Z',
-      last_updated: '2022-05-30T23:33:39.001Z',
-    },
-    'binary_sensor.office_occupancy': {
-      entity_id: 'binary_sensor.office_occupancy',
-      state: 'on',
-      attributes: {
-        device_class: 'occupancy',
-        friendly_name: 'Office Occupancy',
-      },
-      context: {
-        id: '01811751643ac702e09998134ef895d0',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:39.002Z',
-      last_updated: '2022-05-30T23:33:39.002Z',
-    },
-    'sensor.my_ecobee_temperature': {
-      entity_id: 'sensor.my_ecobee_temperature',
-      state: '75.1',
-      attributes: {
-        state_class: 'measurement',
-        unit_of_measurement: '°F',
-        device_class: 'temperature',
-        friendly_name: 'My ecobee Temperature',
-      },
-      context: {
-        id: '0181176d5106c80bb5ee948dd22843ba',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-31T00:04:09.094Z',
-      last_updated: '2022-05-31T00:04:09.094Z',
-    },
-    'sensor.my_ecobee_humidity': {
-      entity_id: 'sensor.my_ecobee_humidity',
-      state: '53',
-      attributes: {
-        state_class: 'measurement',
-        unit_of_measurement: '%',
-        device_class: 'humidity',
-        friendly_name: 'My ecobee Humidity',
-      },
-      context: {
-        id: '0181176d5107380f550ef358ece73676',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-31T00:04:09.095Z',
-      last_updated: '2022-05-31T00:04:09.095Z',
-    },
-    'sensor.bedroom_sensor_temperature': {
-      entity_id: 'sensor.bedroom_sensor_temperature',
-      state: '76.0',
-      attributes: {
-        state_class: 'measurement',
-        unit_of_measurement: '°F',
-        device_class: 'temperature',
-        friendly_name: 'bedroom sensor Temperature',
-      },
-      context: {
-        id: '0181176d5107d9c9fd774810f8f0a77c',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-31T00:04:09.095Z',
-      last_updated: '2022-05-31T00:04:09.095Z',
-    },
-    'sensor.office_temperature': {
-      entity_id: 'sensor.office_temperature',
-      state: '76.7',
-      attributes: {
-        state_class: 'measurement',
-        unit_of_measurement: '°F',
-        device_class: 'temperature',
-        friendly_name: 'Office Temperature',
-      },
-      context: {
-        id: '0181176d51088cf52487713479f17023',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-31T00:04:09.096Z',
-      last_updated: '2022-05-31T00:04:09.096Z',
+      last_changed: '2022-05-31T00:38:25.131Z',
+      last_updated: '2022-05-31T00:38:25.131Z',
     },
     'climate.ecobee': {
       entity_id: 'climate.ecobee',
@@ -7405,11 +7410,11 @@ const hass: any = {
         target_temp_step: 0.5,
         fan_modes: ['auto', 'on'],
         preset_modes: ['Away', 'Home', 'Sleep'],
-        current_temperature: 76,
-        temperature: 76,
+        current_temperature: 76.6,
+        temperature: 75,
         target_temp_high: null,
         target_temp_low: null,
-        current_humidity: 52,
+        current_humidity: 51,
         fan_mode: 'auto',
         hvac_action: 'idle',
         preset_mode: 'temp',
@@ -7423,47 +7428,47 @@ const hass: any = {
         supported_features: 91,
       },
       context: {
-        id: '0181176f9c524605a55e89a8029e5286',
+        id: '018117de4ac3e1d06dfdcd1ceef1eb6d',
         parent_id: null,
-        user_id: null,
+        user_id: 'fefe8d8a7bec4ab9ad5ca86ac9734a4c',
       },
-      last_changed: '2022-05-30T23:33:39.018Z',
-      last_updated: '2022-05-31T00:06:39.442Z',
+      last_changed: '2022-05-31T00:38:25.185Z',
+      last_updated: '2022-05-31T02:07:34.161Z',
     },
     'weather.my_ecobee': {
       entity_id: 'weather.my_ecobee',
       state: 'sunny',
       attributes: {
-        temperature: 82,
-        humidity: 60,
+        temperature: 78,
+        humidity: 69,
         pressure: 30.06,
-        wind_bearing: 174,
-        wind_speed: 7,
-        visibility: 9,
+        wind_bearing: 181,
+        wind_speed: 5,
+        visibility: 10,
         forecast: [
           {
             condition: 'sunny',
             temperature: 89,
             templow: 67,
-            wind_bearing: 174,
-            wind_speed: 7,
-            datetime: '2022-05-31T00:06:39.109657+00:00',
+            wind_bearing: 181,
+            wind_speed: 5,
+            datetime: '2022-05-31T02:09:25.809080+00:00',
           },
           {
             condition: 'sunny',
-            temperature: 91,
+            temperature: 90,
             templow: 73,
             wind_bearing: 251,
             wind_speed: 4,
-            datetime: '2022-06-01T00:06:39.109657+00:00',
+            datetime: '2022-06-01T02:09:25.809080+00:00',
           },
           {
             condition: 'partlycloudy',
             temperature: 90,
             templow: 77,
-            wind_bearing: 274,
+            wind_bearing: 275,
             wind_speed: 5,
-            datetime: '2022-06-02T00:06:39.109657+00:00',
+            datetime: '2022-06-02T02:09:25.809080+00:00',
           },
           {
             condition: 'rainy',
@@ -7471,28 +7476,28 @@ const hass: any = {
             templow: 74,
             wind_bearing: 328,
             wind_speed: 5,
-            datetime: '2022-06-03T00:06:39.109657+00:00',
+            datetime: '2022-06-03T02:09:25.809080+00:00',
           },
           {
             condition: 'rainy',
             temperature: 76,
             templow: 67,
-            wind_bearing: 331,
+            wind_bearing: 325,
             wind_speed: 6,
-            datetime: '2022-06-04T00:06:39.109657+00:00',
+            datetime: '2022-06-04T02:09:25.809080+00:00',
           },
         ],
         attribution:
-          'Ecobee weather provided by FI:NDV at 2022-05-31 00:00:39 UTC',
+          'Ecobee weather provided by FI:NDV at 2022-05-31 02:00:49 UTC',
         friendly_name: 'My ecobee',
       },
       context: {
-        id: '0181176f9b067d9925c851e476cee169',
+        id: '018117e00331739e803ea5025ff67902',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:39.019Z',
-      last_updated: '2022-05-31T00:06:39.110Z',
+      last_changed: '2022-05-31T00:38:25.186Z',
+      last_updated: '2022-05-31T02:09:25.809Z',
     },
     'light.bedroom_lamp': {
       entity_id: 'light.bedroom_lamp',
@@ -7504,82 +7509,12 @@ const hass: any = {
         supported_features: 37,
       },
       context: {
-        id: '01811751646212a19a7bad5ce1d69bc2',
+        id: '0181178cb3048bccd84c90d1047368e0',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:39.042Z',
-      last_updated: '2022-05-30T23:33:39.042Z',
-    },
-    'binary_sensor.eero_wan_status': {
-      entity_id: 'binary_sensor.eero_wan_status',
-      state: 'on',
-      attributes: {
-        device_class: 'connectivity',
-        friendly_name: 'eero wan status',
-      },
-      context: {
-        id: '018117516476da691dcec11aef14f262',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:39.062Z',
-      last_updated: '2022-05-30T23:33:39.062Z',
-    },
-    'sensor.eero_external_ip': {
-      entity_id: 'sensor.eero_external_ip',
-      state: '108.28.69.66',
-      attributes: {
-        icon: 'mdi:server-network',
-        friendly_name: 'eero External IP',
-      },
-      context: {
-        id: '01811751647709edbd0d6b3775896d77',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:39.063Z',
-      last_updated: '2022-05-30T23:33:39.063Z',
-    },
-    'sensor.eero_wan_status': {
-      entity_id: 'sensor.eero_wan_status',
-      state: 'Connected',
-      attributes: {
-        icon: 'mdi:server-network',
-        friendly_name: 'eero wan status',
-      },
-      context: {
-        id: '018117516478f178aafa8c1c133e0808',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:39.064Z',
-      last_updated: '2022-05-30T23:33:39.064Z',
-    },
-    'light.desk_light': {
-      entity_id: 'light.desk_light',
-      state: 'on',
-      attributes: {
-        min_mireds: 111,
-        max_mireds: 666,
-        effect_list: ['effect_colorloop', 'effect_pulse', 'effect_stop'],
-        supported_color_modes: ['color_temp', 'hs'],
-        color_mode: 'hs',
-        brightness: 255,
-        hs_color: [27.999, 26],
-        rgb_color: [255, 219, 188],
-        xy_color: [0.392, 0.358],
-        icon: 'mdi:led-strip-variant',
-        friendly_name: 'Desk light',
-        supported_features: 55,
-      },
-      context: {
-        id: '0181176d83bf5d1c23be6c88bf9f3826',
-        parent_id: null,
-        user_id: 'fefe8d8a7bec4ab9ad5ca86ac9734a4c',
-      },
-      last_changed: '2022-05-31T00:04:22.420Z',
-      last_updated: '2022-05-31T00:04:22.420Z',
+      last_changed: '2022-05-31T00:38:25.796Z',
+      last_updated: '2022-05-31T00:38:25.796Z',
     },
     'sensor.hacs': {
       entity_id: 'sensor.hacs',
@@ -7610,291 +7545,82 @@ const hass: any = {
         friendly_name: 'hacs',
       },
       context: {
-        id: '018117517ea5ae60b6f4dc21fa5268e6',
+        id: '0181178cd853a2ad7c2b35663a12f4bd',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:45.765Z',
-      last_updated: '2022-05-30T23:33:45.765Z',
+      last_changed: '2022-05-31T00:38:35.347Z',
+      last_updated: '2022-05-31T00:38:35.347Z',
     },
-    'sensor.disk_use_home': {
-      entity_id: 'sensor.disk_use_home',
-      state: 'unavailable',
+    'light.desk_light': {
+      entity_id: 'light.desk_light',
+      state: 'on',
       attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:harddisk',
-        friendly_name: 'Disk use /home',
-        supported_features: 0,
-        unit_of_measurement: 'GiB',
+        min_mireds: 111,
+        max_mireds: 666,
+        effect_list: ['effect_colorloop', 'effect_pulse', 'effect_stop'],
+        supported_color_modes: ['color_temp', 'hs'],
+        color_mode: 'hs',
+        brightness: 255,
+        hs_color: [27.999, 26],
+        rgb_color: [255, 219, 188],
+        xy_color: [0.392, 0.358],
+        icon: 'mdi:led-strip-variant',
+        friendly_name: 'Desk light',
+        supported_features: 55,
       },
       context: {
-        id: '018117516b864b65c810483d1adb46d5',
+        id: '0181178cb7301e244a98a5ae478af52c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:40.870Z',
-      last_updated: '2022-05-30T23:33:40.870Z',
+      last_changed: '2022-05-31T00:38:26.864Z',
+      last_updated: '2022-05-31T00:38:26.864Z',
     },
-    'sensor.disk_free_home': {
-      entity_id: 'sensor.disk_free_home',
-      state: 'unavailable',
+    'binary_sensor.eero_wan_status': {
+      entity_id: 'binary_sensor.eero_wan_status',
+      state: 'on',
       attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:harddisk',
-        friendly_name: 'Disk free /home',
-        supported_features: 0,
-        unit_of_measurement: 'GiB',
+        device_class: 'connectivity',
+        friendly_name: 'eero wan status',
       },
       context: {
-        id: '018117516b86cdb077867674b38ed432',
+        id: '0181178cb7e018e469c92f6ebba95e0e',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:40.870Z',
-      last_updated: '2022-05-30T23:33:40.870Z',
+      last_changed: '2022-05-31T00:38:27.040Z',
+      last_updated: '2022-05-31T00:38:27.040Z',
     },
-    'sensor.disk_use_percent_home': {
-      entity_id: 'sensor.disk_use_percent_home',
-      state: 'unavailable',
+    'sensor.eero_external_ip': {
+      entity_id: 'sensor.eero_external_ip',
+      state: '108.28.69.66',
       attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:harddisk',
-        friendly_name: 'Disk use (percent) /home',
-        supported_features: 0,
-        unit_of_measurement: '%',
-      },
-      context: {
-        id: '018117516b861ab62d402852b94267da',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.870Z',
-      last_updated: '2022-05-30T23:33:40.870Z',
-    },
-    'sensor.memory_free': {
-      entity_id: 'sensor.memory_free',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:memory',
-        friendly_name: 'Memory free',
-        supported_features: 0,
-        unit_of_measurement: 'MiB',
-      },
-      context: {
-        id: '018117516b872c75f2d871e612c3efa5',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
-    },
-    'sensor.memory_use': {
-      entity_id: 'sensor.memory_use',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:memory',
-        friendly_name: 'Memory use',
-        supported_features: 0,
-        unit_of_measurement: 'MiB',
-      },
-      context: {
-        id: '018117516b87720b6cfa0a2b4105ecfa',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
-    },
-    'sensor.memory_use_percent': {
-      entity_id: 'sensor.memory_use_percent',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:memory',
-        friendly_name: 'Memory use (percent)',
-        supported_features: 0,
-        unit_of_measurement: '%',
-      },
-      context: {
-        id: '018117516b87e43b2e7260f0e7252402',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
-    },
-    'sensor.network_in_eth0': {
-      entity_id: 'sensor.network_in_eth0',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'total_increasing',
         icon: 'mdi:server-network',
-        friendly_name: 'Network in eth0',
-        supported_features: 0,
-        unit_of_measurement: 'MiB',
+        friendly_name: 'eero External IP',
       },
       context: {
-        id: '018117516b874d302ff722f11ca1b5f5',
+        id: '0181178cb7e207c9d51844e0ab8131ec',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
+      last_changed: '2022-05-31T00:38:27.042Z',
+      last_updated: '2022-05-31T00:38:27.042Z',
     },
-    'sensor.network_out_eth0': {
-      entity_id: 'sensor.network_out_eth0',
-      state: 'unavailable',
+    'sensor.eero_wan_status': {
+      entity_id: 'sensor.eero_wan_status',
+      state: 'Connected',
       attributes: {
-        restored: true,
-        state_class: 'total_increasing',
         icon: 'mdi:server-network',
-        friendly_name: 'Network out eth0',
-        supported_features: 0,
-        unit_of_measurement: 'MiB',
+        friendly_name: 'eero wan status',
       },
       context: {
-        id: '018117516b87103c26e9391970e57a29',
+        id: '0181178cb7e31ecc6e130b6c31723b4f',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
-    },
-    'sensor.network_throughput_in_eth0': {
-      entity_id: 'sensor.network_throughput_in_eth0',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:server-network',
-        friendly_name: 'Network throughput in eth0',
-        supported_features: 0,
-        unit_of_measurement: 'MB/s',
-      },
-      context: {
-        id: '018117516b87687ea76758a2b1a9a78a',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
-    },
-    'sensor.network_throughput_out_eth0': {
-      entity_id: 'sensor.network_throughput_out_eth0',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:server-network',
-        friendly_name: 'Network throughput out eth0',
-        supported_features: 0,
-        unit_of_measurement: 'MB/s',
-      },
-      context: {
-        id: '018117516b878f2723ecf9d63cc49bcb',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
-    },
-    'sensor.ipv4_address_eth0': {
-      entity_id: 'sensor.ipv4_address_eth0',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        icon: 'mdi:server-network',
-        friendly_name: 'IPv4 address eth0',
-        supported_features: 0,
-      },
-      context: {
-        id: '018117516b87434b0a889f7669f7a048',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.871Z',
-      last_updated: '2022-05-30T23:33:40.871Z',
-    },
-    'sensor.packets_in_eth0': {
-      entity_id: 'sensor.packets_in_eth0',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'total_increasing',
-        icon: 'mdi:server-network',
-        friendly_name: 'Packets in eth0',
-        supported_features: 0,
-      },
-      context: {
-        id: '018117516b8885d7d9457cbd4b26576c',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.872Z',
-      last_updated: '2022-05-30T23:33:40.872Z',
-    },
-    'sensor.packets_out_eth0': {
-      entity_id: 'sensor.packets_out_eth0',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'total_increasing',
-        icon: 'mdi:server-network',
-        friendly_name: 'Packets out eth0',
-        supported_features: 0,
-      },
-      context: {
-        id: '018117516b884ddf33fdd48eaadb559c',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.872Z',
-      last_updated: '2022-05-30T23:33:40.872Z',
-    },
-    'sensor.processor_use': {
-      entity_id: 'sensor.processor_use',
-      state: 'unavailable',
-      attributes: {
-        restored: true,
-        state_class: 'measurement',
-        icon: 'mdi:cpu-64-bit',
-        friendly_name: 'Processor use',
-        supported_features: 0,
-        unit_of_measurement: '%',
-      },
-      context: {
-        id: '018117516b88464be621ecc362639220',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:33:40.872Z',
-      last_updated: '2022-05-30T23:33:40.872Z',
-    },
-    'persistent_notification.config_entry_discovery': {
-      entity_id: 'persistent_notification.config_entry_discovery',
-      state: 'notifying',
-      attributes: {
-        message:
-          'We have discovered new devices on your network. [Check it out](/config/integrations).',
-        title: 'New devices discovered',
-        friendly_name: 'New devices discovered',
-      },
-      context: {
-        id: '01811751b904b9ca2c6d06e20a509cf4',
-        parent_id: null,
-        user_id: null,
-      },
-      last_changed: '2022-05-30T23:34:00.708Z',
-      last_updated: '2022-05-30T23:34:00.708Z',
+      last_changed: '2022-05-31T00:38:27.043Z',
+      last_updated: '2022-05-31T00:38:27.043Z',
     },
     'vacuum.alfred': {
       entity_id: 'vacuum.alfred',
@@ -7908,12 +7634,12 @@ const hass: any = {
         supported_features: 15228,
       },
       context: {
-        id: '018117693cfdc9e8e786b7f323044de5',
+        id: '0181178cc42c611e27f6da73aada24a8',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:59:41.821Z',
-      last_updated: '2022-05-30T23:59:41.821Z',
+      last_changed: '2022-05-31T00:38:30.188Z',
+      last_updated: '2022-05-31T00:38:30.188Z',
     },
     'button.alfred_life_span_side_brush_reset': {
       entity_id: 'button.alfred_life_span_side_brush_reset',
@@ -7923,12 +7649,12 @@ const hass: any = {
         friendly_name: 'Alfred life span side brush reset',
       },
       context: {
-        id: '018117693d1161538bf2866555448183',
+        id: '0181178cc437fed36ae21d6b06bb96ce',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:59:41.841Z',
-      last_updated: '2022-05-30T23:59:41.841Z',
+      last_changed: '2022-05-31T00:38:30.199Z',
+      last_updated: '2022-05-31T00:38:30.199Z',
     },
     'button.alfred_life_span_brush_reset': {
       entity_id: 'button.alfred_life_span_brush_reset',
@@ -7938,12 +7664,12 @@ const hass: any = {
         friendly_name: 'Alfred life span brush reset',
       },
       context: {
-        id: '018117693d12127ed0ead8ba752f1baa',
+        id: '0181178cc437dc1c8e5d3b8876b165ed',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:59:41.842Z',
-      last_updated: '2022-05-30T23:59:41.842Z',
+      last_changed: '2022-05-31T00:38:30.200Z',
+      last_updated: '2022-05-31T00:38:30.200Z',
     },
     'button.alfred_life_span_filter_reset': {
       entity_id: 'button.alfred_life_span_filter_reset',
@@ -7953,12 +7679,12 @@ const hass: any = {
         friendly_name: 'Alfred life span filter reset',
       },
       context: {
-        id: '018117693d12d3edfd449919983f529c',
+        id: '0181178cc4386743ccd67789dfeb2692',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:59:41.842Z',
-      last_updated: '2022-05-30T23:59:41.842Z',
+      last_changed: '2022-05-31T00:38:30.200Z',
+      last_updated: '2022-05-31T00:38:30.200Z',
     },
     'button.alfred_relocate': {
       entity_id: 'button.alfred_relocate',
@@ -7968,12 +7694,340 @@ const hass: any = {
         friendly_name: 'Alfred relocate',
       },
       context: {
-        id: '018117693d134252d7f61bcfca1e723f',
+        id: '0181178cc43814c3e16ecc1e139c8c5c',
         parent_id: null,
         user_id: null,
       },
-      last_changed: '2022-05-30T23:59:41.843Z',
-      last_updated: '2022-05-30T23:59:41.843Z',
+      last_changed: '2022-05-31T00:38:30.200Z',
+      last_updated: '2022-05-31T00:38:30.200Z',
+    },
+    'sensor.disk_use_home': {
+      entity_id: 'sensor.disk_use_home',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:harddisk',
+        friendly_name: 'Disk use /home',
+        supported_features: 0,
+        unit_of_measurement: 'GiB',
+      },
+      context: {
+        id: '0181178cc43d6e449dff395380d05732',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.205Z',
+      last_updated: '2022-05-31T00:38:30.205Z',
+    },
+    'sensor.disk_free_home': {
+      entity_id: 'sensor.disk_free_home',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:harddisk',
+        friendly_name: 'Disk free /home',
+        supported_features: 0,
+        unit_of_measurement: 'GiB',
+      },
+      context: {
+        id: '0181178cc43db31e6a2462f4c0581adc',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.205Z',
+      last_updated: '2022-05-31T00:38:30.205Z',
+    },
+    'sensor.disk_use_percent_home': {
+      entity_id: 'sensor.disk_use_percent_home',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:harddisk',
+        friendly_name: 'Disk use (percent) /home',
+        supported_features: 0,
+        unit_of_measurement: '%',
+      },
+      context: {
+        id: '0181178cc43d965e3f5973b000a8d5fd',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.205Z',
+      last_updated: '2022-05-31T00:38:30.205Z',
+    },
+    'sensor.memory_free': {
+      entity_id: 'sensor.memory_free',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:memory',
+        friendly_name: 'Memory free',
+        supported_features: 0,
+        unit_of_measurement: 'MiB',
+      },
+      context: {
+        id: '0181178cc43d01ee2729a214c30c2ed2',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.205Z',
+      last_updated: '2022-05-31T00:38:30.205Z',
+    },
+    'sensor.memory_use': {
+      entity_id: 'sensor.memory_use',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:memory',
+        friendly_name: 'Memory use',
+        supported_features: 0,
+        unit_of_measurement: 'MiB',
+      },
+      context: {
+        id: '0181178cc43e5e3c596e62f10a64bd10',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.memory_use_percent': {
+      entity_id: 'sensor.memory_use_percent',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:memory',
+        friendly_name: 'Memory use (percent)',
+        supported_features: 0,
+        unit_of_measurement: '%',
+      },
+      context: {
+        id: '0181178cc43e9497d62dbcb6afe82629',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.network_in_eth0': {
+      entity_id: 'sensor.network_in_eth0',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'total_increasing',
+        icon: 'mdi:server-network',
+        friendly_name: 'Network in eth0',
+        supported_features: 0,
+        unit_of_measurement: 'MiB',
+      },
+      context: {
+        id: '0181178cc43e92a9d2deafa50058e25c',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.network_out_eth0': {
+      entity_id: 'sensor.network_out_eth0',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'total_increasing',
+        icon: 'mdi:server-network',
+        friendly_name: 'Network out eth0',
+        supported_features: 0,
+        unit_of_measurement: 'MiB',
+      },
+      context: {
+        id: '0181178cc43ede9b06de8334c5c6b17a',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.network_throughput_in_eth0': {
+      entity_id: 'sensor.network_throughput_in_eth0',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:server-network',
+        friendly_name: 'Network throughput in eth0',
+        supported_features: 0,
+        unit_of_measurement: 'MB/s',
+      },
+      context: {
+        id: '0181178cc43e00375357c50e7ece5624',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.network_throughput_out_eth0': {
+      entity_id: 'sensor.network_throughput_out_eth0',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:server-network',
+        friendly_name: 'Network throughput out eth0',
+        supported_features: 0,
+        unit_of_measurement: 'MB/s',
+      },
+      context: {
+        id: '0181178cc43e602d9c172afc32ffc984',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.ipv4_address_eth0': {
+      entity_id: 'sensor.ipv4_address_eth0',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        icon: 'mdi:server-network',
+        friendly_name: 'IPv4 address eth0',
+        supported_features: 0,
+      },
+      context: {
+        id: '0181178cc43edce810f6606da105fe68',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.packets_in_eth0': {
+      entity_id: 'sensor.packets_in_eth0',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'total_increasing',
+        icon: 'mdi:server-network',
+        friendly_name: 'Packets in eth0',
+        supported_features: 0,
+      },
+      context: {
+        id: '0181178cc43edd1d7ba615758b671b12',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.206Z',
+      last_updated: '2022-05-31T00:38:30.206Z',
+    },
+    'sensor.packets_out_eth0': {
+      entity_id: 'sensor.packets_out_eth0',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'total_increasing',
+        icon: 'mdi:server-network',
+        friendly_name: 'Packets out eth0',
+        supported_features: 0,
+      },
+      context: {
+        id: '0181178cc43fe044c6289bcb101c1405',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.207Z',
+      last_updated: '2022-05-31T00:38:30.207Z',
+    },
+    'sensor.processor_use': {
+      entity_id: 'sensor.processor_use',
+      state: 'unavailable',
+      attributes: {
+        restored: true,
+        state_class: 'measurement',
+        icon: 'mdi:cpu-64-bit',
+        friendly_name: 'Processor use',
+        supported_features: 0,
+        unit_of_measurement: '%',
+      },
+      context: {
+        id: '0181178cc43fa4c65130e2bbd43d2279',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:30.207Z',
+      last_updated: '2022-05-31T00:38:30.207Z',
+    },
+    'persistent_notification.config_entry_discovery': {
+      entity_id: 'persistent_notification.config_entry_discovery',
+      state: 'notifying',
+      attributes: {
+        message:
+          'We have discovered new devices on your network. [Check it out](/config/integrations).',
+        title: 'New devices discovered',
+        friendly_name: 'New devices discovered',
+      },
+      context: {
+        id: '0181178d11e862b718128b711133db3d',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:38:50.088Z',
+      last_updated: '2022-05-31T00:38:50.088Z',
+    },
+    'persistent_notification.http_login': {
+      entity_id: 'persistent_notification.http_login',
+      state: 'notifying',
+      attributes: {
+        message:
+          'Login attempt or request with invalid authentication from 192.168.4.100 (192.168.4.100). See the log for details.',
+        title: 'Login attempt failed',
+        friendly_name: 'Login attempt failed',
+      },
+      context: {
+        id: '0181179de813b1e7d4b0348778d64a72',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T00:57:13.491Z',
+      last_updated: '2022-05-31T00:57:13.491Z',
+    },
+    'binary_sensor.office_ecobee_sensor_occupancy': {
+      entity_id: 'binary_sensor.office_ecobee_sensor_occupancy',
+      state: 'on',
+      attributes: {
+        device_class: 'occupancy',
+        friendly_name: 'office_ecobee_sensor Occupancy',
+      },
+      context: {
+        id: '018117d5089a0cca87be328337597afb',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T01:57:26.298Z',
+      last_updated: '2022-05-31T01:57:26.298Z',
+    },
+    'sensor.office_ecobee_sensor_temperature': {
+      entity_id: 'sensor.office_ecobee_sensor_temperature',
+      state: '77.2',
+      attributes: {
+        state_class: 'measurement',
+        unit_of_measurement: '°F',
+        device_class: 'temperature',
+        friendly_name: 'office_ecobee_sensor Temperature',
+      },
+      context: {
+        id: '018117dea1ecbc4f6fb6579d7f38004c',
+        parent_id: null,
+        user_id: null,
+      },
+      last_changed: '2022-05-31T02:07:55.372Z',
+      last_updated: '2022-05-31T02:07:55.372Z',
     },
   },
   config: {
@@ -7992,122 +8046,122 @@ const hass: any = {
     location_name: 'Home',
     time_zone: 'America/New_York',
     components: [
-      'lifx',
-      'button.deebot',
-      'vacuum.deebot',
-      'sensor.ecobee',
-      'number.deebot',
-      'upnp',
-      'light.hue',
-      'analytics',
-      'persistent_notification',
-      'script',
-      'tag',
-      'config',
-      'image',
-      'mobile_app',
-      'trace',
-      'counter',
-      'history',
-      'homekit',
-      'vacuum',
-      'scene.hue',
-      'weather.ecobee',
-      'energy',
-      'binary_sensor.mobile_app',
-      'apple_tv',
-      'ssdp',
-      'sensor.energy',
-      'light',
-      'sensor.hassio',
-      'tts.google_translate',
-      'dhcp',
-      'hacs',
-      'map',
-      'input_text',
-      'binary_sensor.upnp',
-      'media_source',
-      'ecobee',
-      'usb',
-      'deebot',
-      'blueprint',
-      'input_datetime',
-      'cloud',
-      'device_tracker.mobile_app',
-      'automation',
-      'api',
-      'climate.ecobee',
-      'search',
-      'switch',
-      'media_player',
-      'input_number',
-      'switch.hue',
-      'device_automation',
-      'onboarding',
-      'media_player.apple_tv',
-      'select.deebot',
-      'auth',
-      'select',
-      'input_button',
-      'rpi_power',
-      'input_select',
-      'device_tracker',
-      'number',
-      'webhook',
-      'climate',
-      'sensor.upnp',
-      'websocket_api',
-      'diagnostics',
-      'person',
-      'system_health',
-      'update',
-      'logbook',
-      'zeroconf',
-      'light.lifx',
-      'camera',
-      'camera.deebot',
-      'my',
       'timer',
-      'notify',
-      'network',
-      'hassio',
-      'recorder',
-      'sensor.deebot',
-      'hue',
-      'tts',
-      'homeassistant',
-      'humidifier.ecobee',
-      'sensor.hacs',
-      'scene',
-      'update.hassio',
-      'binary_sensor',
-      'remote',
-      'weather',
-      'humidifier',
-      'sun',
-      'stream',
-      'panel_custom',
-      'notify.mobile_app',
-      'sensor.mobile_app',
-      'binary_sensor.rpi_power',
+      'climate.ecobee',
+      'device_tracker',
       'binary_sensor.hue',
-      'binary_sensor.ecobee',
-      'input_boolean',
-      'zone',
-      'ffmpeg',
-      'http',
-      'scene.homeassistant',
+      'system_log',
       'sensor',
-      'default_config',
-      'button',
-      'switch.deebot',
-      'binary_sensor.deebot',
+      'hacs',
+      'input_select',
+      'binary_sensor.rpi_power',
+      'recorder',
+      'sensor.upnp',
+      'binary_sensor.upnp',
+      'light',
       'sensor.hue',
+      'history',
+      'notify.mobile_app',
+      'camera.deebot',
+      'tts',
+      'input_number',
+      'select.deebot',
+      'logbook',
+      'button',
+      'default_config',
+      'vacuum.deebot',
+      'scene.hue',
+      'websocket_api',
+      'search',
+      'number',
+      'persistent_notification',
+      'tts.google_translate',
+      'binary_sensor.mobile_app',
+      'ecobee',
+      'sensor.deebot',
+      'input_datetime',
+      'device_automation',
+      'lovelace',
+      'zeroconf',
+      'my',
+      'analytics',
+      'blueprint',
+      'input_button',
+      'humidifier.ecobee',
+      'counter',
+      'media_source',
+      'http',
+      'sensor.energy',
+      'notify',
+      'webhook',
+      'sensor.hacs',
+      'select',
+      'camera',
+      'sensor.mobile_app',
+      'hue',
       'frontend',
       'binary_sensor.hassio',
-      'lovelace',
+      'scene',
+      'weather',
+      'person',
+      'image',
+      'sun',
+      'binary_sensor.ecobee',
       'remote.apple_tv',
-      'system_log',
+      'automation',
+      'media_player.apple_tv',
+      'sensor.ecobee',
+      'media_player',
+      'binary_sensor.deebot',
+      'deebot',
+      'remote',
+      'tag',
+      'device_tracker.mobile_app',
+      'vacuum',
+      'config',
+      'rpi_power',
+      'auth',
+      'update',
+      'scene.homeassistant',
+      'input_text',
+      'network',
+      'switch',
+      'climate',
+      'sensor.hassio',
+      'api',
+      'trace',
+      'switch.hue',
+      'diagnostics',
+      'dhcp',
+      'number.deebot',
+      'button.deebot',
+      'usb',
+      'input_boolean',
+      'switch.deebot',
+      'upnp',
+      'humidifier',
+      'zone',
+      'cloud',
+      'onboarding',
+      'apple_tv',
+      'ffmpeg',
+      'system_health',
+      'binary_sensor',
+      'homeassistant',
+      'lifx',
+      'energy',
+      'ssdp',
+      'update.hassio',
+      'weather.ecobee',
+      'light.hue',
+      'light.lifx',
+      'script',
+      'homekit',
+      'hassio',
+      'panel_custom',
+      'map',
+      'mobile_app',
+      'stream',
     ],
     config_dir: '/config',
     whitelist_external_dirs: ['/config/www', '/media'],
@@ -8195,12 +8249,12 @@ const hass: any = {
       url_path: 'core_ssh',
       require_admin: true,
     },
-    map: {
-      component_name: 'map',
-      icon: 'hass:tooltip-account',
-      title: 'map',
+    _my_redirect: {
+      component_name: 'my',
+      icon: null,
+      title: null,
       config: null,
-      url_path: 'map',
+      url_path: '_my_redirect',
       require_admin: false,
     },
     'media-browser': {
@@ -8211,12 +8265,12 @@ const hass: any = {
       url_path: 'media-browser',
       require_admin: false,
     },
-    logbook: {
-      component_name: 'logbook',
-      icon: 'hass:format-list-bulleted-type',
-      title: 'logbook',
+    history: {
+      component_name: 'history',
+      icon: 'hass:chart-box',
+      title: 'history',
       config: null,
-      url_path: 'logbook',
+      url_path: 'history',
       require_admin: false,
     },
     'react-panel-prod': {
@@ -8235,20 +8289,20 @@ const hass: any = {
       url_path: 'react-panel-prod',
       require_admin: false,
     },
-    _my_redirect: {
-      component_name: 'my',
-      icon: null,
-      title: null,
+    map: {
+      component_name: 'map',
+      icon: 'hass:tooltip-account',
+      title: 'map',
       config: null,
-      url_path: '_my_redirect',
+      url_path: 'map',
       require_admin: false,
     },
-    history: {
-      component_name: 'history',
-      icon: 'hass:chart-box',
-      title: 'history',
+    logbook: {
+      component_name: 'logbook',
+      icon: 'hass:format-list-bulleted-type',
+      title: 'logbook',
       config: null,
-      url_path: 'history',
+      url_path: 'logbook',
       require_admin: false,
     },
     energy: {
@@ -8450,6 +8504,68 @@ const hass: any = {
         },
       },
     },
+    system_log: {
+      clear: {
+        name: 'Clear all',
+        description: 'Clear all log entries.',
+        fields: {},
+      },
+      write: {
+        name: 'Write',
+        description: 'Write log entry.',
+        fields: {
+          message: {
+            name: 'Message',
+            description: 'Message to log.',
+            required: true,
+            example: 'Something went wrong',
+            selector: {
+              text: null,
+            },
+          },
+          level: {
+            name: 'Level',
+            description: 'Log level.',
+            default: 'error',
+            selector: {
+              select: {
+                options: [
+                  {
+                    label: 'Debug',
+                    value: 'debug',
+                  },
+                  {
+                    label: 'Info',
+                    value: 'info',
+                  },
+                  {
+                    label: 'Warning',
+                    value: 'warning',
+                  },
+                  {
+                    label: 'Error',
+                    value: 'error',
+                  },
+                  {
+                    label: 'Critical',
+                    value: 'critical',
+                  },
+                ],
+              },
+            },
+          },
+          logger: {
+            name: 'Logger',
+            description:
+              "Logger name under which to log the message. Defaults to 'system_log.external'.",
+            example: 'mycomponent.myplatform',
+            selector: {
+              text: null,
+            },
+          },
+        },
+      },
+    },
     recorder: {
       purge: {
         name: 'Purge',
@@ -8529,68 +8645,6 @@ const hass: any = {
         name: 'Disable',
         description: 'Stop the recording of events and state changes',
         fields: {},
-      },
-    },
-    system_log: {
-      clear: {
-        name: 'Clear all',
-        description: 'Clear all log entries.',
-        fields: {},
-      },
-      write: {
-        name: 'Write',
-        description: 'Write log entry.',
-        fields: {
-          message: {
-            name: 'Message',
-            description: 'Message to log.',
-            required: true,
-            example: 'Something went wrong',
-            selector: {
-              text: null,
-            },
-          },
-          level: {
-            name: 'Level',
-            description: 'Log level.',
-            default: 'error',
-            selector: {
-              select: {
-                options: [
-                  {
-                    label: 'Debug',
-                    value: 'debug',
-                  },
-                  {
-                    label: 'Info',
-                    value: 'info',
-                  },
-                  {
-                    label: 'Warning',
-                    value: 'warning',
-                  },
-                  {
-                    label: 'Error',
-                    value: 'error',
-                  },
-                  {
-                    label: 'Critical',
-                    value: 'critical',
-                  },
-                ],
-              },
-            },
-          },
-          logger: {
-            name: 'Logger',
-            description:
-              "Logger name under which to log the message. Defaults to 'system_log.external'.",
-            example: 'mycomponent.myplatform',
-            selector: {
-              text: null,
-            },
-          },
-        },
       },
     },
     cloud: {
@@ -9192,6 +9246,13 @@ const hass: any = {
         },
       },
     },
+    zone: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the YAML-based zone configuration.',
+        fields: {},
+      },
+    },
     counter: {
       increment: {
         name: 'Increment',
@@ -9290,78 +9351,6 @@ const hass: any = {
             domain: 'counter',
           },
         },
-      },
-    },
-    zone: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the YAML-based zone configuration.',
-        fields: {},
-      },
-    },
-    automation: {
-      trigger: {
-        name: 'Trigger',
-        description: 'Trigger the actions of an automation.',
-        fields: {
-          skip_condition: {
-            name: 'Skip conditions',
-            description: 'Whether or not the conditions will be skipped.',
-            default: true,
-            selector: {
-              boolean: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      toggle: {
-        name: 'Toggle',
-        description: 'Toggle (enable / disable) an automation.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      turn_on: {
-        name: 'Turn on',
-        description: 'Enable an automation.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      turn_off: {
-        name: 'Turn off',
-        description: 'Disable an automation.',
-        fields: {
-          stop_actions: {
-            name: 'Stop actions',
-            description: 'Stop currently running actions.',
-            default: true,
-            selector: {
-              boolean: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'automation',
-          },
-        },
-      },
-      reload: {
-        name: 'Reload',
-        description: 'Reload the automation configuration.',
-        fields: {},
       },
     },
     media_player: {
@@ -9750,84 +9739,14 @@ const hass: any = {
         },
       },
     },
-    input_text: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the input_text configuration.',
-        fields: {},
-      },
-      set_value: {
-        name: 'Set',
-        description: 'Set the value of an input text entity.',
+    automation: {
+      trigger: {
+        name: 'Trigger',
+        description: 'Trigger the actions of an automation.',
         fields: {
-          value: {
-            name: 'Value',
-            description: 'The target value the entity should be set to.',
-            required: true,
-            example: 'This is an example text',
-            selector: {
-              text: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_text',
-          },
-        },
-      },
-    },
-    input_button: {
-      reload: {
-        name: '',
-        description: '',
-        fields: {},
-      },
-      press: {
-        name: 'Press',
-        description: 'Press the input button entity.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_button',
-          },
-        },
-      },
-    },
-    input_select: {
-      reload: {
-        name: 'Reload',
-        description: 'Reload the input_select configuration.',
-        fields: {},
-      },
-      select_option: {
-        name: 'Select',
-        description: 'Select an option of an input select entity.',
-        fields: {
-          option: {
-            name: 'Option',
-            description: 'Option to be selected.',
-            required: true,
-            example: '"Item A"',
-            selector: {
-              text: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      select_next: {
-        name: 'Next',
-        description: 'Select the next options of an input select entity.',
-        fields: {
-          cycle: {
-            name: 'Cycle',
-            description:
-              'If the option should cycle from the last to the first.',
+          skip_condition: {
+            name: 'Skip conditions',
+            description: 'Whether or not the conditions will be skipped.',
             default: true,
             selector: {
               boolean: null,
@@ -9836,18 +9755,37 @@ const hass: any = {
         },
         target: {
           entity: {
-            domain: 'input_select',
+            domain: 'automation',
           },
         },
       },
-      select_previous: {
-        name: 'Previous',
-        description: 'Select the previous options of an input select entity.',
+      toggle: {
+        name: 'Toggle',
+        description: 'Toggle (enable / disable) an automation.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'automation',
+          },
+        },
+      },
+      turn_on: {
+        name: 'Turn on',
+        description: 'Enable an automation.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'automation',
+          },
+        },
+      },
+      turn_off: {
+        name: 'Turn off',
+        description: 'Disable an automation.',
         fields: {
-          cycle: {
-            name: 'Cycle',
-            description:
-              'If the option should cycle from the first to the last.',
+          stop_actions: {
+            name: 'Stop actions',
+            description: 'Stop currently running actions.',
             default: true,
             selector: {
               boolean: null,
@@ -9856,104 +9794,14 @@ const hass: any = {
         },
         target: {
           entity: {
-            domain: 'input_select',
+            domain: 'automation',
           },
         },
       },
-      select_first: {
-        name: 'First',
-        description: 'Select the first option of an input select entity.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      select_last: {
-        name: 'Last',
-        description: 'Select the last option of an input select entity.',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-      set_options: {
-        name: 'Set options',
-        description: 'Set the options of an input select entity.',
-        fields: {
-          options: {
-            name: 'Options',
-            description: 'Options for the input select entity.',
-            required: true,
-            example: '["Item A", "Item B", "Item C"]',
-            selector: {
-              object: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_select',
-          },
-        },
-      },
-    },
-    input_datetime: {
       reload: {
         name: 'Reload',
-        description: 'Reload the input_datetime configuration.',
+        description: 'Reload the automation configuration.',
         fields: {},
-      },
-      set_datetime: {
-        name: 'Set',
-        description:
-          'This can be used to dynamically set the date and/or time.',
-        fields: {
-          date: {
-            name: 'Date',
-            description: 'The target date the entity should be set to.',
-            example: '"2019-04-20"',
-            selector: {
-              text: null,
-            },
-          },
-          time: {
-            name: 'Time',
-            description: 'The target time the entity should be set to.',
-            example: '"05:04:20"',
-            selector: {
-              time: null,
-            },
-          },
-          datetime: {
-            name: 'Date & Time',
-            description: 'The target date & time the entity should be set to.',
-            example: '"2019-04-20 05:04:20"',
-            selector: {
-              text: null,
-            },
-          },
-          timestamp: {
-            name: 'Timestamp',
-            description:
-              'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
-            selector: {
-              number: {
-                min: 0,
-                max: 9223372036854776000,
-                mode: 'box',
-              },
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'input_datetime',
-          },
-        },
       },
     },
     remote: {
@@ -10152,63 +10000,220 @@ const hass: any = {
         },
       },
     },
-    tts: {
-      google_translate_say: {
-        name: 'Say an TTS message with google_translate',
-        description:
-          'Say something using text-to-speech on a media player with google_translate.',
+    input_select: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_select configuration.',
+        fields: {},
+      },
+      select_option: {
+        name: 'Select',
+        description: 'Select an option of an input select entity.',
         fields: {
-          entity_id: {
-            name: 'Entity',
-            description: 'Name(s) of media player entities.',
+          option: {
+            name: 'Option',
+            description: 'Option to be selected.',
             required: true,
-            selector: {
-              entity: {
-                domain: 'media_player',
-              },
-            },
-          },
-          message: {
-            name: 'Message',
-            description: 'Text to speak on devices.',
-            example: 'My name is hanna',
-            required: true,
+            example: '"Item A"',
             selector: {
               text: null,
             },
           },
-          cache: {
-            name: 'Cache',
-            description: 'Control file cache of this message.',
-            default: false,
+        },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_next: {
+        name: 'Next',
+        description: 'Select the next options of an input select entity.',
+        fields: {
+          cycle: {
+            name: 'Cycle',
+            description:
+              'If the option should cycle from the last to the first.',
+            default: true,
             selector: {
               boolean: null,
             },
           },
-          language: {
-            name: 'Language',
-            description: 'Language to use for speech generation.',
-            example: 'ru',
+        },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_previous: {
+        name: 'Previous',
+        description: 'Select the previous options of an input select entity.',
+        fields: {
+          cycle: {
+            name: 'Cycle',
+            description:
+              'If the option should cycle from the first to the last.',
+            default: true,
             selector: {
-              text: null,
+              boolean: null,
             },
           },
+        },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_first: {
+        name: 'First',
+        description: 'Select the first option of an input select entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      select_last: {
+        name: 'Last',
+        description: 'Select the last option of an input select entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
+      },
+      set_options: {
+        name: 'Set options',
+        description: 'Set the options of an input select entity.',
+        fields: {
           options: {
             name: 'Options',
-            description:
-              'A dictionary containing platform-specific options. Optional depending on the platform.',
-            advanced: true,
-            example: 'platform specific',
+            description: 'Options for the input select entity.',
+            required: true,
+            example: '["Item A", "Item B", "Item C"]',
             selector: {
               object: null,
             },
           },
         },
+        target: {
+          entity: {
+            domain: 'input_select',
+          },
+        },
       },
-      clear_cache: {
-        name: 'Clear TTS cache',
-        description: 'Remove all text-to-speech cache files and RAM cache.',
+    },
+    input_button: {
+      reload: {
+        name: '',
+        description: '',
         fields: {},
+      },
+      press: {
+        name: 'Press',
+        description: 'Press the input button entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_button',
+          },
+        },
+      },
+    },
+    input_datetime: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_datetime configuration.',
+        fields: {},
+      },
+      set_datetime: {
+        name: 'Set',
+        description:
+          'This can be used to dynamically set the date and/or time.',
+        fields: {
+          date: {
+            name: 'Date',
+            description: 'The target date the entity should be set to.',
+            example: '"2019-04-20"',
+            selector: {
+              text: null,
+            },
+          },
+          time: {
+            name: 'Time',
+            description: 'The target time the entity should be set to.',
+            example: '"05:04:20"',
+            selector: {
+              time: null,
+            },
+          },
+          datetime: {
+            name: 'Date & Time',
+            description: 'The target date & time the entity should be set to.',
+            example: '"2019-04-20 05:04:20"',
+            selector: {
+              text: null,
+            },
+          },
+          timestamp: {
+            name: 'Timestamp',
+            description:
+              'The target date & time the entity should be set to as expressed by a UNIX timestamp.',
+            selector: {
+              number: {
+                min: 0,
+                max: 9223372036854776000,
+                mode: 'box',
+              },
+            },
+          },
+        },
+        target: {
+          entity: {
+            domain: 'input_datetime',
+          },
+        },
+      },
+    },
+    input_boolean: {
+      reload: {
+        name: 'Reload',
+        description: 'Reload the input_boolean configuration',
+        fields: {},
+      },
+      turn_on: {
+        name: 'Turn on',
+        description: 'Turn on an input boolean',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_boolean',
+          },
+        },
+      },
+      turn_off: {
+        name: 'Turn off',
+        description: 'Turn off an input boolean',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_boolean',
+          },
+        },
+      },
+      toggle: {
+        name: 'Toggle',
+        description: 'Toggle an input boolean',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'input_boolean',
+          },
+        },
       },
     },
     light: {
@@ -10900,39 +10905,88 @@ const hass: any = {
         },
       },
     },
-    input_boolean: {
+    tts: {
+      google_translate_say: {
+        name: 'Say an TTS message with google_translate',
+        description:
+          'Say something using text-to-speech on a media player with google_translate.',
+        fields: {
+          entity_id: {
+            name: 'Entity',
+            description: 'Name(s) of media player entities.',
+            required: true,
+            selector: {
+              entity: {
+                domain: 'media_player',
+              },
+            },
+          },
+          message: {
+            name: 'Message',
+            description: 'Text to speak on devices.',
+            example: 'My name is hanna',
+            required: true,
+            selector: {
+              text: null,
+            },
+          },
+          cache: {
+            name: 'Cache',
+            description: 'Control file cache of this message.',
+            default: false,
+            selector: {
+              boolean: null,
+            },
+          },
+          language: {
+            name: 'Language',
+            description: 'Language to use for speech generation.',
+            example: 'ru',
+            selector: {
+              text: null,
+            },
+          },
+          options: {
+            name: 'Options',
+            description:
+              'A dictionary containing platform-specific options. Optional depending on the platform.',
+            advanced: true,
+            example: 'platform specific',
+            selector: {
+              object: null,
+            },
+          },
+        },
+      },
+      clear_cache: {
+        name: 'Clear TTS cache',
+        description: 'Remove all text-to-speech cache files and RAM cache.',
+        fields: {},
+      },
+    },
+    input_text: {
       reload: {
         name: 'Reload',
-        description: 'Reload the input_boolean configuration',
+        description: 'Reload the input_text configuration.',
         fields: {},
       },
-      turn_on: {
-        name: 'Turn on',
-        description: 'Turn on an input boolean',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_boolean',
+      set_value: {
+        name: 'Set',
+        description: 'Set the value of an input text entity.',
+        fields: {
+          value: {
+            name: 'Value',
+            description: 'The target value the entity should be set to.',
+            required: true,
+            example: 'This is an example text',
+            selector: {
+              text: null,
+            },
           },
         },
-      },
-      turn_off: {
-        name: 'Turn off',
-        description: 'Turn off an input boolean',
-        fields: {},
         target: {
           entity: {
-            domain: 'input_boolean',
-          },
-        },
-      },
-      toggle: {
-        name: 'Toggle',
-        description: 'Toggle an input boolean',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'input_boolean',
+            domain: 'input_text',
           },
         },
       },
@@ -11539,38 +11593,6 @@ const hass: any = {
         },
       },
     },
-    switch: {
-      turn_off: {
-        name: 'Turn off',
-        description: 'Turn a switch off',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'switch',
-          },
-        },
-      },
-      turn_on: {
-        name: 'Turn on',
-        description: 'Turn a switch on',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'switch',
-          },
-        },
-      },
-      toggle: {
-        name: 'Toggle',
-        description: 'Toggles a switch state',
-        fields: {},
-        target: {
-          entity: {
-            domain: 'switch',
-          },
-        },
-      },
-    },
     climate: {
       turn_on: {
         name: 'Turn on',
@@ -11904,6 +11926,38 @@ const hass: any = {
         },
       },
     },
+    switch: {
+      turn_off: {
+        name: 'Turn off',
+        description: 'Turn a switch off',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'switch',
+          },
+        },
+      },
+      turn_on: {
+        name: 'Turn on',
+        description: 'Turn a switch on',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'switch',
+          },
+        },
+      },
+      toggle: {
+        name: 'Toggle',
+        description: 'Toggles a switch state',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'switch',
+          },
+        },
+      },
+    },
     ecobee: {
       create_vacation: {
         name: 'Create vacation',
@@ -12165,28 +12219,6 @@ const hass: any = {
         },
       },
     },
-    select: {
-      select_option: {
-        name: 'Select',
-        description: 'Select an option of an select entity.',
-        fields: {
-          option: {
-            name: 'Option',
-            description: 'Option to be selected.',
-            required: true,
-            example: '"Item A"',
-            selector: {
-              text: null,
-            },
-          },
-        },
-        target: {
-          entity: {
-            domain: 'select',
-          },
-        },
-      },
-    },
     number: {
       set_value: {
         name: 'Set',
@@ -12208,14 +12240,24 @@ const hass: any = {
         },
       },
     },
-    button: {
-      press: {
-        name: 'Press',
-        description: 'Press the button entity.',
-        fields: {},
+    select: {
+      select_option: {
+        name: 'Select',
+        description: 'Select an option of an select entity.',
+        fields: {
+          option: {
+            name: 'Option',
+            description: 'Option to be selected.',
+            required: true,
+            example: '"Item A"',
+            selector: {
+              text: null,
+            },
+          },
+        },
         target: {
           entity: {
-            domain: 'button',
+            domain: 'select',
           },
         },
       },
@@ -12362,6 +12404,18 @@ const hass: any = {
         target: {
           entity: {
             domain: 'vacuum',
+          },
+        },
+      },
+    },
+    button: {
+      press: {
+        name: 'Press',
+        description: 'Press the button entity.',
+        fields: {},
+        target: {
+          entity: {
+            domain: 'button',
           },
         },
       },
@@ -13580,42 +13634,8 @@ const hass: any = {
         "Press 'e' on any page to open the entity search dialog",
       'ui.tips.key_m_hint':
         "Press 'm' on any page to get the My Home Assistant link",
-      'component.media_player.state._.buffering': 'Buffering',
-      'component.media_player.state._.idle': 'Idle',
-      'component.media_player.state._.off': 'Off',
-      'component.media_player.state._.on': 'On',
-      'component.media_player.state._.paused': 'Paused',
-      'component.media_player.state._.playing': 'Playing',
-      'component.media_player.state._.standby': 'Standby',
-      'component.sensor.state._.off': 'Off',
-      'component.sensor.state._.on': 'On',
-      'component.switch.state._.off': 'Off',
-      'component.switch.state._.on': 'On',
-      'component.input_boolean.state._.off': 'Off',
-      'component.input_boolean.state._.on': 'On',
-      'component.automation.state._.off': 'Off',
-      'component.automation.state._.on': 'On',
-      'component.sun.state._.above_horizon': 'Above horizon',
-      'component.sun.state._.below_horizon': 'Below horizon',
-      'component.humidifier.state._.off': 'Off',
-      'component.humidifier.state._.on': 'On',
-      'component.weather.state._.clear-night': 'Clear, night',
-      'component.weather.state._.cloudy': 'Cloudy',
-      'component.weather.state._.exceptional': 'Exceptional',
-      'component.weather.state._.fog': 'Fog',
-      'component.weather.state._.hail': 'Hail',
-      'component.weather.state._.lightning': 'Lightning',
-      'component.weather.state._.lightning-rainy': 'Lightning, rainy',
-      'component.weather.state._.partlycloudy': 'Partly cloudy',
-      'component.weather.state._.pouring': 'Pouring',
-      'component.weather.state._.rainy': 'Rainy',
-      'component.weather.state._.snowy': 'Snowy',
-      'component.weather.state._.snowy-rainy': 'Snowy, rainy',
-      'component.weather.state._.sunny': 'Sunny',
-      'component.weather.state._.windy': 'Windy',
-      'component.weather.state._.windy-variant': 'Windy',
-      'component.remote.state._.off': 'Off',
-      'component.remote.state._.on': 'On',
+      'component.script.state._.off': 'Off',
+      'component.script.state._.on': 'On',
       'component.binary_sensor.state._.off': 'Off',
       'component.binary_sensor.state._.on': 'On',
       'component.binary_sensor.state.battery.off': 'Normal',
@@ -13672,8 +13692,19 @@ const hass: any = {
       'component.binary_sensor.state.vibration.on': 'Detected',
       'component.binary_sensor.state.window.off': 'Closed',
       'component.binary_sensor.state.window.on': 'Open',
-      'component.light.state._.off': 'Off',
-      'component.light.state._.on': 'On',
+      'component.humidifier.state._.off': 'Off',
+      'component.humidifier.state._.on': 'On',
+      'component.input_boolean.state._.off': 'Off',
+      'component.input_boolean.state._.on': 'On',
+      'component.climate.state._.auto': 'Auto',
+      'component.climate.state._.cool': 'Cool',
+      'component.climate.state._.dry': 'Dry',
+      'component.climate.state._.fan_only': 'Fan only',
+      'component.climate.state._.heat': 'Heat',
+      'component.climate.state._.heat_cool': 'Heat/Cool',
+      'component.climate.state._.off': 'Off',
+      'component.switch.state._.off': 'Off',
+      'component.switch.state._.on': 'On',
       'component.vacuum.state._.cleaning': 'Cleaning',
       'component.vacuum.state._.docked': 'Docked',
       'component.vacuum.state._.error': 'Error',
@@ -13682,25 +13713,54 @@ const hass: any = {
       'component.vacuum.state._.on': 'On',
       'component.vacuum.state._.paused': 'Paused',
       'component.vacuum.state._.returning': 'Returning to dock',
+      'component.remote.state._.off': 'Off',
+      'component.remote.state._.on': 'On',
+      'component.light.state._.off': 'Off',
+      'component.light.state._.on': 'On',
+      'component.media_player.state._.buffering': 'Buffering',
+      'component.media_player.state._.idle': 'Idle',
+      'component.media_player.state._.off': 'Off',
+      'component.media_player.state._.on': 'On',
+      'component.media_player.state._.paused': 'Paused',
+      'component.media_player.state._.playing': 'Playing',
+      'component.media_player.state._.standby': 'Standby',
+      'component.automation.state._.off': 'Off',
+      'component.automation.state._.on': 'On',
+      'component.sun.state._.above_horizon': 'Above horizon',
+      'component.sun.state._.below_horizon': 'Below horizon',
+      'component.person.state._.home': 'Home',
+      'component.person.state._.not_home': 'Away',
+      'component.weather.state._.clear-night': 'Clear, night',
+      'component.weather.state._.cloudy': 'Cloudy',
+      'component.weather.state._.exceptional': 'Exceptional',
+      'component.weather.state._.fog': 'Fog',
+      'component.weather.state._.hail': 'Hail',
+      'component.weather.state._.lightning': 'Lightning',
+      'component.weather.state._.lightning-rainy': 'Lightning, rainy',
+      'component.weather.state._.partlycloudy': 'Partly cloudy',
+      'component.weather.state._.pouring': 'Pouring',
+      'component.weather.state._.rainy': 'Rainy',
+      'component.weather.state._.snowy': 'Snowy',
+      'component.weather.state._.snowy-rainy': 'Snowy, rainy',
+      'component.weather.state._.sunny': 'Sunny',
+      'component.weather.state._.windy': 'Windy',
+      'component.weather.state._.windy-variant': 'Windy',
+      'component.sensor.state._.off': 'Off',
+      'component.sensor.state._.on': 'On',
+      'component.device_tracker.state._.home': 'Home',
+      'component.device_tracker.state._.not_home': 'Away',
       'component.timer.state._.active': 'Active',
       'component.timer.state._.idle': 'Idle',
       'component.timer.state._.paused': 'Paused',
       'component.camera.state._.idle': 'Idle',
       'component.camera.state._.recording': 'Recording',
       'component.camera.state._.streaming': 'Streaming',
-      'component.person.state._.home': 'Home',
-      'component.person.state._.not_home': 'Away',
-      'component.script.state._.off': 'Off',
-      'component.script.state._.on': 'On',
-      'component.climate.state._.auto': 'Auto',
-      'component.climate.state._.cool': 'Cool',
-      'component.climate.state._.dry': 'Dry',
-      'component.climate.state._.fan_only': 'Fan only',
-      'component.climate.state._.heat': 'Heat',
-      'component.climate.state._.heat_cool': 'Heat/Cool',
-      'component.climate.state._.off': 'Off',
-      'component.device_tracker.state._.home': 'Home',
-      'component.device_tracker.state._.not_home': 'Away',
+      'ui.panel.custom.external_panel.question_trust':
+        'Do you trust the external panel {name} at {link}?',
+      'ui.panel.custom.external_panel.complete_access':
+        'It will have access to all data in Home Assistant.',
+      'ui.panel.custom.external_panel.hide_message':
+        'Check docs for the panel_custom component to hide this message',
     },
   },
   translationMetadata: {

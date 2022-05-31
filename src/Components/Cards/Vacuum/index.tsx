@@ -1,19 +1,22 @@
 // import { LightCard as HomekitLightCard } from './VacuumCard'
 import { AccessoryCard } from 'src/Components/Cards/common/AccessoryCard'
 import { useModalHelper } from 'src/Components/Cards/common/hooks'
+import useStore from 'src/lib/useStore'
 // @ts-ignore
 import VacuumIcon from './vacuum.svg?component'
-import CardWrapper from '../common/CardWrapper'
 import VacuumModal from './VacuumModal'
 
 type VacuumCardProps = {
-  hass: any
   entityId: string
 }
 
-const Vacuum = ({ hass, entityId }: VacuumCardProps) => {
+const Vacuum = ({ entityId }: VacuumCardProps) => {
+  const { states, sendSocket } = useStore((state: any) => ({
+    states: state.states,
+    sendSocket: state.sendSocket,
+  }))
   const { showModal, openModal, closeModal } = useModalHelper()
-  const entity = hass.states[entityId]
+  const entity = states[entityId]
 
   const { friendly_name } = entity.attributes
   // check what this actually will be.
@@ -21,13 +24,13 @@ const Vacuum = ({ hass, entityId }: VacuumCardProps) => {
 
   const onPress = () => {
     if (isActive) {
-      hass.callService('homeassistant', 'turn_off', {
-        entity_id: entityId,
-      })
+      // hass.callService('homeassistant', 'turn_off', {
+      //   entity_id: entityId,
+      // })
     } else {
-      hass.callService('homeassistant', 'turn_on', {
-        entity_id: entityId,
-      })
+      // hass.callService('homeassistant', 'turn_on', {
+      //   entity_id: entityId,
+      // })
     }
   }
 
@@ -47,4 +50,4 @@ const Vacuum = ({ hass, entityId }: VacuumCardProps) => {
   )
 }
 
-export const VacuumCard = CardWrapper(Vacuum)
+export const VacuumCard = Vacuum

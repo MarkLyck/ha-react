@@ -21,6 +21,7 @@
     "antd": "4.20.6",
     "axios": "0.27.2",
     "framer-motion": "6.3.4",
+    "home-assistant-js-websocket": "^7.1.0",
     "homekit-react-components": "1.0.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",

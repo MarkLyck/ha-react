@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import { LightCard as HomekitLightCard } from './LightCard'
-import CardWrapper from '../common/CardWrapper'
+import useStore from 'src/lib/useStore'
 
 type HassLightCardProps = {
-  hass: any
   entityId: string
 }
 
-const Light = ({ hass, entityId }: HassLightCardProps) => {
-  const entity = hass.states[entityId]
+const Light = ({ entityId }: HassLightCardProps) => {
+  const { states, sendSocket } = useStore((state: any) => ({
+    states: state.states,
+    sendSocket: state.sendSocket,
+  }))
+  const entity = states[entityId]
   const [isOn, setIsOn] = useState(
     entity.state && entity.state !== 'off' && entity.state != 'unavailable'
   )
@@ -17,17 +20,25 @@ const Light = ({ hass, entityId }: HassLightCardProps) => {
 
   function handleToggle() {
     setIsOn(!isOn)
-    hass.callService('light', 'toggle', {
-      entity_id: entity.entity_id,
+    sendSocket({
+      domain: 'light',
+      service: 'toggle',
+      service_data: { entity_id: entityId },
+      type: 'call_service',
     })
   }
 
   function handlePercentageChange(value: number) {
     const newBrightness = Math.floor((value * 255) / 100)
     setBrightness(newBrightness)
-    hass.callService('light', 'turn_on', {
-      entity_id: entityId,
-      brightness: newBrightness,
+    sendSocket({
+      domain: 'light',
+      service: 'turn_on',
+      service_data: {
+        entity_id: entityId,
+        brightness_pct: Math.floor((newBrightness * 100) / 255),
+      },
+      type: 'call_service',
     })
   }
 
@@ -45,4 +56,4 @@ const Light = ({ hass, entityId }: HassLightCardProps) => {
   )
 }
 
-export const LightCard = CardWrapper(Light)
+export const LightCard = Light

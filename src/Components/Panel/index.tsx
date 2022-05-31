@@ -21,7 +21,6 @@ type PanelProps = {
 }
 
 const Panel = (props: PanelProps) => {
-  console.log('🔈 ~ Panel props', props)
   return (
     <PanelContainer>
       <TimeView />

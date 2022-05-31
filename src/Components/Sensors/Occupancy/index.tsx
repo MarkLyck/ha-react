@@ -1,32 +1,20 @@
-import { Alert } from 'antd'
 import styled from '@emotion/styled'
-import { ErrorBoundary } from 'react-error-boundary'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SensorCard from '../Card'
+import useStore from 'src/lib/useStore'
 
 const Text = styled.b`
   margin-left: 8px;
 `
 
 type OccupancySensorProps = {
-  hass: any
   entityId: string
 }
 
-const Sensor = ({ hass, entityId }: OccupancySensorProps) => {
-  const entity = hass.states[entityId]
-  if (!entityId) {
-    return <Alert message="Missing entityId" type="error" showIcon />
-  }
-  if (!entity) {
-    return (
-      <Alert
-        message={`Entity with id "${entityId}" not found`}
-        type="error"
-        showIcon
-      />
-    )
-  }
+export const OccupancySensor = ({ entityId }: OccupancySensorProps) => {
+  const states = useStore((state: any) => state?.states)
+  const entity = states[entityId]
+  if (!entity) return null
 
   const occupied = entity.state
 
@@ -37,11 +25,3 @@ const Sensor = ({ hass, entityId }: OccupancySensorProps) => {
     </SensorCard>
   )
 }
-
-export const OccupancySensor = (props: OccupancySensorProps) => (
-  <ErrorBoundary
-    fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
-  >
-    <Sensor {...props} />
-  </ErrorBoundary>
-)

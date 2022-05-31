@@ -1,15 +1,18 @@
 import { useState } from 'react'
-import CardWrapper from '../common/CardWrapper'
+import useStore from 'src/lib/useStore'
 
 import { ThermostatCard as HomekitThermostatCard } from './ThermostatCard'
 
 type ThermostatCardCardProps = {
-  hass: any
   entityId: string
 }
 
-const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
-  const entity = hass.states[entityId]
+const Thermostat = ({ entityId }: ThermostatCardCardProps) => {
+  const { states, sendSocket } = useStore((state: any) => ({
+    states: state.states,
+    sendSocket: state.sendSocket,
+  }))
+  const entity = states[entityId]
   const [currentMode, setCurrentMode] = useState(entity?.state || 'off')
   const [targetTemperature, setTargetTemperature] = useState(
     entity?.attributes?.temperature || 0
@@ -17,9 +20,11 @@ const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
 
   const handleTemperatureChange = (value: number) => {
     setTargetTemperature(value)
-    hass.callService('climate', 'set_temperature', {
-      entity_id: entity.entity_id,
-      temperature: Math.floor(value),
+    sendSocket({
+      domain: 'climate',
+      service: 'set_temperature',
+      service_data: { entity_id: entityId, temperature: Math.floor(value) },
+      type: 'call_service',
     })
   }
 
@@ -27,11 +32,15 @@ const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
     let newTemp = Math.floor(entity.attributes.current_temperature)
     setCurrentMode(value)
     setTargetTemperature(newTemp)
-
-    hass.callService('climate', 'set_hvac_mode', {
-      entity_id: entity.entity_id,
-      hvac_mode: value,
-      temperature: newTemp,
+    sendSocket({
+      domain: 'climate',
+      service: 'set_hvac_mode',
+      service_data: {
+        entity_id: entityId,
+        hvac_mode: value,
+        temperature: newTemp,
+      },
+      type: 'call_service',
     })
   }
 
@@ -47,4 +56,4 @@ const Thermostat = ({ hass, entityId }: ThermostatCardCardProps) => {
   )
 }
 
-export const ThermostatCard = CardWrapper(Thermostat)
+export const ThermostatCard = Thermostat

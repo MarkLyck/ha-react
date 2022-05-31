@@ -1,9 +1,9 @@
 import { ThemeProvider, Global } from '@emotion/react'
 import theme from 'src/lib/themes'
-import Controls from './Components/Controls'
 import globalStyles from './lib/styles'
 import { QueryClientProvider } from 'react-query'
 import queryClient from './queries/client'
+import Areas from './Components/Areas'
 
 type DashboardProps = {
   hass: any
@@ -18,7 +18,7 @@ const Dashboard = (props: DashboardProps) => {
       <ThemeProvider theme={theme}>
         <>
           <div className="App">
-            <Controls {...props} />
+            <Areas />
           </div>
           <Global styles={globalStyles} />
         </>

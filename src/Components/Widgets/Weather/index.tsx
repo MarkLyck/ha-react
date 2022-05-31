@@ -18,7 +18,6 @@ const WeatherCardContainer = styled(CardContainer, {
 // }
 
 export const WeatherCard = (props: any) => {
-  console.log('🔈 ~ props', props)
   // const [weather, setWeather] = useState()
 
   // useEffect(() => {

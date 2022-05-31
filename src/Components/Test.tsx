@@ -22,7 +22,6 @@ const Test = ({ hass }: any) => {
   const [service, setService] = useState('turn_on')
   const [entityId, setEntityId] = useState('vacuum.vacuum')
   const [extraData, setExtraData] = useState('')
-  console.log('🔈 ~ extraData', extraData)
 
   const onSubmit = () => {
     const jsonData = extraData ? JSON.parse(extraData) : {}

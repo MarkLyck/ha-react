@@ -9,6 +9,7 @@ import entityMock from '../mocks/entity.json'
 import './index.css'
 import 'antd/dist/antd.css'
 import 'src/lib/iconsLibrary'
+import 'src/lib/hass'
 
 if (window.location.hostname.includes('localhost')) {
   const container = document.getElementById('root')
