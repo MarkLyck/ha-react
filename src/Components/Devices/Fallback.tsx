@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import useStore from 'src/lib/useStore'
-import { AccessoryCard } from 'src/Components/Tiles/common/AccessoryCard'
+import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
 
 type FallbackTileProps = {
   entityId: string

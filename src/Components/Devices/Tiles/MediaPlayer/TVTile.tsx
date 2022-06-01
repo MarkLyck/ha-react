@@ -1,25 +1,26 @@
-import { AccessoryCard } from 'src/Components/Tiles/common/AccessoryCard'
+import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
 import useStore from 'src/lib/useStore'
+import Icon from './AppleTV.svg?component'
 
-const AudioTile = ({ entity }: any) => {
+const TVTile = ({ entity }: any) => {
   const { sendSocket } = useStore()
-  const INACTIVE_STATES = ['off', 'idle', 'paused']
+  const INACTIVE_STATES = ['standby', 'off']
   const isActive = !INACTIVE_STATES.includes(entity.state)
 
   const { friendly_name } = entity.attributes
 
   const onPress = async () => {
-    if (!isActive) {
+    if (isActive) {
       await sendSocket({
         domain: 'media_player',
-        service: 'media_play',
+        service: 'turn_off',
         service_data: { entity_id: entity.entity_id },
         type: 'call_service',
       })
     } else {
       await sendSocket({
         domain: 'media_player',
-        service: 'media_stop',
+        service: 'turn_on',
         service_data: { entity_id: entity.entity_id },
         type: 'call_service',
       })
@@ -29,6 +30,8 @@ const AudioTile = ({ entity }: any) => {
   return (
     <>
       <AccessoryCard
+        iconActive={<Icon />}
+        iconInactive={<Icon />}
         onPress={onPress}
         name={friendly_name}
         isActive={isActive}
@@ -38,4 +41,4 @@ const AudioTile = ({ entity }: any) => {
   )
 }
 
-export default AudioTile
+export default TVTile

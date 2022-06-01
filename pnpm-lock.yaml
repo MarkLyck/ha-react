@@ -9,7 +9,6 @@ specifiers:
   '@fortawesome/pro-regular-svg-icons': ^6.1.1
   '@fortawesome/react-fontawesome': 0.1.18
   '@honkhonk/vite-plugin-svgr': 1.1.0
-  '@stitches/react': 1.2.8
   '@types/node': 17.0.36
   '@types/react': 18.0.0
   '@types/react-dom': 18.0.0
@@ -41,7 +40,6 @@ dependencies:
   '@fortawesome/pro-light-svg-icons': 6.1.1
   '@fortawesome/pro-regular-svg-icons': 6.1.1
   '@fortawesome/react-fontawesome': 0.1.18_ale3w4t32h5v6dbzn5wc64akdu
-  '@stitches/react': 1.2.8_react@18.0.0
   antd: 4.20.6_zpnidt7m3osuk7shl3s4oenomq
   axios: 0.27.2
   dayjs: 1.11.2
@@ -646,14 +644,6 @@ packages:
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
     engines: {node: '>=6'}
     dev: true
-
-  /@stitches/react/1.2.8_react@18.0.0:
-    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
-    peerDependencies:
-      react: '>= 16.3.0'
-    dependencies:
-      react: 18.0.0
-    dev: false
 
   /@svgr/babel-plugin-add-jsx-attribute/5.4.0:
     resolution: {integrity: sha512-ZFf2gs/8/6B8PnSofI0inYXr2SDNTDScPXhN7k5EqD4aZ3gi6u+rbmZHVB8IM3wDyx8ntKACZbtXSm7oZGRqVg==}

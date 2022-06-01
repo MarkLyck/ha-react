@@ -5,7 +5,7 @@ import {
   ThermostatCard,
   VacuumCard,
   MediaPlayerTile,
-} from 'src/Components/Tiles'
+} from 'src/Components/Devices/Tiles'
 
 import FallbackTile from './Fallback'
 

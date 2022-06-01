@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { AccessoryCard } from 'src/Components/Tiles/common/AccessoryCard'
-import { useModalHelper } from 'src/Components/Tiles/common/hooks'
+import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
+import { useModalHelper } from 'src/Components/Devices/Tiles/common/hooks'
 import useStore from 'src/lib/useStore'
 // @ts-ignore
 import VacuumIcon from './vacuum.svg?component'
