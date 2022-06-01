@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useStore from 'src/lib/useStore'
 import { ModalHeader } from '../common/modals'
 // @ts-ignore
-import VacuumIcon from './vacuum.svg'
+import VacuumIcon from 'src/assets/icons/devices/vacuum.svg'
 import { Battery } from 'src/ui-components'
 
 const StyledModal = styled(Modal)`
@@ -42,7 +42,7 @@ type VacuumModalProps = {
 const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
   const { entity_id } = entity
   const { friendly_name, battery_level, fan_speed } = entity.attributes
-  const { sendSocket } = useStore()
+  const sendSocket = useStore((state: any) => state.sendSocket)
 
   return (
     <StyledModal visible={visible} onCancel={close} footer={null}>
@@ -50,6 +50,7 @@ const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
         title={friendly_name}
         subtitle={entity.state}
         close={close}
+        // @ts-ignore
         icon={<VacuumIcon style={{ width: 'auto' }} />}
       />
       <Container>
