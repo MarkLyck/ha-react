@@ -30,6 +30,7 @@ specifiers:
   typescript: 4.6.3
   vite: 2.9.9
   vite-plugin-react-svg: 0.2.0
+  vite-plugin-svgr: ^2.1.0
   zustand: 4.0.0-rc.1
 
 dependencies:
@@ -65,6 +66,7 @@ devDependencies:
   typescript: 4.6.3
   vite: 2.9.9
   vite-plugin-react-svg: 0.2.0_vite@2.9.9
+  vite-plugin-svgr: 2.1.0_vite@2.9.9
 
 packages:
 
@@ -650,9 +652,27 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /@svgr/babel-plugin-add-jsx-attribute/6.0.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-MdPdhdWLtQsjd29Wa4pABdhWbaRMACdM1h31BY+c6FghTZqNGT7pEYdBoaGeKtdTOBC/XNFQaKVj+r/Ei2ryWA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
+    dev: true
+
   /@svgr/babel-plugin-remove-jsx-attribute/5.4.0:
     resolution: {integrity: sha512-yaS4o2PgUtwLFGTKbsiAy6D0o3ugcUhWK0Z45umJ66EPWunAz9fuFw2gJuje6wqQvQWOTJvIahUwndOXb7QCPg==}
     engines: {node: '>=10'}
+    dev: true
+
+  /@svgr/babel-plugin-remove-jsx-attribute/6.0.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-aVdtfx9jlaaxc3unA6l+M9YRnKIZjOhQPthLKqmTXC8UVkBLDRGwPKo+r8n3VZN8B34+yVajzPTZ+ptTSuZZCw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
     dev: true
 
   /@svgr/babel-plugin-remove-jsx-empty-expression/5.0.1:
@@ -660,9 +680,27 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /@svgr/babel-plugin-remove-jsx-empty-expression/6.0.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-Ccj42ApsePD451AZJJf1QzTD1B/BOU392URJTeXFxSK709i0KUsGtbwyiqsKu7vsYxpTM0IA5clAKDyf9RCZyA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
+    dev: true
+
   /@svgr/babel-plugin-replace-jsx-attribute-value/5.0.1:
     resolution: {integrity: sha512-PoiE6ZD2Eiy5mK+fjHqwGOS+IXX0wq/YDtNyIgOrc6ejFnxN4b13pRpiIPbtPwHEc+NT2KCjteAcq33/F1Y9KQ==}
     engines: {node: '>=10'}
+    dev: true
+
+  /@svgr/babel-plugin-replace-jsx-attribute-value/6.0.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-88V26WGyt1Sfd1emBYmBJRWMmgarrExpKNVmI9vVozha4kqs6FzQJ/Kp5+EYli1apgX44518/0+t9+NU36lThQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
     dev: true
 
   /@svgr/babel-plugin-svg-dynamic-title/5.4.0:
@@ -670,9 +708,27 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /@svgr/babel-plugin-svg-dynamic-title/6.0.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-F7YXNLfGze+xv0KMQxrl2vkNbI9kzT9oDK55/kUuymh1ACyXkMV+VZWX1zEhSTfEKh7VkHVZGmVtHg8eTZ6PRg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
+    dev: true
+
   /@svgr/babel-plugin-svg-em-dimensions/5.4.0:
     resolution: {integrity: sha512-cPzDbDA5oT/sPXDCUYoVXEmm3VIoAWAPT6mSPTJNbQaBNUuEKVKyGH93oDY4e42PYHRW67N5alJx/eEol20abw==}
     engines: {node: '>=10'}
+    dev: true
+
+  /@svgr/babel-plugin-svg-em-dimensions/6.0.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-+rghFXxdIqJNLQK08kwPBD3Z22/0b2tEZ9lKiL/yTfuyj1wW8HUXu4bo/XkogATIYuXSghVQOOCwURXzHGKyZA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
     dev: true
 
   /@svgr/babel-plugin-transform-react-native-svg/5.4.0:
@@ -680,9 +736,27 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /@svgr/babel-plugin-transform-react-native-svg/6.0.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-VaphyHZ+xIKv5v0K0HCzyfAaLhPGJXSk2HkpYfXIOKb7DjLBv0soHDxNv6X0vr2titsxE7klb++u7iOf7TSrFQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
+    dev: true
+
   /@svgr/babel-plugin-transform-svg-component/5.5.0:
     resolution: {integrity: sha512-q4jSH1UUvbrsOtlo/tKcgSeiCHRSBdXoIoqX1pgcKK/aU3JD27wmMKwGtpB8qRYUYoyXvfGxUVKchLuR5pB3rQ==}
     engines: {node: '>=10'}
+    dev: true
+
+  /@svgr/babel-plugin-transform-svg-component/6.2.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-bhYIpsORb++wpsp91fymbFkf09Z/YEKR0DnFjxvN+8JHeCUD2unnh18jIMKnDJTWtvpTaGYPXELVe4OOzFI0xg==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
     dev: true
 
   /@svgr/babel-preset/5.5.0:
@@ -699,11 +773,39 @@ packages:
       '@svgr/babel-plugin-transform-svg-component': 5.5.0
     dev: true
 
+  /@svgr/babel-preset/6.2.0_@babel+core@7.18.2:
+    resolution: {integrity: sha512-4WQNY0J71JIaL03DRn0vLiz87JXx0b9dYm2aA8XHlQJQoixMl4r/soYHm8dsaJZ3jWtkCiOYy48dp9izvXhDkQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.2
+      '@svgr/babel-plugin-add-jsx-attribute': 6.0.0_@babel+core@7.18.2
+      '@svgr/babel-plugin-remove-jsx-attribute': 6.0.0_@babel+core@7.18.2
+      '@svgr/babel-plugin-remove-jsx-empty-expression': 6.0.0_@babel+core@7.18.2
+      '@svgr/babel-plugin-replace-jsx-attribute-value': 6.0.0_@babel+core@7.18.2
+      '@svgr/babel-plugin-svg-dynamic-title': 6.0.0_@babel+core@7.18.2
+      '@svgr/babel-plugin-svg-em-dimensions': 6.0.0_@babel+core@7.18.2
+      '@svgr/babel-plugin-transform-react-native-svg': 6.0.0_@babel+core@7.18.2
+      '@svgr/babel-plugin-transform-svg-component': 6.2.0_@babel+core@7.18.2
+    dev: true
+
   /@svgr/core/5.5.0:
     resolution: {integrity: sha512-q52VOcsJPvV3jO1wkPtzTuKlvX7Y3xIcWRpCMtBF3MrteZJtBfQw/+u0B1BHy5ColpQc1/YVTrPEtSYIMNZlrQ==}
     engines: {node: '>=10'}
     dependencies:
       '@svgr/plugin-jsx': 5.5.0
+      camelcase: 6.3.0
+      cosmiconfig: 7.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@svgr/core/6.2.1:
+    resolution: {integrity: sha512-NWufjGI2WUyrg46mKuySfviEJ6IxHUOm/8a3Ph38VCWSp+83HBraCQrpEM3F3dB6LBs5x8OElS8h3C0oOJaJAA==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@svgr/plugin-jsx': 6.2.1_@svgr+core@6.2.1
       camelcase: 6.3.0
       cosmiconfig: 7.0.1
     transitivePeerDependencies:
@@ -717,6 +819,14 @@ packages:
       '@babel/types': 7.18.2
     dev: true
 
+  /@svgr/hast-util-to-babel-ast/6.2.1:
+    resolution: {integrity: sha512-pt7MMkQFDlWJVy9ULJ1h+hZBDGFfSCwlBNW1HkLnVi7jUhyEXUaGYWi1x6bM2IXuAR9l265khBT4Av4lPmaNLQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@babel/types': 7.18.2
+      entities: 3.0.1
+    dev: true
+
   /@svgr/plugin-jsx/5.5.0:
     resolution: {integrity: sha512-V/wVh33j12hGh05IDg8GpIUXbjAPnTdPTKuP4VNLggnwaHMPNQNae2pRnyTAILWCQdz5GyMqtO488g7CKM8CBA==}
     engines: {node: '>=10'}
@@ -724,6 +834,21 @@ packages:
       '@babel/core': 7.18.2
       '@svgr/babel-preset': 5.5.0
       '@svgr/hast-util-to-babel-ast': 5.5.0
+      svg-parser: 2.0.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@svgr/plugin-jsx/6.2.1_@svgr+core@6.2.1:
+    resolution: {integrity: sha512-u+MpjTsLaKo6r3pHeeSVsh9hmGRag2L7VzApWIaS8imNguqoUwDq/u6U/NDmYs/KAsrmtBjOEaAAPbwNGXXp1g==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@svgr/core': ^6.0.0
+    dependencies:
+      '@babel/core': 7.18.2
+      '@svgr/babel-preset': 6.2.0_@babel+core@7.18.2
+      '@svgr/core': 6.2.1
+      '@svgr/hast-util-to-babel-ast': 6.2.1
       svg-parser: 2.0.4
     transitivePeerDependencies:
       - supports-color
@@ -1552,6 +1677,11 @@ packages:
 
   /entities/2.2.0:
     resolution: {integrity: sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==}
+    dev: true
+
+  /entities/3.0.1:
+    resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==}
+    engines: {node: '>=0.12'}
     dev: true
 
   /env-paths/2.2.1:
@@ -2385,7 +2515,7 @@ packages:
     dev: true
 
   /is-arrayish/0.2.1:
-    resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=}
+    resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
 
   /is-bigint/1.0.4:
     resolution: {integrity: sha512-zB9CruMamjym81i2JZ3UMn54PKGsQzsJeo6xvN3HJJ4CAsQNB6iRutp2To77OfCNuoxspsIhzaPoO1zyCEhFOg==}
@@ -4383,6 +4513,17 @@ packages:
       vite: 2.9.9
     transitivePeerDependencies:
       - '@babel/core'
+      - supports-color
+    dev: true
+
+  /vite-plugin-svgr/2.1.0_vite@2.9.9:
+    resolution: {integrity: sha512-3J19p8pmGfRt297yvc8Fd36+0AC0sLgA/gZYQDjotNAhv3CmSTQyviXIrDbwiRFVrsZjSlHJH1vca7OGFmjDcA==}
+    peerDependencies:
+      vite: ^2.6.0
+    dependencies:
+      '@svgr/core': 6.2.1
+      vite: 2.9.9
+    transitivePeerDependencies:
       - supports-color
     dev: true
 

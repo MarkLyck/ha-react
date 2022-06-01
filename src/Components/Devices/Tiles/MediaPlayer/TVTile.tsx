@@ -1,6 +1,6 @@
 import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
 import useStore from 'src/lib/useStore'
-import Icon from './AppleTV.svg?component'
+import Icon from 'src/assets/icons/AppleTV.svg'
 
 const TVTile = ({ entity }: any) => {
   const { sendSocket } = useStore()
