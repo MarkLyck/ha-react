@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import styled from '@emotion/styled'
 import { Modal } from 'antd'
 // @ts-ignore
-import LightIconSvg from './light-bulb.svg?component'
+import LightIconSvg from './light-bulb.svg'
 import { ModalContent, ModalHeader } from '../../common/modals'
 import { Slider, Switch } from '../../common'
 import { Capabilities } from '../../common/types'

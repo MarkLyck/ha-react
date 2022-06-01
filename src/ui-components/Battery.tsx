@@ -24,9 +24,13 @@ type BatteryProps = {
   isCharging?: boolean
 }
 
-export const Battery = ({ percentage }: BatteryProps) => (
-  <Container percentage={percentage}>
-    <FontAwesomeIcon icon={['far', 'battery-full']} />
-    {percentage.toFixed(0)}%
-  </Container>
-)
+export const Battery = ({ percentage }: BatteryProps) => {
+  if (percentage === null || isNaN(percentage)) return null
+
+  return (
+    <Container percentage={percentage}>
+      <FontAwesomeIcon icon={['far', 'battery-full']} />
+      {percentage.toFixed(0)}%
+    </Container>
+  )
+}

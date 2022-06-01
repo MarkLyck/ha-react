@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useStore from 'src/lib/useStore'
 import { ModalHeader } from '../common/modals'
 // @ts-ignore
-import VacuumIcon from './vacuum.svg?component'
+import VacuumIcon from './vacuum.svg'
 import { Battery } from 'src/ui-components'
 
 const StyledModal = styled(Modal)`

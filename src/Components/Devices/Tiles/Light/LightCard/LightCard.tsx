@@ -1,11 +1,12 @@
 import React, { FC, ReactNode } from 'react'
 
 // @ts-ignore
-import LightIconSvg from './light-bulb.svg?component'
 import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
 import { useModalHelper } from 'src/Components/Devices/Tiles/common/hooks'
 import { Capabilities } from 'src/Components/Devices/Tiles/common/types'
 import { LightCardModal } from './LightCardModal'
+import LightBulbIcon from 'src/assets/icons/devices/light_bulb.svg'
+import LedStripIcon from 'src/assets/icons/devices/led_strip.svg'
 
 interface LightCardProps {
   /** Custom icon for active light */
@@ -46,8 +47,8 @@ export const LightCard: FC<LightCardProps> = ({
   return (
     <React.Fragment>
       <AccessoryCard
-        iconActive={iconActive ? iconActive : <LightIconSvg />}
-        iconInactive={iconInactive ? iconInactive : <LightIconSvg />}
+        iconActive={iconActive ? iconActive : <LightBulbIcon />}
+        iconInactive={iconInactive ? iconInactive : <LightBulbIcon />}
         name={name}
         state={stateLabel}
         isActive={on}

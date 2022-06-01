@@ -12,6 +12,7 @@ const Light = ({ entityId }: HassLightCardProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
+
   const [isOn, setIsOn] = useState(
     entity.state && entity.state !== 'off' && entity.state != 'unavailable'
   )
@@ -20,7 +21,7 @@ const Light = ({ entityId }: HassLightCardProps) => {
 
   const handleToggle = async () => {
     setIsOn(!isOn)
-    const result = await sendSocket({
+    await sendSocket({
       domain: 'light',
       service: 'toggle',
       service_data: { entity_id: entityId },

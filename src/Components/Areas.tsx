@@ -20,9 +20,9 @@ const Sensors = styled.div`
 `
 
 const Devices = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
+  grid-gap: 12px;
 `
 
 const Loading = styled.div`
@@ -34,10 +34,18 @@ const Loading = styled.div`
 `
 
 const SENSOR_TYPES = ['binary_sensor', 'sensor']
-const DEVICE_TYPES = ['light', 'climate', 'vacuum', 'button', 'media_player']
+const DEVICE_TYPES = [
+  'light',
+  'climate',
+  'vacuum',
+  'button',
+  'media_player',
+  'switch',
+]
 
 const Areas = () => {
   const state = useStore()
+  console.log('🔈 ~ state', state)
   const { areas } = useStore((state: any) => ({
     areas: state.areas,
   }))

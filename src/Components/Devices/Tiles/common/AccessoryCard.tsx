@@ -6,19 +6,11 @@ import { ActionableTileContainer, TileIcon, TileName, TileState } from './Tile'
 
 export const AccessoryCardContainer = styled(ActionableTileContainer)`
   position: relative;
-  display: grid;
-  padding: 10px;
-  grid-template-areas:
-    'icon info'
-    'name name'
-    'status status';
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 2fr 1fr;
-  max-height: ${(props) => props.theme.card.size};
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
   overflow: hidden;
-  width: ${(props) => props.theme.card.size};
-  height: ${(props) => props.theme.card.size};
+  width: 160px;
   cursor: pointer;
 `
 
@@ -42,13 +34,13 @@ export const AccessoryCardStatus = styled(TileState)`
 `
 
 export const AccessoryCardIcon = styled(TileIcon)`
-  justify-self: start;
-  grid-area: icon;
-  width: 1.8rem;
-  margin-bottom: 0.5rem;
+  margin-right: 12px;
+  height: 32px;
+  width: 32px;
 
   svg {
-    width: auto;
+    height: 32px;
+    width: 32px;
   }
 `
 
@@ -56,6 +48,11 @@ const AccessoryLoading = styled.div`
   position: absolute;
   top: 12px;
   right: 12px;
+`
+
+const Header = styled.div`
+  display: flex;
+  align-items: center;
 `
 
 let buttonPressTimer: any
@@ -84,13 +81,13 @@ export interface AccessoryCardProps {
 }
 
 export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
-  function onPress() {
+  const onPress = () => {
     if (props.onPress) {
       props.onPress()
     }
   }
 
-  function handleButtonPress() {
+  const handleButtonPress = () => {
     if (props.onLongPress) {
       buttonPressTimer = setTimeout(
         () => props.onLongPress && props.onLongPress(),
@@ -99,36 +96,44 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
     }
   }
 
-  function handleButtonRelease() {
+  const handleButtonRelease = () => {
     clearTimeout(buttonPressTimer)
   }
 
   const icon = props.isActive ? props.iconActive : props.iconInactive
 
   return (
-    <AccessoryCardContainer
-      className={props.className}
-      isActive={props.isActive}
-      onClick={onPress}
-      onTouchStart={handleButtonPress}
-      onTouchEnd={handleButtonRelease}
-      onMouseDown={handleButtonPress}
-      onMouseUp={handleButtonRelease}
-      onMouseLeave={handleButtonRelease}
-    >
-      {props.loading && (
-        <AccessoryLoading>
-          <Spin />
-        </AccessoryLoading>
-      )}
-      <AccessoryCardIcon isActive={props.isActive}>{icon}</AccessoryCardIcon>
-      <AccessoryCardName isActive={props.isActive}>
-        {props.name}
-      </AccessoryCardName>
-      <AccessoryCardStatus isActive={props.isActive}>
-        {props.state}
-      </AccessoryCardStatus>
-      {props.children}
-    </AccessoryCardContainer>
+    <div>
+      <AccessoryCardContainer
+        className={props.className}
+        isActive={props.isActive}
+        onClick={onPress}
+        onTouchStart={handleButtonPress}
+        onTouchEnd={handleButtonRelease}
+        onMouseDown={handleButtonPress}
+        onMouseUp={handleButtonRelease}
+        onMouseLeave={handleButtonRelease}
+      >
+        {props.loading && (
+          <AccessoryLoading>
+            <Spin />
+          </AccessoryLoading>
+        )}
+        <Header>
+          <AccessoryCardIcon isActive={props.isActive}>
+            {icon}
+          </AccessoryCardIcon>
+          <div>
+            <AccessoryCardName isActive={props.isActive}>
+              {props.name}
+            </AccessoryCardName>
+            <AccessoryCardStatus isActive={props.isActive}>
+              {props.state}
+            </AccessoryCardStatus>
+          </div>
+        </Header>
+        {props.children}
+      </AccessoryCardContainer>
+    </div>
   )
 }

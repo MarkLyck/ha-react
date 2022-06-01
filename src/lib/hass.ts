@@ -49,11 +49,24 @@ const handleConfig = (message: any) => {
 }
 const handleDeviceRegistry = (message: any) => {
   if (!message.result) return
-  useStore.getState().setDeviceRegistry(message.result)
+
+  const deviceRegistry = message.result.reduce((acc: any, device: any) => {
+    acc[device.id] = device
+    return acc
+  }, {})
+
+  useStore.getState().setDeviceRegistry(deviceRegistry)
 }
 const handleEntityRegistry = (message: any) => {
   if (!message.result) return
-  useStore.getState().setEntityRegistry(message.result)
+
+  const entityRegistry = message.result.reduce((acc: any, entity: any) => {
+    acc[entity.entity_id] = entity
+    return acc
+  }, {})
+  console.log('🔈 ~ entityRegistry', entityRegistry)
+
+  useStore.getState().setEntityRegistry(entityRegistry)
 }
 
 const handleAreas = (message: any) => {

@@ -42,12 +42,6 @@ export const TileState = styled.div<WithActiveProps>`
 
 export const TileIcon = styled.div<WithActiveProps>`
   filter: ${(p) => (p.isActive ? 'grayscale(0%)' : 'grayscale(100%)')};
-
-  svg,
-  img {
-    height: 28px;
-    max-height: 28px;
-  }
 `
 
 export const TileTitle = styled.div`

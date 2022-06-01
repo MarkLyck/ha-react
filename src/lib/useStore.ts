@@ -53,6 +53,16 @@ const useStore: any = create((set: any, get: any) => ({
   setDeviceRegistry: (deviceRegistry: any) => set(() => ({ deviceRegistry })),
   entityRegistry: {},
   setEntityRegistry: (entityRegistry: any) => set(() => ({ entityRegistry })),
+  getDevice: (entityId: string) => {
+    const entityRegistry = get().entityRegistry
+    const deviceRegistry = get().deviceRegistry
+
+    const entityFromRegistry = entityRegistry[entityId]
+    const deviceId = entityFromRegistry.device_id
+
+    const device = deviceRegistry[deviceId]
+    return device
+  },
 }))
 
 export default useStore

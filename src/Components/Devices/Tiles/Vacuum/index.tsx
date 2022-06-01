@@ -3,7 +3,7 @@ import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard
 import { useModalHelper } from 'src/Components/Devices/Tiles/common/hooks'
 import useStore from 'src/lib/useStore'
 // @ts-ignore
-import VacuumIcon from './vacuum.svg?component'
+import VacuumIcon from 'src/assets/icons/devices/vacuum.svg'
 import VacuumModal from './VacuumModal'
 
 type VacuumCardProps = {

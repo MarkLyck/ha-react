@@ -1,4 +1,5 @@
 import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
+import Icon from 'src/assets/icons/devices/homepod.svg'
 import useStore from 'src/lib/useStore'
 
 const AudioTile = ({ entity }: any) => {
@@ -29,6 +30,8 @@ const AudioTile = ({ entity }: any) => {
   return (
     <>
       <AccessoryCard
+        iconActive={<Icon />}
+        iconInactive={<Icon />}
         onPress={onPress}
         name={friendly_name}
         isActive={isActive}

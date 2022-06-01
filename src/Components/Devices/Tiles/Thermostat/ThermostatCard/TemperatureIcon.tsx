@@ -5,8 +5,8 @@ const ThermostatIcon = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   background-color: #444444;
   border-radius: 50%;
   border: 3px solid #8e8d92;
