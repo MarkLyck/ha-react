@@ -42,6 +42,7 @@ export const TileState = styled.div<WithActiveProps>`
 
 export const TileIcon = styled.div<WithActiveProps>`
   filter: ${(p) => (p.isActive ? 'grayscale(0%)' : 'grayscale(100%)')};
+  opacity: ${(p) => (p.isActive ? '100%' : '25%')};
 `
 
 export const TileTitle = styled.div`

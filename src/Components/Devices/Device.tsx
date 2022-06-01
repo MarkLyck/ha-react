@@ -5,6 +5,7 @@ import {
   ThermostatCard,
   VacuumCard,
   MediaPlayerTile,
+  SwitchTile,
 } from 'src/Components/Devices/Tiles'
 
 import FallbackTile from './Fallback'
@@ -15,6 +16,7 @@ type DeviceProps = {
 const Device = ({ entityId }: DeviceProps) => {
   const domain = entityId.split('.')[0]
 
+  if (domain === 'switch') return <SwitchTile entityId={entityId} />
   if (domain === 'light') return <LightCard entityId={entityId} />
   if (domain === 'climate') return <ThermostatCard entityId={entityId} />
   if (domain === 'vacuum') return <VacuumCard entityId={entityId} />

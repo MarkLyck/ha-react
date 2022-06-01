@@ -64,7 +64,6 @@ const handleEntityRegistry = (message: any) => {
     acc[entity.entity_id] = entity
     return acc
   }, {})
-  console.log('🔈 ~ entityRegistry', entityRegistry)
 
   useStore.getState().setEntityRegistry(entityRegistry)
 }

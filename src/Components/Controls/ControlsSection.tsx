@@ -15,7 +15,7 @@ const Title = styled.div`
 `
 
 const Container = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `
 
 type ControlsSectionProps = {
