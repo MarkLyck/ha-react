@@ -23,6 +23,12 @@ const colors = {
   success: {
     600: '#38B700',
   },
+  warning: {
+    600: '#fa8c16',
+  },
+  danger: {
+    600: '#f5222d',
+  },
 }
 
 const theme = {

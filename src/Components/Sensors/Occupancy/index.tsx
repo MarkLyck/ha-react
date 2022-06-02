@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import SensorCard from '../Card'
+import { SensorCardMini } from '../Card'
 import useStore from 'src/lib/useStore'
 
 const Text = styled.b`
@@ -19,9 +19,9 @@ export const OccupancySensor = ({ entityId }: OccupancySensorProps) => {
   const occupied = entity.state === 'on'
 
   return (
-    <SensorCard>
+    <SensorCardMini>
       <FontAwesomeIcon icon={['far', 'person-walking']} />
       <Text>{occupied ? 'Occupied' : 'Empty'}</Text>
-    </SensorCard>
+    </SensorCardMini>
   )
 }

@@ -17,6 +17,9 @@ export const ActionableTileContainer = styled(TileContainer)<WithActiveProps>`
   opacity: ${(p) =>
     p.isActive ? '100%' : p.isActive === false ? '80%' : '100%'};
   cursor: pointer;
+  &:hover {
+    opacity: 90%;
+  }
   &:active {
     transform: scale(0.9);
   }

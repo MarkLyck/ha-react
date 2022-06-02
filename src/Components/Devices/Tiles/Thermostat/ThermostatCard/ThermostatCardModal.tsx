@@ -8,7 +8,6 @@ import { TemperatureIcon } from './TemperatureIcon'
 
 const StyledModal = styled(Modal)`
   .ant-modal-content {
-    width: 300px;
     border-radius: 12px;
   }
 `
@@ -106,7 +105,7 @@ export const ThermostatCardModal: FC<ThermostatCardModalProps> = ({
   }
 
   return (
-    <StyledModal visible={show} onCancel={close} footer={null}>
+    <StyledModal visible={show} onCancel={close} footer={null} width={300}>
       <ModalHeader
         title={name}
         subtitle={statusLabel}

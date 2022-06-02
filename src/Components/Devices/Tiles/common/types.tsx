@@ -1,5 +1,5 @@
 export type WithActiveProps = {
-  readonly isActive: boolean
+  readonly isActive?: boolean
 }
 
 export type Capabilities = {

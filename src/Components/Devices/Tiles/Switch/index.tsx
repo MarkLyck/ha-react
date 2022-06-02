@@ -12,7 +12,6 @@ export const SwitchTile = ({ entityId }: MediaPlayerTileProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
-  console.log('🔈 ~ entity', entity)
 
   const handleToggle = async () => {
     await sendSocket({

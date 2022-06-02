@@ -6,6 +6,7 @@ import {
   VacuumCard,
   MediaPlayerTile,
   SwitchTile,
+  TeslaTile,
 } from 'src/Components/Devices/Tiles'
 
 import FallbackTile from './Fallback'
@@ -14,6 +15,7 @@ type DeviceProps = {
   entityId: string
 }
 const Device = ({ entityId }: DeviceProps) => {
+  if (entityId === 'tesla') return <TeslaTile />
   const domain = entityId.split('.')[0]
 
   if (domain === 'switch') return <SwitchTile entityId={entityId} />

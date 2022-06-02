@@ -1,12 +1,6 @@
-import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import dayjs from 'dayjs'
-import SensorCard from '../Card'
+import { SensorCard } from '../Card'
 import useStore from 'src/lib/useStore'
-
-const Text = styled.b`
-  margin-left: 8px;
-`
 
 type UptimeStatusSensorProps = {
   entityId: string
@@ -17,7 +11,7 @@ export const UptimeSensor = ({ entityId }: UptimeStatusSensorProps) => {
   const entity = states[entityId]
   if (!entity) return null
 
-  const timeInMiliseconds = entity.state
+  const timeInMiliseconds = Number(entity.state)
   const timeInSeconds = timeInMiliseconds / 1000
   const timeInMinutes = timeInSeconds / 60
   const timeInHours = timeInMinutes / 60
@@ -35,11 +29,10 @@ export const UptimeSensor = ({ entityId }: UptimeStatusSensorProps) => {
   }
 
   return (
-    <SensorCard>
-      <FontAwesomeIcon icon={['far', 'timer']} />
-      <Text>
-        {time} {timeText}
-      </Text>
-    </SensorCard>
+    <SensorCard
+      name={entity.attributes.friendly_name}
+      icon={<FontAwesomeIcon icon={['far', 'timer']} />}
+      state={`${time} ${timeText}`}
+    />
   )
 }

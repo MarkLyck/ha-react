@@ -9,7 +9,6 @@ import {
 } from 'src/Components/Sensors'
 import { Alert, Tooltip } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
-import SensorCard from './Card'
 
 type SensorProps = {
   entityId: string
@@ -27,21 +26,13 @@ const Sensor = ({ entityId }: SensorProps) => {
 
   if (SensorType) {
     return (
-      <Tooltip title={entityId}>
-        <div>
-          <SensorType entityId={entityId} />
-        </div>
-      </Tooltip>
+      <div>
+        <SensorType entityId={entityId} />
+      </div>
     )
   }
 
-  return (
-    <Tooltip title={entityId}>
-      <div>
-        <FallbackSensor entityId={entityId} />
-      </div>
-    </Tooltip>
-  )
+  return <FallbackSensor entityId={entityId} />
 }
 
 const SensorWrapper = (props: SensorProps) => (

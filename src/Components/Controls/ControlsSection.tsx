@@ -12,10 +12,11 @@ const Title = styled.div`
   margin-bottom: 10px;
   position: relative;
   margin-right: 12px;
+  text-transform: capitalize;
 `
 
 const Container = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 `
 
 type ControlsSectionProps = {

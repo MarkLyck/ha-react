@@ -1,11 +1,6 @@
-import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import SensorCard from '../Card'
+import { SensorCard } from '../Card'
 import useStore from 'src/lib/useStore'
-
-const Text = styled.b`
-  margin-left: 8px;
-`
 
 type WanStatusSensorProps = {
   entityId: string
@@ -19,9 +14,10 @@ export const WifiSensor = ({ entityId }: WanStatusSensorProps) => {
   const status = entity.state
 
   return (
-    <SensorCard>
-      <FontAwesomeIcon icon={['far', 'wifi']} />
-      <Text>{status}</Text>
-    </SensorCard>
+    <SensorCard
+      name={entity.attributes.friendly_name}
+      icon={<FontAwesomeIcon icon={['far', 'wifi']} />}
+      state={status}
+    />
   )
 }

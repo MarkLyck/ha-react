@@ -1,5 +1,6 @@
 import useStore from 'src/lib/useStore'
-import SensorCard from './Card'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { SensorCard } from './Card'
 
 export const FallbackSensor = ({ entityId }: any) => {
   const states = useStore((state: any) => state.states)
@@ -7,8 +8,10 @@ export const FallbackSensor = ({ entityId }: any) => {
   if (!entity) return null
 
   return (
-    <SensorCard>
-      <b>{entity.state}</b>
-    </SensorCard>
+    <SensorCard
+      name={entity.attributes.friendly_name}
+      icon={<FontAwesomeIcon icon={['far', 'sensor']} />}
+      state={entity.state}
+    />
   )
 }

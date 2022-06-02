@@ -5,3 +5,6 @@ export * from './Thermostat'
 export * from './Vacuum'
 export * from './MediaPlayer'
 export * from './Switch'
+
+// Custom
+export * from './Tesla'

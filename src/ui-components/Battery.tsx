@@ -8,9 +8,9 @@ const Container = styled.div`
   font-size: 12px;
 
   svg {
-    color: ${(p: { percentage: number; theme?: any }) => {
-      if (p.percentage > 75) {
-        return p.theme.colors.success[600]
+    color: ${(p: { color: string; theme?: any }) => {
+      if (p.color) {
+        return p.theme.colors[p.color][600]
       }
       return 'black'
     }};
@@ -22,15 +22,45 @@ const Container = styled.div`
 type BatteryProps = {
   percentage: number
   isCharging?: boolean
+  showNumber?: boolean
 }
 
-export const Battery = ({ percentage }: BatteryProps) => {
+export const Battery = ({
+  percentage,
+  isCharging,
+  showNumber,
+}: BatteryProps) => {
   if (percentage === null || isNaN(percentage)) return null
 
+  let icon = 'battery-full'
+  let color = 'success'
+
+  if (percentage < 75) {
+    icon = 'battery-three-quarters'
+    color = 'success'
+  }
+  if (percentage < 50) {
+    icon = 'battery-half'
+    color = 'warning'
+  }
+  if (percentage < 25) {
+    icon = 'battery-quarter'
+    color = 'danger'
+  }
+  if (percentage < 10) {
+    icon = 'battery-exclamation'
+    color = 'danger'
+  }
+  if (isCharging) {
+    icon = 'battery-bolt'
+    color = 'success'
+  }
+
   return (
-    <Container percentage={percentage}>
-      <FontAwesomeIcon icon={['far', 'battery-full']} />
-      {percentage.toFixed(0)}%
+    <Container color={color}>
+      {/* @ts-ignore */}
+      <FontAwesomeIcon icon={['far', icon]} />
+      {showNumber && `${percentage.toFixed(0)}%`}
     </Container>
   )
 }

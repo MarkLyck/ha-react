@@ -19,7 +19,7 @@ const handleEntities = (message: any) => {
 
 const handleEvents = (message: any) => {
   const { event } = message
-  if (event.event_type === 'state_changed') {
+  if (event?.event_type === 'state_changed') {
     const currentStates = useStore.getState().states
     const entityId = event.data.entity_id
     const newStates: any = {}

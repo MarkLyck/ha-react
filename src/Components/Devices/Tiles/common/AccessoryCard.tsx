@@ -5,25 +5,27 @@ import styled from '@emotion/styled'
 import { ActionableTileContainer, TileIcon, TileName, TileState } from './Tile'
 
 export const AccessoryCardContainer = styled(ActionableTileContainer)`
+  width: 160px;
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 12px;
-  overflow: hidden;
-  width: 160px;
+  overflow: auto;
   cursor: pointer;
+
+  @media (max-width: 1000px) {
+    width: auto;
+  }
 `
 
 export const AccessoryCardName = styled(TileName)`
-  justify-self: start;
-  align-self: flex-end;
-  grid-area: name;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  width: 96px;
+  line-height: 13px;
+  overflow: hidden;
+  text-transform: capitalize;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 13px;
 `
 
 export const AccessoryCardStatus = styled(TileState)`
@@ -31,10 +33,13 @@ export const AccessoryCardStatus = styled(TileState)`
   align-self: center;
   grid-area: status;
   text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `
 
 export const AccessoryCardIcon = styled(TileIcon)`
-  margin-right: 12px;
+  margin-right: 8px;
   height: 32px;
   width: 32px;
 
@@ -50,9 +55,14 @@ const AccessoryLoading = styled.div`
   right: 12px;
 `
 
-const Header = styled.div`
+export const AccessoryCardHeader = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
+`
+
+const TextContainer = styled.div`
+  width: 100%;
 `
 
 let buttonPressTimer: any
@@ -119,19 +129,19 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
             <Spin />
           </AccessoryLoading>
         )}
-        <Header>
+        <AccessoryCardHeader>
           <AccessoryCardIcon isActive={props.isActive}>
             {icon}
           </AccessoryCardIcon>
-          <div>
+          <TextContainer>
             <AccessoryCardName isActive={props.isActive}>
               {props.name}
             </AccessoryCardName>
             <AccessoryCardStatus isActive={props.isActive}>
               {props.state}
             </AccessoryCardStatus>
-          </div>
-        </Header>
+          </TextContainer>
+        </AccessoryCardHeader>
         {props.children}
       </AccessoryCardContainer>
     </div>
