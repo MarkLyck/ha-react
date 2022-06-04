@@ -3,11 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@emotion/react': 11.9.0
   '@emotion/styled': 11.8.1
-  '@fortawesome/fontawesome-svg-core': ^6.1.1
-  '@fortawesome/free-brands-svg-icons': ^6.1.1
+  '@fortawesome/fontawesome-svg-core': 6.1.1
+  '@fortawesome/free-brands-svg-icons': 6.1.1
   '@fortawesome/free-solid-svg-icons': 6.1.1
-  '@fortawesome/pro-regular-svg-icons': ^6.1.1
-  '@fortawesome/pro-solid-svg-icons': ^6.1.1
+  '@fortawesome/pro-regular-svg-icons': 6.1.1
+  '@fortawesome/pro-solid-svg-icons': 6.1.1
   '@fortawesome/react-fontawesome': 0.1.18
   '@honkhonk/vite-plugin-svgr': 1.1.0
   '@types/node': 17.0.36
@@ -17,21 +17,21 @@ specifiers:
   '@vitejs/plugin-react': 1.3.0
   antd: 4.20.6
   axios: 0.27.2
-  dayjs: ^1.11.2
+  dayjs: 1.11.2
   framer-motion: 6.3.4
   gitmoji-cli: 5.0.0
-  home-assistant-js-websocket: ^7.1.0
+  home-assistant-js-websocket: 7.1.0
   homekit-react-components: 1.0.0
   prettier: 2.6.2
   pretty-quick: 3.1.3
   react: 18.0.0
   react-dom: 18.0.0
-  react-error-boundary: ^3.1.4
+  react-error-boundary: 3.1.4
   react-modal: 3.15.1
   typescript: 4.6.3
   vite: 2.9.9
   vite-plugin-react-svg: 0.2.0
-  vite-plugin-svgr: ^2.1.0
+  vite-plugin-svgr: 2.1.0
   zustand: 4.0.0-rc.1
 
 dependencies:
@@ -534,7 +534,7 @@ packages:
     dev: false
 
   /@fortawesome/fontawesome-svg-core/6.1.1:
-    resolution: {integrity: sha512-NCg0w2YIp81f4V6cMGD9iomfsIj7GWrqmsa0ZsPh59G7PKiGN1KymZNxmF00ssuAlo/VZmpK6xazsGOwzKYUMg==}
+    resolution: {integrity: sha512-NCg0w2YIp81f4V6cMGD9iomfsIj7GWrqmsa0ZsPh59G7PKiGN1KymZNxmF00ssuAlo/VZmpK6xazsGOwzKYUMg==, tarball: '@fortawesome/fontawesome-svg-core/-/6.1.1/fontawesome-svg-core-6.1.1.tgz'}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
@@ -2298,7 +2298,7 @@ packages:
     dev: true
 
   /has-flag/3.0.0:
-    resolution: {integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=}
+    resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
     engines: {node: '>=4'}
 
   /has-flag/4.0.0:
