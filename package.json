@@ -22,7 +22,7 @@
     "antd": "4.20.6",
     "axios": "0.27.2",
     "dayjs": "1.11.2",
-    "framer-motion": "6.3.4",
+    "framer-motion": "6.3.10",
     "home-assistant-js-websocket": "7.1.0",
     "homekit-react-components": "1.0.0",
     "react": "18.1.0",
