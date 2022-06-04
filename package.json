@@ -21,13 +21,13 @@
     "@fortawesome/react-fontawesome": "0.1.18",
     "antd": "4.20.6",
     "axios": "0.27.2",
-    "dayjs": "^1.11.2",
+    "dayjs": "1.11.2",
     "framer-motion": "6.3.4",
-    "home-assistant-js-websocket": "^7.1.0",
+    "home-assistant-js-websocket": "7.1.0",
     "homekit-react-components": "1.0.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-error-boundary": "^3.1.4",
+    "react-error-boundary": "3.1.4",
     "react-modal": "3.15.1",
     "zustand": "4.0.0-rc.1"
   },
@@ -44,6 +44,6 @@
     "typescript": "4.6.3",
     "vite": "2.9.9",
     "vite-plugin-react-svg": "0.2.0",
-    "vite-plugin-svgr": "^2.1.0"
+    "vite-plugin-svgr": "2.1.0"
   }
 }
