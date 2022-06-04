@@ -10,7 +10,7 @@ export const FallbackSensor = ({ entityId }: any) => {
   return (
     <SensorCard
       name={entity.attributes.friendly_name}
-      icon={<FontAwesomeIcon icon={['far', 'sensor']} />}
+      icon={<FontAwesomeIcon icon={['fas', 'sensor']} />}
       state={entity.state}
     />
   )

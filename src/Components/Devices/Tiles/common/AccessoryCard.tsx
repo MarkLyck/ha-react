@@ -9,17 +9,18 @@ export const AccessoryCardContainer = styled(ActionableTileContainer)`
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 12px;
+
   overflow: auto;
   cursor: pointer;
+  overflow: hidden;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 600px) {
     width: auto;
   }
 `
 
 export const AccessoryCardName = styled(TileName)`
-  width: 96px;
+  width: 100%;
   line-height: 13px;
   overflow: hidden;
   text-transform: capitalize;
@@ -36,6 +37,7 @@ export const AccessoryCardStatus = styled(TileState)`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
 `
 
 export const AccessoryCardIcon = styled(TileIcon)`
@@ -59,10 +61,11 @@ export const AccessoryCardHeader = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 12px;
 `
 
-const TextContainer = styled.div`
-  width: 100%;
+export const AccessoryTextContainer = styled.div`
+  width: calc(100% - 42px);
 `
 
 let buttonPressTimer: any
@@ -88,10 +91,13 @@ export interface AccessoryCardProps {
   readonly state: string
   /** State label of the card */
   readonly loading?: boolean
+  /** Background */
+  readonly backgroundImage?: string
 }
 
 export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
-  const onPress = () => {
+  const onPress = (e: any) => {
+    console.log('🔈 ~ e', e)
     if (props.onPress) {
       props.onPress()
     }
@@ -117,30 +123,30 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
       <AccessoryCardContainer
         className={props.className}
         isActive={props.isActive}
-        onClick={onPress}
         onTouchStart={handleButtonPress}
         onTouchEnd={handleButtonRelease}
         onMouseDown={handleButtonPress}
         onMouseUp={handleButtonRelease}
         onMouseLeave={handleButtonRelease}
+        backgroundImage={props.backgroundImage}
       >
-        {props.loading && (
-          <AccessoryLoading>
-            <Spin />
-          </AccessoryLoading>
-        )}
-        <AccessoryCardHeader>
+        <AccessoryCardHeader onClick={onPress}>
+          {props.loading && (
+            <AccessoryLoading>
+              <Spin />
+            </AccessoryLoading>
+          )}
           <AccessoryCardIcon isActive={props.isActive}>
             {icon}
           </AccessoryCardIcon>
-          <TextContainer>
+          <AccessoryTextContainer>
             <AccessoryCardName isActive={props.isActive}>
               {props.name}
             </AccessoryCardName>
             <AccessoryCardStatus isActive={props.isActive}>
               {props.state}
             </AccessoryCardStatus>
-          </TextContainer>
+          </AccessoryTextContainer>
         </AccessoryCardHeader>
         {props.children}
       </AccessoryCardContainer>

@@ -4,9 +4,10 @@ specifiers:
   '@emotion/react': 11.9.0
   '@emotion/styled': 11.8.1
   '@fortawesome/fontawesome-svg-core': ^6.1.1
+  '@fortawesome/free-brands-svg-icons': ^6.1.1
   '@fortawesome/free-solid-svg-icons': 6.1.1
-  '@fortawesome/pro-light-svg-icons': ^6.1.1
   '@fortawesome/pro-regular-svg-icons': ^6.1.1
+  '@fortawesome/pro-solid-svg-icons': ^6.1.1
   '@fortawesome/react-fontawesome': 0.1.18
   '@honkhonk/vite-plugin-svgr': 1.1.0
   '@types/node': 17.0.36
@@ -37,9 +38,10 @@ dependencies:
   '@emotion/react': 11.9.0_ehmod3dzv42yraeb3kvhrgnwcq
   '@emotion/styled': 11.8.1_4jkfnefot42zhhyb6nh2dgyrnu
   '@fortawesome/fontawesome-svg-core': 6.1.1
+  '@fortawesome/free-brands-svg-icons': 6.1.1
   '@fortawesome/free-solid-svg-icons': 6.1.1
-  '@fortawesome/pro-light-svg-icons': 6.1.1
   '@fortawesome/pro-regular-svg-icons': 6.1.1
+  '@fortawesome/pro-solid-svg-icons': 6.1.1
   '@fortawesome/react-fontawesome': 0.1.18_ale3w4t32h5v6dbzn5wc64akdu
   antd: 4.20.6_zpnidt7m3osuk7shl3s4oenomq
   axios: 0.27.2
@@ -539,6 +541,14 @@ packages:
       '@fortawesome/fontawesome-common-types': 6.1.1
     dev: false
 
+  /@fortawesome/free-brands-svg-icons/6.1.1:
+    resolution: {integrity: sha512-mFbI/czjBZ+paUtw5NPr2IXjun5KAC8eFqh1hnxowjA4mMZxWz4GCIksq6j9ZSa6Uxj9JhjjDVEd77p2LN2Blg==, tarball: '@fortawesome/free-brands-svg-icons/-/6.1.1/free-brands-svg-icons-6.1.1.tgz'}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.1.1
+    dev: false
+
   /@fortawesome/free-solid-svg-icons/6.1.1:
     resolution: {integrity: sha512-0/5exxavOhI/D4Ovm2r3vxNojGZioPwmFrKg0ZUH69Q68uFhFPs6+dhAToh6VEQBntxPRYPuT5Cg1tpNa9JUPg==}
     engines: {node: '>=6'}
@@ -547,16 +557,16 @@ packages:
       '@fortawesome/fontawesome-common-types': 6.1.1
     dev: false
 
-  /@fortawesome/pro-light-svg-icons/6.1.1:
-    resolution: {integrity: sha512-PSo6AdC4NK+kO5Q0xmD6oALJRhfVSp6doaIso6/LS6UDrpzZI7NBvBMZnIir/sJcTwjO52z00TGybijlVkP5Ow==, tarball: '@fortawesome/pro-light-svg-icons/-/6.1.1/pro-light-svg-icons-6.1.1.tgz'}
+  /@fortawesome/pro-regular-svg-icons/6.1.1:
+    resolution: {integrity: sha512-8kKFn8eA1sLtc5zu6Z/LvWZPNpS8CRL8c8JuXAG3HwIwZB7L27b8l6BJC5jC3zRwJw7TXk1wi1CKTsLxmtHcgw==, tarball: '@fortawesome/pro-regular-svg-icons/-/6.1.1/pro-regular-svg-icons-6.1.1.tgz'}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
       '@fortawesome/fontawesome-common-types': 6.1.1
     dev: false
 
-  /@fortawesome/pro-regular-svg-icons/6.1.1:
-    resolution: {integrity: sha512-8kKFn8eA1sLtc5zu6Z/LvWZPNpS8CRL8c8JuXAG3HwIwZB7L27b8l6BJC5jC3zRwJw7TXk1wi1CKTsLxmtHcgw==, tarball: '@fortawesome/pro-regular-svg-icons/-/6.1.1/pro-regular-svg-icons-6.1.1.tgz'}
+  /@fortawesome/pro-solid-svg-icons/6.1.1:
+    resolution: {integrity: sha512-BF1vuvQlFNRy38EZAxaXuReQ73z9VrXaRmVy+MFnLFpHZa5yH3M68iZHl04/5uThUPbrXG7VsIRoICc5HjD0Iw==, tarball: '@fortawesome/pro-solid-svg-icons/-/6.1.1/pro-solid-svg-icons-6.1.1.tgz'}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:

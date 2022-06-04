@@ -12,7 +12,7 @@ const Container = styled.div`
       if (p.color) {
         return p.theme.colors[p.color][600]
       }
-      return 'black'
+      return 'rgba(255,255,255, 0.5)'
     }};
     font-size: 18px;
     margin-right: 8px;
@@ -33,15 +33,15 @@ export const Battery = ({
   if (percentage === null || isNaN(percentage)) return null
 
   let icon = 'battery-full'
-  let color = 'success'
+  let color = undefined
 
   if (percentage < 75) {
     icon = 'battery-three-quarters'
-    color = 'success'
+    // color = 'success'
   }
   if (percentage < 50) {
     icon = 'battery-half'
-    color = 'warning'
+    // color = 'warning'
   }
   if (percentage < 25) {
     icon = 'battery-quarter'
@@ -59,7 +59,7 @@ export const Battery = ({
   return (
     <Container color={color}>
       {/* @ts-ignore */}
-      <FontAwesomeIcon icon={['far', icon]} />
+      <FontAwesomeIcon icon={['fas', icon]} />
       {showNumber && `${percentage.toFixed(0)}%`}
     </Container>
   )

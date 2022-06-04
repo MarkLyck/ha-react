@@ -58,7 +58,7 @@ const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
 
         <Space style={{ margin: '16px 0' }}>
           <IconButton
-            icon={<FontAwesomeIcon icon={['far', 'play']} />}
+            icon={<FontAwesomeIcon icon={['fas', 'play']} />}
             size="large"
             type="primary"
             onClick={() =>
@@ -71,7 +71,7 @@ const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
             }
           />
           <IconButton
-            icon={<FontAwesomeIcon icon={['far', 'pause']} />}
+            icon={<FontAwesomeIcon icon={['fas', 'pause']} />}
             size="large"
             onClick={() =>
               sendSocket({
@@ -83,7 +83,7 @@ const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
             }
           />
           <IconButton
-            icon={<FontAwesomeIcon icon={['far', 'stop']} />}
+            icon={<FontAwesomeIcon icon={['fas', 'stop']} />}
             size="large"
             onClick={() =>
               sendSocket({
@@ -95,7 +95,7 @@ const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
             }
           />
           <IconButton
-            icon={<FontAwesomeIcon icon={['far', 'location-crosshairs']} />}
+            icon={<FontAwesomeIcon icon={['fas', 'location-crosshairs']} />}
             size="large"
             onClick={() =>
               sendSocket({
@@ -107,7 +107,7 @@ const VacuumModal = ({ visible, close, entity = {} }: VacuumModalProps) => {
             }
           />
           <IconButton
-            icon={<FontAwesomeIcon icon={['far', 'house-chimney']} />}
+            icon={<FontAwesomeIcon icon={['fas', 'house-chimney']} />}
             size="large"
             onClick={() =>
               sendSocket({

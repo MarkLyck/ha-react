@@ -19,7 +19,7 @@ export const HumiditySensor = ({ entityId }: HumiditySensorProps) => {
   return (
     <SensorCardMini>
       <Text>
-        <FontAwesomeIcon icon={['far', 'droplet']} />{' '}
+        <FontAwesomeIcon icon={['fas', 'droplet']} />{' '}
         {Number(Humidity).toFixed(0)}%
       </Text>
     </SensorCardMini>

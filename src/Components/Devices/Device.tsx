@@ -12,10 +12,17 @@ import {
 import FallbackTile from './Fallback'
 
 type DeviceProps = {
-  entityId: string
+  entityId: string | null
+  areaId?: string
+  deviceId?: string
+  type?: string
 }
-const Device = ({ entityId }: DeviceProps) => {
-  if (entityId === 'tesla') return <TeslaTile />
+const Device = ({ entityId, deviceId, areaId, type }: DeviceProps) => {
+  // Custom tiles
+  if (type === 'tesla') return <TeslaTile deviceId={deviceId} areaId={areaId} />
+
+  if (!entityId) return null
+
   const domain = entityId.split('.')[0]
 
   if (domain === 'switch') return <SwitchTile entityId={entityId} />

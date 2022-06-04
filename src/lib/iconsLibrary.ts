@@ -26,10 +26,14 @@ import {
   faTemperatureHalf,
   faTimer,
   faWifi,
-} from '@fortawesome/pro-regular-svg-icons'
+} from '@fortawesome/pro-solid-svg-icons'
+
+import { faYoutube as fabYoutube } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
-  // Light
+  // Brands
+  fabYoutube,
+  // Solid
   faAngleUp,
   faAngleDown,
   faBatterySlash,

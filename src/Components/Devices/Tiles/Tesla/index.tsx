@@ -3,6 +3,7 @@ import useStore from 'src/lib/useStore'
 import { AccessoryCard } from '../common/AccessoryCard'
 import TeslaLogo from 'src/assets/icons/devices/tesla.svg'
 import { Battery } from 'src/ui-components'
+import configuration from 'src/../configuration.json'
 
 const BatteryContainer = styled.div`
   position: absolute;
@@ -10,13 +11,26 @@ const BatteryContainer = styled.div`
   right: 8px;
 `
 
-export const TeslaTile = () => {
-  const { states } = useStore((state: any) => ({ states: state.states }))
-  const batterySensorId = 'sensor.tesla_battery_sensor'
-  const chargerSensorId = 'binary_sensor.tesla_charger_sensor'
+type TeslaTileProps = {
+  deviceId: string
+  areaId: string
+}
 
-  const batteryPercentage = Number(states[batterySensorId].state)
-  const isCharging = states[chargerSensorId].state === 'on'
+const getConfig = (deviceId: string, areaId: string) => {
+  const devices = configuration?.areas[areaId]?.extraDevices
+  const deviceConfig = devices.filter(
+    (device: any) => device.device_id === deviceId
+  )[0]
+  return deviceConfig
+}
+
+export const TeslaTile = ({ deviceId, areaId }: TeslaTileProps) => {
+  const { states } = useStore((state: any) => ({ states: state.states }))
+  const config = getConfig(deviceId, areaId)
+  const entities = config.entities
+
+  const batteryPercentage = Number(states[entities.battery_sensor].state)
+  const isCharging = states[entities.charger_sensor].state === 'on'
 
   return (
     <AccessoryCard

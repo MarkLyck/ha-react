@@ -4,6 +4,7 @@ import {
   AccessoryCardHeader,
   AccessoryCardName,
   AccessoryCardStatus,
+  AccessoryTextContainer,
 } from 'src/Components/Devices/Tiles/common/AccessoryCard'
 
 const ContainerMini = styled.div`
@@ -55,10 +56,10 @@ export const SensorCard = ({
     <SensorCardContainer>
       <AccessoryCardHeader>
         <IconContainer>{icon}</IconContainer>
-        <div>
+        <AccessoryTextContainer>
           <AccessoryCardName isActive={false}>{name}</AccessoryCardName>
           <AccessoryCardStatus isActive={false}>{state}</AccessoryCardStatus>
-        </div>
+        </AccessoryTextContainer>
       </AccessoryCardHeader>
       {children}
     </SensorCardContainer>

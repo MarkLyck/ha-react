@@ -4,6 +4,7 @@ import useStore from 'src/lib/useStore'
 import ControlsSection from './Controls/ControlsSection'
 import Sensor from './Sensors/Sensor'
 import Device from './Devices/Device'
+import configuration from 'src/../configuration.json'
 
 const ControlsContainer = styled.div`
   width: 100%;
@@ -28,7 +29,8 @@ const Sensors = styled.div`
   margin-bottom: 16px;
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr 1fr;
+    padding-right: 16px;
+    grid-template-columns: 50% 50%;
   }
 `
 
@@ -39,7 +41,8 @@ const Devices = styled.div`
   margin-bottom: 16px;
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr 1fr;
+    padding-right: 16px;
+    grid-template-columns: 50% 50%;
   }
 `
 
@@ -57,7 +60,7 @@ const CategoryTitle = styled.h3`
   margin-bottom: 8px;
 `
 
-const SENSOR_TYPES = ['binary_sensor', 'sensor', 'device_tracker']
+const SENSOR_DOMAINS = ['binary_sensor', 'sensor', 'device_tracker']
 const MINI_SENSOR_TYPES = ['temp', 'humidity', 'occupancy', 'motion']
 const DEVICE_TYPES = [
   'light',
@@ -70,47 +73,43 @@ const DEVICE_TYPES = [
   'select',
 ]
 
-const HIDDEN = [
-  'lock.tesla_door_lock',
-  'sensor.tesla_battery_sensor',
-  'sensor.tesla_energy_added_sensor',
-  'sensor.tesla_temperature_sensor_outside',
-  'select.tesla_heated_seat_left',
-  'climate.tesla_hvac_climate_system',
-  'lock.tesla_charger_door_lock',
-  'select.tesla_heated_seat_rear_center',
-  'select.tesla_heated_seat_right',
-  'binary_sensor.tesla_charger_sensor',
-  'sensor.tesla_range_sensor',
-  'button.tesla_horn',
-  'switch.tesla_maxrange_switch',
-  'sensor.tesla_mileage_sensor',
-  'binary_sensor.tesla_update_available_sensor',
-  'switch.tesla_charger_switch',
-  'select.tesla_heated_seat_rear_right',
-  'sensor.tesla_temperature_sensor_inside',
-  'switch.tesla_sentry_mode_switch',
-  'lock.tesla_trunk_lock',
-  'select.tesla_heated_seat_rear_left',
-  'switch.tesla_heated_steering_switch',
-  'switch.tesla_polling_switch',
-  'lock.tesla_frunk_lock',
-  'binary_sensor.tesla_online_sensor',
-  'device_tracker.tesla_location_tracker',
-  'sensor.tesla_charging_rate_sensor',
-  'binary_sensor.tesla_parking_brake_sensor',
-  'button.tesla_flash_lights',
-]
+const getEntitiesInArea = (area: any) => {
+  return area.entities
+}
 
-const CUSTOM_CARDS: any = {
-  room: {
-    other: {
-      devices: {
-        tesla: true,
-      },
-      sensors: {},
-    },
-  },
+const getDevices = (entities: string[]) => {
+  return (
+    entities?.filter((entityId: string) => {
+      const domain = entityId.split('.')[0]
+      return DEVICE_TYPES.includes(domain)
+    }) || []
+  )
+}
+const getSensors = (entities: string[], miniSensors: string[]) => {
+  return (
+    entities?.filter((entityId: string) => {
+      if (miniSensors.includes(entityId)) return false
+      const domain = entityId.split('.')[0]
+      return SENSOR_DOMAINS.includes(domain)
+    }) || []
+  )
+}
+
+const getMiniSensors = (entities: string[]) => {
+  const sensors =
+    entities?.filter((entityId: string) => {
+      return SENSOR_DOMAINS.includes(entityId.split('.')[0])
+    }) || []
+
+  return sensors?.filter((entityId: string) => {
+    let found = false
+    MINI_SENSOR_TYPES.forEach((type) => {
+      if (entityId.includes(type)) {
+        found = true
+      }
+    })
+    return found
+  })
 }
 
 const Areas = () => {
@@ -131,40 +130,19 @@ const Areas = () => {
   return (
     <ControlsContainer>
       {areasList.map((area: any) => {
-        const entities = area.entities?.filter(
-          (entity: any) => !HIDDEN.includes(entity)
-        )
+        const entities = getEntitiesInArea(area)
+        let devices: string[] = getDevices(entities)
+        const customDevices: any[] = []
+        let miniSensors: string[] = getMiniSensors(entities)
+        let sensors: string[] = getSensors(entities, miniSensors)
 
-        let sensors: string[] =
-          entities?.filter((entityId: string) =>
-            SENSOR_TYPES.includes(entityId.split('.')[0])
-          ) || []
-        let devices: string[] =
-          entities?.filter((entityId: string) =>
-            DEVICE_TYPES.includes(entityId.split('.')[0])
-          ) || []
-
-        const miniSensors: string[] =
-          sensors?.filter((entityId: string) => {
-            let found = false
-            MINI_SENSOR_TYPES.forEach((type) => {
-              if (entityId.includes(type)) {
-                found = true
-              }
-            })
-            return found
-          }) || []
-
-        sensors = sensors.filter((entityId) => {
-          let skip = false
-          if (!miniSensors.includes(entityId)) skip = true
-          return skip
-        })
-
-        const customRoomCards = CUSTOM_CARDS.room?.[area.name]
-        if (customRoomCards?.devices) {
-          const customDevices = Object.keys(customRoomCards?.devices)
-          devices = [...devices, ...customDevices]
+        // @ts-ignore
+        const areaConfig: any = configuration?.areas[area.area_id]
+        const extraDevices = areaConfig?.extraDevices
+        if (extraDevices?.length > 0) {
+          extraDevices.forEach((device: any) => {
+            customDevices.push(device)
+          })
         }
 
         return (
@@ -183,6 +161,15 @@ const Areas = () => {
             <Devices>
               {devices.map((entityId) => (
                 <Device key={entityId} entityId={entityId} />
+              ))}
+              {customDevices.map((device) => (
+                <Device
+                  key={device.device_id}
+                  entityId={null}
+                  type={device.type}
+                  deviceId={device.device_id}
+                  areaId={area.area_id}
+                />
               ))}
             </Devices>
             {sensors.length > 0 && (

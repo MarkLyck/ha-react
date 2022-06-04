@@ -127,13 +127,13 @@ export const ThermostatCardModal: FC<ThermostatCardModalProps> = ({
             onClick={handleDecreaseTemperature}
             disabled={!on || targetTemperature <= Number(tempMin)}
           >
-            <FontAwesomeIcon icon={['far', 'angle-down']} />
+            <FontAwesomeIcon icon={['fas', 'angle-down']} />
           </Button>
           <Button
             onClick={handleIncreaseTemperature}
             disabled={!on || targetTemperature >= Number(tempMax)}
           >
-            <FontAwesomeIcon icon={['far', 'angle-up']} />
+            <FontAwesomeIcon icon={['fas', 'angle-up']} />
           </Button>
         </ButtonContainer>
         <ModeContainer>

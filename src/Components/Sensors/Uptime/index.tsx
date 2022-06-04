@@ -31,7 +31,7 @@ export const UptimeSensor = ({ entityId }: UptimeStatusSensorProps) => {
   return (
     <SensorCard
       name={entity.attributes.friendly_name}
-      icon={<FontAwesomeIcon icon={['far', 'timer']} />}
+      icon={<FontAwesomeIcon icon={['fas', 'timer']} />}
       state={`${time} ${timeText}`}
     />
   )

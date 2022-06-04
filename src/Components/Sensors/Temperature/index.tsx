@@ -20,7 +20,7 @@ export const TemperatureSensor = ({ entityId }: TemperatureSensorProps) => {
 
   return (
     <SensorCardMini>
-      <FontAwesomeIcon icon={['far', 'temperature-half']} />
+      <FontAwesomeIcon icon={['fas', 'temperature-half']} />
       <Text>{Number(temperature).toFixed(0)}°</Text>
     </SensorCardMini>
   )

@@ -20,7 +20,7 @@ export const OccupancySensor = ({ entityId }: OccupancySensorProps) => {
 
   return (
     <SensorCardMini>
-      <FontAwesomeIcon icon={['far', 'person-walking']} />
+      <FontAwesomeIcon icon={['fas', 'person-walking']} />
       <Text>{occupied ? 'Occupied' : 'Empty'}</Text>
     </SensorCardMini>
   )

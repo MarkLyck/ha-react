@@ -14,6 +14,7 @@ export const ActionableTileContainer = styled(TileContainer)<WithActiveProps>`
     p.isActive
       ? p.theme.card.background.colorActive
       : p.theme.card.background.colorInactive};
+  background-image: ${(p) => p.backgroundImage}
   opacity: ${(p) =>
     p.isActive ? '100%' : p.isActive === false ? '80%' : '100%'};
   cursor: pointer;

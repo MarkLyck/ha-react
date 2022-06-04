@@ -20,7 +20,7 @@ export const PowerSensor = ({ entityId }: PowerSensorProps) => {
 
   return (
     <SensorCardMini>
-      <FontAwesomeIcon icon={['far', 'power-off']} />
+      <FontAwesomeIcon icon={['fas', 'power-off']} />
       <Text>{status}</Text>
     </SensorCardMini>
   )

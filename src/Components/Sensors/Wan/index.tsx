@@ -16,7 +16,7 @@ export const WifiSensor = ({ entityId }: WanStatusSensorProps) => {
   return (
     <SensorCard
       name={entity.attributes.friendly_name}
-      icon={<FontAwesomeIcon icon={['far', 'wifi']} />}
+      icon={<FontAwesomeIcon icon={['fas', 'wifi']} />}
       state={status}
     />
   )

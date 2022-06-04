@@ -1,0 +1,21 @@
+{
+  "areas": {
+    "garage": {
+      "extraDevices": [
+        {
+          "type": "tesla",
+          "room": "garage",
+          "device_id": "0dda1835745d84e8967bc321022cf9c2",
+          "entities": {
+            "location": "device_tracker.tesla_location_tracker",
+            "battery_sensor": "sensor.tesla_battery_sensor",
+            "charger_sensor": "binary_sensor.tesla_charger_sensor"
+          }
+        }
+      ]
+    },
+    "office": {
+      "extraTiles": []
+    }
+  }
+}
