@@ -57,6 +57,7 @@ export const Battery = ({
   }
 
   return (
+    // @ts-ignore
     <Container color={color}>
       {/* @ts-ignore */}
       <FontAwesomeIcon icon={['fas', icon]} />

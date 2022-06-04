@@ -17,7 +17,9 @@ type TeslaTileProps = {
 }
 
 const getConfig = (deviceId: string, areaId: string) => {
-  const devices = configuration?.areas[areaId]?.extraDevices
+  // @ts-ignore
+  const configArea = configuration?.areas[areaId]
+  const devices = configArea?.extraDevices
   const deviceConfig = devices.filter(
     (device: any) => device.device_id === deviceId
   )[0]

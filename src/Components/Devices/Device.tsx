@@ -19,6 +19,7 @@ type DeviceProps = {
 }
 const Device = ({ entityId, deviceId, areaId, type }: DeviceProps) => {
   // Custom tiles
+  // @ts-ignore
   if (type === 'tesla') return <TeslaTile deviceId={deviceId} areaId={areaId} />
 
   if (!entityId) return null
