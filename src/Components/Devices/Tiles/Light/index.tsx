@@ -2,6 +2,10 @@ import { useState } from 'react'
 import { LightCard as HomekitLightCard } from './LightCard'
 import useStore from 'src/lib/useStore'
 
+import getSupportedFeatures from 'src/common/supportedFeatures'
+import LIGHT_FEATURES from './features.json'
+console.log('🔈 ~ LIGHT_FEATURES', LIGHT_FEATURES)
+
 type HassLightCardProps = {
   entityId: string
 }
@@ -12,6 +16,9 @@ const Light = ({ entityId }: HassLightCardProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
+  console.log('🔈 ~ entity', entity.attributes.friendly_name)
+
+  getSupportedFeatures(entity.attributes.supported_features, LIGHT_FEATURES)
 
   const [isOn, setIsOn] = useState(
     entity.state && entity.state !== 'off' && entity.state != 'unavailable'

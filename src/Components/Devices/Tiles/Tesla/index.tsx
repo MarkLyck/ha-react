@@ -38,7 +38,7 @@ export const TeslaTile = ({ deviceId, areaId }: TeslaTileProps) => {
     <AccessoryCard
       isActive={isCharging}
       name="model Y"
-      state={`${isCharging ? 'charging - ' : ''}${batteryPercentage}%`}
+      state={`${isCharging ? 'charging: ' : ''}${batteryPercentage}%`}
       iconActive={<TeslaLogo />}
       iconInactive={<TeslaLogo />}
     >

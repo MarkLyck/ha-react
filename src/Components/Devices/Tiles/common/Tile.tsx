@@ -17,13 +17,14 @@ export const ActionableTileContainer = styled(TileContainer)<WithActiveProps>`
   background-image: ${(p) => p.backgroundImage}
   opacity: ${(p) =>
     p.isActive ? '100%' : p.isActive === false ? '80%' : '100%'};
-  cursor: pointer;
+  
   &:hover {
     opacity: 90%;
   }
   &:active {
-    transform: scale(0.9);
+    transform: ${(p) => (p.isPressing ? 'scale(0.9)' : 'scale(1)')};
   }
+  transition: all 0.05s ease-in-out;
 `
 
 export const TileName = styled.div<WithActiveProps>`

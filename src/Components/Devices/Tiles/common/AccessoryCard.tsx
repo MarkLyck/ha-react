@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode, useState } from 'react'
 import { Spin } from 'antd'
 import styled from '@emotion/styled'
 
@@ -11,7 +11,6 @@ export const AccessoryCardContainer = styled(ActionableTileContainer)`
   flex-direction: column;
 
   overflow: auto;
-  cursor: pointer;
   overflow: hidden;
 
   @media (max-width: 600px) {
@@ -21,7 +20,7 @@ export const AccessoryCardContainer = styled(ActionableTileContainer)`
 
 export const AccessoryCardName = styled(TileName)`
   width: 100%;
-  line-height: 13px;
+  line-height: 16px;
   overflow: hidden;
   text-transform: capitalize;
   white-space: nowrap;
@@ -62,6 +61,7 @@ export const AccessoryCardHeader = styled.div`
   display: flex;
   align-items: center;
   padding: 12px;
+  cursor: pointer;
 `
 
 export const AccessoryTextContainer = styled.div`
@@ -96,14 +96,16 @@ export interface AccessoryCardProps {
 }
 
 export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
+  const [isPressing, setIsPressing] = useState(false)
+
   const onPress = (e: any) => {
-    console.log('🔈 ~ e', e)
     if (props.onPress) {
       props.onPress()
     }
   }
 
   const handleButtonPress = () => {
+    setIsPressing(true)
     if (props.onLongPress) {
       buttonPressTimer = setTimeout(
         () => props.onLongPress && props.onLongPress(),
@@ -113,6 +115,7 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
   }
 
   const handleButtonRelease = () => {
+    setIsPressing(false)
     clearTimeout(buttonPressTimer)
   }
 
@@ -123,14 +126,17 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
       <AccessoryCardContainer
         className={props.className}
         isActive={props.isActive}
-        onTouchStart={handleButtonPress}
-        onTouchEnd={handleButtonRelease}
-        onMouseDown={handleButtonPress}
-        onMouseUp={handleButtonRelease}
-        onMouseLeave={handleButtonRelease}
         backgroundImage={props.backgroundImage}
+        isPressing={isPressing}
       >
-        <AccessoryCardHeader onClick={onPress}>
+        <AccessoryCardHeader
+          onClick={onPress}
+          onTouchStart={handleButtonPress}
+          onTouchEnd={handleButtonRelease}
+          onMouseDown={handleButtonPress}
+          onMouseUp={handleButtonRelease}
+          onMouseLeave={handleButtonRelease}
+        >
           {props.loading && (
             <AccessoryLoading>
               <Spin />

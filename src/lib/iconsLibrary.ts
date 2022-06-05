@@ -13,6 +13,7 @@ import {
   faBatteryFull,
   faBatteryBolt,
   faDroplet,
+  faForward,
   faHouseChimney,
   faLocationCrosshairs,
   faPersonWalking,
@@ -25,6 +26,10 @@ import {
   faSensorTriangleExclamation,
   faTemperatureHalf,
   faTimer,
+  faVolume,
+  faVolumeHigh,
+  faVolumeLow,
+  faVolumeXmark,
   faWifi,
 } from '@fortawesome/pro-solid-svg-icons'
 
@@ -45,6 +50,7 @@ library.add(
   faBatteryFull,
   faBatteryBolt,
   faDroplet,
+  faForward,
   faHouseChimney,
   faLocationCrosshairs,
   faPersonWalking,
@@ -57,5 +63,9 @@ library.add(
   faSensorTriangleExclamation,
   faTemperatureHalf,
   faTimer,
+  faVolume,
+  faVolumeHigh,
+  faVolumeLow,
+  faVolumeXmark,
   faWifi
 )

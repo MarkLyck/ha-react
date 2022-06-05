@@ -1,9 +1,15 @@
 import React, { FC } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { AccessoryCard } from '../../common/AccessoryCard'
 import { useModalHelper } from '../../common/hooks'
 import { TemperatureIcon } from './TemperatureIcon'
 import { ThermostatCardModal } from './ThermostatCardModal'
+
+import {
+  ActionsContainer,
+  ActionButton,
+} from 'src/Components/Devices/Tiles/common/Actions'
 
 interface ThermostatCardProps {
   readonly entity: any
@@ -40,10 +46,26 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
 
   let statusLabel = 'Off'
   if (currentMode === 'heat')
-    statusLabel = `Heat to ${Number(targetTemperature).toFixed(0)}°`
+    statusLabel = `Heating to ${Number(targetTemperature).toFixed(0)}°`
   if (currentMode === 'cool')
-    statusLabel = `Cool to ${Number(targetTemperature).toFixed(0)}°`
+    statusLabel = `Cooling to ${Number(targetTemperature).toFixed(0)}°`
   if (currentMode === 'heat_cool') statusLabel = `Auto`
+
+  const tempMin = Math.ceil(entity.attributes.min_temp)
+  const tempMax = Math.floor(entity.attributes.max_temp)
+
+  const handleIncreaseTemperature = () => {
+    const newTemp = targetTemperature + 1
+    if (newTemp <= tempMax) {
+      onTemperatureChange(newTemp)
+    }
+  }
+  const handleDecreaseTemperature = () => {
+    const newTemp = targetTemperature - 1
+    if (newTemp >= tempMin) {
+      onTemperatureChange(newTemp)
+    }
+  }
 
   return (
     <React.Fragment>
@@ -65,15 +87,31 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
         isActive={currentMode !== 'off'}
         onPress={openModal}
         onLongPress={openModal}
-      />
+      >
+        <ActionsContainer>
+          <ActionButton onClick={handleDecreaseTemperature}>
+            <FontAwesomeIcon icon={['fas', 'angle-down']} />
+          </ActionButton>
+          <ActionButton onClick={handleIncreaseTemperature}>
+            <FontAwesomeIcon icon={['fas', 'angle-up']} />
+          </ActionButton>
+        </ActionsContainer>
+        {/* <SliderContainer>
+          <Slider
+            defaultValue={currentTemperature}
+            min={tempMin}
+            max={tempMax}
+          />
+        </SliderContainer> */}
+      </AccessoryCard>
       <ThermostatCardModal
         name={name}
         statusLabel={statusLabel}
         currentMode={currentMode}
         modes={modes}
         onModeChange={onModeChange}
-        tempMax={Math.floor(entity.attributes.max_temp)}
-        tempMin={Math.ceil(entity.attributes.min_temp)}
+        tempMin={tempMin}
+        tempMax={tempMax}
         currentTemperature={currentTemperature}
         targetTemperature={targetTemperature}
         onTemperatureChange={onTemperatureChange}

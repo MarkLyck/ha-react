@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import styled from '@emotion/styled'
 import { Modal } from 'antd'
 // @ts-ignore
-import LightIconSvg from './light-bulb.svg'
+import LightBulbIcon from 'src/assets/icons/devices/light_bulb.svg'
 import { ModalContent, ModalHeader } from '../../common/modals'
 import { Slider, Switch } from '../../common'
 import { Capabilities } from '../../common/types'
@@ -69,7 +69,7 @@ export const LightCardModal: FC<LightCardModalProps> = ({
         title={name}
         subtitle={stateLabel}
         close={close}
-        icon={<LightIconSvg />}
+        icon={<LightBulbIcon />}
       />
       <ModalContent>
         {capabilities.SUPPORT_BRIGHTNESS ? (
