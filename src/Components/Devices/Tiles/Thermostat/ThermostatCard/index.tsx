@@ -88,21 +88,16 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
         onPress={openModal}
         onLongPress={openModal}
       >
-        <ActionsContainer>
-          <ActionButton onClick={handleDecreaseTemperature}>
-            <FontAwesomeIcon icon={['fas', 'angle-down']} />
-          </ActionButton>
-          <ActionButton onClick={handleIncreaseTemperature}>
-            <FontAwesomeIcon icon={['fas', 'angle-up']} />
-          </ActionButton>
-        </ActionsContainer>
-        {/* <SliderContainer>
-          <Slider
-            defaultValue={currentTemperature}
-            min={tempMin}
-            max={tempMax}
-          />
-        </SliderContainer> */}
+        {currentMode !== 'off' && (
+          <ActionsContainer>
+            <ActionButton onClick={handleDecreaseTemperature}>
+              <FontAwesomeIcon icon={['fas', 'angle-down']} />
+            </ActionButton>
+            <ActionButton onClick={handleIncreaseTemperature}>
+              <FontAwesomeIcon icon={['fas', 'angle-up']} />
+            </ActionButton>
+          </ActionsContainer>
+        )}
       </AccessoryCard>
       <ThermostatCardModal
         name={name}

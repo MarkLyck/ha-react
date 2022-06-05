@@ -1,4 +1,3 @@
-import { Alert } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
 import {
   LightCard,
@@ -8,6 +7,7 @@ import {
   SwitchTile,
   TeslaTile,
 } from 'src/Components/Devices/Tiles'
+import { ErrorTile } from 'src/ui-components'
 
 import FallbackTile from './Fallback'
 
@@ -37,7 +37,9 @@ const Device = ({ entityId, deviceId, areaId, type }: DeviceProps) => {
 
 const DeviceWrapper = (props: DeviceProps) => (
   <ErrorBoundary
-    fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
+    FallbackComponent={(error) => (
+      <ErrorTile error={error} entityProps={props} />
+    )}
   >
     <Device {...props} />
   </ErrorBoundary>

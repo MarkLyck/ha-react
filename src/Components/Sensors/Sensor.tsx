@@ -7,8 +7,8 @@ import {
   FallbackSensor,
   UptimeSensor,
 } from 'src/Components/Sensors'
-import { Alert, Tooltip } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
+import { ErrorTile } from 'src/ui-components'
 
 type SensorProps = {
   entityId: string
@@ -37,7 +37,9 @@ const Sensor = ({ entityId }: SensorProps) => {
 
 const SensorWrapper = (props: SensorProps) => (
   <ErrorBoundary
-    fallback={<Alert message={'Something went wrong'} type="error" showIcon />}
+    FallbackComponent={(error) => (
+      <ErrorTile error={error} entityProps={props} />
+    )}
   >
     <Sensor {...props} />
   </ErrorBoundary>

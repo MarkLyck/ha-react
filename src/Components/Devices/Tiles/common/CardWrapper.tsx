@@ -1,5 +1,6 @@
 import { Alert } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
+import { ErrorTile } from 'src/ui-components'
 
 const CardWrapper = (Component: any) => (props: any) => {
   const entity = props.hass.states[props.entityId]
@@ -18,9 +19,9 @@ const CardWrapper = (Component: any) => (props: any) => {
 
   return (
     <ErrorBoundary
-      fallback={
-        <Alert message={'Something went wrong'} type="error" showIcon />
-      }
+      FallbackComponent={(error) => (
+        <ErrorTile error={error} entityProps={props} />
+      )}
     >
       <Component {...props} />
     </ErrorBoundary>
