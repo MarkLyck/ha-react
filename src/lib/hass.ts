@@ -31,7 +31,6 @@ const handleEvents = (message: any) => {
 
 const handleServices = (message: any) => {
   if (!message.result) return
-  console.log('🔈 ~ message', message)
   useStore.getState().setServices(message.result)
 }
 const handleStates = (message: any) => {

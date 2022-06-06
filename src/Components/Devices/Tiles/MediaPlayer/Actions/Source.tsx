@@ -15,14 +15,12 @@ const sourceIcons: any = {
 }
 
 export const SourceButton = ({ entity }: SourceButtonProps) => {
-  console.log('🔈 ~ entity', entity)
   const sourceList = entity.attributes.source_list
   const appId = entity.attributes.app_id
   const currentApp = appId.split('.')[appId.split('.').length - 1]
   const AppIcon = sourceIcons[currentApp]
 
   const handleClick = (e: any) => {
-    console.log('HANDLE CLICK')
     e.preventDefault()
   }
 

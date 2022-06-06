@@ -37,6 +37,12 @@ export const AccessoryCardStatus = styled(TileState)`
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+
+  ${(p) => {
+    if (String(p.children).toLowerCase() === 'unavailable') {
+      return `color: ${p.theme.colors.danger[600]}; `
+    }
+  }}
 `
 
 export const AccessoryCardIcon = styled(TileIcon)`

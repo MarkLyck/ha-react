@@ -45,6 +45,9 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
   const isOn = currentMode !== 'off'
 
   let statusLabel = 'Off'
+  if (currentMode === 'unavailable') {
+    statusLabel = 'Unavailable'
+  }
   if (currentMode === 'heat')
     statusLabel = `Heating to ${Number(targetTemperature).toFixed(0)}°`
   if (currentMode === 'cool')
@@ -67,6 +70,8 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
     }
   }
 
+  const isActive = currentMode !== 'off' && currentMode !== 'unavailable'
+
   return (
     <React.Fragment>
       <AccessoryCard
@@ -84,11 +89,11 @@ export const ThermostatCard: FC<ThermostatCardProps> = ({
         }
         name={name}
         state={statusLabel}
-        isActive={currentMode !== 'off'}
+        isActive={isActive}
         onPress={openModal}
         onLongPress={openModal}
       >
-        {currentMode !== 'off' && (
+        {isActive && (
           <ActionsContainer>
             <ActionButton onClick={handleDecreaseTemperature}>
               <FontAwesomeIcon icon={['fas', 'angle-down']} />

@@ -13,6 +13,7 @@ const Thermostat = ({ entityId }: ThermostatCardCardProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
+
   const [currentMode, setCurrentMode] = useState(entity?.state || 'off')
   const [targetTemperature, setTargetTemperature] = useState(
     entity?.attributes?.temperature || 0
@@ -28,20 +29,29 @@ const Thermostat = ({ entityId }: ThermostatCardCardProps) => {
     })
   }
 
-  const handleModeChange = (value: string) => {
-    let newTemp = Math.floor(entity.attributes.current_temperature)
-    setCurrentMode(value)
-    setTargetTemperature(newTemp)
-    sendSocket({
+  const handleModeChange = async (mode: string) => {
+    setCurrentMode(mode)
+    await sendSocket({
       domain: 'climate',
       service: 'set_hvac_mode',
       service_data: {
         entity_id: entityId,
-        hvac_mode: value,
-        temperature: newTemp,
+        hvac_mode: mode,
       },
       type: 'call_service',
     })
+    if (mode !== 'off') {
+      let newTemp = Math.floor(entity.attributes.current_temperature)
+      setTargetTemperature(newTemp)
+      window.setTimeout(() => {
+        sendSocket({
+          domain: 'climate',
+          service: 'set_temperature',
+          service_data: { entity_id: entityId, temperature: newTemp },
+          type: 'call_service',
+        })
+      }, 200)
+    }
   }
 
   return (

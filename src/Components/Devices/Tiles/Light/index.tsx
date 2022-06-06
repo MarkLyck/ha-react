@@ -1,10 +1,14 @@
 import { useState } from 'react'
-import { LightCard as HomekitLightCard } from './LightCard'
 import useStore from 'src/lib/useStore'
+import { useModalHelper } from 'src/Components/Devices/Tiles/common/hooks'
+import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
 
-import getSupportedFeatures from 'src/common/supportedFeatures'
-import LIGHT_FEATURES from './features.json'
-console.log('🔈 ~ LIGHT_FEATURES', LIGHT_FEATURES)
+import { LightCardModal } from './LightCardModal'
+import LightBulbIcon from 'src/assets/icons/devices/light_bulb.svg'
+import LedStripIcon from 'src/assets/icons/devices/led_strip.svg'
+
+// import getSupportedFeatures from 'src/common/supportedFeatures'
+// import LIGHT_FEATURES from 'src/common/features/light.json'
 
 type HassLightCardProps = {
   entityId: string
@@ -16,15 +20,21 @@ const Light = ({ entityId }: HassLightCardProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
-  console.log('🔈 ~ entity', entity.attributes.friendly_name)
 
-  getSupportedFeatures(entity.attributes.supported_features, LIGHT_FEATURES)
+  // const supportedFeatures = getSupportedFeatures(
+  //   entity.attributes.supported_features,
+  //   LIGHT_FEATURES
+  // )
 
   const [isOn, setIsOn] = useState(
-    entity.state && entity.state !== 'off' && entity.state != 'unavailable'
+    entity.state && entity.state !== 'off' && entity.state !== 'unavailable'
   )
   const [brightness, setBrightness] = useState(entity.attributes.brightness)
-  const brightnessPercentage = Math.floor((brightness * 100) / 255)
+  const { showModal, openModal, closeModal } = useModalHelper()
+
+  const stateLabel = isOn ? (brightness ? `${brightness}%` : 'On') : 'Off'
+
+  // const brightnessPercentage = Math.floor((brightness * 100) / 255)
 
   const handleToggle = async () => {
     setIsOn(!isOn)
@@ -50,17 +60,30 @@ const Light = ({ entityId }: HassLightCardProps) => {
     })
   }
 
+  const name = entity.attributes.friendly_name
+
   return (
-    <HomekitLightCard
-      name={entity.attributes.friendly_name}
-      on={isOn}
-      brightness={brightnessPercentage}
-      onBrightnessChange={handlePercentageChange}
-      onToggle={handleToggle}
-      capabilities={{
-        SUPPORT_BRIGHTNESS: true,
-      }}
-    />
+    <>
+      <AccessoryCard
+        iconActive={<LightBulbIcon />}
+        iconInactive={<LightBulbIcon />}
+        name={name}
+        state={entity.state}
+        isActive={isOn}
+        onPress={handleToggle}
+        onLongPress={openModal}
+      />
+      <LightCardModal
+        name={name}
+        state={stateLabel}
+        on={isOn}
+        onToggle={handleToggle}
+        brightness={brightness}
+        onBrightnessChange={handlePercentageChange}
+        show={showModal}
+        close={closeModal}
+      />
+    </>
   )
 }
 

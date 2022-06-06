@@ -1,20 +1,14 @@
 const getSupportedFeatures = (value: number, features: any) => {
-  console.log('🔈 ~ value', value)
-  console.log('🔈 ~ features', features)
+  const supportedFeatures: string[] = []
   Object.keys(features).forEach((key, i) => {
     const bitFeature = Number(key)
-    console.log(
-      '✅',
-      value,
-      bitFeature,
-      value & bitFeature,
-      (value & bitFeature) === bitFeature
-    )
     const result = (value & bitFeature) === bitFeature
     if (result) {
-      console.log('🔈 ~ result', features[i])
+      supportedFeatures.push(features[key])
     }
   })
+
+  return supportedFeatures
 }
 
 export default getSupportedFeatures

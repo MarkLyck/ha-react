@@ -3,15 +3,12 @@ import styled from '@emotion/styled'
 import { Modal } from 'antd'
 // @ts-ignore
 import LightBulbIcon from 'src/assets/icons/devices/light_bulb.svg'
-import { ModalContent, ModalHeader } from '../../common/modals'
-import { Slider, Switch } from '../../common'
-import { Capabilities } from '../../common/types'
+import { ModalContent, ModalHeader } from '../common/modals'
+import { Slider } from '../common'
 
 interface LightCardModalProps {
   /** Brightness value */
   readonly brightness?: number
-  /** Capabilities of the light */
-  readonly capabilities: Capabilities
   /** Method to close the modal */
   readonly close: () => void
   /** Color of the light */
@@ -40,10 +37,7 @@ const StyledModal = styled(Modal)`
 
 export const LightCardModal: FC<LightCardModalProps> = ({
   name,
-  state,
-  on,
   show,
-  capabilities,
   brightness,
   onBrightnessChange,
   onToggle,
@@ -51,11 +45,7 @@ export const LightCardModal: FC<LightCardModalProps> = ({
 }: LightCardModalProps) => {
   const [color] = useState('#F8CC46')
 
-  const stateLabel = capabilities.SUPPORT_BRIGHTNESS
-    ? brightness && brightness > 0
-      ? `${brightness}% Brightness`
-      : state
-    : state
+  const stateLabel = `${brightness}% Brightness`
 
   function handleSliderChange(value: number) {
     if (onBrightnessChange) {
@@ -72,18 +62,11 @@ export const LightCardModal: FC<LightCardModalProps> = ({
         icon={<LightBulbIcon />}
       />
       <ModalContent>
-        {capabilities.SUPPORT_BRIGHTNESS ? (
-          <Slider
-            value={brightness || 0}
-            onChange={handleSliderChange}
-            color={color}
-          />
-        ) : (
-          <Switch isActive={on} onToggle={() => onToggle && onToggle()} />
-        )}
-        {capabilities.SUPPORT_COLOR ? (
-          <div>TODO: Implement color picker</div>
-        ) : null}
+        <Slider
+          value={brightness || 0}
+          onChange={handleSliderChange}
+          color={color}
+        />
       </ModalContent>
     </StyledModal>
   )

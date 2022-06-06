@@ -14045,7 +14045,7 @@ hass.callService = (
   service: string,
   data: { entity_id: string; brightness?: string }
 ) => {
-  console.log('🚀 callService: ', domain, service, data)
+  console.info('🚀 callService: ', domain, service, data)
 }
 
 export default hass
