@@ -15,7 +15,7 @@ const TVTile = ({ entity, device }: any) => {
   const { sendSocket } = useStore((state: any) => ({
     sendSocket: state.sendSocket,
   }))
-  const INACTIVE_STATES = ['standby', 'off', 'idle']
+  const INACTIVE_STATES = ['standby', 'off']
   const isActive = !INACTIVE_STATES.includes(entity.state)
 
   let Icon = TVIcon
@@ -45,9 +45,11 @@ const TVTile = ({ entity, device }: any) => {
     }
   }
 
+  const { media_title, source } = entity.attributes
+
   let state = entity.state
-  if (state === 'playing' && entity.attributes.media_title) {
-    state = entity.attributes.media_title
+  if (state === 'playing' && media_title) {
+    state = media_title
   }
 
   return (
@@ -60,11 +62,11 @@ const TVTile = ({ entity, device }: any) => {
       state={state}
       backgroundImage={undefined}
     >
-      {/* {entity.state === 'idle' && (
+      {source && (
         <ActionsContainer>
           <SourceButton entity={entity} />
         </ActionsContainer>
-      )} */}
+      )}
       {entity.state === 'playing' && (
         <ActionsContainer>
           <SourceButton entity={entity} />

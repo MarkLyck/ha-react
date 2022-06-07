@@ -16,9 +16,21 @@ const sourceIcons: any = {
 
 export const SourceButton = ({ entity }: SourceButtonProps) => {
   const sourceList = entity.attributes.source_list
-  const appId = entity.attributes.app_id
-  const currentApp = appId.split('.')[appId.split('.').length - 1]
-  const AppIcon = sourceIcons[currentApp]
+  let source = entity.attributes.source
+  if (!source && entity.attributes.app_id) {
+    source = entity.attributes.app_id
+  }
+  console.log('🔈 ~ source', source)
+
+  let currentApp = null
+  let AppIcon = 'S'
+  if (source) {
+    const src = source.toLowerCase()
+    currentApp = src.split('.')[src?.split('.').length - 1]
+    if (src.includes('apple')) {
+      AppIcon = sourceIcons.apple
+    }
+  }
 
   const handleClick = (e: any) => {
     e.preventDefault()

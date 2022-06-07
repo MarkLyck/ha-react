@@ -34,10 +34,14 @@ import {
   faWifi,
 } from '@fortawesome/pro-solid-svg-icons'
 
-import { faYoutube as fabYoutube } from '@fortawesome/free-brands-svg-icons'
+import {
+  faYoutube as fabYoutube,
+  faApple as fabApple,
+} from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   // Brands
+  fabApple,
   fabYoutube,
   // Solid
   faAngleUp,
