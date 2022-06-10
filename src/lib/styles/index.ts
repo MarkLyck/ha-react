@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import backgroundImage from 'src/assets/images/background1.png'
+import backgroundImage from 'src/assets/images/background-ios1.jpeg'
 
 const globalStyles = css`
   html,

@@ -3,7 +3,7 @@ import { Slider } from 'antd'
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
-import Icon from 'src/assets/icons/devices/homepod.svg'
+import Icon from 'src/assets/icons/devices/homepod_mini.svg'
 import useStore from 'src/lib/useStore'
 
 import {

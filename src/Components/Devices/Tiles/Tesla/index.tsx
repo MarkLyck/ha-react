@@ -2,13 +2,46 @@ import styled from '@emotion/styled'
 import useStore from 'src/lib/useStore'
 import { AccessoryCard } from '../common/AccessoryCard'
 import TeslaLogo from 'src/assets/icons/devices/tesla.svg'
-import { Battery } from 'src/ui-components'
 import configuration from 'src/../configuration.json'
 
-const BatteryContainer = styled.div`
-  position: absolute;
-  top: 8px;
-  right: 8px;
+const ChargingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 16px 16px;
+`
+
+const ProgressBarContainer = styled.div`
+  height: 8px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 4px;
+`
+
+const ProgressBar = styled.div`
+  height: 8px;
+  width: ${(p: { percent: number }) => p.percent}%;
+  background: ${(p) => {
+    if (p.percent < 15) return p.theme.colors.danger[600]
+    if (p.percent < 30) return p.theme.colors.warning[600]
+    return p.theme.colors.success[600]
+  }};
+  border-radius: 4px;
+  transition: 0.2s width ease-in-out;
+`
+
+const Flex = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
+
+const ChargingStatus = styled.span`
+  font-size: 11px;
+  color: ${(p) => p.theme.colors.neutral[1000]};
+  font-weight: bold;
+  margin-bottom: 6px;
 `
 
 type TeslaTileProps = {
@@ -33,22 +66,28 @@ export const TeslaTile = ({ deviceId, areaId }: TeslaTileProps) => {
 
   const batteryPercentage = Number(states[entities.battery_sensor].state)
   const isCharging = states[entities.charger_sensor].state === 'on'
+  const chargingRate = states[entities.charging_rate_sensor].state
+  const isParked = states[entities.parking_brake_sensor].state === 'on'
 
   return (
     <AccessoryCard
       isActive={isCharging}
       name="model Y"
-      state={`${isCharging ? 'charging: ' : ''}${batteryPercentage}%`}
-      iconActive={<TeslaLogo />}
-      iconInactive={<TeslaLogo />}
+      state={`${isParked ? 'parked' : 'driving'} - ${batteryPercentage}%`}
+      // @ts-ignore
+      iconActive={<TeslaLogo style={{ height: '24px' }} />}
+      // @ts-ignore
+      iconInactive={<TeslaLogo style={{ height: '24px' }} />}
     >
-      <BatteryContainer>
-        <Battery
-          percentage={batteryPercentage}
-          showNumber={false}
-          isCharging={isCharging}
-        />
-      </BatteryContainer>
+      <ChargingContainer>
+        <Flex>
+          <ChargingStatus>Charging</ChargingStatus>
+          <ChargingStatus>{chargingRate} mi/hr</ChargingStatus>
+        </Flex>
+        <ProgressBarContainer>
+          <ProgressBar percent={batteryPercentage} />
+        </ProgressBarContainer>
+      </ChargingContainer>
     </AccessoryCard>
   )
 }

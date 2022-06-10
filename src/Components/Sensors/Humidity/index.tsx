@@ -1,9 +1,6 @@
-import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SensorCardMini } from '../Card'
 import useStore from 'src/lib/useStore'
-
-const Text = styled.b``
 
 type HumiditySensorProps = {
   entityId: string
@@ -14,14 +11,12 @@ export const HumiditySensor = ({ entityId }: HumiditySensorProps) => {
   const entity = states[entityId]
   if (!entity) return null
 
-  const Humidity = entity.state
+  const humidity = entity.state
 
   return (
-    <SensorCardMini>
-      <Text>
-        <FontAwesomeIcon icon={['fas', 'droplet']} />{' '}
-        {Number(Humidity).toFixed(0)}%
-      </Text>
-    </SensorCardMini>
+    <SensorCardMini
+      icon={<FontAwesomeIcon icon={['fas', 'droplet']} />}
+      state={`${Number(humidity).toFixed(0)}%`}
+    />
   )
 }

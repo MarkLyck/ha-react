@@ -1,4 +1,13 @@
 {
+  "areasOrder": [
+    "living_room",
+    "kitchen",
+    "office",
+    "hallway",
+    "bedroom",
+    "bathroom",
+    "garage"
+  ],
   "areas": {
     "garage": {
       "extraDevices": [
@@ -9,7 +18,9 @@
           "entities": {
             "location": "device_tracker.tesla_location_tracker",
             "battery_sensor": "sensor.tesla_battery_sensor",
-            "charger_sensor": "binary_sensor.tesla_charger_sensor"
+            "charger_sensor": "binary_sensor.tesla_charger_sensor",
+            "charging_rate_sensor": "sensor.tesla_charging_rate_sensor",
+            "parking_brake_sensor": "binary_sensor.tesla_parking_brake_sensor"
           }
         }
       ]

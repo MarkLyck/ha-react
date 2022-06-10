@@ -13,10 +13,17 @@ export const WifiSensor = ({ entityId }: WanStatusSensorProps) => {
 
   const status = entity.state
 
+  let icon = 'router'
+
+  if (entity.attributes.friendly_name === 'Internet') {
+    icon = 'globe'
+  }
+
   return (
     <SensorCard
       name={entity.attributes.friendly_name}
-      icon={<FontAwesomeIcon icon={['fas', 'wifi']} />}
+      // @ts-ignore
+      icon={<FontAwesomeIcon icon={['fas', icon]} />}
       state={status}
     />
   )

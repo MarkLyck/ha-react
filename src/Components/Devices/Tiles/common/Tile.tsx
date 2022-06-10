@@ -29,20 +29,14 @@ export const ActionableTileContainer = styled(TileContainer)<WithActiveProps>`
 
 export const TileName = styled.div<WithActiveProps>`
   font-size: ${(p) => p.theme.card.name.size};
-  font-weight: ${(p) => p.theme.card.name.weight};
-  color: ${(p) =>
-    p.isActive
-      ? p.theme.card.name.colorActive
-      : p.theme.card.name.colorInactive};
+  font-weight: 600;
+  color: ${(p) => (p.isActive ? 'black' : 'white')};
 `
 
 export const TileState = styled.div<WithActiveProps>`
-  font-size: ${(p) => p.theme.card.state.size};
-  font-weight: ${(p) => p.theme.card.state.weight};
-  color: ${(p) =>
-    p.isActive
-      ? p.theme.card.state.colorActive
-      : p.theme.card.state.colorInactive};
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: ${(p) => (p.isActive ? 'rgba(0,0,0,0.75)' : 'rgba(255,255,255,0.5)')};
 `
 
 export const TileIcon = styled.div<WithActiveProps>`

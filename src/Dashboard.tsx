@@ -2,7 +2,7 @@ import { ThemeProvider, Global } from '@emotion/react'
 import theme from 'src/lib/themes'
 
 import globalStyles from './lib/styles'
-import Areas from './Components/Areas'
+import Areas from './Components/HomeView'
 
 const Dashboard = () => (
   <ThemeProvider theme={theme}>

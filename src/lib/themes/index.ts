@@ -10,8 +10,8 @@ const colors = {
   textGray: '#909090',
   textDark: '#000000D0',
 
-  backgroundActive: '#FFFFFFFF',
-  backgroundInactive: '#70707040',
+  backgroundActive: 'white',
+  backgroundInactive: 'rgba(0,0,0,0.28)',
 
   red: '#BD0909',
   green: '#38B700',

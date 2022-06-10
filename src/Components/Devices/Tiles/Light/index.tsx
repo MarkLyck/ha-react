@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import styled from '@emotion/styled'
 import useStore from 'src/lib/useStore'
 import { useModalHelper } from 'src/Components/Devices/Tiles/common/hooks'
 import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard'
@@ -6,6 +7,24 @@ import { AccessoryCard } from 'src/Components/Devices/Tiles/common/AccessoryCard
 import { LightCardModal } from './LightCardModal'
 import LightBulbIcon from 'src/assets/icons/devices/light_bulb.svg'
 import LedStripIcon from 'src/assets/icons/devices/led_strip.svg'
+
+const LightIconContainer = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: ${(p: { isActive: boolean }) =>
+    p.isActive ? 'rgba(0,0,0,0.05)' : 'black'};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  && {
+    svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
+`
 
 // import getSupportedFeatures from 'src/common/supportedFeatures'
 // import LIGHT_FEATURES from 'src/common/features/light.json'
@@ -20,6 +39,7 @@ const Light = ({ entityId }: HassLightCardProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
+  console.log('🔈 ~ entity', entity)
 
   // const supportedFeatures = getSupportedFeatures(
   //   entity.attributes.supported_features,
@@ -29,12 +49,14 @@ const Light = ({ entityId }: HassLightCardProps) => {
   const [isOn, setIsOn] = useState(
     entity.state && entity.state !== 'off' && entity.state !== 'unavailable'
   )
-  const [brightness, setBrightness] = useState(entity.attributes.brightness)
+  const [brightness, setBrightness] = useState(
+    Math.floor((entity.attributes.brightness * 100) / 255)
+  )
   const { showModal, openModal, closeModal } = useModalHelper()
 
   const stateLabel = isOn ? (brightness ? `${brightness}%` : 'On') : 'Off'
 
-  // const brightnessPercentage = Math.floor((brightness * 100) / 255)
+  const brightnessPercentage = brightness
 
   const handleToggle = async () => {
     setIsOn(!isOn)
@@ -47,14 +69,13 @@ const Light = ({ entityId }: HassLightCardProps) => {
   }
 
   function handlePercentageChange(value: number) {
-    const newBrightness = Math.floor((value * 255) / 100)
-    setBrightness(newBrightness)
+    setBrightness(value)
     sendSocket({
       domain: 'light',
       service: 'turn_on',
       service_data: {
         entity_id: entityId,
-        brightness_pct: Math.floor((newBrightness * 100) / 255),
+        brightness_pct: value,
       },
       type: 'call_service',
     })
@@ -65,8 +86,16 @@ const Light = ({ entityId }: HassLightCardProps) => {
   return (
     <>
       <AccessoryCard
-        iconActive={<LightBulbIcon />}
-        iconInactive={<LightBulbIcon />}
+        iconActive={
+          <LightIconContainer isActive={isOn}>
+            <LightBulbIcon />
+          </LightIconContainer>
+        }
+        iconInactive={
+          <LightIconContainer isActive={isOn}>
+            <LightBulbIcon />
+          </LightIconContainer>
+        }
         name={name}
         state={entity.state}
         isActive={isOn}
@@ -78,7 +107,7 @@ const Light = ({ entityId }: HassLightCardProps) => {
         state={stateLabel}
         on={isOn}
         onToggle={handleToggle}
-        brightness={brightness}
+        brightness={brightnessPercentage}
         onBrightnessChange={handlePercentageChange}
         show={showModal}
         close={closeModal}

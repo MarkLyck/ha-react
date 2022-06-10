@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import { ActionableTileContainer, TileIcon, TileName, TileState } from './Tile'
 
 export const AccessoryCardContainer = styled(ActionableTileContainer)`
-  width: 160px;
+  width: 180px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ export const AccessoryCardContainer = styled(ActionableTileContainer)`
   overflow: auto;
   overflow: hidden;
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     width: auto;
   }
 `
@@ -39,7 +39,8 @@ export const AccessoryCardStatus = styled(TileState)`
   width: 100%;
 
   ${(p) => {
-    if (String(p.children).toLowerCase() === 'unavailable') {
+    const status = String(p.children).toLowerCase()
+    if (status === 'unavailable' || status === 'unknown') {
       return `color: ${p.theme.colors.danger[600]}; `
     }
   }}
@@ -47,8 +48,11 @@ export const AccessoryCardStatus = styled(TileState)`
 
 export const AccessoryCardIcon = styled(TileIcon)`
   margin-right: 8px;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   svg {
     height: 32px;
@@ -66,7 +70,7 @@ export const AccessoryCardHeader = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 12px;
+  padding: 12px 14px;
   cursor: pointer;
 `
 
