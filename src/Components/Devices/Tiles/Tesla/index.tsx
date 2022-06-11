@@ -71,7 +71,7 @@ export const TeslaTile = ({ deviceId, areaId }: TeslaTileProps) => {
 
   return (
     <AccessoryCard
-      isActive={isCharging}
+      isActive={isCharging && !isParked}
       name="model Y"
       state={`${isParked ? 'parked' : 'driving'} - ${batteryPercentage}%`}
       // @ts-ignore
@@ -79,15 +79,17 @@ export const TeslaTile = ({ deviceId, areaId }: TeslaTileProps) => {
       // @ts-ignore
       iconInactive={<TeslaLogo style={{ height: '24px' }} />}
     >
-      <ChargingContainer>
-        <Flex>
-          <ChargingStatus>Charging</ChargingStatus>
-          <ChargingStatus>{chargingRate} mi/hr</ChargingStatus>
-        </Flex>
-        <ProgressBarContainer>
-          <ProgressBar percent={batteryPercentage} />
-        </ProgressBarContainer>
-      </ChargingContainer>
+      {isCharging && (
+        <ChargingContainer>
+          <Flex>
+            <ChargingStatus>Charging</ChargingStatus>
+            <ChargingStatus>{chargingRate} mi/hr</ChargingStatus>
+          </Flex>
+          <ProgressBarContainer>
+            <ProgressBar percent={batteryPercentage} />
+          </ProgressBarContainer>
+        </ChargingContainer>
+      )}
     </AccessoryCard>
   )
 }

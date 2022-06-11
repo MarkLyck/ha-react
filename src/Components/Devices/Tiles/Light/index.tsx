@@ -39,7 +39,6 @@ const Light = ({ entityId }: HassLightCardProps) => {
     sendSocket: state.sendSocket,
   }))
   const entity = states[entityId]
-  console.log('🔈 ~ entity', entity)
 
   // const supportedFeatures = getSupportedFeatures(
   //   entity.attributes.supported_features,
@@ -83,6 +82,15 @@ const Light = ({ entityId }: HassLightCardProps) => {
 
   const name = entity.attributes.friendly_name
 
+  let state = entity.state
+  if (
+    state === 'on' &&
+    brightnessPercentage > 0 &&
+    brightnessPercentage < 100
+  ) {
+    state = `${brightnessPercentage}%`
+  }
+
   return (
     <>
       <AccessoryCard
@@ -97,7 +105,7 @@ const Light = ({ entityId }: HassLightCardProps) => {
           </LightIconContainer>
         }
         name={name}
-        state={entity.state}
+        state={state}
         isActive={isOn}
         onPress={handleToggle}
         onLongPress={openModal}
