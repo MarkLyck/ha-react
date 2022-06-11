@@ -71,7 +71,7 @@ export const TeslaTile = ({ deviceId, areaId }: TeslaTileProps) => {
 
   return (
     <AccessoryCard
-      isActive={isCharging && !isParked}
+      isActive={isCharging || !isParked}
       name="model Y"
       state={`${isParked ? 'parked' : 'driving'} - ${batteryPercentage}%`}
       // @ts-ignore

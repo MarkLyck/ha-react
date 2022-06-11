@@ -4,5 +4,6 @@ export * from './Occupancy'
 export * from './Wan'
 export * from './Power'
 export * from './Uptime'
+export * from './DoorWindow'
 
 export * from './Fallback'

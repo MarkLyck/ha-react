@@ -1,4 +1,5 @@
 import {
+  DoorWindowSensor,
   TemperatureSensor,
   HumiditySensor,
   OccupancySensor,
@@ -15,6 +16,9 @@ type SensorProps = {
 }
 const Sensor = ({ entityId }: SensorProps) => {
   let SensorType = null
+  if (entityId.includes('door') || entityId.includes('window')) {
+    SensorType = DoorWindowSensor
+  }
   if (entityId.includes('temp')) SensorType = TemperatureSensor
   if (entityId.includes('humid')) SensorType = HumiditySensor
   if (entityId.includes('occupancy')) SensorType = OccupancySensor

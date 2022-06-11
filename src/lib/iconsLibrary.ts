@@ -12,6 +12,7 @@ import {
   faBatteryThreeQuarters,
   faBatteryFull,
   faBatteryBolt,
+  faDoorOpen,
   faDroplet,
   faForward,
   faGlobe,
@@ -35,6 +36,7 @@ import {
   faVolumeLow,
   faVolumeXmark,
   faWifi,
+  faWindowFrameOpen,
 } from '@fortawesome/pro-solid-svg-icons'
 
 import {
@@ -57,6 +59,7 @@ library.add(
   faBatteryThreeQuarters,
   faBatteryFull,
   faBatteryBolt,
+  faDoorOpen,
   faDroplet,
   faForward,
   faGlobe,
@@ -79,5 +82,6 @@ library.add(
   faVolumeHigh,
   faVolumeLow,
   faVolumeXmark,
+  faWindowFrameOpen,
   faWifi
 )
