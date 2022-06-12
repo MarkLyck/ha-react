@@ -7,6 +7,7 @@ import './index.css'
 import 'antd/dist/antd.css'
 import 'src/lib/prototypes'
 import 'src/lib/iconsLibrary'
+import 'src/lib/chartLibrary'
 import 'src/lib/hass'
 
 if (window.location.hostname.includes('localhost')) {

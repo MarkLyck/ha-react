@@ -45,7 +45,6 @@ const Areas = () => {
       const bIndex = configuration.areasOrder.indexOf(b.area_id)
       return aIndex < bIndex ? -1 : 1
     })
-  console.log('🔈 ~ areasList', areasList)
 
   return (
     <Container>

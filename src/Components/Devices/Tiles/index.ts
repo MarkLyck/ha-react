@@ -8,3 +8,4 @@ export * from './Switch'
 
 // Custom
 export * from './Tesla'
+export * from './Plant'

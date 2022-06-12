@@ -1,6 +1,19 @@
+import styled from '@emotion/styled'
+
 import { ActionButton } from '../../common/Actions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NetflixIcon from 'src/assets/icons/logos/netflix.svg'
+
+const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    height: 14px;
+    width: auto;
+  }
+`
 
 type SourceButtonProps = {
   entity: any
@@ -20,21 +33,24 @@ export const SourceButton = ({ entity }: SourceButtonProps) => {
   if (!source && entity.attributes.app_id) {
     source = entity.attributes.app_id
   }
-  console.log('🔈 ~ source', source)
 
   let currentApp = null
   let AppIcon = 'S'
   if (source) {
     const src = source.toLowerCase()
     currentApp = src.split('.')[src?.split('.').length - 1]
-    if (src.includes('apple')) {
-      AppIcon = sourceIcons.apple
-    }
+    if (src.includes('apple')) AppIcon = sourceIcons.apple
+    if (src.includes('youtube')) AppIcon = sourceIcons.youtube
+    if (src.includes('netflix')) AppIcon = sourceIcons.netflix
   }
 
   const handleClick = (e: any) => {
     e.preventDefault()
   }
 
-  return <ActionButton onClick={handleClick}>{AppIcon}</ActionButton>
+  return (
+    <ActionButton onClick={handleClick}>
+      <IconContainer>{AppIcon}</IconContainer>
+    </ActionButton>
+  )
 }

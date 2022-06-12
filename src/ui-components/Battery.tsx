@@ -8,12 +8,7 @@ const Container = styled.div`
   font-size: 12px;
 
   svg {
-    color: ${(p: { color: string; theme?: any }) => {
-      if (p.color) {
-        return p.theme.colors[p.color][600]
-      }
-      return 'rgba(255,255,255, 0.5)'
-    }};
+    color: rgba(0, 0, 0, 0.2);
     font-size: 18px;
     margin-right: 8px;
   }
@@ -60,7 +55,7 @@ export const Battery = ({
     // @ts-ignore
     <Container color={color}>
       {/* @ts-ignore */}
-      <FontAwesomeIcon icon={['fas', icon]} />
+      <FontAwesomeIcon icon={['far', icon]} />
       {showNumber && `${percentage.toFixed(0)}%`}
     </Container>
   )

@@ -2,21 +2,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SensorCardMini } from '../Card'
 import useStore from 'src/lib/useStore'
 
-type OccupancySensorProps = {
+type MotionSensorProps = {
   entityId: string
 }
 
-export const OccupancySensor = ({ entityId }: OccupancySensorProps) => {
+export const MotionSensor = ({ entityId }: MotionSensorProps) => {
   const states = useStore((state: any) => state?.states)
   const entity = states[entityId]
   if (!entity) return null
 
-  const occupied = entity.state === 'on'
+  const detected = entity.state === 'on'
 
   return (
     <SensorCardMini
-      icon={<FontAwesomeIcon icon={['fas', 'person']} />}
-      state={occupied ? 'Occupied' : 'Empty'}
+      icon={<FontAwesomeIcon icon={['fas', 'person-walking']} />}
+      state={detected ? 'detected' : 'clear'}
     />
   )
 }

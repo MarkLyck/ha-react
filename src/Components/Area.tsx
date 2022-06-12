@@ -131,7 +131,7 @@ const Area = ({ area }: AreaProps) => {
         ))}
         {customDevices.map((device) => (
           <Device
-            key={device.device_id}
+            key={device.device_id + device.type}
             entityId={null}
             type={device.type}
             deviceId={device.device_id}

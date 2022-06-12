@@ -69,11 +69,16 @@ export const TeslaTile = ({ deviceId, areaId }: TeslaTileProps) => {
   const chargingRate = states[entities.charging_rate_sensor].state
   const isParked = states[entities.parking_brake_sensor].state === 'on'
 
+  let state = isParked ? 'parked' : 'driving'
+  if (batteryPercentage) {
+    state += ` - ${batteryPercentage}%`
+  }
+
   return (
     <AccessoryCard
       isActive={isCharging || !isParked}
       name="model Y"
-      state={`${isParked ? 'parked' : 'driving'} - ${batteryPercentage}%`}
+      state={state}
       // @ts-ignore
       iconActive={<TeslaLogo style={{ height: '24px' }} />}
       // @ts-ignore

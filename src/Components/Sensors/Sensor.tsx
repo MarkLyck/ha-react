@@ -2,7 +2,9 @@ import {
   DoorWindowSensor,
   TemperatureSensor,
   HumiditySensor,
+  LumensSensor,
   OccupancySensor,
+  MotionSensor,
   WifiSensor,
   PowerSensor,
   FallbackSensor,
@@ -14,19 +16,27 @@ import { ErrorTile } from 'src/ui-components'
 type SensorProps = {
   entityId: string
 }
-const Sensor = ({ entityId }: SensorProps) => {
-  let SensorType = null
+
+const getSensorType = (entityId: string) => {
   if (entityId.includes('door') || entityId.includes('window')) {
-    SensorType = DoorWindowSensor
+    return DoorWindowSensor
   }
-  if (entityId.includes('temp')) SensorType = TemperatureSensor
-  if (entityId.includes('humid')) SensorType = HumiditySensor
-  if (entityId.includes('occupancy')) SensorType = OccupancySensor
+  if (entityId.includes('temp')) return TemperatureSensor
+  if (entityId.includes('humid')) return HumiditySensor
+  if (entityId.includes('luminance')) return LumensSensor
+  if (entityId.includes('occupancy')) return OccupancySensor
+  if (entityId.includes('motion')) return MotionSensor
   if (entityId.includes('wan') || entityId.includes('external_ip')) {
-    SensorType = WifiSensor
+    return WifiSensor
   }
-  if (entityId.includes('power')) SensorType = PowerSensor
-  if (entityId.includes('uptime')) SensorType = UptimeSensor
+  if (entityId.includes('power')) return PowerSensor
+  if (entityId.includes('uptime')) return UptimeSensor
+
+  return undefined
+}
+
+const Sensor = ({ entityId }: SensorProps) => {
+  let SensorType = getSensorType(entityId)
 
   if (SensorType) {
     return (

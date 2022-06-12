@@ -6,6 +6,7 @@ import {
   MediaPlayerTile,
   SwitchTile,
   TeslaTile,
+  PlantTile,
 } from 'src/Components/Devices/Tiles'
 import { ErrorTile } from 'src/ui-components'
 
@@ -21,6 +22,8 @@ const Device = ({ entityId, deviceId, areaId, type }: DeviceProps) => {
   // Custom tiles
   // @ts-ignore
   if (type === 'tesla') return <TeslaTile deviceId={deviceId} areaId={areaId} />
+  // @ts-ignore
+  if (type === 'plant') return <PlantTile deviceId={deviceId} areaId={areaId} />
 
   if (!entityId) return null
 

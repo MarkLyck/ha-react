@@ -1,5 +1,11 @@
 import styled from '@emotion/styled'
 
+import TemperatureCard from './TemperatureCard'
+
+const Container = styled.div`
+  margin-bottom: 32px;
+`
+
 const Title = styled.h1`
   color: white;
   font-weight: bold;
@@ -7,9 +13,10 @@ const Title = styled.h1`
 
 const Overview = () => {
   return (
-    <div>
+    <Container>
       <Title>Home</Title>
-    </div>
+      <TemperatureCard />
+    </Container>
   )
 }
 export default Overview

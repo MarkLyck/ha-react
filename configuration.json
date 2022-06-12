@@ -13,7 +13,6 @@
       "extraDevices": [
         {
           "type": "tesla",
-          "room": "garage",
           "device_id": "0dda1835745d84e8967bc321022cf9c2",
           "entities": {
             "location": "device_tracker.tesla_location_tracker",
@@ -26,7 +25,30 @@
       ]
     },
     "office": {
-      "extraTiles": []
+      "extraDevices": [
+        {
+          "type": "plant",
+          "name": "palor palm",
+          "entities": {
+            "battery_sensor": "sensor.parlor_palm_battery",
+            "conductivity_sensor": "sensor.parlor_palm_conductivity",
+            "light_sensor": "sensor.parlor_palm_light_intensity",
+            "moisture_sensor": "sensor.parlor_palm_moisture",
+            "temperature_sensor": "sensor.parlor_palm_temperature"
+          },
+          "target": {
+            "moisture": 15,
+            "conductivity": 350,
+            "temperature": 50
+          }
+        }
+      ]
     }
-  }
+  },
+  "temperature_sensors": [
+    "sensor.ecobee_bedroom_temperature_sensor",
+    "sensor.aqara_bathroom_temperature_sensor",
+    "sensor.ecobee_office_temperature_sensor",
+    "sensor.thermostat_temperature"
+  ]
 }

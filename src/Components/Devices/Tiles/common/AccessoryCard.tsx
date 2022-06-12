@@ -1,8 +1,18 @@
 import { FC, ReactNode, useState } from 'react'
-import { Spin } from 'antd'
+import { keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
+import { Spin } from 'antd'
 
 import { ActionableTileContainer, TileIcon, TileName, TileState } from './Tile'
+
+const marquee = keyframes`
+  0% { 
+    transform: translateX(100%); 		
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+`
 
 export const AccessoryCardContainer = styled(ActionableTileContainer)`
   width: 180px;
@@ -15,6 +25,11 @@ export const AccessoryCardContainer = styled(ActionableTileContainer)`
 
   @media (max-width: 640px) {
     width: auto;
+  }
+
+  .scrolling {
+    width: auto;
+    animation: ${marquee} 10s linear infinite;
   }
 `
 
@@ -34,11 +49,13 @@ export const AccessoryCardStatus = styled(TileState)`
   grid-area: status;
   text-transform: capitalize;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   width: 100%;
 
   ${(p) => {
+    if (p.color) {
+      return `color: ${p.color}`
+    }
+
     const status = String(p.children).toLowerCase()
     if (status === 'unavailable' || status === 'unknown') {
       return `color: ${p.theme.colors.danger[600]}; `
@@ -76,6 +93,7 @@ export const AccessoryCardHeader = styled.div`
 
 export const AccessoryTextContainer = styled.div`
   width: calc(100% - 42px);
+  overflow: hidden;
 `
 
 let buttonPressTimer: any
@@ -99,6 +117,8 @@ export interface AccessoryCardProps {
   readonly name: string
   /** State label of the card */
   readonly state: string
+  /** State label of the card */
+  readonly stateColor?: string
   /** State label of the card */
   readonly loading?: boolean
   /** Background */
@@ -159,7 +179,11 @@ export const AccessoryCard: FC<AccessoryCardProps> = (props) => {
             <AccessoryCardName isActive={props.isActive}>
               {props.name}
             </AccessoryCardName>
-            <AccessoryCardStatus isActive={props.isActive}>
+            <AccessoryCardStatus
+              isActive={props.isActive}
+              className={props.state.length > 18 ? 'scrolling' : undefined}
+              color={props.stateColor}
+            >
               {props.state}
             </AccessoryCardStatus>
           </AccessoryTextContainer>
