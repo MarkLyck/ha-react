@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
-import TemperatureCard from './TemperatureCard'
+// import TemperatureCard from './TemperatureCard'
+import Climate from './Climate'
 
 const Container = styled.div`
   margin-bottom: 32px;
@@ -11,11 +12,18 @@ const Title = styled.h1`
   font-weight: bold;
 `
 
+const Cards = styled.div`
+  display: flex;
+`
+
 const Overview = () => {
   return (
     <Container>
       <Title>Home</Title>
-      <TemperatureCard />
+      <Cards>
+        <Climate />
+      </Cards>
+      {/* <TemperatureCard /> */}
     </Container>
   )
 }
