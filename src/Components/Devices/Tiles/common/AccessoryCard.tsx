@@ -10,7 +10,7 @@ const marquee = keyframes`
     transform: translateX(100%); 		
   }
   100% {
-    transform: translateX(-100%); 
+    transform: translateX(-150%); 
   }
 `
 
