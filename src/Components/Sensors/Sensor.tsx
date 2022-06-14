@@ -42,12 +42,13 @@ const getSensorType = (entityId: string) => {
   return undefined
 }
 
-const Sensor = ({ entityId, type, ...restProps }: SensorProps) => {
+const Sensor = ({ entityId, ...restProps }: SensorProps) => {
   let SensorType = getSensorType(entityId)
 
   if (SensorType) {
     return (
       <div>
+        {/* @ts-ignore */}
         <SensorType entityId={entityId} {...restProps} />
       </div>
     )
