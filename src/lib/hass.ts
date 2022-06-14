@@ -92,7 +92,8 @@ let messageId = 0
 // const messageIds: any = {}
 
 async function connectManual() {
-  const socket = new WebSocket('ws://homeassistant.local:8123/api/websocket')
+  const BASE_URL = import.meta.env.VITE_BASE_URL
+  const socket = new WebSocket(`ws://${BASE_URL}/api/websocket`)
   useStore.getState().setSocket(socket)
 
   const sendSocket = useStore.getState().sendSocket

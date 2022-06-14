@@ -9,6 +9,7 @@ import {
   PowerSensor,
   FallbackSensor,
   UptimeSensor,
+  PlantSensor,
   PressureSensor,
 } from 'src/Components/Sensors'
 import { ErrorBoundary } from 'react-error-boundary'
@@ -16,9 +17,13 @@ import { ErrorTile } from 'src/ui-components'
 
 type SensorProps = {
   entityId: string
+  id?: string
 }
 
 const getSensorType = (entityId: string) => {
+  // Custom sensors
+  if (entityId.includes('plant.')) return PlantSensor
+
   if (entityId.includes('door') || entityId.includes('window')) {
     return DoorWindowSensor
   }
@@ -37,13 +42,13 @@ const getSensorType = (entityId: string) => {
   return undefined
 }
 
-const Sensor = ({ entityId }: SensorProps) => {
+const Sensor = ({ entityId, type, ...restProps }: SensorProps) => {
   let SensorType = getSensorType(entityId)
 
   if (SensorType) {
     return (
       <div>
-        <SensorType entityId={entityId} />
+        <SensorType entityId={entityId} {...restProps} />
       </div>
     )
   }

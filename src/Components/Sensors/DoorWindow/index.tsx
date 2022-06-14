@@ -11,9 +11,9 @@ export const DoorWindowSensor = ({ entityId }: DoorWindowSensorProps) => {
   const entity = states[entityId]
   if (!entity) return null
 
-  const status = entity.state
+  const isOpen = entity.state === 'on'
 
-  let icon = 'door-open'
+  let icon = isOpen ? 'door-open' : 'door-closed'
 
   if (entity.attributes.friendly_name.includes('window')) {
     icon = 'window-frame-open'
@@ -24,7 +24,7 @@ export const DoorWindowSensor = ({ entityId }: DoorWindowSensorProps) => {
       name={entity.attributes.friendly_name}
       // @ts-ignore
       icon={<FontAwesomeIcon icon={['fas', icon]} />}
-      state={status === 'on' ? 'open' : 'closed'}
+      state={isOpen ? 'open' : 'closed'}
     />
   )
 }

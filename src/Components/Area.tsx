@@ -107,9 +107,16 @@ const Area = ({ area }: AreaProps) => {
   let miniSensors: string[] = getMiniSensors(entities)
   let sensors: string[] = getSensors(entities, miniSensors)
 
+  const customSensorsInArea = []
+  for (const [id, sensor] of Object.entries(configuration.customSensors)) {
+    if (sensor.area_id === area.area_id) {
+      customSensorsInArea.push(id)
+    }
+  }
+
   // @ts-ignore
   const areaConfig: any = configuration?.areas[area.area_id]
-  const extraDevices = areaConfig?.extraDevices
+  const extraDevices = areaConfig?.extraDevices || []
   if (extraDevices?.length > 0) {
     extraDevices.forEach((device: any) => {
       customDevices.push(device)
@@ -128,15 +135,18 @@ const Area = ({ area }: AreaProps) => {
         </MiniSensors>
       }
     >
-      {sensors.length > 0 && (
+      {sensors.length > 0 || customSensorsInArea.length > 0 ? (
         <>
           <Sensors>
             {sensors.map((entityId) => (
               <Sensor key={entityId} entityId={entityId} />
             ))}
+            {customSensorsInArea.map((sensorId: any) => {
+              return <Sensor key={sensorId} entityId={sensorId} id={sensorId} />
+            })}
           </Sensors>
         </>
-      )}
+      ) : null}
       <Devices>
         {devices.map((entityId) => (
           <Device key={entityId} entityId={entityId} />

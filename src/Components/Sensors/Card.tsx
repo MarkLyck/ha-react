@@ -49,11 +49,14 @@ const SensorName = styled.h5`
   margin-bottom: 4px;
 `
 const SensorStatus = styled.h5`
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 400;
-  font-size: 0.8rem;
-  line-height: 12px;
-  margin-bottom: 0;
+font-weight: 400;
+font-size: 0.8rem;
+line-height: 12px;
+margin-bottom: 0;
+color: ${(p) => {
+  if (p.color) return p.color
+  return 'rgba(255, 255, 255, 0.5)'
+}}};
 `
 
 const MiniContainer = styled.div`
@@ -85,12 +88,14 @@ type SensorCardProps = {
   icon: any
   children?: any
   state: any
+  stateColor?: string
 }
 export const SensorCard = ({
   name,
   icon,
   children,
   state,
+  stateColor,
 }: SensorCardProps) => {
   return (
     <SensorCardContainer>
@@ -98,7 +103,7 @@ export const SensorCard = ({
         <IconContainer>{icon}</IconContainer>
         <TextContainer>
           <SensorName>{name}</SensorName>
-          <SensorStatus>{state}</SensorStatus>
+          <SensorStatus color={stateColor}>{state}</SensorStatus>
         </TextContainer>
       </AccessoryCardHeader>
       {children}
