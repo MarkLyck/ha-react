@@ -54,11 +54,15 @@ export const PlantTile = ({ areaId }: PlantTileProps) => {
   let state = 'moisture: ' + moisture + '%'
   let stateColor
 
-  if (moisture < config.target.moisture) {
+  if (states[entities.moisture_sensor].state === 'unavailable') {
+    state = 'Unavailable'
+    isActive = true
+    stateColor = theme.colors.danger[600]
+  } else if (moisture < config.target.min_moisture) {
     state = 'needs water!'
     isActive = true
     stateColor = theme.colors.primary[600]
-  } else if (conductivity < config.target.conductivity) {
+  } else if (conductivity < config.target.min_conductivity) {
     state = `needs fertilizing`
     isActive = true
     stateColor = theme.colors.warning[700]

@@ -51,6 +51,9 @@ const getDevices = (entities: string[]) => {
 const getSensors = (entities: string[], miniSensors: string[]) => {
   return (
     entities?.filter((entityId: string) => {
+      if (entityId.includes('battery') || entityId.includes('power')) {
+        return false
+      }
       if (miniSensors.includes(entityId)) return false
       const domain = entityId.split('.')[0]
       return SENSOR_DOMAINS.includes(domain)
@@ -61,6 +64,9 @@ const getSensors = (entities: string[], miniSensors: string[]) => {
 const getMiniSensors = (entities: string[]) => {
   const sensors =
     entities?.filter((entityId: string) => {
+      if (entityId.includes('battery') || entityId.includes('power')) {
+        return false
+      }
       return SENSOR_DOMAINS.includes(entityId.split('.')[0])
     }) || []
 
@@ -76,7 +82,13 @@ const getMiniSensors = (entities: string[]) => {
 }
 
 const SENSOR_DOMAINS = ['binary_sensor', 'sensor', 'device_tracker']
-const MINI_SENSOR_TYPES = ['temp', 'humidity', 'occupancy', 'motion']
+const MINI_SENSOR_TYPES = [
+  'temp',
+  'humidity',
+  'occupancy',
+  'motion',
+  'pressure',
+]
 const DEVICE_TYPES = [
   'light',
   'climate',

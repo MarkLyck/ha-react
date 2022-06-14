@@ -28,7 +28,7 @@
       "extraDevices": [
         {
           "type": "plant",
-          "name": "palor palm",
+          "name": "parlor palm",
           "entities": {
             "battery_sensor": "sensor.parlor_palm_battery",
             "conductivity_sensor": "sensor.parlor_palm_conductivity",
@@ -37,9 +37,10 @@
             "temperature_sensor": "sensor.parlor_palm_temperature"
           },
           "target": {
-            "moisture": 15,
-            "conductivity": 350,
-            "temperature": 50
+            "min_moisture": 15,
+            "min_conductivity": 350,
+            "min_temperature": 50,
+            "max_temperature": 50
           }
         }
       ]

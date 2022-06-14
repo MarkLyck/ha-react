@@ -7,5 +7,6 @@ export * from './Uptime'
 export * from './DoorWindow'
 export * from './Lumens'
 export * from './Motion'
+export * from './Pressure'
 
 export * from './Fallback'

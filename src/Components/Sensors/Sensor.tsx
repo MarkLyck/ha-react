@@ -9,6 +9,7 @@ import {
   PowerSensor,
   FallbackSensor,
   UptimeSensor,
+  PressureSensor,
 } from 'src/Components/Sensors'
 import { ErrorBoundary } from 'react-error-boundary'
 import { ErrorTile } from 'src/ui-components'
@@ -26,6 +27,7 @@ const getSensorType = (entityId: string) => {
   if (entityId.includes('luminance')) return LumensSensor
   if (entityId.includes('occupancy')) return OccupancySensor
   if (entityId.includes('motion')) return MotionSensor
+  if (entityId.includes('pressure')) return PressureSensor
   if (entityId.includes('wan') || entityId.includes('external_ip')) {
     return WifiSensor
   }

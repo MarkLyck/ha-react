@@ -31,6 +31,7 @@ import {
   faVolumeHigh,
   faVolumeLow,
   faVolumeXmark,
+  faWeightHanging,
   faWifi,
   faWindowFrameOpen,
 } from '@fortawesome/pro-solid-svg-icons'
@@ -94,6 +95,7 @@ library.add(
   faVolumeHigh,
   faVolumeLow,
   faVolumeXmark,
+  faWeightHanging,
   faWindowFrameOpen,
   faWifi
 )
