@@ -66,6 +66,7 @@
       }
     }
   },
+  "climate": "climate.thermostat",
   "temperature_sensors": [
     "sensor.ecobee_bedroom_temperature_sensor",
     "sensor.ecobee_office_temperature_sensor",

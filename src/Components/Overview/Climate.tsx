@@ -6,6 +6,7 @@ import configuration from 'src/../configuration.json'
 const Climate = () => {
   const states = useStore((state: any) => state.states)
 
+  const climateState = states[configuration.climate]
   const temperatures = configuration.temperature_sensors.map(
     (entityId: string) => {
       return Math.floor(Number(states[entityId]?.state))
@@ -17,7 +18,12 @@ const Climate = () => {
 
   return (
     <OverviewCard
-      icon={<FontAwesomeIcon icon={['fas', 'fan']} />}
+      icon={
+        <FontAwesomeIcon
+          icon={['fas', 'fan']}
+          className={climateState.state === 'off' ? undefined : 'fa-spin'}
+        />
+      }
       name="climate"
       state={`${minTemp}-${maxTemp}°`}
     />
