@@ -28,9 +28,9 @@
     "home-assistant-js-websocket": "7.1.0",
     "homekit-react-components": "1.0.0",
     "lodash": "^4.17.21",
-    "react": "18.1.0",
+    "react": "18.2.0",
     "react-chartjs-2": "^4.2.0",
-    "react-dom": "18.1.0",
+    "react-dom": "18.2.0",
     "react-error-boundary": "3.1.4",
     "react-modal": "3.15.1",
     "zustand": "4.0.0-rc.1"
