@@ -1,11 +1,23 @@
 import styled from '@emotion/styled'
 
 const Container = styled.div`
-  padding: 8px 20px 8px 8px;
+  padding: 8px 20px 8px 12px;
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 42px;
+  transition: all 0.1s;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    transform: scale(0.95);
+    background: rgba(0, 0, 0, 0.6);
+  }
 
   svg {
     color: white;
@@ -25,18 +37,23 @@ const Name = styled.p`
   margin-bottom: 4px;
   font-weight: 400;
   color: white;
-  text-transform: capitalize;
   font-size: 13px;
   line-height: 12px;
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
 `
 
 const State = styled.p`
   margin-bottom: 0;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
-  text-transform: capitalize;
   font-size: 12px;
   line-height: 12px;
+  &:first-letter {
+    text-transform: capitalize;
+  }
 `
 
 type OverviewCardProps = {

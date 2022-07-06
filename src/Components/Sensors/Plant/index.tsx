@@ -27,19 +27,19 @@ export const PlantSensor = ({ id }: PlantSensorProps) => {
   let stateColor
 
   if (states[entities.moisture_sensor].state === 'unavailable') {
-    state = 'Unavailable'
+    state = 'unavailable'
     isActive = true
     stateColor = theme.colors.danger[600]
   } else if (moisture < plant.target.min_moisture) {
-    state = 'needs water!'
+    state = 'needs water: ' + moisture + '%'
     isActive = true
-    stateColor = theme.colors.primary[600]
+    // stateColor = theme.colors.primary[600]
   } else if (conductivity < plant.target.min_conductivity) {
     state = `needs fertilizing`
     isActive = true
-    stateColor = theme.colors.warning[700]
+    // stateColor = theme.colors.warning[700]
   } else if (batteryPercentage < 10) {
-    state = 'Replace battery'
+    state = 'replace battery'
     isActive = true
     stateColor = theme.colors.danger[600]
   }

@@ -49,14 +49,15 @@ const SensorName = styled.h5`
   margin-bottom: 4px;
 `
 const SensorStatus = styled.h5`
-font-weight: 400;
-font-size: 0.8rem;
-line-height: 12px;
-margin-bottom: 0;
-color: ${(p) => {
-  if (p.color) return p.color
-  return 'rgba(255, 255, 255, 0.5)'
-}}};
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 12px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: ${(p) => {
+    if (p.color) return p.color
+    return 'rgba(255, 255, 255, 0.5)'
+  }};
 `
 
 const MiniContainer = styled.div`

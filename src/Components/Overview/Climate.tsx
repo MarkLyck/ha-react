@@ -1,12 +1,15 @@
-import OverviewCard from './OverviewCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTheme } from '@emotion/react'
+import OverviewCard from './OverviewCard'
 import useStore from 'src/lib/useStore'
 import configuration from 'src/../configuration.json'
 
 const Climate = () => {
+  const theme = useTheme()
   const states = useStore((state: any) => state.states)
 
   const climateState = states[configuration.climate]
+  console.log('🔈 ~ climateState', climateState)
   const temperatures = configuration.temperature_sensors.map(
     (entityId: string) => {
       return Math.floor(Number(states[entityId]?.state))
@@ -21,11 +24,13 @@ const Climate = () => {
       icon={
         <FontAwesomeIcon
           icon={['fas', 'fan']}
-          className={climateState.state === 'off' ? undefined : 'fa-spin'}
+          className={
+            climateState.attributes.fan === 'off' ? undefined : 'fa-spin'
+          }
         />
       }
       name="climate"
-      color="#65d1ff"
+      color={theme.colors.primary[400]}
       state={`${minTemp}-${maxTemp}°`}
     />
   )

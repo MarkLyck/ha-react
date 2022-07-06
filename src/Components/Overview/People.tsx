@@ -1,34 +1,44 @@
-import OverviewCard from './OverviewCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTheme } from '@emotion/react'
+import OverviewCard from './OverviewCard'
 import useStore from 'src/lib/useStore'
 
 const People = () => {
+  const theme = useTheme()
   const states = useStore((state: any) => state.states)
 
   let peopleHome = 0
+  let totalPeople = 0
+  const peopleAtHome: string[] = []
   Object.keys(states)
     .filter((key) => key.includes('person'))
-    .map((personState) => {
+    .forEach((personState) => {
       const person = states[personState]
+      totalPeople++
       if (person.state === 'home') {
         peopleHome++
+        peopleAtHome.push(person.attributes.friendly_name)
       }
       return person
     })
 
   let state = 'All away'
-  if (peopleHome === 2) {
-    state = 'All Home'
-  } else if (peopleHome > 0) {
-    state = `${peopleHome} Home`
+  if (peopleHome === totalPeople) {
+    state = 'All home'
+  } else if (peopleHome === 1) {
+    state = `${peopleAtHome[0]} is home`
+  } else if (peopleHome > 1) {
+    state = `${peopleHome} home`
   }
+
+  const faIcon = peopleHome > 0 ? 'house-user' : 'house-blank'
 
   return (
     <OverviewCard
-      icon={<FontAwesomeIcon icon={['fas', 'people-roof']} />}
+      icon={<FontAwesomeIcon icon={['fas', faIcon]} />}
       name="people"
       state={state}
-      color="#ffaa00"
+      color={theme.colors.warning[600]}
     />
   )
 }
