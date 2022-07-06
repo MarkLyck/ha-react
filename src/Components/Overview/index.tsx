@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
 import Climate from './Climate'
+import People from './People'
 
 const Container = styled.div`
   margin-bottom: 32px;
@@ -22,6 +23,7 @@ const Overview = () => {
       <Title>Home</Title>
       <Cards>
         <Climate />
+        <People />
       </Cards>
     </Container>
   )

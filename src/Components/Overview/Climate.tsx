@@ -25,6 +25,7 @@ const Climate = () => {
         />
       }
       name="climate"
+      color="#65d1ff"
       state={`${minTemp}-${maxTemp}°`}
     />
   )

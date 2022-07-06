@@ -87,13 +87,13 @@ const handleAreaSearch = (message: any) => {
   useStore.getState().setAreas(areas)
 }
 
-let messageId = 0
-
-// const messageIds: any = {}
-
 async function connectManual() {
-  const BASE_URL = import.meta.env.VITE_BASE_URL
-  const socket = new WebSocket(`ws://${BASE_URL}/api/websocket`)
+  let BASE_URL = import.meta.env.VITE_BASE_URL
+  if (!window.location.hostname.includes('local')) {
+    BASE_URL = 'yuomxarhpjshdgj4ueeb03zfzd19pf19.ui.nabu.casa'
+  }
+  const protocol = window.location.href.includes('https') ? 'wss' : 'ws'
+  const socket = new WebSocket(`${protocol}://${BASE_URL}/api/websocket`)
   useStore.getState().setSocket(socket)
 
   const sendSocket = useStore.getState().sendSocket

@@ -12,7 +12,7 @@ const Container = styled.div`
     margin-right: 8px;
     width: 24px;
     font-size: 16px;
-    color: #65d1ff;
+    color: ${(p) => p.color};
   }
 `
 
@@ -42,12 +42,13 @@ const State = styled.p`
 type OverviewCardProps = {
   name: string
   state: string
+  color: string
   icon: React.ReactNode
 }
 
-const OverviewCard = ({ icon, name, state }: OverviewCardProps) => {
+const OverviewCard = ({ icon, name, state, color }: OverviewCardProps) => {
   return (
-    <Container>
+    <Container color={color}>
       {icon}
       <Content>
         <Name>{name}</Name>
