@@ -7,22 +7,26 @@ import configuration from 'src/../configuration.json'
 const Plants = () => {
   const theme = useTheme()
   const states = useStore((state: any) => state.states)
+  console.log('🔈 ~ states', states)
 
+  let totalPlants = 0
   let plantsThatNeedWater = 0
   let plantsThatNeedsFertilizing = 0
   let plantsThatNeedsBatteryReplacement = 0
 
   Object.values(configuration.customSensors)
-    .filter((sensor) => sensor.type === 'plant')
-    .forEach((plant) => {
-      const moisture = Number(states[plant.entities.moisture_sensor].state)
+    // @ts-ignore
+    .filter((sensor) => sensor?.type === 'plant')
+    .forEach((plant: any) => {
+      totalPlants++
+      const moisture = Number(states[plant.entities.moisture_sensor]?.state)
 
       const conductivity = Number(
-        states[plant.entities.conductivity_sensor].state
+        states[plant.entities.conductivity_sensor]?.state
       )
 
       const batteryPercentage = Number(
-        states[plant.entities.battery_sensor].state
+        states[plant.entities.battery_sensor]?.state
       )
 
       const needsWater = moisture < plant.target.min_moisture
@@ -33,6 +37,8 @@ const Plants = () => {
       if (needsFertilizer) plantsThatNeedsFertilizing++
       if (needsBattery) plantsThatNeedsBatteryReplacement++
     })
+
+  if (totalPlants === 0) return null
 
   let state = 'all good'
   if (plantsThatNeedsBatteryReplacement > 0) {

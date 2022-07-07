@@ -9,7 +9,7 @@ const Climate = () => {
   const states = useStore((state: any) => state.states)
 
   const climateState = states[configuration.climate]
-  console.log('🔈 ~ climateState', climateState)
+
   const temperatures = configuration.temperature_sensors.map(
     (entityId: string) => {
       return Math.floor(Number(states[entityId]?.state))

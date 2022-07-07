@@ -18,15 +18,18 @@ export const PlantSensor = ({ id }: PlantSensorProps) => {
 
   const entities = plant.entities
 
-  const moisture = Number(states[entities.moisture_sensor].state)
-  const conductivity = Number(states[entities.conductivity_sensor].state)
-  const batteryPercentage = Number(states[entities.battery_sensor].state)
+  const moisture = Number(states[entities.moisture_sensor]?.state)
+  const conductivity = Number(states[entities.conductivity_sensor]?.state)
+  const batteryPercentage = Number(states[entities.battery_sensor]?.state)
 
   let isActive = false
   let state = 'moisture: ' + moisture + '%'
   let stateColor
 
-  if (states[entities.moisture_sensor].state === 'unavailable') {
+  if (
+    !states[entities.moisture_sensor] ||
+    states[entities.moisture_sensor]?.state === 'unavailable'
+  ) {
     state = 'unavailable'
     isActive = true
     stateColor = theme.colors.danger[600]

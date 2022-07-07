@@ -109,7 +109,8 @@ const Area = ({ area }: AreaProps) => {
 
   const customSensorsInArea = []
   for (const [id, sensor] of Object.entries(configuration.customSensors)) {
-    if (sensor.area_id === area.area_id) {
+    // @ts-ignore
+    if (sensor?.area_id === area.area_id) {
       customSensorsInArea.push(id)
     }
   }

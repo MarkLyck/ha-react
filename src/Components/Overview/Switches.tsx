@@ -6,7 +6,6 @@ import useStore from 'src/lib/useStore'
 const Switches = () => {
   const theme = useTheme()
   const states = useStore((state: any) => state.states)
-  console.log('🔈 ~ states', states)
 
   let totalSwitches = 0
   let switchesOn = 0

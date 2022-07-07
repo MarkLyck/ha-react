@@ -26,46 +26,7 @@
       ]
     }
   },
-  "customSensors": {
-    "plant.parlor_palm": {
-      "id": "parlor_palm",
-      "area_id": "office",
-      "type": "plant",
-      "name": "parlor palm",
-      "entities": {
-        "battery_sensor": "sensor.parlor_palm_battery",
-        "conductivity_sensor": "sensor.parlor_palm_conductivity",
-        "light_sensor": "sensor.parlor_palm_light_intensity",
-        "moisture_sensor": "sensor.parlor_palm_moisture",
-        "temperature_sensor": "sensor.parlor_palm_temperature"
-      },
-      "target": {
-        "min_moisture": 15,
-        "min_conductivity": 350,
-        "min_temperature": 50,
-        "max_temperature": 50
-      }
-    },
-    "plant.monstera_deliciosa": {
-      "id": "monstera_deliciosa",
-      "area_id": "bedroom",
-      "type": "plant",
-      "name": "monstera",
-      "entities": {
-        "battery_sensor": "sensor.monstera_deliciosa_battery",
-        "conductivity_sensor": "sensor.monstera_deliciosa_conductivity",
-        "light_sensor": "sensor.monstera_deliciosa_light_intensity",
-        "moisture_sensor": "sensor.monstera_deliciosa_moisture",
-        "temperature_sensor": "monstera_deliciosa_temperature"
-      },
-      "target": {
-        "min_moisture": 15,
-        "min_conductivity": 350,
-        "min_temperature": 50,
-        "max_temperature": 50
-      }
-    }
-  },
+  "customSensors": {},
   "climate": "climate.thermostat",
   "temperature_sensors": [
     "sensor.ecobee_bedroom_temperature_sensor",
