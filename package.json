@@ -24,7 +24,7 @@
     "chart.js": "^3.8.0",
     "chartjs-adapter-dayjs": "^1.0.0",
     "dayjs": "1.11.2",
-    "framer-motion": "6.3.10",
+    "framer-motion": "6.5.1",
     "home-assistant-js-websocket": "7.1.0",
     "homekit-react-components": "1.0.0",
     "lodash": "^4.17.21",
